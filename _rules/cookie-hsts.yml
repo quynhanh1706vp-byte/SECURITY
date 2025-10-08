@@ -1,0 +1,17 @@
+rules:
+  - id: cookie-missing-secure-httponly
+    languages: [csharp]
+    severity: MEDIUM
+    message: "Cookie set thiếu Secure/HttpOnly/SameSite. Hãy đặt Secure=true, HttpOnly=true, SameSite (lax/strict)."
+    pattern-either:
+      # Không truyền CookieOptions (khả năng thiếu Secure/HttpOnly/SameSite)
+      - pattern: Response.Cookies.Append($NAME, $VAL);
+      # Có CookieOptions nhưng chưa bật Secure/HttpOnly/SameSite (chỉ cảnh báo mềm)
+      - pattern: Response.Cookies.Append($NAME, $VAL, $OPTS);
+    metadata: { cwe: "CWE-614" }
+
+  - id: missing-hsts-header-add
+    languages: [csharp]
+    severity: MEDIUM
+    message: "Đảm bảo ứng dụng set HSTS (Strict-Transport-Security)."
+    pattern: Response.Headers.Add("Strict-Transport-Security", $X);

@@ -1,0 +1,64 @@
+rules:
+  # --- SQLi: gọi SQL API với chuỗi nội suy $"..."
+  - id: sqli-suspect-sql-call-interpolated
+    languages: [generic]
+    severity: CRITICAL
+    message: "SQLi: interpolated string ($\"...\") used in SQL API call. Use parameters."
+    pattern-regex: '(?m)\b(FromSqlRaw|ExecuteSqlRaw|SqlCommand|Query|Execute)\s*\(\s*\$"'
+
+  # --- SSRF: HttpClient tới dải internal / metadata
+  - id: ssrf-httpclient-linklocal
+    languages: [generic]
+    severity: CRITICAL
+    message: "SSRF: URL trỏ về 127.* / 10.* / 172.16–31 / 192.168.* / 169.254.169.254."
+    pattern-regex: '(?m)\bHttpClient\s*\.\s*(Get|Post|Send)\w*Async\s*\(\s*[^)]*(127\.|10\.|172\.(1[6-9]|2\d|3[0-1])\.|192\.168\.|169\.254\.169\.254)\b'
+
+  # --- Upload/Traversal: dùng trực tiếp IFormFile.FileName
+  - id: dotnet-upload-raw-filename
+    languages: [generic]
+    severity: CRITICAL
+    message: "Upload: dùng trực tiếp IFormFile.FileName. Hãy dùng Path.GetFileName + GetFullPath + prefix check."
+    pattern-regex: '(?m)(Path\.Combine\s*\([^)]*IFormFile\s*\.\s*FileName|IFormFile\s*\.\s*FileName\s*\)\s*;)'
+
+  # --- JWT config yếu
+  - id: jwt-weak-validation-flags
+    languages: [generic]
+    severity: CRITICAL
+    message: "JWT: tắt ValidateLifetime/IssuerSigningKey/Issuer/Audience."
+    pattern-regex: '(?m)\bTokenValidationParameters\b[\s\S]{0,500}?\b(ValidateLifetime|ValidateIssuerSigningKey|ValidateIssuer|ValidateAudience)\s*=\s*false'
+
+  # --- Crypto RNG/Hash yếu
+  - id: crypto-insecure-rng-random
+    languages: [generic]
+    severity: HIGH
+    message: "Crypto: dùng System.Random cho mục đích bảo mật. Dùng RandomNumberGenerator."
+    pattern-regex: '(?m)\bnew\s+Random\s*\('
+
+  - id: crypto-md5-sha1
+    languages: [generic]
+    severity: HIGH
+    message: "Crypto: MD5/SHA1 không an toàn. Dùng SHA256+/HMAC/AES-GCM."
+    pattern-regex: '(?m)\b(MD5|SHA1)\s*\.\s*Create\s*\('
+
+  # --- Razor/React XSS sinks
+  - id: razor-xss-htmlraw
+    languages: [generic]
+    severity: CRITICAL
+    message: "Razor XSS: @Html.Raw — cần sanitize/encode."
+    pattern-regex: '(?m)@Html\.Raw\s*\('
+
+  - id: react-dangerouslysetinnerhtml
+    languages: [javascript, typescript, html]
+    severity: CRITICAL
+    message: "DOM XSS: dangerouslySetInnerHTML — chỉ dùng sau khi sanitize (DOMPurify…)."
+    pattern-regex: 'dangerouslySetInnerHTML\s*='
+
+  # --- Secrets phổ biến
+  - id: secrets-private-keys-and-aws
+    languages: [generic]
+    severity: CRITICAL
+    message: "Secret/private key có thể đã bị commit. Hãy gỡ khỏi repo và rotate."
+    pattern-either:
+      - pattern-regex: '(?m)-----BEGIN\s+RSA\s+PRIVATE\s+KEY-----'
+      - pattern-regex: '(?m)AKIA[0-9A-Z]{16}'
+      - pattern-regex: '(?m)ssh-rsa\s+[A-Za-z0-9+/]{100,}'

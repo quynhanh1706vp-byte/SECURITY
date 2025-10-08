@@ -1,0 +1,249 @@
+rules:
+  ########################################################################
+  # AUTHORIZATION / CSRF (ASP.NET Core MVC) — REGEX (generic)
+  ########################################################################
+  - id: csharp-missing-authorization-post
+    message: "POST action thiếu [Authorize] (bypass ACL)."
+    languages: [generic]
+    severity: ERROR
+    patterns:
+      - pattern-regex: "(?m)^\\s*\\[HttpPost(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*public\\s+\\S+\\s+\\w+\\s*\\("
+      - pattern-not-regex: "(?m)^\\s*\\[Authorize(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*\\[HttpPost"
+  - id: csharp-missing-authorization-put
+    message: "PUT action thiếu [Authorize] (bypass ACL)."
+    languages: [generic]
+    severity: ERROR
+    patterns:
+      - pattern-regex: "(?m)^\\s*\\[HttpPut(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*public\\s+\\S+\\s+\\w+\\s*\\("
+      - pattern-not-regex: "(?m)^\\s*\\[Authorize(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*\\[HttpPut"
+  - id: csharp-missing-authorization-delete
+    message: "DELETE action thiếu [Authorize] (bypass ACL)."
+    languages: [generic]
+    severity: ERROR
+    patterns:
+      - pattern-regex: "(?m)^\\s*\\[HttpDelete(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*public\\s+\\S+\\s+\\w+\\s*\\("
+      - pattern-not-regex: "(?m)^\\s*\\[Authorize(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*\\[HttpDelete"
+  - id: csharp-missing-authorization-patch
+    message: "PATCH action thiếu [Authorize] (bypass ACL)."
+    languages: [generic]
+    severity: ERROR
+    patterns:
+      - pattern-regex: "(?m)^\\s*\\[HttpPatch(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*public\\s+\\S+\\s+\\w+\\s*\\("
+      - pattern-not-regex: "(?m)^\\s*\\[Authorize(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*\\[HttpPatch"
+
+  - id: csharp-missing-antiforgery-post
+    message: "POST thiếu [ValidateAntiForgeryToken] → CSRF."
+    languages: [generic]
+    severity: WARNING
+    patterns:
+      - pattern-regex: "(?m)^\\s*\\[HttpPost(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*public\\s+\\S+\\s+\\w+\\s*\\("
+      - pattern-not-regex: "(?m)^\\s*\\[ValidateAntiForgeryToken\\]\\s*(?:[^\\n]*\\n){0,5}\\s*\\[HttpPost"
+  - id: csharp-missing-antiforgery-put
+    message: "PUT thiếu [ValidateAntiForgeryToken] → CSRF."
+    languages: [generic]
+    severity: WARNING
+    patterns:
+      - pattern-regex: "(?m)^\\s*\\[HttpPut(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*public\\s+\\S+\\s+\\w+\\s*\\("
+      - pattern-not-regex: "(?m)^\\s*\\[ValidateAntiForgeryToken\\]\\s*(?:[^\\n]*\\n){0,5}\\s*\\[HttpPut"
+  - id: csharp-missing-antiforgery-delete
+    message: "DELETE thiếu [ValidateAntiForgeryToken] → CSRF."
+    languages: [generic]
+    severity: WARNING
+    patterns:
+      - pattern-regex: "(?m)^\\s*\\[HttpDelete(\\s*\\(.*?\\))?\\]\\s*(?:[^\\n]*\\n){0,5}\\s*public\\s+\\S+\\s+\\w+\\s*\\("
+      - pattern-not-regex: "(?m)^\\s*\\[ValidateAntiForgeryToken\\]\\s*(?:[^\\n]*\\n){0,5}\\s*\\[HttpDelete"
+
+  ########################################################################
+  # SQL INJECTION (.NET / EF / Dapper) — REGEX
+  ########################################################################
+  - id: dotnet-sqli-sqlcommand-plus
+    message: "SQLi: nối chuỗi trong SqlCommand(). Dùng SqlParameter."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?s)\\bnew\\s+SqlCommand\\s*\\(\\s*[^\\)]*\\+[^\\)]*\\)"
+  - id: dotnet-sqli-commandtext-assign
+    message: "SQLi: CommandText gán từ chuỗi nối / nội suy."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bCommandText\\s*=\\s*(?:\\$?\"[^\"]*\\{[^}]+\\}[^\"]*\"|.*\\+.*);"
+  - id: efcore-sqli-fromsqlraw-interpolated
+    message: "SQLi: EF Core FromSqlRaw/ExecuteSqlRaw với chuỗi nội suy."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\b(FromSqlRaw|ExecuteSqlRaw)\\s*\\(\\s*\\$\""
+  - id: dapper-sqli-interpolated
+    message: "SQLi: Dapper Query/Execute với chuỗi nội suy."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\b(Query|QueryFirst|Execute)\\s*\\(\\s*\\$\""
+
+  ########################################################################
+  # RAZOR XSS / HTML Helpers
+  ########################################################################
+  - id: razor-xss-html-raw
+    message: "Razor XSS: @Html.Raw() với dữ liệu có thể chưa sanitize."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)@\\s*Html\\.Raw\\s*\\("
+  - id: razor-xss-appendhtml
+    message: "Razor XSS: AppendHtml/InnerHtml từ input."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\b(AppendHtml|InnerHtml\\.AppendHtml)\\s*\\("
+  - id: js-domxss-innerhtml
+    message: "DOM XSS: innerHTML/insertAdjacentHTML — cần sanitize."
+    languages: [javascript, typescript, html]
+    severity: ERROR
+    pattern-regex: "(\\.innerHTML\\s*=|\\.insertAdjacentHTML\\s*\\()"
+
+  ########################################################################
+  # SSRF (.NET) — mở rộng API
+  ########################################################################
+  - id: dotnet-ssrf-httpclient-any
+    message: "SSRF: HttpClient.*(urlVar) — cần Uri.TryCreate + allowlist host & chặn link-local."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bHttpClient\\s*\\.\\s*(GetAsync|PostAsync|PutAsync|PatchAsync|DeleteAsync|Send|SendAsync)\\s*\\(\\s*[^\"\\)]"
+  - id: dotnet-ssrf-webrequest
+    message: "SSRF: WebRequest.Create(urlVar)."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bWebRequest\\s*\\.\\s*Create\\s*\\(\\s*[^\"\\)]"
+
+  ########################################################################
+  # XXE (XML) / Deserialization / Command Injection
+  ########################################################################
+  - id: dotnet-xxe-dtd-parse
+    message: "XXE: DtdProcessing = Parse (bật DTD)."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bDtdProcessing\\s*=\\s*DtdProcessing\\.Parse\\b"
+  - id: dotnet-xxe-xmlresolver
+    message: "XXE: XmlResolver = new XmlUrlResolver()."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bXmlResolver\\s*=\\s*new\\s+XmlUrlResolver\\s*\\("
+  - id: dotnet-deserialization-binaryformatter
+    message: "Insecure Deserialization: BinaryFormatter."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bnew\\s+BinaryFormatter\\s*\\("
+  - id: dotnet-command-injection-process-start
+    message: "Command Injection: Process.Start/StartInfo.Arguments từ input."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\b(Process\\.Start\\s*\\([^\\)]*\\+|ProcessStartInfo\\s*\\{[\\s\\S]{0,200}?Arguments\\s*=\\s*[^;]*\\+[^;]*;)"
+
+  ########################################################################
+  # JWT / AuthN config
+  ########################################################################
+  - id: dotnet-jwt-none
+    message: "JWT: SecurityAlgorithms.None (không ký)."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "\\bSecurityAlgorithms\\.None\\b"
+  - id: dotnet-jwt-invalid-validation
+    message: "JWT: TokenValidationParameters tắt ValidateLifetime/ValidateIssuerSigningKey."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bTokenValidationParameters\\b[\\s\\S]{0,300}?(ValidateLifetime|ValidateIssuerSigningKey)\\s*=\\s*false"
+
+  ########################################################################
+  # Upload / Path Traversal nâng cao
+  ########################################################################
+  - id: dotnet-upload-filename-traversal
+    message: "Upload: dùng IFormFile.FileName trong Path.Combine (chưa GetFileName)."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bPath\\.Combine\\s*\\([^\\)]*IFormFile\\s*\\.\\s*FileName"
+  - id: dotnet-path-apis
+    message: "File I/O với path từ input (hãy canonicalize & whitelist root)."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\b(System\\.)?(IO\\.)?(File|Directory|FileStream)\\s*\\.(Open|ReadAllText|WriteAllText|ReadAllBytes|WriteAllBytes|Create|Delete)\\s*\\("
+
+  ########################################################################
+  # Crypto yếu / Random / Cookie flags
+  ########################################################################
+  - id: dotnet-aes-ecb
+    message: "Crypto: AES Mode = ECB → không an toàn."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bAes(?:Create|Managed)\\s*\\(\\)[\\s\\S]{0,200}?Mode\\s*=\\s*CipherMode\\.ECB\\b"
+  - id: dotnet-hash-md5
+    message: "Crypto: MD5."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bMD5\\s*\\.\\s*Create\\s*\\("
+  - id: dotnet-hash-sha1
+    message: "Crypto: SHA1."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?m)\\bSHA1\\s*\\.\\s*Create\\s*\\("
+  - id: dotnet-insecure-random
+    message: "Random: System.Random cho token/secret."
+    languages: [generic]
+    severity: WARNING
+    pattern-regex: "(?m)\\bnew\\s+Random\\s*\\("
+  - id: dotnet-cookie-append-no-options
+    message: "Cookie: Response.Cookies.Append thiếu options (Secure/HttpOnly/SameSite)."
+    languages: [generic]
+    severity: WARNING
+    pattern-regex: "(?m)\\bResponse\\.Cookies\\.Append\\s*\\(\\s*[^,\\)]+\\s*,\\s*[^,\\)]+\\s*\\)"
+
+  ########################################################################
+  # Logging nhạy cảm
+  ########################################################################
+  - id: dotnet-logging-sensitive
+    message: "Logging: có password/secret/token/authorization trong log."
+    languages: [generic]
+    severity: WARNING
+    pattern-regex: "(?i)(logger\\.|Console\\.(Write|WriteLine)).*(password|secret|token|authorization)"
+
+  ########################################################################
+  # Docker / K8s hardening
+  ########################################################################
+  - id: docker-user-root
+    message: "Dockerfile: USER root."
+    languages: [dockerfile]
+    severity: WARNING
+    pattern-regex: "(?m)^\\s*USER\\s+root\\b"
+  - id: docker-expose-sensitive
+    message: "Dockerfile: EXPOSE 22/2375."
+    languages: [dockerfile]
+    severity: WARNING
+    pattern-regex: "(?m)\\bEXPOSE\\s+(22|2375)\\b"
+  - id: k8s-run-as-non-root-false
+    message: "K8s: runAsNonRoot: false."
+    languages: [yaml]
+    severity: ERROR
+    pattern-regex: "(?m)^\\s*runAsNonRoot:\\s*false\\b"
+  - id: k8s-readonlyrootfs-false
+    message: "K8s: readOnlyRootFilesystem: false."
+    languages: [yaml]
+    severity: WARNING
+    pattern-regex: "(?m)\\breadOnlyRootFilesystem:\\s*false\\b"
+  - id: k8s-allow-privilege-escalation
+    message: "K8s: allowPrivilegeEscalation: true."
+    languages: [yaml]
+    severity: WARNING
+    pattern-regex: "(?m)\\ballowPrivilegeEscalation:\\s*true\\b"
+
+  ########################################################################
+  # Secrets (fallback cơ bản — khuyên dùng p/secrets để validator tốt hơn)
+  ########################################################################
+  - id: secret-private-key-block
+    message: "Secret: Private key block."
+    languages: [generic]
+    severity: CRITICAL
+    pattern-regex: "(?s)-----BEGIN (?:RSA |EC |)?PRIVATE KEY-----.*?-----END (?:RSA |EC |)?PRIVATE KEY-----"
+  - id: secret-aws-access-key-id
+    message: "Secret: AWS Access Key ID."
+    languages: [generic]
+    severity: CRITICAL
+    pattern-regex: "\\bAKIA[0-9A-Z]{16}\\b"
+  - id: secret-high-entropy
+    message: "Secret: chuỗi entropy cao (hãy xác minh)."
+    languages: [generic]
+    severity: WARNING
+    pattern-regex: "(?<![A-Za-z0-9_])[A-Za-z0-9_\\/+\\-=]{32,}(?![A-Za-z0-9_])"

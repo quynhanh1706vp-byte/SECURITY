@@ -1,0 +1,15 @@
+rules:
+  - id: dotnet-path-traversal-io
+    languages: [csharp]
+    severity: HIGH
+    message: File I/O with possibly untrusted path. Normalize & enforce allowed roots.
+    metadata: { cwe: "CWE-22" }
+    pattern-either:
+      - pattern: File.ReadAllText($P)
+      - pattern: File.Open($P, ...)
+      - pattern: new FileStream($P, ...)
+  - id: dotnet-path-traversal-combine
+    languages: [csharp]
+    severity: HIGH
+    message: Path.Combine with untrusted segment. Validate final full path prefix.
+    pattern: Path.Combine($BASE, $SEG)

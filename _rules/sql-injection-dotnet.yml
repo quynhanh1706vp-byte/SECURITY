@@ -1,0 +1,31 @@
+rules:
+  # Ghép chuỗi trong SqlCommand(...)
+  - id: dotnet-sql-injection-sqlcommand-plus
+    languages: [csharp]
+    severity: ERROR
+    message: "Possible SQL injection: string concatenation inside SqlCommand(). Use parameters."
+    metadata:
+      cwe: "CWE-89"
+      confidence: "MEDIUM"
+    # Tìm dấu + trong tham số đầu tiên của SqlCommand(
+    pattern-regex: "(?s)\\bnew\\s+SqlCommand\\s*\\(\\s*[^\\)]*\\+[^\\)]*\\)"
+
+  # Ghép chuỗi vào CommandText
+  - id: dotnet-sql-injection-commandtext-plus
+    languages: [csharp]
+    severity: ERROR
+    message: "Possible SQL injection: concatenation assigned to CommandText. Use parameters."
+    metadata:
+      cwe: "CWE-89"
+      confidence: "MEDIUM"
+    pattern-regex: "(?m)\\bCommandText\\s*=\\s*.*\\+.*;"
+
+  # Execute* trên biến có vẻ dynamic
+  - id: dotnet-sql-injection-exec-dynamic
+    languages: [csharp]
+    severity: WARNING
+    message: "Execute* on possibly dynamic SQL. Review parameterization."
+    metadata:
+      cwe: "CWE-89"
+      confidence: "LOW"
+    pattern-regex: "\\bExecute(?:NonQuery|Reader|Scalar)\\s*\\("

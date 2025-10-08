@@ -1,0 +1,12 @@
+rules:
+  - id: react-dangerouslysetinnerhtml-regex
+    languages: [regex]
+    severity: HIGH
+    message: "React dangerouslySetInnerHTML — ensure input is sanitized or avoid usage."
+    pattern-regex: "(?s)dangerouslySetInnerHTML\\s*=\\s*\\{\\s*\\{\\s*__html\\s*:\\s*.+?\\}\\s*\\}"
+
+  - id: dom-innerhtml-insert-regex
+    languages: [regex]
+    severity: HIGH
+    message: "DOM insertion via innerHTML/insertAdjacentHTML — sanitize input."
+    pattern-regex: "(\\.innerHTML\\s*=|\\.insertAdjacentHTML\\s*\\()"

@@ -1,0 +1,111 @@
+rules:
+  - id: dotnet-path-traversal-io
+    languages: [csharp]
+    severity: HIGH
+    message: "File I/O với đường dẫn có thể không tin cậy. Chuẩn hoá + ràng buộc root."
+    pattern-either:
+      - pattern: File.ReadAllText($P)
+      - pattern: File.Open($P, ...)
+      - pattern: new FileStream($P, ...)
+  - id: dotnet-path-traversal-combine
+    languages: [csharp]
+    severity: HIGH
+    message: "Path.Combine với input untrusted. Dùng GetFullPath + kiểm tra prefix."
+    pattern: Path.Combine($BASE, $SEG)
+  - id: dotnet-sql-injection-sqlcommand-plus
+    languages: [csharp]
+    severity: ERROR
+    message: "Có thể SQLi: nối chuỗi trong SqlCommand()."
+    pattern-regex: "(?s)\\bnew\\s+SqlCommand\\s*\\(\\s*[^\\)]*\\+[^\\)]*\\)"
+  - id: dotnet-sql-injection-commandtext-plus
+    languages: [csharp]
+    severity: ERROR
+    message: "Có thể SQLi: CommandText = ... + ...; dùng tham số."
+    pattern-regex: "(?m)\\bCommandText\\s*=\\s*.*\\+.*;"
+  - id: dotnet-sql-injection-exec-dynamic
+    languages: [csharp]
+    severity: WARNING
+    message: "Execute* gọi trên nội dung có thể dynamic. Rà soát parameterization."
+    pattern-regex: "\\bExecute(?:NonQuery|Reader|Scalar)\\s*\\("
+  - id: dotnet-ssrf-httpclient-url
+    languages: [csharp]
+    severity: HIGH
+    message: "SSRF: HTTP outbound với URL có thể bị kiểm soát. Cần allowlist hostname."
+    pattern-regex: "\\bnew\\s+HttpClient\\s*\\(\\)\\s*\\.\\s*\\w+Async\\s*\\(\\s*[^\\)]+\\)"
+  - id: dotnet-ssrf-webrequest-create
+    languages: [csharp]
+    severity: HIGH
+    message: "SSRF: WebRequest.Create(URL) từ input. Cần allowlist/validation."
+    pattern-regex: "\\bWebRequest\\s*\\.\\s*Create\\s*\\("
+  - id: aes-ecb
+    languages: [csharp]
+    severity: HIGH
+    message: "AES ECB không an toàn. Dùng AES-GCM hoặc AES-CBC + HMAC."
+    pattern-regex: "(Aes(?:Create|Managed)\\(\\).*?Mode\\s*=\\s*CipherMode\\.ECB)"
+  - id: insecure-rng-or-static-key
+    languages: [csharp]
+    severity: HIGH
+    message: "RNG không an toàn (Random) hoặc hard-coded key."
+    pattern-regex: "(new\\s+Random\\(|Encoding\\.(?:ASCII|UTF8)\\.GetBytes\\(\\s*['\\\"][^'\\\"]+['\\\"]\\s*\\))"
+  - id: jwt-none-algorithm
+    languages: [csharp]
+    severity: HIGH
+    message: "JWT dùng 'SecurityAlgorithms.None' (không an toàn)."
+    pattern-regex: "\\bSecurityAlgorithms\\.None\\b"
+  - id: jwt-hardcoded-symmetric-key
+    languages: [csharp]
+    severity: HIGH
+    message: "JWT symmetric key có vẻ hard-code qua Encoding.GetBytes(...)."
+    pattern-regex: "new\\s+SymmetricSecurityKey\\(\\s*Encoding\\.(?:ASCII|UTF8)\\.GetBytes\\(\\s*['\\\"][^'\\\"]+['\\\"]\\s*\\)\\s*\\)"
+  - id: cookie-missing-secure-httponly
+    languages: [csharp]
+    severity: MEDIUM
+    message: "Cookie có thể thiếu Secure/HttpOnly/SameSite."
+    pattern-either:
+      - pattern: Response.Cookies.Append($NAME, $VAL);
+      - pattern: Response.Cookies.Append($NAME, $VAL, $OPTS);
+  - id: missing-hsts-header-add
+    languages: [csharp]
+    severity: MEDIUM
+    message: "Cần set Strict-Transport-Security."
+    pattern: Response.Headers.Add("Strict-Transport-Security", $X);
+  - id: react-dangerouslysetinnerhtml-regex
+    languages: [regex]
+    severity: HIGH
+    message: "React dangerouslySetInnerHTML — hãy sanitize hoặc tránh."
+    pattern-regex: "(?s)dangerouslySetInnerHTML\\s*=\\s*\\{\\s*\\{\\s*__html\\s*:\\s*.+?\\}\\s*\\}"
+  - id: dom-innerhtml-insert-regex
+    languages: [regex]
+    severity: HIGH
+    message: "DOM insertion qua innerHTML/insertAdjacentHTML — sanitize input."
+    pattern-regex: "(\\.innerHTML\\s*=|\\.insertAdjacentHTML\\s*\\()"
+  - id: dockerfile-expose-sensitive
+    languages: [dockerfile]
+    severity: MEDIUM
+    message: "Dockerfile EXPOSE 22/2375 là nhạy cảm."
+    pattern-regex: "(?m)\\bEXPOSE\\s+(22|2375)\\b"
+  - id: k8s-run-as-non-root-false
+    languages: [yaml]
+    severity: HIGH
+    message: "K8s runAsNonRoot: false. Hãy bật true và set user không root."
+    pattern-regex: "(?m)^\\s*runAsNonRoot:\\s*false\\b"
+  - id: k8s-readonlyrootfs-false
+    languages: [yaml]
+    severity: MEDIUM
+    message: "K8s readOnlyRootFilesystem: false. Nên bật true."
+    pattern-regex: "(?m)\\breadOnlyRootFilesystem:\\s*false\\b"
+  - id: secret-high-entropy
+    languages: [javascript, typescript, python, csharp, yaml, json, go]
+    severity: CRITICAL
+    message: "Chuỗi entropy cao — khả năng là secret. Kiểm tra & rotate nếu là thật."
+    pattern-regex: '"?[A-Za-z0-9_\\/\\-\\+=]{24,}"?'
+  - id: aws-access-key
+    languages: [javascript, typescript, python, csharp, yaml, json, go]
+    severity: CRITICAL
+    message: "Phát hiện AWS Access Key ID."
+    pattern-regex: "\\bAKIA[0-9A-Z]{16}\\b"
+  - id: private-key-block
+    languages: [javascript, typescript, python, csharp, yaml, json, go]
+    severity: CRITICAL
+    message: "Private key trong repo."
+    pattern-regex: "(?s)-----BEGIN (?:RSA |EC |)?PRIVATE KEY-----.*?-----END (?:RSA |EC |)?PRIVATE KEY-----"
