@@ -6,3 +6,5 @@ dmpw_linux_install_v3/semgrep_extracted/dmpw_linux_install/dmpw_linux_install/im
 # ignore image tarballs
 dmpw_linux_install_v2/semgrep_extracted/dmpw_linux_install/dmpw_linux_install/images/*.tgz
 dmpw_linux_install_v3/semgrep_extracted/dmpw_linux_install/dmpw_linux_install/images/*.tgz
+dmpw_linux_install_v2/semgrep_extracted/dmpw_linux_install/dmpw_linux_install/images/*.tgz
+dmpw_linux_install_v3/semgrep_extracted/dmpw_linux_install/dmpw_linux_install/images/*.tgz
