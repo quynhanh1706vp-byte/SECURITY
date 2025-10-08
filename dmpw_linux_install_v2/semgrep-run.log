@@ -1,9 +1,0 @@
-[INFO] Extracting code/api.tar.gz -> semgrep_extracted/api
-[INFO] Extracting code/webapp.tar.gz -> semgrep_extracted/webapp
-[INFO] Extracting install/dmpw_linux_install.tar.gz -> semgrep_extracted/dmpw_linux_install
-[INFO] Extracted 3 archive(s) into semgrep_extracted/
-[INFO] Mounting ~/.semgrep for Pro rules
-[INFO] Using Docker image: returntocorp/semgrep
-Paths that match both --include and --exclude will be skipped by Semgrep.
-running 717 rules from 8 configs  (1 config error)
-Not sending pseudonymous metrics since metrics are configured to OFF, registry usage is True, and login status is False
