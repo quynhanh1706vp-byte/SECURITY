@@ -1,0 +1,341 @@
+# Semgrep Custom Full v3.1 (API-aware CSRF)
+rules:
+
+# --- Authorize (chia theo verb, giữ nguyên như v3) ---
+- id: csharp-missing-authorize-on-post
+  message: 'POST action missing [Authorize].'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $CTRL : $BASE {
+          ...
+          [HttpPost(...)]
+          public $T $M(...){ ... }
+        }
+    - pattern-not-inside: |
+        [Authorize(...)]
+        public class $CTRL : $BASE { ... }
+    - pattern-not: |
+        [Authorize(...)]
+        public $T $M(...){ ... }
+  metadata: { category: broken-access-control, impact: high }
+
+- id: csharp-missing-authorize-on-put
+  message: 'PUT action missing [Authorize].'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $CTRL : $BASE {
+          ...
+          [HttpPut(...)]
+          public $T $M(...){ ... }
+        }
+    - pattern-not-inside: |
+        [Authorize(...)]
+        public class $CTRL : $BASE { ... }
+    - pattern-not: |
+        [Authorize(...)]
+        public $T $M(...){ ... }
+  metadata: { category: broken-access-control, impact: high }
+
+- id: csharp-missing-authorize-on-patch
+  message: 'PATCH action missing [Authorize].'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $CTRL : $BASE {
+          ...
+          [HttpPatch(...)]
+          public $T $M(...){ ... }
+        }
+    - pattern-not-inside: |
+        [Authorize(...)]
+        public class $CTRL : $BASE { ... }
+    - pattern-not: |
+        [Authorize(...)]
+        public $T $M(...){ ... }
+  metadata: { category: broken-access-control, impact: high }
+
+- id: csharp-missing-authorize-on-delete
+  message: 'DELETE action missing [Authorize].'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $CTRL : $BASE {
+          ...
+          [HttpDelete(...)]
+          public $T $M(...){ ... }
+        }
+    - pattern-not-inside: |
+        [Authorize(...)]
+        public class $CTRL : $BASE { ... }
+    - pattern-not: |
+        [Authorize(...)]
+        public $T $M(...){ ... }
+  metadata: { category: broken-access-control, impact: high }
+
+# --- Path Traversal ---
+- id: csharp-path-traversal-file
+  message: 'Possible path traversal reaching File.* sink. Normalize & enforce baseDir.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: File.$F($ARGS)
+    - metavariable-pattern:
+        metavariable: $F
+        pattern: (Open|OpenRead|OpenWrite|ReadAll.*|WriteAll.*|Create|Delete|Move|Copy|Exists)
+    - pattern-not: Path.Combine(...)
+  metadata: { category: path-traversal, impact: high }
+
+- id: csharp-path-traversal-directory
+  message: 'Possible path traversal reaching Directory.* sink. Normalize & enforce baseDir.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: Directory.$F($ARGS)
+    - metavariable-pattern:
+        metavariable: $F
+        pattern: (Create|Delete|Move|Copy|Exists|SetCurrentDirectory|GetFiles|GetDirectories)
+    - pattern-not: Path.Combine(...)
+  metadata: { category: path-traversal, impact: high }
+
+- id: csharp-path-traversal-filestream
+  message: 'Possible path traversal in new FileStream(...). Normalize & enforce baseDir.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: new FileStream($P, ...)
+    - pattern-not: Path.Combine(...)
+  metadata: { category: path-traversal, impact: high }
+
+# --- Secrets ---
+- id: generic-secrets-high
+  message: 'Hardcoded secret (API key / token / private key / password). Remove & rotate.'
+  severity: CRITICAL
+  languages: [generic]
+  patterns:
+    - pattern-regex: (?i)(aws_.{0,20}secret|access[_-]?key|api[_-]?key|apikey|token|private[_-]?key|jwt[_-]?secret|password)\s*[:=]\s*["'][A-Za-z0-9/\+_=:\-]{12,}["']
+  metadata: { category: secrets, impact: critical }
+
+# --- Sensitive logging ---
+- id: csharp-logging-sensitive-data
+  message: 'Avoid logging sensitive values (passwords, tokens, secrets).'
+  severity: MEDIUM
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (?i)Log(Information|Debug|Warning|Error)\(.*(password|secret|token).*
+  metadata: { category: sensitive-logging, impact: medium }
+
+# --- DOM XSS ---
+- id: js-domxss-innerhtml
+  message: 'Dangerous HTML sink: innerHTML.'
+  severity: ERROR
+  languages: [javascript, typescript]
+  patterns:
+    - pattern: $EL.innerHTML = $X
+  metadata: { category: xss, impact: high }
+
+- id: js-domxss-outerhtml
+  message: 'Dangerous HTML sink: outerHTML.'
+  severity: ERROR
+  languages: [javascript, typescript]
+  patterns:
+    - pattern: $EL.outerHTML = $X
+  metadata: { category: xss, impact: high }
+
+- id: js-domxss-document-write
+  message: 'Dangerous HTML sink: document.write.'
+  severity: ERROR
+  languages: [javascript, typescript]
+  patterns:
+    - pattern: document.write($X)
+  metadata: { category: xss, impact: high }
+
+# --- SQLi ---
+- id: csharp-sqli-exec-concat
+  message: 'SQLi risk: concatenation in Execute(...). Use parameters.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: $DB.Execute(... + $U + ...)
+  metadata: { category: injection, impact: high }
+
+- id: csharp-sqli-query-concat
+  message: 'SQLi risk: concatenation in Query(...). Use parameters.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: $DB.Query(... + $U + ...)
+  metadata: { category: injection, impact: high }
+
+- id: csharp-sqli-exec-interp
+  message: 'SQLi risk: interpolation in Execute($"..."). Use parameters.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: $DB.Execute($"..." + $U + "...")
+  metadata: { category: injection, impact: high }
+
+- id: csharp-sqli-query-interp
+  message: 'SQLi risk: interpolation in Query($"..."). Use parameters.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: $DB.Query($"..." + $U + "...")
+  metadata: { category: injection, impact: high }
+
+- id: csharp-sqli-ef-raw
+  message: 'SQLi risk: EF Core ExecuteSqlRaw(... + user input + ...).'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: $CTX.Database.ExecuteSqlRaw(... + $U + ...)
+  metadata: { category: injection, impact: high }
+
+- id: csharp-sqli-ef-interpolated
+  message: 'SQLi risk: EF Core ExecuteSqlInterpolated($"..." + user input + "...").'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: $CTX.Database.ExecuteSqlInterpolated($"..." + $U + "...")
+  metadata: { category: injection, impact: high }
+
+# --- SSRF ---
+- id: csharp-ssrf-sendasync
+  message: 'SSRF risk: HttpClient.SendAsync(request) with user-controlled URL.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: $HC.SendAsync($REQ)
+  metadata: { category: ssrf, impact: high }
+
+- id: csharp-ssrf-httpclient-method
+  message: 'SSRF risk: HttpClient.$M(url). Enforce allowlist & block metadata.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: HttpClient.$M($URL)
+  metadata: { category: ssrf, impact: high }
+
+- id: csharp-ssrf-webrequest
+  message: 'SSRF risk: WebRequest.Create(url).'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: WebRequest.Create($URL)
+  metadata: { category: ssrf, impact: high }
+
+# --- ws:// ---
+- id: insecure-websocket-ws
+  message: 'Insecure WebSocket (ws://). Use wss:// and TLS.'
+  severity: ERROR
+  languages: [csharp, javascript, typescript]
+  patterns:
+    - pattern-regex: (?i)ws://
+  metadata: { category: transport, impact: high }
+
+# --- JWT ---
+- id: csharp-jwt-without-validate
+  message: 'JWT is parsed without validation. Ensure ValidateToken is used.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        var token = new JwtSecurityTokenHandler().ReadToken($S);
+    - pattern-not: |
+        new JwtSecurityTokenHandler().ValidateToken(...)
+  metadata: { category: authn, impact: high }
+
+# --- CSRF (API-aware: bỏ qua khi có [ApiController]) ---
+- id: csharp-missing-antiforgery-post
+  message: 'POST action missing [ValidateAntiForgeryToken].'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $C : $BASE {
+          ...
+          [HttpPost(...)]
+          public $T $M(...){ ... }
+        }
+    - pattern-not: |
+        [ValidateAntiForgeryToken]
+        public $T $M(...){ ... }
+    - pattern-not-inside: |
+        [ApiController]
+        public class $C : $BASE { ... }
+  metadata: { category: csrf, impact: high }
+
+- id: csharp-missing-antiforgery-put
+  message: 'PUT action missing [ValidateAntiForgeryToken].'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $C : $BASE {
+          ...
+          [HttpPut(...)]
+          public $T $M(...){ ... }
+        }
+    - pattern-not: |
+        [ValidateAntiForgeryToken]
+        public $T $M(...){ ... }
+    - pattern-not-inside: |
+        [ApiController]
+        public class $C : $BASE { ... }
+  metadata: { category: csrf, impact: high }
+
+- id: csharp-missing-antiforgery-delete
+  message: 'DELETE action missing [ValidateAntiForgeryToken].'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $C : $BASE {
+          ...
+          [HttpDelete(...)]
+          public $T $M(...){ ... }
+        }
+    - pattern-not: |
+        [ValidateAntiForgeryToken]
+        public $T $M(...){ ... }
+    - pattern-not-inside: |
+        [ApiController]
+        public class $C : $BASE { ... }
+  metadata: { category: csrf, impact: high }
+
+# --- Docker & K8s (giữ đơn giản) ---
+- id: docker-user-nonroot
+  message: 'Dockerfile runs as root. Use USER nonroot.'
+  severity: ERROR
+  languages: [dockerfile]
+  patterns:
+    - pattern: |
+        FROM $B
+        ...
+        USER root
+  metadata: { category: container, impact: high }
+
+- id: k8s-hardening-basics
+  message: 'K8s hardening: runAsNonRoot, allowPrivilegeEscalation: false, readOnlyRootFilesystem: true.'
+  severity: ERROR
+  languages: [yaml]
+  patterns:
+    - pattern: |
+        apiVersion: $V
+        kind: Pod
+        metadata: ...
+        spec:
+          containers:
+            - name: $N
+              securityContext: $SC
+    - pattern-not: |
+        securityContext:
+          runAsNonRoot: true
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+  metadata: { category: iac, impact: high }

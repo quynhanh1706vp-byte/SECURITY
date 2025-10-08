@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAttendance" xml:space="preserve">
+    <value>勤怠</value>
+    <comment/>
+  </data>
+  <data name="headerName" xml:space="preserve">
+    <value>名前</value>
+    <comment/>
+  </data>
+  <data name="headerDate" xml:space="preserve">
+    <value>日付</value>
+    <comment/>
+  </data>
+  <data name="headerClockIn" xml:space="preserve">
+    <value>出勤時間</value>
+    <comment/>
+  </data>
+  <data name="headerClockOut" xml:space="preserve">
+    <value>退勤時間</value>
+    <comment/>
+  </data>
+  <data name="headerUnfulfilledTime" xml:space="preserve">
+    <value>満たしきれなかった時間</value>
+    <comment/>
+  </data>
+  <data name="headerOverTime" xml:space="preserve">
+    <value>超過勤務時間</value>
+    <comment/>
+  </data>
+  <data name="headerTotalTime" xml:space="preserve">
+    <value>勤務時間</value>
+    <comment/>
+  </data>
+  <data name="headerDayOfWeek" xml:space="preserve">
+    <value>曜日</value>
+    <comment/>
+  </data>
+  <data name="lblFriday" xml:space="preserve">
+    <value>Fri</value>
+    <comment/>
+  </data>
+  <data name="lblMonday" xml:space="preserve">
+    <value>Mon</value>
+    <comment/>
+  </data>
+  <data name="lblSaturday" xml:space="preserve">
+    <value>Sat</value>
+    <comment/>
+  </data>
+  <data name="lblSunday" xml:space="preserve">
+    <value>Sun</value>
+    <comment/>
+  </data>
+  <data name="lblThursday" xml:space="preserve">
+    <value>Thu</value>
+    <comment/>
+  </data>
+  <data name="lblTuesday" xml:space="preserve">
+    <value>Tue</value>
+    <comment/>
+  </data>
+  <data name="lblWednesday" xml:space="preserve">
+    <value>Wed</value>
+    <comment/>
+  </data>
+  <data name="headerDiffTime" xml:space="preserve">
+    <value>差分時間</value>
+    <comment/>
+  </data>
+  <data name="lblTotalWorkingHour" xml:space="preserve">
+    <value>総勤務時間</value>
+    <comment/>
+  </data>
+  <data name="lblTotalDiffTime" xml:space="preserve">
+    <value>合計差分時間</value>
+    <comment/>
+  </data>
+  <data name="lblWeekWorkingHour" xml:space="preserve">
+    <value>週の勤労時間</value>
+    <comment/>
+  </data>
+  <data name="lblWeekDiffTime" xml:space="preserve">
+    <value>週の差分時間</value>
+    <comment/>
+  </data>
+  <data name="lblWeekly" xml:space="preserve">
+    <value>週間の計算</value>
+    <comment/>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>合計</value>
+    <comment/>
+  </data>
+  <data name="lblOnlyInOffice" xml:space="preserve">
+    <value>オフィスに滞在した時間</value>
+    <comment/>
+  </data>
+  <data name="lblTotalInOffice" xml:space="preserve">
+    <value>出勤から退社までの時間</value>
+    <comment/>
+  </data>
+  <data name="lblStatusWaiting" xml:space="preserve">
+    <value>待っている</value>
+    <comment/>
+  </data>
+  <data name="lblStatusAprroval" xml:space="preserve">
+    <value>承認済み</value>
+    <comment/>
+  </data>
+  <data name="lblStatusReject" xml:space="preserve">
+    <value>拒否する</value>
+    <comment/>
+  </data>
+  <data name="contentRegisterAttenance" xml:space="preserve">
+    <value>{0}で承認が必要な申請があります</value>
+    <comment/>
+  </data>
+  <data name="contentAcceptAttendanceLeave" xml:space="preserve">
+    <value>休暇申請は{0}によって承認されました</value>
+    <comment/>
+  </data>
+  <data name="contentRejectAttendanceLeave" xml:space="preserve">
+    <value>申請は{0}によって拒否されました</value>
+    <comment/>
+  </data>
+  <data name="messageRegisterSuccess" xml:space="preserve">
+    <value>正常に申請されました</value>
+    <comment/>
+  </data>
+  <data name="requestAttendanceExist" xml:space="preserve">
+    <value>申請内容は既に存在します</value>
+    <comment/>
+  </data>
+  <data name="headerAttendanceType" xml:space="preserve">
+    <value>勤怠タイプ</value>
+    <comment/>
+  </data>
+  <data name="cannotDeleteRequest" xml:space="preserve">
+    <value>休暇申請は削除できません</value>
+    <comment/>
+  </data>
+  <data name="cannotEditRequest" xml:space="preserve">
+    <value>休暇申請は編集できません</value>
+    <comment/>
+  </data>
+  <data name="titleNoticationLeaveRequest" xml:space="preserve">
+    <value>出勤休暇申請</value>
+    <comment/>
+  </data>
+  <data name="lblHHmmss" xml:space="preserve">
+    <value>時:分:秒</value>
+    <comment/>
+  </data>
+  <data name="lblHHmm" xml:space="preserve">
+    <value>時:分</value>
+    <comment/>
+  </data>
+  <data name="msgAddNewWorkingType" xml:space="preserve">
+    <value>新しいタイムスケジュールの追加</value>
+    <comment/>
+  </data>
+  <data name="msgUpdateWorkingType" xml:space="preserve">
+    <value>作業タイプを更新</value>
+    <comment/>
+  </data>
+  <data name="msgDeleteWorkingType" xml:space="preserve">
+    <value>作業タイプを削除</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType0" xml:space="preserve">
+    <value>タイプデフォルト</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType1" xml:space="preserve">
+    <value>タイプ1</value>
+    <comment/>
+  </data>
+  <data name="headerBodyTemperature" xml:space="preserve">
+    <value>体温</value>
+    <comment/>
+  </data>
+  <data name="headerDepartment" xml:space="preserve">
+    <value>部門</value>
+    <comment/>
+  </data>
+  <data name="msgNotifyCheckinLate" xml:space="preserve">
+    <value>It seem you forgot to check-in, please do it soon!</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveUserName" xml:space="preserve">
+    <value>ユーザー名</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveType" xml:space="preserve">
+    <value>休暇タイプ</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveFromDate" xml:space="preserve">
+    <value>開始日</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveToDate" xml:space="preserve">
+    <value>現在まで</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveReason" xml:space="preserve">
+    <value>理由</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveRejectReason" xml:space="preserve">
+    <value>拒否理由</value>
+    <comment/>
+  </data>
+  <data name="lblButtonCheckLeaveRequest" xml:space="preserve">
+    <value>休暇申請を確認する</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType2" xml:space="preserve">
+    <value>タイプ2</value>
+    <comment/>
+  </data>
+  <data name="titleAttendanceReportType2" xml:space="preserve">
+    <value>部門内外の出席レポート {0}</value>
+    <comment/>
+  </data>
+  <data name="titleAttendanceReportDateType2" xml:space="preserve">
+    <value>({0} から {1} まで)</value>
+    <comment/>
+  </data>
+  <data name="lblNote" xml:space="preserve">
+    <value>注記</value>
+    <comment/>
+  </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>No</value>
+    <comment/>
+  </data>
+  <data name="lblFullName" xml:space="preserve">
+    <value>フルネーム</value>
+    <comment/>
+  </data>
+  <data name="lblTimeIn" xml:space="preserve">
+    <value>の時間</value>
+    <comment/>
+  </data>
+  <data name="lblTimeOut" xml:space="preserve">
+    <value>タイムアウト</value>
+    <comment/>
+  </data>
+  <data name="lblDefineLateIn" xml:space="preserve">
+    <value>Background color black, text color white: Late in</value>
+    <comment/>
+  </data>
+  <data name="lblDefineAbsence" xml:space="preserve">
+    <value>Black ground gray: Absence no reason</value>
+    <comment/>
+  </data>
+  <data name="lblDefineEarlyOut" xml:space="preserve">
+    <value>Background color gray, text italic: Early Out</value>
+    <comment/>
+  </data>
+  <data name="lblWork" xml:space="preserve">
+    <value>仕事</value>
+    <comment/>
+  </data>
+  <data name="lblAnnualVacation" xml:space="preserve">
+    <value>年次休暇</value>
+    <comment/>
+  </data>
+  <data name="lblOfficialVacation" xml:space="preserve">
+    <value>正式な休暇</value>
+    <comment/>
+  </data>
+  <data name="lblPetitionVacation" xml:space="preserve">
+    <value>嘆願休暇</value>
+    <comment/>
+  </data>
+  <data name="lblSpecialVacation" xml:space="preserve">
+    <value>特別な休暇</value>
+    <comment/>
+  </data>
+  <data name="lblSleepOut" xml:space="preserve">
+    <value>外泊</value>
+    <comment/>
+  </data>
+  <data name="lblGoOut" xml:space="preserve">
+    <value>外出</value>
+    <comment/>
+  </data>
+  <data name="lblVisitOut" xml:space="preserve">
+    <value>外出</value>
+    <comment/>
+  </data>
+  <data name="lblHospitalization" xml:space="preserve">
+    <value>入院</value>
+    <comment/>
+  </data>
+  <data name="lblStartDate" xml:space="preserve">
+    <value>開始日</value>
+    <comment/>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>終了日</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType3" xml:space="preserve">
+    <value>タイプ3</value>
+    <comment/>
+  </data>
+  <data name="titleAttendanceReportDateType3" xml:space="preserve">
+    <value>1 時間ごとのタイムシート: {0} から {1}</value>
+    <comment/>
+  </data>
+  <data name="lblUserCode" xml:space="preserve">
+    <value>ユーザーコード</value>
+    <comment/>
+  </data>
+  <data name="lblPosition" xml:space="preserve">
+    <value>位置</value>
+    <comment/>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>部門</value>
+    <comment/>
+  </data>
+  <data name="lblDateOfMonth" xml:space="preserve">
+    <value>月の日付</value>
+    <comment/>
+  </data>
+  <data name="headerShift" xml:space="preserve">
+    <value>日付型</value>
+    <comment/>
+  </data>
+  <data name="headerLateIn" xml:space="preserve">
+    <value>レイトイン</value>
+    <comment/>
+  </data>
+  <data name="headerEarlyOut" xml:space="preserve">
+    <value>アーリーアウト</value>
+    <comment/>
+  </data>
+  <data name="headerActualWorkingHour" xml:space="preserve">
+    <value>必要な時間数</value>
+    <comment/>
+  </data>
+  <data name="headerRealWorkingHour" xml:space="preserve">
+    <value>実労働時間</value>
+    <comment/>
+  </data>
+  <data name="headerOvertimeDurationBefore" xml:space="preserve">
+    <value>以前の残業時間</value>
+    <comment/>
+  </data>
+  <data name="headerOvertimeDurationAfter" xml:space="preserve">
+    <value>後の残業時間</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType4" xml:space="preserve">
+    <value>タイプ4</value>
+    <comment/>
+  </data>
+  <data name="msgNotifyCheckinFirst" xml:space="preserve">
+    <value>You have successfully check in your time today</value>
+    <comment/>
+  </data>
+  <data name="lblHHmmDot" xml:space="preserve">
+    <value>時.分</value>
+    <comment/>
+  </data>
+  <data name="msgWorkingTimeNameExisted" xml:space="preserve">
+    <value>勤務時間名がシステム内に存在</value>
+  </data>
+  <data name="msgValidationLunchTime" xml:space="preserve">
+    <value>昼休みの設定が間違っています</value>
+  </data>
+  <data name="msgValidationWorkingDay" xml:space="preserve">
+    <value>勤務日の構成が正しくありません</value>
+  </data>
+  <data name="msgValidationWorkingTime" xml:space="preserve">
+    <value>営業時間の設定が正しくありません</value>
+  </data>
+  <data name="msgValidationWorkingType" xml:space="preserve">
+    <value>作業タイプの構成が正しくありません</value>
+  </data>
+</root>

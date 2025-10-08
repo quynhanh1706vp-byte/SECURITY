@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IblSite2" xml:space="preserve">
+    <value>장소</value>
+  </data>
+  <data name="lblAccessTime" xml:space="preserve">
+    <value>출입시간</value>
+  </data>
+  <data name="lblApplyDate" xml:space="preserve">
+    <value>신청날짜</value>
+  </data>
+  <data name="lblApproval1" xml:space="preserve">
+    <value>결재자</value>
+  </data>
+  <data name="lblApproval2" xml:space="preserve">
+    <value>승인자</value>
+  </data>
+  <data name="lblApprovalWaiting1" xml:space="preserve">
+    <value>결재대기</value>
+  </data>
+  <data name="lblApprovalWaiting2" xml:space="preserve">
+    <value>승인대기</value>
+  </data>
+  <data name="lblBirthDay" xml:space="preserve">
+    <value>생년월일</value>
+  </data>
+  <data name="lblCardID" xml:space="preserve">
+    <value>카드 ID</value>
+  </data>
+  <data name="lblCardStatus" xml:space="preserve">
+    <value>카드상태</value>
+  </data>
+  <data name="lblDelivered" xml:space="preserve">
+    <value>교부</value>
+  </data>
+  <data name="lblDeliveryOk" xml:space="preserve">
+    <value>교부 완료</value>
+  </data>
+  <data name="lblDeliveryWaiting" xml:space="preserve">
+    <value>교부 대기 중</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>소속</value>
+  </data>
+  <data name="lblDoorName" xml:space="preserve">
+    <value>출입문 이름</value>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>방문종료일</value>
+  </data>
+  <data name="lblEventDetail" xml:space="preserve">
+    <value>이벤트 종류</value>
+  </data>
+  <data name="lblExport" xml:space="preserve">
+    <value>내보내기</value>
+  </data>
+  <data name="lblID" xml:space="preserve">
+    <value>진행번호</value>
+  </data>
+  <data name="lblIDX" xml:space="preserve">
+    <value>IDX</value>
+  </data>
+  <data name="lblInOut" xml:space="preserve">
+    <value>입/출</value>
+  </data>
+  <data name="lblInsider" xml:space="preserve">
+    <value>내부자</value>
+  </data>
+  <data name="lblIssueCount" xml:space="preserve">
+    <value>발급차수</value>
+  </data>
+  <data name="lblIssueing" xml:space="preserve">
+    <value>발급중</value>
+  </data>
+  <data name="lblNotUse" xml:space="preserve">
+    <value>사용안함</value>
+  </data>
+  <data name="lblOutsider" xml:space="preserve">
+    <value>외부자</value>
+  </data>
+  <data name="lblPhone" xml:space="preserve">
+    <value>연락처</value>
+  </data>
+  <data name="lblPosition" xml:space="preserve">
+    <value>직책</value>
+  </data>
+  <data name="lblProcedureOmission" xml:space="preserve">
+    <value>절차생략</value>
+  </data>
+  <data name="lblReason" xml:space="preserve">
+    <value>Work content</value>
+  </data>
+  <data name="lblReclamation" xml:space="preserve">
+    <value>회수</value>
+  </data>
+  <data name="lblReject" xml:space="preserve">
+    <value>거절</value>
+  </data>
+  <data name="lblRejectCardID" xml:space="preserve">
+    <value>CardID</value>
+  </data>
+  <data name="lblRejectReason" xml:space="preserve">
+    <value>반려 및 거절 사유</value>
+  </data>
+  <data name="lblReturn" xml:space="preserve">
+    <value>반려</value>
+  </data>
+  <data name="lblReturned" xml:space="preserve">
+    <value>회수</value>
+  </data>
+  <data name="lblRID" xml:space="preserve">
+    <value>RID</value>
+  </data>
+  <data name="lblSite" xml:space="preserve">
+    <value>방문장소</value>
+  </data>
+  <data name="lblStartDate" xml:space="preserve">
+    <value>방문시작일</value>
+  </data>
+  <data name="lblUserName" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="lblVisit" xml:space="preserve">
+    <value>방문</value>
+  </data>
+  <data name="lblVisitName" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="lblVisitTarget" xml:space="preserve">
+    <value>방문대상</value>
+  </data>
+  <data name="msgExportVisitList" xml:space="preserve">
+    <value>방문 목록 내보내기</value>
+  </data>
+  <data name="msgLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="lblPreRegister" xml:space="preserve">
+    <value>사전 방문 신청</value>
+  </data>
+  <data name="lblRequest" xml:space="preserve">
+    <value>요청</value>
+  </data>
+  <data name="msgAlreadyDeliveredCard" xml:space="preserve">
+    <value>이미 교부된 카드입니다.</value>
+  </data>
+  <data name="msgAlreadyReturnedCard" xml:space="preserve">
+    <value>이미 회수된 카드입니다.</value>
+  </data>
+  <data name="msgNotDeliveredCard" xml:space="preserve">
+    <value>교부되지 않은 카드입니다.</value>
+  </data>
+  <data name="msgNotVisitCard" xml:space="preserve">
+    <value>방문증이 아닙니다.</value>
+  </data>
+  <data name="lblApprove1" xml:space="preserve">
+    <value>결재</value>
+  </data>
+  <data name="lblApprove2" xml:space="preserve">
+    <value>승인</value>
+  </data>
+  <data name="lblReject1" xml:space="preserve">
+    <value>반려</value>
+  </data>
+  <data name="lblReject2" xml:space="preserve">
+    <value>거절</value>
+  </data>
+  <data name="msgNotApprovedVisit" xml:space="preserve">
+    <value>승인되지 않았습니다.</value>
+  </data>
+  <data name="lblVisitStatus" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="lblVisitNoStep" xml:space="preserve">
+    <value>NoStep</value>
+  </data>
+  <data name="lblVisitFirstStep" xml:space="preserve">
+    <value>FirstStep</value>
+  </data>
+  <data name="lblVisitSecondStep" xml:space="preserve">
+    <value>SecondStep</value>
+  </data>
+  <data name="lblVisitSetting" xml:space="preserve">
+    <value>방문 설정</value>
+  </data>
+  <data name="lblCompany" xml:space="preserve">
+    <value>회사</value>
+  </data>
+  <data name="RequiredApprover" xml:space="preserve">
+    <value>Required Approver</value>
+  </data>
+  <data name="lblWaiting" xml:space="preserve">
+    <value>승인 대기</value>
+  </data>
+  <data name="lblFinished" xml:space="preserve">
+    <value>방문 종료</value>
+  </data>
+  <data name="lblFinishedWithoutReturnCard" xml:space="preserve">
+    <value>카드 미회수 종료</value>
+  </data>
+  <data name="lblCivilian" xml:space="preserve">
+    <value>민간인</value>
+  </data>
+  <data name="lblAnotherArmy" xml:space="preserve">
+    <value>타 부대원</value>
+  </data>
+  <data name="lblArmyFamily" xml:space="preserve">
+    <value>군 가족</value>
+  </data>
+  <data name="lblResidentCivilian" xml:space="preserve">
+    <value>고정 출입자</value>
+  </data>
+  <data name="lblApproved" xml:space="preserve">
+    <value>승인 완료</value>
+  </data>
+  <data name="lblApproved1" xml:space="preserve">
+    <value>1차 승인 완료</value>
+  </data>
+  <data name="lblApproved2" xml:space="preserve">
+    <value>2차 승인 완료</value>
+  </data>
+  <data name="lblCardIssued" xml:space="preserve">
+    <value>카드 교부 완료</value>
+  </data>
+  <data name="ApproveNotification" xml:space="preserve">
+    <value>방문자 {0}에 대한 요청이 {1} 입니다</value>
+  </data>
+  <data name="contentVisitorNotification" xml:space="preserve">
+    <value>{1}에 방문할 방문자 {0}이(가) 승인을 기다리고 있습니다</value>
+  </data>
+  <data name="smsContentSendQRcode" xml:space="preserve">
+    <value>Your Visit application to company {0} has been approved. Please use QR code follow link: {1}</value>
+  </data>
+  <data name="LocationVirus" xml:space="preserve">
+    <value>Location virus COVID</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>주소</value>
+  </data>
+  <data name="lblNationalIdNumber" xml:space="preserve">
+    <value>National Id Number</value>
+  </data>
+  <data name="lblOtherUnitMember" xml:space="preserve">
+    <value>타 부대원</value>
+  </data>
+  <data name="lblMilitaryNumber" xml:space="preserve">
+    <value>군번</value>
+  </data>
+  <data name="lblVisitType" xml:space="preserve">
+    <value>Visit Type</value>
+  </data>
+  <data name="msgRequiredFirstApproval" xml:space="preserve">
+    <value>1st approval required</value>
+  </data>
+  <data name="lblCardReturned" xml:space="preserve">
+    <value>카드 회수</value>
+  </data>
+  <data name="lblAutoApproved" xml:space="preserve">
+    <value>전결 처리됨</value>
+  </data>
+  <data name="lblMultiVisitorName" xml:space="preserve">
+    <value>{0} 등 {1}명</value>
+  </data>
+  <data name="lblEquipmentName" xml:space="preserve">
+    <value>장비명</value>
+  </data>
+  <data name="lblEquipmentModelName" xml:space="preserve">
+    <value>모델명</value>
+  </data>
+  <data name="lblEquipmentSerialNumber" xml:space="preserve">
+    <value>시리얼 번호</value>
+  </data>
+  <data name="lblLeader" xml:space="preserve">
+    <value>인솔자</value>
+  </data>
+  <data name="titlePushNotificationToVisitee" xml:space="preserve">
+    <value>Your visitor has been approved</value>
+  </data>
+  <data name="bodyPushNotificationToVisitee" xml:space="preserve">
+    <value>Visitor Name: {0}. Time Access: {1}.</value>
+  </data>
+  <data name="lblVisitFromOut" xml:space="preserve">
+    <value>외래</value>
+  </data>
+  <data name="msgOnlyAccessSingleBuilding" xml:space="preserve">
+    <value>한 군데의 장소에만 신청이 가능합니다.</value>
+  </data>
+  <data name="msgNoDoorNotice" xml:space="preserve">
+    <value>선택된 출입문이 없습니다. 계속 진행하시겠습니까?</value>
+  </data>
+  <data name="msgAddVisit" xml:space="preserve">
+    <value>손님 추가</value>
+  </data>
+  <data name="msgDeleteVisit" xml:space="preserve">
+    <value>게스트 제거</value>
+  </data>
+  <data name="msgUpdateVisit" xml:space="preserve">
+    <value>게스트 업데이트</value>
+  </data>
+  <data name="lblCMND" xml:space="preserve">
+    <value>CMND</value>
+  </data>
+  <data name="lblCCCD" xml:space="preserve">
+    <value>CCCD</value>
+  </data>
+  <data name="lblPassport" xml:space="preserve">
+    <value>Passport</value>
+  </data>
+  <data name="lblIdentificationOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="lblVisiteeDepartment" xml:space="preserve">
+    <value>Visitee Department</value>
+  </data>
+  <data name="lblRoomNumber" xml:space="preserve">
+    <value>Room Number</value>
+  </data>
+  <data name="lblDocumentNumber" xml:space="preserve">
+    <value>Document Number</value>
+  </data>
+  <data name="lblListVisitPurpose" xml:space="preserve">
+    <value>List Visit Purpose</value>
+  </data>
+</root>

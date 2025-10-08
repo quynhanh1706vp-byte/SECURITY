@@ -1,0 +1,96 @@
+rules:
+  # A) Thiếu phân quyền cho action ghi (CWE-862)
+  - id: csharp.dotnet.security.missing-authorize-on-write
+    message: |
+      Write action (POST/PUT/PATCH/DELETE) without [Authorize]. Use FallbackPolicy or add [Authorize].
+    severity: ERROR
+    languages: [csharp]
+    metadata: { category: security, cwe: "CWE-862" }
+    patterns:
+      - pattern-either:
+          - pattern: |
+              [HttpPost(...)]
+              public $RET $M(...){...}
+          - pattern: |
+              [HttpPut(...)]
+              public $RET $M(...){...}
+          - pattern: |
+              [HttpPatch(...)]
+              public $RET $M(...){...}
+          - pattern: |
+              [HttpDelete(...)]
+              public $RET $M(...){...}
+      - pattern-not: |
+          [Authorize(...)]
+          public $RET $M(...){...}
+      - pattern-not: |
+          [Authorize]
+          public $RET $M(...){...}
+
+  # B) Path Traversal + I/O (CWE-22)
+  - id: csharp.dotnet.path-traversal.join.with-io
+    message: |
+      User-controlled path is combined and used in file I/O. Validate against a base directory or use a safe helper.
+    severity: ERROR
+    languages: [csharp]
+    metadata: { category: security, cwe: "CWE-22" }
+    patterns:
+      - pattern-either:
+          - pattern: |
+              $P = System.IO.Path.Combine($BASE, $USERINPUT, ...);
+          - pattern: |
+              $P = System.IO.Path.GetFullPath(System.IO.Path.Combine($BASE, $USERINPUT, ...));
+      - pattern-either:
+          - pattern: System.IO.File.$FNC($P, ...)
+          - pattern: System.IO.File.$FNC(..., $P, ...)
+          - pattern: System.IO.Directory.$DFNC($P, ...)
+          - pattern: new System.IO.FileStream($P, ...)
+          - pattern: return PhysicalFile($P, ...);
+          - pattern: return File(System.IO.File.OpenRead($P), ...)
+      - pattern-not: |
+          $P = PathSafe.CombineUnderBase(...);
+
+  # C) XSS (DOM sink) cho FE (CWE-79)
+  - id: js.dom.xss.innerhtml
+    message: Avoid assigning untrusted data to innerHTML/document.write; use safe DOM APIs.
+    severity: ERROR
+    languages: [javascript, typescript]
+    metadata: { category: xss, cwe: "CWE-79" }
+    patterns:
+      - pattern-either:
+          - pattern: $EL.innerHTML = $S
+          - pattern: document.write($S)
+      - pattern-not: |
+          $EL.innerHTML = sanitizeHtml($S)
+
+  # D) SQL Injection bằng nối chuỗi thô (CWE-89)
+  - id: csharp.sql.raw.concat
+    message: Possible raw SQL concatenation. Use parameterized queries.
+    severity: ERROR
+    languages: [csharp]
+    metadata: { category: injection, cwe: "CWE-89" }
+    patterns:
+      - pattern-either:
+          - pattern: $DB.Database.ExecuteSqlRaw($SQL + $X, ...)
+          - pattern: $DB.Database.ExecuteSqlInterpolated($"..." + $X + "...")
+          - pattern: $CMD.CommandText = $SQL + $X
+
+  # E1) WebSocket không mã hóa (ws://) — JS/TS
+  - id: web.websocket.insecure.js
+    message: Insecure WebSocket (ws://). Use wss:// with TLS.
+    severity: ERROR
+    languages: [javascript, typescript]
+    metadata: { category: transport }
+    pattern-either:
+      - pattern: new WebSocket("ws://...")
+      - pattern: WebSocket("ws://...")
+
+  # E2) WebSocket không mã hóa (ws://) — C#
+  - id: web.websocket.insecure.csharp
+    message: Insecure WebSocket (ws://). Use wss:// with TLS.
+    severity: ERROR
+    languages: [csharp]
+    metadata: { category: transport }
+    patterns:
+      # đơn giản: bắt literal "ws://"
+      - pattern-regex: '"ws://[^"]+"'

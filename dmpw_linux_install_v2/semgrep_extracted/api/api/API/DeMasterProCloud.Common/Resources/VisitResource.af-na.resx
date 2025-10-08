@@ -1,0 +1,338 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="IblSite2" xml:space="preserve">
+    <value>Trang</value>
+  </data>
+    <data name="lblAccessTime" xml:space="preserve">
+    <value>Thời gian truy cập</value>
+  </data>
+    <data name="lblApplyDate" xml:space="preserve">
+    <value>Thời gian đăng kí</value>
+  </data>
+    <data name="lblApproval1" xml:space="preserve">
+    <value>Phê duyệt 1</value>
+  </data>
+    <data name="lblApproval2" xml:space="preserve">
+    <value>Phê duyệt 2</value>
+  </data>
+    <data name="lblApprovalWaiting1" xml:space="preserve">
+    <value>Chờ phê duyệt 1</value>
+  </data>
+    <data name="lblApprovalWaiting2" xml:space="preserve">
+    <value>Chờ phê duyệt 2</value>
+  </data>
+    <data name="lblApprove1" xml:space="preserve">
+    <value>Phê duyệt 1</value>
+  </data>
+    <data name="lblApprove2" xml:space="preserve">
+    <value>Phê duyệt 2</value>
+  </data>
+    <data name="lblBirthDay" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+    <data name="lblCardID" xml:space="preserve">
+    <value>Thẻ định danh</value>
+  </data>
+    <data name="lblCardStatus" xml:space="preserve">
+    <value>Trạng thái thẻ</value>
+  </data>
+    <data name="lblDelivered" xml:space="preserve">
+    <value>Đã giao</value>
+  </data>
+    <data name="lblDeliveryOk" xml:space="preserve">
+    <value>Đã giao Ok</value>
+  </data>
+    <data name="lblDeliveryWaiting" xml:space="preserve">
+    <value>Chờ được giao</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+    <data name="lblDoorName" xml:space="preserve">
+    <value>Điểm kiểm soát</value>
+  </data>
+    <data name="lblEndDate" xml:space="preserve">
+    <value>Ngày kết thúc</value>
+  </data>
+    <data name="lblEventDetail" xml:space="preserve">
+    <value>Chi tiết sự kiện</value>
+  </data>
+    <data name="lblExport" xml:space="preserve">
+    <value>Xuất</value>
+  </data>
+    <data name="lblID" xml:space="preserve">
+    <value>ID Khách</value>
+  </data>
+    <data name="lblIDX" xml:space="preserve">
+    <value>IDX</value>
+  </data>
+    <data name="lblInOut" xml:space="preserve">
+    <value>Vào/Ra</value>
+  </data>
+    <data name="lblInsider" xml:space="preserve">
+    <value>Người nội bộ</value>
+  </data>
+    <data name="lblIssueCount" xml:space="preserve">
+    <value>Số lượng vấn đề</value>
+  </data>
+    <data name="lblIssueing" xml:space="preserve">
+    <value>Vấn đề</value>
+  </data>
+    <data name="lblNotUse" xml:space="preserve">
+    <value>Không dùng</value>
+  </data>
+    <data name="lblOutsider" xml:space="preserve">
+    <value>Người ngoài</value>
+  </data>
+    <data name="lblPhone" xml:space="preserve">
+    <value>Điện thoại di động</value>
+  </data>
+    <data name="lblPosition" xml:space="preserve">
+    <value>Chức vụ</value>
+  </data>
+    <data name="lblPreRegister" xml:space="preserve">
+    <value>Đăng kí khách đặc biệt</value>
+  </data>
+    <data name="lblProcedureOmission" xml:space="preserve">
+    <value>Bỏ sót thủ tục</value>
+  </data>
+  <data name="lblReason" xml:space="preserve">
+    <value>Nội dung công việc</value>
+  </data>
+    <data name="lblReclamation" xml:space="preserve">
+    <value>Khiếu nại</value>
+  </data>
+    <data name="lblReject" xml:space="preserve">
+    <value>Từ chối</value>
+  </data>
+    <data name="lblReject1" xml:space="preserve">
+    <value>Từ chối 1</value>
+  </data>
+    <data name="lblReject2" xml:space="preserve">
+    <value>Từ chối 2</value>
+  </data>
+    <data name="lblRejectCardID" xml:space="preserve">
+    <value>Thẻ định danh</value>
+  </data>
+    <data name="lblRejectReason" xml:space="preserve">
+    <value>Lý do từ chối</value>
+  </data>
+    <data name="lblRequest" xml:space="preserve">
+    <value>Yêu cầu</value>
+  </data>
+    <data name="lblReturn" xml:space="preserve">
+    <value>Trở về</value>
+  </data>
+    <data name="lblReturned" xml:space="preserve">
+    <value>Trả lại</value>
+  </data>
+    <data name="lblRID" xml:space="preserve">
+    <value>RID</value>
+  </data>
+    <data name="lblSite" xml:space="preserve">
+    <value>Nơi ghé thăm</value>
+  </data>
+    <data name="lblStartDate" xml:space="preserve">
+    <value>Ngày bắt đầu</value>
+  </data>
+    <data name="lblUserName" xml:space="preserve">
+    <value>Tên người dùng</value>
+  </data>
+    <data name="lblVisit" xml:space="preserve">
+    <value>Khách thăm quan</value>
+  </data>
+  <data name="lblVisitName" xml:space="preserve">
+    <value>Tên khách mời</value>
+  </data>
+    <data name="lblVisitTarget" xml:space="preserve">
+    <value>Tên truy cập</value>
+  </data>
+    <data name="lblVisitStatus" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+    <data name="msgAlreadyDeliveredCard" xml:space="preserve">
+    <value>Thử này đã được giao.</value>
+  </data>
+    <data name="msgAlreadyReturnedCard" xml:space="preserve">
+    <value>Thẻ này đã được trả lại.</value>
+  </data>
+    <data name="msgExportVisitList" xml:space="preserve">
+    <value>Xuất danh sách khách mời</value>
+  </data>
+    <data name="msgLogin" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+    <data name="msgNotApprovedVisit" xml:space="preserve">
+    <value>Chuyến thăm này không được chấp thuận.</value>
+  </data>
+    <data name="msgNotDeliveredCard" xml:space="preserve">
+    <value>Thẻ này không được giao.</value>
+  </data>
+    <data name="msgNotVisitCard" xml:space="preserve">
+    <value>Thẻ này không phải thẻ dành cho khách.</value>
+  </data>
+    <data name="lblVisitNoStep" xml:space="preserve">
+    <value>Không có bước nào</value>
+  </data>
+    <data name="lblVisitFirstStep" xml:space="preserve">
+    <value>Bước thứ nhất</value>
+  </data>
+    <data name="lblVisitSecondStep" xml:space="preserve">
+    <value>Bước thứ hai</value>
+  </data>
+    <data name="lblVisitSetting" xml:space="preserve">
+    <value>Cài đặt thăm quan</value>
+  </data>
+    <data name="lblCompany" xml:space="preserve">
+    <value>Công ty</value>
+  </data>
+    <data name="RequiredApprover" xml:space="preserve">
+    <value>Yêu cầu cần người phê duyệt</value>
+  </data>
+    <data name="lblWaiting" xml:space="preserve">
+    <value>Đang chờ phê duyệt</value>
+  </data>
+    <data name="lblFinished" xml:space="preserve">
+    <value>Đã kết thúc</value>
+  </data>
+    <data name="lblFinishedWithoutReturnCard" xml:space="preserve">
+    <value>Kết thúc mà không có thẻ trả lại</value>
+  </data>
+    <data name="lblCivilian" xml:space="preserve">
+    <value>Cư dân</value>
+  </data>
+    <data name="lblAnotherArmy" xml:space="preserve">
+    <value>Một thành viên của đơn vị khác</value>
+  </data>
+    <data name="lblArmyFamily" xml:space="preserve">
+    <value>Người nhà của chiến sĩ</value>
+  </data>
+    <data name="lblResidentCivilian" xml:space="preserve">
+    <value>Cư dân thường trú</value>
+  </data>
+    <data name="lblApproved" xml:space="preserve">
+    <value>Đã duyệt</value>
+  </data>
+    <data name="lblApproved1" xml:space="preserve">
+    <value>Đã duyệt lần 1</value>
+  </data>
+    <data name="lblApproved2" xml:space="preserve">
+    <value>Đã duyệt lần 2</value>
+  </data>
+    <data name="lblCardIssued" xml:space="preserve">
+    <value>Đã được phát hành thẻ</value>
+  </data>
+    <data name="ApproveNotification" xml:space="preserve">
+    <value>Yêu cầu thăm quan của khách {0} đã được {1}</value>
+  </data>
+    <data name="contentVisitorNotification" xml:space="preserve">
+    <value>Yêu cầu thăm quan của khách {0} vào ngày {1} đang chờ phê duyệt của bạn</value>
+  </data>
+    <data name="lblApproval" xml:space="preserve">
+    <value>Phê duyệt</value>
+  </data>
+    <data name="RejectNotification" xml:space="preserve">
+    <value>Yêu cầu thăm quan của khách {0} đã bị {1}</value>
+  </data>
+    <data name="smsContentSendQRcode" xml:space="preserve">
+    <value>Yêu cầu ghé thăm đến công ty {0} đã được duyệt. Vui lòng sử dụng QR code ở đường dẫn dưới đây: {1}</value>
+  </data>
+    <data name="LocationVirus" xml:space="preserve">
+    <value>Địa điểm của bạn có thể đang chịu ảnh hưởng của dịch Covid</value>
+  </data>
+    <data name="lblAddress" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+    <data name="lblNationalIdNumber" xml:space="preserve">
+    <value>Số CMT/CCCD</value>
+  </data>
+    <data name="lblOtherUnitMember" xml:space="preserve">
+    <value>Thành viên đơn vị khác</value>
+  </data>
+    <data name="lblMilitaryNumber" xml:space="preserve">
+    <value>Số hiệu quân đội</value>
+  </data>
+    <data name="lblVisitType" xml:space="preserve">
+    <value>Loại ghé thăm</value>
+  </data>
+    <data name="msgRequiredFirstApproval" xml:space="preserve">
+    <value>Yêu cầu  người phê duyệt đầu tiên</value>
+  </data>
+    <data name="lblCardReturned" xml:space="preserve">
+    <value>Thẻ đã được thu hồi</value>
+  </data>
+    <data name="lblAutoApproved" xml:space="preserve">
+    <value>Được tự động chấp thuật</value>
+  </data>
+    <data name="lblMultiVisitorName" xml:space="preserve">
+    <value>{1} du khách trong đó có {0}</value>
+  </data>
+    <data name="lblEquipmentName" xml:space="preserve">
+    <value>Tên thiết bị</value>
+  </data>
+    <data name="lblEquipmentModelName" xml:space="preserve">
+    <value>Tên mô hình</value>
+  </data>
+    <data name="lblEquipmentSerialNumber" xml:space="preserve">
+    <value>Số seri</value>
+  </data>
+    <data name="lblLeader" xml:space="preserve">
+    <value>người chỉ huy</value>
+  </data>
+    <data name="titlePushNotificationToVisitee" xml:space="preserve">
+    <value>Khách của bạn đã được phê duyệt</value>
+  </data>
+    <data name="bodyPushNotificationToVisitee" xml:space="preserve">
+    <value>Tên khách: {0}. Thời gian: {1}.</value>
+  </data>
+    <data name="lblVisitFromOut" xml:space="preserve">
+    <value>Visiting outside</value>
+  </data>
+    <data name="msgOnlyAccessSingleBuilding" xml:space="preserve">
+    <value>You can only apply to one place.</value>
+  </data>
+    <data name="msgNoDoorNotice" xml:space="preserve">
+    <value>No doors selected. Do you want to continue?</value>
+  </data>
+  <data name="msgAddVisit" xml:space="preserve">
+    <value>Thêm khách mời</value>
+  </data>
+  <data name="msgDeleteVisit" xml:space="preserve">
+    <value>Xóa khách mời</value>
+  </data>
+  <data name="msgUpdateVisit" xml:space="preserve">
+    <value>Cập nhật khách mời</value>
+  </data>
+  <data name="lblCMND" xml:space="preserve">
+    <value>CMND</value>
+  </data>
+  <data name="lblPassport" xml:space="preserve">
+    <value>Hộ chiếu</value>
+  </data>
+  <data name="lblIdentificationOther" xml:space="preserve">
+    <value>Giấy tờ khác</value>
+  </data>
+  <data name="lblVisiteeDepartment" xml:space="preserve">
+    <value>Đơn vị công tác</value>
+  </data>
+  <data name="lblRoomNumber" xml:space="preserve">
+    <value>Số phòng</value>
+  </data>
+  <data name="lblDocumentNumber" xml:space="preserve">
+    <value>Số giấy tờ</value>
+  </data>
+  <data name="lblListVisitPurpose" xml:space="preserve">
+    <value>Danh sách mục đích chuyến thăm</value>
+  </data>
+</root>

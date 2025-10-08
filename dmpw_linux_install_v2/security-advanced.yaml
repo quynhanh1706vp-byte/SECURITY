@@ -1,0 +1,99 @@
+rules:
+  - id: csharp.dotnet.security.missing-authorize-on-write
+    message: Write action (POST/PUT/PATCH/DELETE) without [Authorize]. Use FallbackPolicy or add [Authorize].
+    severity: ERROR
+    languages: [csharp]
+    metadata: { category: access-control, cwe: "CWE-862" }
+    patterns:
+      - pattern-either:
+          - pattern: |
+              [HttpPost(...)]
+              public $RET $M(...){...}
+          - pattern: |
+              [HttpPut(...)]
+              public $RET $M(...){...}
+          - pattern: |
+              [HttpPatch(...)]
+              public $RET $M(...){...}
+          - pattern: |
+              [HttpDelete(...)]
+              public $RET $M(...){...}
+      - pattern-not: |
+          [Authorize(...)]
+          public $RET $M(...){...}
+      - pattern-not: |
+          [Authorize]
+          public $RET $M(...){...}
+
+  - id: csharp.dotnet.path-traversal.with-io
+    message: User-controlled path is combined and then used in file I/O. Validate against a base directory and normalize path.
+    severity: ERROR
+    languages: [csharp]
+    metadata: { category: file-io, cwe: "CWE-22" }
+    patterns:
+      - pattern-either:
+          - pattern: |
+              $P = System.IO.Path.Combine($BASE, $INP, ...);
+          - pattern: |
+              $P = System.IO.Path.GetFullPath(System.IO.Path.Combine($BASE, $INP, ...));
+      - pattern-either:
+          - pattern: System.IO.File.$F($P, ...)
+          - pattern: System.IO.File.$F(..., $P, ...)
+          - pattern: System.IO.Directory.$D($P, ...)
+          - pattern: new System.IO.FileStream($P, ...)
+          - pattern: return PhysicalFile($P, ...);
+          - pattern: return File(System.IO.File.OpenRead($P), ...)
+      - pattern-not: |
+          $P = PathSafe.CombineUnderBase(...);
+
+  - id: js.dom.xss.innerhtml
+    message: Avoid assigning untrusted data to innerHTML/document.write; use safe DOM APIs.
+    severity: ERROR
+    languages: [javascript, typescript]
+    metadata: { category: xss, cwe: "CWE-79" }
+    patterns:
+      - pattern-either:
+          - pattern: $EL.innerHTML = $S
+          - pattern: document.write($S)
+      - pattern-not: |
+          $EL.innerHTML = sanitizeHtml($S)
+
+  - id: csharp.sql.raw.concat
+    message: Possible raw SQL concatenation. Use parameterized queries.
+    severity: ERROR
+    languages: [csharp]
+    metadata: { category: injection, cwe: "CWE-89" }
+    patterns:
+      - pattern-either:
+          - pattern: $DB.Database.ExecuteSqlRaw($SQL + $X, ...)
+          - pattern: $DB.Database.ExecuteSqlInterpolated($"..." + $X + "...")
+          - pattern: $CMD.CommandText = $SQL + $X
+
+  - id: web.websocket.insecure.js
+    message: Insecure WebSocket (ws://). Use wss:// with TLS.
+    severity: ERROR
+    languages: [javascript, typescript]
+    metadata: { category: transport }
+    pattern-either:
+      - pattern: new WebSocket("ws://...")
+      - pattern: WebSocket("ws://...")
+
+  - id: web.websocket.insecure.csharp
+    message: Insecure WebSocket (ws://). Use wss:// with TLS.
+    severity: ERROR
+    languages: [csharp]
+    metadata: { category: transport }
+    patterns:
+      - pattern-regex: '"ws://[^"]+"'
+
+  - id: csharp.ssrf.httpclient.user-url
+    message: Potential SSRF: outbound HTTP call uses user-controlled URL. Validate and whitelist destination.
+    severity: ERROR
+    languages: [csharp]
+    metadata: { category: ssrf, cwe: "CWE-918" }
+    patterns:
+      - pattern: |
+          var $resp = await $HTTP.GetAsync($URL);
+      - metavariable-pattern:
+          metavariable: $URL
+          pattern: $X

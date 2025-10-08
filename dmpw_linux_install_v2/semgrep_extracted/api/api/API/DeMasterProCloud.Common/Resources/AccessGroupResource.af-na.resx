@@ -1,0 +1,143 @@
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAccessGroup" xml:space="preserve">
+  <value>Nhóm truy cập</value>
+  </data>
+    <data name="lblAccessGroupName" xml:space="preserve">
+    <value>Tên nhóm truy cập</value>
+  </data>
+    <data name="lblAssignDoor" xml:space="preserve">
+    <value>Điểm kiểm soát(s)</value>
+  </data>
+    <data name="lblAssignUser" xml:space="preserve">
+    <value>Gán người dùng(s)</value>
+  </data>
+    <data name="lblUnAssignDoor" xml:space="preserve">
+    <value>nhóm người dùng được định nghĩa</value>
+  </data>
+    <data name="lblUnAssignUser" xml:space="preserve">
+    <value>Bỏ gán người dùng(s)</value>
+  </data>
+    <data name="msgAssignDoors" xml:space="preserve">
+    <value>Điểm kiểm soát(s) cho nhóm quyền truy cập thành công.</value>
+  </data>
+    <data name="msgAssignUsers" xml:space="preserve">
+    <value>Gán người dùng(s) cho nhóm quyền truy cập thành công.</value>
+  </data>
+    <data name="msgCanNotChangeTimezone" xml:space="preserve">
+    <value>Không thể thay đổi múi giờ của Nhóm truy cập.</value>
+  </data>
+    <data name="msgCanNotDeleteAccessGroup" xml:space="preserve">
+    <value>{0} không thể xóa.</value>
+  </data>
+    <data name="msgCanNotDeleteDevice" xml:space="preserve">
+    <value>Không thể xóa thiết bị.</value>
+  </data>
+    <data name="msgCanNotUpdateAccessGroup" xml:space="preserve">
+    <value>{0} không thể cập nhật!</value>
+  </data>
+    <data name="msgChangeAccessGroup" xml:space="preserve">
+    <value>Thay đổi thông tin của Nhóm truy cập.</value>
+  </data>
+    <data name="msgChangeAccessGroupName" xml:space="preserve">
+    <value>Thay đổi tên từ '{0}' sang '{1}'.</value>
+  </data>
+    <data name="msgChangeAccessGroupWithDefault" xml:space="preserve">
+    <value>Thay đổi Nhóm truy cập '{0}'(Mặc định) (ID của Nhóm truy cập).</value>
+  </data>
+    <data name="msgChangeDefaultAccessGroup" xml:space="preserve">
+    <value>{0} đã trở thành Nhóm truy cập mặc định.</value>
+  </data>
+    <data name="msgChangeTimezone" xml:space="preserve">
+    <value>Thay đổi múi giờ cho cửa(s) thành công.</value>
+  </data>
+    <data name="msgHasNoAccessGroupDeviceData" xml:space="preserve">
+    <value>Không có thiết bị nào được gán cho Nhóm truy cập.</value>
+  </data>
+    <data name="msgUnableToAssignOverMaxUser" xml:space="preserve">
+    <value>Không thể gán vượt quá {0} người dùng cho cửa {1}.</value>
+  </data>
+    <data name="msgUnAssignDoors" xml:space="preserve">
+    <value>Bỏ điểm kiểm soát(s) cho nhóm truy cập thành công.</value>
+  </data>
+    <data name="msgUnAssignUsers" xml:space="preserve">
+    <value>Bỏ gán người dùng(s) từ nhóm truy cập thành công.</value>
+  </data>
+    <data name="msgAddAccessGroup" xml:space="preserve">
+    <value>Thêm mới một Nhóm truy cập</value>
+  </data>
+    <data name="msgDeleteAccessGroup" xml:space="preserve">
+    <value>Xóa nhóm truy cập(s).</value>
+  </data>
+    <data name="lblAccessGroupCount" xml:space="preserve">
+    <value>Số lượng Nhóm truy cập</value>
+  </data>
+    <data name="msgEmptyUser" xml:space="preserve">
+    <value>Vui lòng chỉ định ít nhất một người dùng.</value>
+  </data>
+    <data name="assingedVisitAuthor" xml:space="preserve">
+    <value>Chỉ người kiểm duyệt cuối mới có thể điểm kiểm soát.</value>
+  </data>
+    <data name="assingedVisitNotApproval" xml:space="preserve">
+    <value>Chuyến thăm cần được phê duyệt trước.</value>
+  </data>
+    <data name="lblCustomGroup" xml:space="preserve">
+    <value>Nhóm tùy chỉnh</value>
+  </data>
+    <data name="msgEmptyDoors" xml:space="preserve">
+    <value>Không thể xóa danh sách cửa trống khỏi tất cả các nhóm truy cập</value>
+  </data>
+    <data name="msgNotFoundAccessGroup" xml:space="preserve">
+    <value>Không thể tìm thấy nhóm truy cập</value>
+  </data>
+    <data name="msgNotFoundTimezoneOrDoor" xml:space="preserve">
+    <value>Không thể tìm thấy múi giờ hoặc cửa</value>
+  </data>
+    <data name="msgEmptyDoorAssign" xml:space="preserve">
+    <value>Vui lòng chỉ định ít nhất một cửa.</value>
+  </data>
+    <data name="msgCannotAssignDevices" xml:space="preserve">
+    <value>Bạn không có quyền gán thiết bị này.</value>
+  </data>
+    <data name="msgCannotUnAssignDevices" xml:space="preserve">
+    <value>Bạn không có quyền bỏ gán thiết bị này.</value>
+  </data>
+    <data name="msgNotPermissionDevices" xml:space="preserve">
+    <value>Bạn không có quyền với thiết bị này.</value>
+  </data>
+    <data name="msgCannotAssignUsers" xml:space="preserve">
+    <value>Bạn không có quyền gán người dùng này.</value>
+  </data>
+    <data name="msgCannotUnAssignUsers" xml:space="preserve">
+    <value>Bạn không có quyền bỏ gán người dùng này.</value>
+  </data>
+    <data name="msgNotPermissionChangeDefaultAg" xml:space="preserve">
+    <value>Bạn không có quyền thay đổi quyền truy cập thành mặc định.</value>
+  </data>
+    <data name="msgNotPermissionAddDefaultAg" xml:space="preserve">
+    <value>Bạn không có quyền tạo quyền truy cập mặc định.</value>
+  </data>
+    <data name="msgAssignFoors" xml:space="preserve">
+    <value>Gán tầng vào nhóm truy cập thành công.</value>
+  </data>
+    <data name="msgUnAssignFoors" xml:space="preserve">
+    <value>Bỏ gán tầng khỏi nhóm truy cập thành công.</value>
+  </data>
+    <data name="msgAssignUsersToDoor" xml:space="preserve">
+    <value>Gán người dùng(s) cho cửa thành công.</value>
+  </data>
+    <data name="msgUnAssignUsersFromDoor" xml:space="preserve">
+    <value>Bỏ gán người dùng(s) từ cửa thành công.</value>
+  </data>
+</root>

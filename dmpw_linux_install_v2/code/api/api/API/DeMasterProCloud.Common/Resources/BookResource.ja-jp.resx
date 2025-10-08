@@ -1,0 +1,89 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblBook" xml:space="preserve">
+        <value>書籍</value>
+    </data>
+    <data name="msgIsbnNumberExisted" xml:space="preserve">
+        <value>ISBN 番号がシステム内に存在します</value>
+    </data>
+    <data name="lblAvailable" xml:space="preserve">
+        <value>貸出中</value>
+    </data>
+    <data name="lblRented" xml:space="preserve">
+        <value>書籍が貸出されました</value>
+    </data>
+    <data name="lblBookArea" xml:space="preserve">
+        <value>書籍エリア</value>
+    </data>
+    <data name="msgNameBookAreaExisted" xml:space="preserve">
+        <value>ブックエリア名が存在しました</value>
+    </data>
+    <data name="msgBookAreaNotExisted" xml:space="preserve">
+        <value>BookArea がシステムに存在しません</value>
+    </data>
+    <data name="msgBookNotExisted" xml:space="preserve">
+        <value>ブックがシステムに存在しません</value>
+    </data>
+    <data name="msgBorrowBookSuccess" xml:space="preserve">
+        <value>ブックの借用が成功しました</value>
+    </data>
+    <data name="msgReturnBookSuccess" xml:space="preserve">
+        <value>ブックの返却が成功しました</value>
+    </data>
+    <data name="msgDeadlineRequired" xml:space="preserve">
+        <value>返却時間は借用時間より長くする必要があります。</value>
+    </data>
+    <data name="lblPaid" xml:space="preserve">
+        <value>반납완료</value>
+    </data>
+    <data name="lblUnPaid" xml:space="preserve">
+        <value>대출중</value>
+    </data>
+    <data name="lblBookName" xml:space="preserve">
+        <value>書籍名</value>
+    </data>
+    <data name="lblAuthor" xml:space="preserve">
+        <value>著者</value>
+    </data>
+    <data name="lblIsbnNumber" xml:space="preserve">
+        <value>ISBN 番号</value>
+    </data>
+    <data name="lblRentingStatus" xml:space="preserve">
+        <value>レンタルステータス</value>
+    </data>
+    <data name="lblBorrowerName" xml:space="preserve">
+        <value>借り手</value>
+    </data>
+    <data name="lblDeadlineDate" xml:space="preserve">
+        <value>期限日</value>
+    </data>
+    <data name="lblReturnDate" xml:space="preserve">
+        <value>返却日</value>
+    </data>
+    <data name="lblBorrowDate" xml:space="preserve">
+        <value>借用日</value>
+    </data>
+    <data name="msgExtendBookSuccess" xml:space="preserve">
+        <value>本の延長成功</value>
+    </data>
+    <data name="lblCreatedOn" xml:space="preserve">
+        <value>作成日</value>
+    </data>
+    <data name="msgImportBookProcess" xml:space="preserve">
+        <value>インポート中の本のリスト。お待ちください...</value>
+    </data>
+    <data name="msgImportBookComplete" xml:space="preserve">
+        <value>書籍のリストのインポートが完了しました!</value>
+    </data>
+</root>

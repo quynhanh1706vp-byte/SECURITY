@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAccount" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="lblAccountList" xml:space="preserve">
+    <value>Danh sách tài khoản</value>
+  </data>
+  <data name="lblAccounts" xml:space="preserve">
+    <value>tài khoản</value>
+  </data>
+  <data name="lblAdd" xml:space="preserve">
+    <value>Thêm tài khoản mới ({0})</value>
+  </data>
+  <data name="lblAddNew" xml:space="preserve">
+    <value>Thêm tài khoản mới</value>
+  </data>
+  <data name="lblComanyCode" xml:space="preserve">
+    <value>Mã công ty</value>
+  </data>
+  <data name="lblConfirmNewPassword" xml:space="preserve">
+    <value>Xác nhận mật khẩu mới Mật khẩu</value>
+  </data>
+  <data name="lblConfirmPassword" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+  </data>
+  <data name="lblContact" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="lblContactInfo" xml:space="preserve">
+    <value>Bạn không thể truy cập vào hệ thống.&lt;br&gt;Vui lòng liên hệ tới: &lt;strong&gt;{0}&lt;/strong&gt; để được hỗ trợ.</value>
+  </data>
+  <data name="lblDelete" xml:space="preserve">
+    <value>Xóa tài khoản</value>
+  </data>
+  <data name="lblDeleteMultiple" xml:space="preserve">
+    <value>Xóa nhiều tài khoản</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblEmailAddressOrUsername" xml:space="preserve">
+    <value>Địa chỉ email hoặc Tên người dùng</value>
+  </data>
+  <data name="lblEnterYourEmail" xml:space="preserve">
+    <value>Nhập địa chỉ email của bạn bên dưới.</value>
+  </data>
+  <data name="lblForgotPassword" xml:space="preserve">
+    <value>Quên mật khẩu</value>
+  </data>
+  <data name="lblLogin" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="lblLogout" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="lblNewPassword" xml:space="preserve">
+    <value>Mật khẩu mới</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="lblRemeberMe" xml:space="preserve">
+    <value>Ghi nhớ tôi</value>
+  </data>
+  <data name="lblRole" xml:space="preserve">
+    <value>Vai trò</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="lblToken" xml:space="preserve">
+    <value>Token</value>
+  </data>
+  <data name="lblUpdate" xml:space="preserve">
+    <value>Cập nhật tài khoản</value>
+  </data>
+  <data name="lblUsername" xml:space="preserve">
+    <value>Tên người dùng</value>
+  </data>
+  <data name="lblYourEmailAddress" xml:space="preserve">
+    <value>Địa chỉ email của bạn</value>
+  </data>
+  <data name="msgChangePassword" xml:space="preserve">
+    <value>Thay đổi p/w tài khoản web ({0}).</value>
+  </data>
+  <data name="msgCompanyExpired" xml:space="preserve">
+    <value>Công ty của bạn đã hết hạn.</value>
+  </data>
+  <data name="msgCompanyNonExist" xml:space="preserve">
+    <value>Mã công ty không tồn tại.</value>
+  </data>
+  <data name="msgEmailNotExist" xml:space="preserve">
+    <value>Email không tồn tại trong hệ thống.</value>
+  </data>
+  <data name="msgInvalidAccount" xml:space="preserve">
+    <value>Tài khoản không hợp lệ.</value>
+  </data>
+  <data name="msgInvalidAccountType" xml:space="preserve">
+    <value>Vai trò tài khoản không hợp lệ.</value>
+  </data>
+  <data name="msgInvalidCompany" xml:space="preserve">
+    <value>Không thể truy cập vào hệ thống. Vui lòng xác nhận bằng {0}.</value>
+  </data>
+  <data name="msgNonAccount" xml:space="preserve">
+    <value>Vui lòng đăng nhập bằng tài khoản mặc định.</value>
+  </data>
+  <data name="msgNotDelete" xml:space="preserve">
+    <value>Không xóa được tài khoản.</value>
+  </data>
+  <data name="msgResetPassword" xml:space="preserve">
+    <value>Đặt lại mật khẩu thành công. Vui lòng kiểm tra hộp thư đến của bạn để nhận mật khẩu mới.</value>
+  </data>
+  <data name="msgChangeCompany" xml:space="preserve">
+    <value>Thay đổi thông tin tài khoản công ty ({0}).</value>
+  </data>
+  <data name="lblImageLimit" xml:space="preserve">
+    <value>Kích thước hình ảnh quá lớn</value>
+  </data>
+  <data name="msgWrongPassword" xml:space="preserve">
+    <value>Sai mật khẩu</value>
+  </data>
+  <data name="msgChangePassSuccess" xml:space="preserve">
+    <value>Thay đổi mật khẩu thành công</value>
+  </data>
+  <data name="msgChangePasswordDefault" xml:space="preserve">
+    <value>Vui lòng thay đổi mật khẩu để tiếp tục</value>
+  </data>
+  <data name="msgAccountNotLinkUser" xml:space="preserve">
+    <value>Người dùng không được tạo bằng tài khoản này</value> </data> <data name="msgPasswordExpired" xml:space="preserve">   <value>{0} ngày đã trôi qua kể từ khi bạn thay đổi mật khẩu của mình. Vui lòng cập nhật mật khẩu của bạn.</value> </data> <data name="msgSamePasswordBefore" xml:space="preserve"> <value>Đây là mật khẩu giống như trước đây. Vui lòng sử dụng một mật khẩu khác.</value> </data> <data name="msgDeleteApprovalAccount" xml:space="preserve"> <value>Tài khoản chấp nhận đã được chấp nhận và không thể xóa.</value> </data>
+  <data name="msgSessionExpired" xml:space="preserve">
+    <value>Phiên làm việc đã hết hạn</value>
+  </data>
+  <data name="msgAccountUseOther" xml:space="preserve">
+    <value>Tài khoản đang được sử dụng trên thiết bị khác</value>
+  </data>
+  <data name="msgEmptyAvatar" xml:space="preserve">
+    <value>Ảnh không được để trống.</value>
+  </data>
+  <data name="msgIsTextBase64Avatar" xml:space="preserve">
+    <value>Ảnh đại diện phải là kiểu base64</value>
+  </data>
+  <data name="msgInvalidTimezon" xml:space="preserve">
+    <value>Múi giờ không tồn tại</value>
+  </data>
+  <data name="msgInvalidUser" xml:space="preserve">
+    <value>Người dùng không tồn tại</value>
+  </data>
+  <data name="msgCanNotChangeRolePrimaryToSystem" xml:space="preserve">
+    <value>Không thể thay đổi vai trò chính thành quản trị viên hệ thống</value>
+  </data>
+  <data name="lblUserId" xml:space="preserve">
+    <value>Mã nhân viên</value>
+  </data>
+  <data name="msgInvalidPassWordFormat" xml:space="preserve">
+    <value>Mật khẩu không đúng định dạng</value>
+  </data>
+  <data name="msgPasswordComplexity" xml:space="preserve">
+    <value>Mật khẩu không đáp ứng yêu cầu độ phức tạp</value>
+  </data>
+   <data name="msgPasswordChangeRequired" xml:space="preserve">
+    <value>Mật khẩu phải được thay đổi</value>
+  </data>
+  <data name="msgPasswordNeedToChange" xml:space="preserve">
+    <value>Bạn cần thay đổi mật khẩu để tăng tính bảo mật</value>
+  </data>
+  <data name="msgAccountLockedWithDuration" xml:space="preserve">
+    <value>Tài khoản đã bị khóa. Vui lòng thử lại sau {0} phút.</value>
+  </data>
+  <data name="msgAccountLocked" xml:space="preserve">
+    <value>Tài khoản đã bị khóa.</value>
+  </data>
+  <data name="msgPasswordChangeFirstLogin" xml:space="preserve">
+    <value>Vui lòng thay đổi mật khẩu khi đăng nhập lần đầu để đảm bảo bảo mật.</value>
+  </data>
+  <data name="msgPasswordRequireUppercase" xml:space="preserve">
+    <value>Mật khẩu phải chứa ít nhất một chữ cái viết hoa.</value>
+  </data>
+  <data name="msgPasswordRequireNumber" xml:space="preserve">
+    <value>Mật khẩu phải chứa ít nhất một chữ số.</value>
+  </data>
+  <data name="msgPasswordRequireSpecialChar" xml:space="preserve">
+    <value>Mật khẩu phải chứa ít nhất một ký tự đặc biệt .</value>
+  </data>
+</root>

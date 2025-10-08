@@ -1,0 +1,48 @@
+rules:
+- id: csharp-xml-xxe-insecure
+  message: 'XXE/unsafe XML: dùng XmlDocument/XmlReader – set DtdProcessing=Prohibit, XmlResolver=null.'
+  severity: ERROR
+  languages: [csharp]
+  pattern-regex: '(new\s+XmlDocument\s*\(\))|(XmlReader\.Create\s*\()'
+
+- id: csharp-regex-without-timeout
+  message: 'Regex không đặt timeout — dùng overload có TimeSpan timeout.'
+  severity: WARNING
+  languages: [csharp]
+  pattern-regex: 'new\s+Regex\s*\((?![^)]*TimeSpan)[^)]*\)'
+
+- id: csharp-missing-https-redirect
+  message: 'Thiếu app.UseHttpsRedirection().'
+  severity: WARNING
+  languages: [csharp]
+  pattern-regex: '(?s)app\.UseRouting\(\);\s*(?!.*UseHttpsRedirection\(\))'
+
+- id: k8s-missing-runasnonroot-regex
+  message: 'K8s: thiếu securityContext.runAsNonRoot: true.'
+  severity: ERROR
+  languages: [yaml]
+  pattern-regex: '(?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!runAsNonRoot:\s*true)'
+
+- id: k8s-missing-readonlyrootfs
+  message: 'K8s: thiếu securityContext.readOnlyRootFilesystem: true.'
+  severity: ERROR
+  languages: [yaml]
+  pattern-regex: '(?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!readOnlyRootFilesystem:\s*true)'
+
+- id: k8s-missing-cap-drop
+  message: 'K8s: thiếu capabilities.drop.'
+  severity: ERROR
+  languages: [yaml]
+  pattern-regex: '(?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!capabilities:\s*\n\s*drop:)'
+
+- id: k8s-missing-seccomp-runtime-default
+  message: 'K8s: thiếu seccompProfile.type: RuntimeDefault.'
+  severity: WARNING
+  languages: [yaml]
+  pattern-regex: '(?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!seccompProfile:\s*\n\s*type:\s*RuntimeDefault)'
+
+- id: k8s-missing-apparmor
+  message: 'K8s: thiếu AppArmor annotation.'
+  severity: WARNING
+  languages: [yaml]
+  pattern-regex: '(?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!container\.apparmor\.security\.beta\.kubernetes\.io)'

@@ -1,0 +1,70 @@
+rules:
+
+# ---- C# XXE (đơn giản, không dùng pattern-not) ----
+# Heuristic: flag mọi new XmlDocument() hoặc XmlReader.Create(...) (DEV cần review cấu hình kèm theo)
+- id: csharp-xml-xxe-insecure
+  message: 'XXE/unsafe XML: dùng XmlDocument/XmlReader – hãy set DtdProcessing=Prohibit, XmlResolver=null.'
+  severity: ERROR
+  languages: [csharp]
+  pattern-regex: (new\s+XmlDocument\s*\(\))|(XmlReader\.Create\s*\()
+
+# ---- C# Regex DoS (không timeout) — dùng negative lookahead ----
+- id: csharp-regex-without-timeout
+  message: 'Regex không đặt timeout — dùng overload có TimeSpan timeout.'
+  severity: WARNING
+  languages: [csharp]
+  pattern-regex: new\s+Regex\s*\((?![^)]*TimeSpan)[^)]*\)
+
+# ---- C# Thiếu UseHttpsRedirection (không dùng pattern-not) ----
+# Heuristic: nếu file có UseRouting(); mà không thấy UseHttpsRedirection() ở phía sau
+- id: csharp-missing-https-redirect
+  message: 'Thiếu app.UseHttpsRedirection().'
+  severity: WARNING
+  languages: [csharp]
+  pattern-regex: (?s)app\.UseRouting\(\);\s*(?!.*UseHttpsRedirection\(\))
+
+# ---- K8s hardening: tách rule nhỏ, tránh pattern-not ----
+- id: k8s-missing-runasnonroot
+  message: 'K8s: thiếu securityContext.runAsNonRoot: true.'
+  severity: ERROR
+  languages: [yaml]
+  patterns:
+    - pattern-regex: 'kind:\s*(Deployment|Pod|StatefulSet|DaemonSet)'
+    - pattern-regex: '(?s)spec:'
+  pattern: |
+    $X  # no-op, để hợp lệ schema
+  metadata: { category: iac, impact: high }
+  # NOTE: Semgrep OSS không có easy "not exists" cho YAML; dùng regex rule riêng:
+  # Mẹo: ta sẽ rely vào regex match tiếp theo (bên dưới). (Xem rule ngay sau)
+
+# => Thay vì "not exists", tạo rule riêng đơn giản bằng regex:
+- id: k8s-missing-runasnonroot-regex
+  message: 'K8s: thiếu securityContext.runAsNonRoot: true.'
+  severity: ERROR
+  languages: [yaml]
+  pattern-regex: (?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!runAsNonRoot:\s*true)
+
+- id: k8s-missing-readonlyrootfs
+  message: 'K8s: thiếu securityContext.readOnlyRootFilesystem: true.'
+  severity: ERROR
+  languages: [yaml]
+  pattern-regex: (?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!readOnlyRootFilesystem:\s*true)
+
+- id: k8s-missing-cap-drop
+  message: 'K8s: thiếu capabilities.drop.'
+  severity: ERROR
+  languages: [yaml]
+  pattern-regex: (?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!capabilities:\s*\n\s*drop:)
+
+# ---- K8s: seccomp/AppArmor thiếu (tách nhỏ, tránh pattern-not) ----
+- id: k8s-missing-seccomp-runtime-default
+  message: 'K8s: thiếu seccompProfile.type: RuntimeDefault.'
+  severity: WARNING
+  languages: [yaml]
+  pattern-regex: (?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!seccompProfile:\s*\n\s*type:\s*RuntimeDefault)
+
+- id: k8s-missing-apparmor
+  message: 'K8s: thiếu AppArmor annotation.'
+  severity: WARNING
+  languages: [yaml]
+  pattern-regex: (?s)kind:\s*(Deployment|Pod|StatefulSet|DaemonSet).*?(?<!container\.apparmor\.security\.beta\.kubernetes\.io)

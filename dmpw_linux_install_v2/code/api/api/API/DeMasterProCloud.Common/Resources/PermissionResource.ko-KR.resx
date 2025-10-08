@@ -1,0 +1,1155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ViewAccessGroup" xml:space="preserve">
+    <value>출입 그룹 보기</value>
+  </data>
+  <data name="AddAccessGroup" xml:space="preserve">
+    <value>출입 그룹 추가</value>
+  </data>
+  <data name="EditAccessGroup" xml:space="preserve">
+    <value>출입 그룹 수정</value>
+  </data>
+  <data name="DeleteAccessGroup" xml:space="preserve">
+    <value>출입 그룹 삭제</value>
+  </data>
+  <data name="AssignDoorAccessGroup" xml:space="preserve">
+    <value>출입 그룹에 문 할당</value>
+  </data>
+  <data name="DescriptionViewAccessGroup" xml:space="preserve">
+    <value>이 권한을 통해서 출입 그룹을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddAccessGroup" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 출입 그룹을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditAccessGroup" xml:space="preserve">
+    <value>이 권한을 통해서 출입 그룹 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteAccessGroup" xml:space="preserve">
+    <value>이 권한을 통해서 출입 그룹을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAssignDoorAccessGroup" xml:space="preserve">
+    <value>이 권한을 통해서 출입 그룹에 문을 할당하실 수 있습니다.</value>
+  </data>
+  <data name="AccessGroup" xml:space="preserve">
+    <value>출입 그룹</value>
+  </data>
+  <data name="ViewAccount" xml:space="preserve">
+    <value>계정 정보 보기</value>
+  </data>
+  <data name="AddAccount" xml:space="preserve">
+    <value>계정 추가</value>
+  </data>
+  <data name="EditAccount" xml:space="preserve">
+    <value>계정 정보 수정</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>계정 삭제</value>
+  </data>
+  <data name="DescriptionViewAccount" xml:space="preserve">
+    <value>이 권한을 통해서 계정 정보를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddAccount" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 계정을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditAccount" xml:space="preserve">
+    <value>이 권한을 통해서 계정 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteAccount" xml:space="preserve">
+    <value>이 권한을 통해서 계정을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>계정</value>
+  </data>
+  <data name="ViewAttendance" xml:space="preserve">
+    <value>근태 기록 보기</value>
+  </data>
+  <data name="ExportAttendance" xml:space="preserve">
+    <value>근태 기록 내보내기</value>
+  </data>
+  <data name="DescriptionViewAttendance" xml:space="preserve">
+    <value>이 권한을 통해서 직원의 근태 기록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionExportAttendance" xml:space="preserve">
+    <value>이 권한을 통해서 근태 기록을 파일로 내보낼 수 있습니다.</value>
+  </data>
+  <data name="TimeAttendanceReport" xml:space="preserve">
+    <value>근태 기록</value>
+  </data>
+  <data name="ViewBuilding" xml:space="preserve">
+    <value>건물 정보 보기</value>
+  </data>
+  <data name="AddBuilding" xml:space="preserve">
+    <value>건물 추가</value>
+  </data>
+  <data name="EditBuilding" xml:space="preserve">
+    <value>건물 정보 수정</value>
+  </data>
+  <data name="DeleteBuilding" xml:space="preserve">
+    <value>건물 삭제</value>
+  </data>
+  <data name="AssignDoorBuilding" xml:space="preserve">
+    <value>건물에 문 할당</value>
+  </data>
+  <data name="DescriptionAssignDoorBuilding" xml:space="preserve">
+    <value>이 권한을 통해서 건물에 문을 할당할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionViewBuilding" xml:space="preserve">
+    <value>이 권한을 통해서 건물 정보를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddBuilding" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 건물을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditBuilding" xml:space="preserve">
+    <value>이 권한을 통해서 건물 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteBuilding" xml:space="preserve">
+    <value>이 권한을 통해서 건물을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="Building" xml:space="preserve">
+    <value>건물</value>
+  </data>
+  <data name="ViewCategory" xml:space="preserve">
+    <value>카테고리 보기</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>카테고리 추가</value>
+  </data>
+  <data name="EditCategory" xml:space="preserve">
+    <value>카테고리 수정</value>
+  </data>
+  <data name="DeleteCategory" xml:space="preserve">
+    <value>카테고리 삭제</value>
+  </data>
+  <data name="DescriptionViewCategory" xml:space="preserve">
+    <value>이 권한을 통해서 카테고리와 옵션 목록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddCategory" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 카테고리와 옵션을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditCategory" xml:space="preserve">
+    <value>이 권한을 통해서 카테고리와 옵션 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteCategory" xml:space="preserve">
+    <value>이 권한을 통해서 카테고리와 옵션을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>카테고리</value>
+  </data>
+  <data name="ViewDepartment" xml:space="preserve">
+    <value>부서 정보 보기</value>
+  </data>
+  <data name="AddDepartment" xml:space="preserve">
+    <value>부서 추가</value>
+  </data>
+  <data name="EditDepartment" xml:space="preserve">
+    <value>부서 정보 수정</value>
+  </data>
+  <data name="DeleteDepartment" xml:space="preserve">
+    <value>부서 삭제</value>
+  </data>
+  <data name="ExportDepartment" xml:space="preserve">
+    <value>부서 내보내기</value>
+  </data>
+  <data name="DescriptionViewDepartment" xml:space="preserve">
+    <value>이 권한을 통해서 부서 정보를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddDepartment" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 부서를 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditDepartment" xml:space="preserve">
+    <value>이 권한을 통해서 부서 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteDepartment" xml:space="preserve">
+    <value>이 권한을 통해서 부서를 삭제할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionExportDepartment" xml:space="preserve">
+    <value>이 권한을 통해서 부서 목록을 파일로 내보낼 수 있습니다.</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="ViewDevice" xml:space="preserve">
+    <value>단말기 보기</value>
+  </data>
+  <data name="EditDevice" xml:space="preserve">
+    <value>단말기 수정</value>
+  </data>
+  <data name="SendInstructionDevice" xml:space="preserve">
+    <value>단말기로 명령 전송</value>
+  </data>
+  <data name="ViewHistoryDevice" xml:space="preserve">
+    <value>단말기 기록 보기</value>
+  </data>
+  <data name="ReinstallDevice" xml:space="preserve">
+    <value>단말기 재설치</value>
+  </data>
+  <data name="RebootDevice" xml:space="preserve">
+    <value>단말기 재시작</value>
+  </data>
+  <data name="CopyDevice" xml:space="preserve">
+    <value>단말기 설정 복사</value>
+  </data>
+  <data name="DescriptionViewDevice" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 목록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditDevice" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionSendInstructionDevice" xml:space="preserve">
+    <value>이 권한을 통해서 단말기로 명령을 전송할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionViewHistoryDevice" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 기록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionReinstallDevice" xml:space="preserve">
+    <value>이 권한을 통해서 단말기를 재설치할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionRebootDevice" xml:space="preserve">
+    <value>이 권한을 통해서 단말기를 재시작할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionCopyDevice" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 설정 정보를 복사하고 붙여넣을 수 있습니다.</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>단말기</value>
+  </data>
+  <data name="ViewDeviceMessage" xml:space="preserve">
+    <value>단말기 화면 메세지 보기</value>
+  </data>
+  <data name="EditDeviceMessage" xml:space="preserve">
+    <value>단말기 화면 메세지 수정</value>
+  </data>
+  <data name="DescriptionViewDeviceMessage" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 화면 메세지 목록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditDeviceMessage" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 화면 메세지를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DeviceMessage" xml:space="preserve">
+    <value>단말기 화면 메세지</value>
+  </data>
+  <data name="ViewEventLog" xml:space="preserve">
+    <value>이벤트 로그 확인</value>
+  </data>
+  <data name="ExportEventLog" xml:space="preserve">
+    <value>이벤트 로그 내보내기</value>
+  </data>
+  <data name="DescriptionViewEventLog" xml:space="preserve">
+    <value>이 권한을 통해서 리포트 페이지에서 이벤트 로그를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionExportEventLog" xml:space="preserve">
+    <value>이 권한을 통해서 리포트 페이지에서 이벤트 로그를 파일로 내보낼 수 있습니다.</value>
+  </data>
+  <data name="EventLog" xml:space="preserve">
+    <value>이벤트 로그</value>
+  </data>
+  <data name="ViewHoliday" xml:space="preserve">
+    <value>휴일 보기</value>
+  </data>
+  <data name="AddHoliday" xml:space="preserve">
+    <value>휴일 추가</value>
+  </data>
+  <data name="EditHoliday" xml:space="preserve">
+    <value>휴일 수정</value>
+  </data>
+  <data name="DeleteHoliday" xml:space="preserve">
+    <value>휴일 삭제</value>
+  </data>
+  <data name="DescriptionViewHoliday" xml:space="preserve">
+    <value>이 권한을 통해서 휴일 목록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddHoliday" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 휴일을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditHoliday" xml:space="preserve">
+    <value>이 권한을 통해서 휴일 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteHoliday" xml:space="preserve">
+    <value>이 권한을 통해서 휴일을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="Holiday" xml:space="preserve">
+    <value>휴일</value>
+  </data>
+  <data name="ViewSetting" xml:space="preserve">
+    <value>설정 보기</value>
+  </data>
+  <data name="EditSetting" xml:space="preserve">
+    <value>설정 수정</value>
+  </data>
+  <data name="DescriptionViewSetting" xml:space="preserve">
+    <value>이 권한을 통해서 시스템 설정을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditSetting" xml:space="preserve">
+    <value>이 권한을 통해서 시스템 설정값을 변경할 수 있습니다.</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>시스템 설정</value>
+  </data>
+  <data name="ViewSystemLog" xml:space="preserve">
+    <value>시스템 로그 보기</value>
+  </data>
+  <data name="ExportSystemLog" xml:space="preserve">
+    <value>시스템 로그 내보내기</value>
+  </data>
+  <data name="DescriptionViewSystemLog" xml:space="preserve">
+    <value>이 권한을 통해서 시스템 로그를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionExportSystemLog" xml:space="preserve">
+    <value>이 권한을 통해서 시스템 로그를 파일로 내보낼 수 있습니다.</value>
+  </data>
+  <data name="SystemLog" xml:space="preserve">
+    <value>시스템 로그</value>
+  </data>
+  <data name="ViewTimezone" xml:space="preserve">
+    <value>타임존 보기</value>
+  </data>
+  <data name="AddTimezone" xml:space="preserve">
+    <value>타임존 추가</value>
+  </data>
+  <data name="EditTimezone" xml:space="preserve">
+    <value>타임존 수정</value>
+  </data>
+  <data name="DeleteTimezone" xml:space="preserve">
+    <value>타임존 삭제</value>
+  </data>
+  <data name="DescriptionViewTimezone" xml:space="preserve">
+    <value>이 권한을 통해서 타임존 정보를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddTimezone" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 타임존을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditTimezone" xml:space="preserve">
+    <value>이 권한을 통해서 타임존 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteTimezone" xml:space="preserve">
+    <value>이 권한을 통해서 타임존을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="Timezone" xml:space="preserve">
+    <value>타임존</value>
+  </data>
+  <data name="ViewUser" xml:space="preserve">
+    <value>사용자 보기</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>사용자 추가</value>
+  </data>
+  <data name="EditUser" xml:space="preserve">
+    <value>사용자 수정</value>
+  </data>
+  <data name="DeleteUser" xml:space="preserve">
+    <value>사용자 삭제</value>
+  </data>
+  <data name="DescriptionViewUser" xml:space="preserve">
+    <value>이 권한을 통해서 사용자 목록을 확인할 수 있습니다. 또한 '출입 가능 문' 페이지에서 사용자 목록을 보는 데도 사용됩니다.</value>
+  </data>
+  <data name="DescriptionAddUser" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 사용자를 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditUser" xml:space="preserve">
+    <value>이 권한을 통해서 사용자 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteUser" xml:space="preserve">
+    <value>이 권한을 통해서 사용자를 삭제할 수 있습니다.</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>사용자</value>
+  </data>
+  <data name="ViewWorkingTime" xml:space="preserve">
+    <value>근무 시간 유형 보기</value>
+  </data>
+  <data name="AddWorkingTime" xml:space="preserve">
+    <value>근무 시간 유형 추가</value>
+  </data>
+  <data name="EditWorkingTime" xml:space="preserve">
+    <value>근무 시간 유형 수정</value>
+  </data>
+  <data name="DeleteWorkingTime" xml:space="preserve">
+    <value>근무 시간 유형 삭제</value>
+  </data>
+  <data name="DescriptionViewWorkingTime" xml:space="preserve">
+    <value>이 권한을 통해서 근무 시간 유형 목록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddWorkingTime" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 근무 시간 유형을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditWorkingTime" xml:space="preserve">
+    <value>이 권한을 통해서 근무 시간 유형을 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteWorkingTime" xml:space="preserve">
+    <value>이 권한을 통해서 근무 시간 유형을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="WorkingTime" xml:space="preserve">
+    <value>근무 시간 유형</value>
+  </data>
+  <data name="ViewVisit" xml:space="preserve">
+    <value>방문 정보 보기</value>
+  </data>
+  <data name="AddVisit" xml:space="preserve">
+    <value>방문 신청</value>
+  </data>
+  <data name="EditVisit" xml:space="preserve">
+    <value>방문자 정보 수정</value>
+  </data>
+  <data name="DeleteVisit" xml:space="preserve">
+    <value>방문 신청 삭제</value>
+  </data>
+  <data name="ExportVisit" xml:space="preserve">
+    <value>방문 정보 내보내기</value>
+  </data>
+  <data name="ReturnCardVisit" xml:space="preserve">
+    <value>방문자 카드 회수</value>
+  </data>
+  <data name="ViewHistoryVisit" xml:space="preserve">
+    <value>방문자 기록 보기</value>
+  </data>
+  <data name="AssignDoorVisit" xml:space="preserve">
+    <value>방문객에게 출입문 할당하기</value>
+  </data>
+  <data name="DescriptionViewVisit" xml:space="preserve">
+    <value>이 권한을 통해서 방문 정보를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddVisit" xml:space="preserve">
+    <value>이 권한을 통해서 신규 방문 신청을 할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditVisit" xml:space="preserve">
+    <value>이 권한을 통해서 방문자 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteVisit" xml:space="preserve">
+    <value>이 권한을 통해서 본인이 신청한 내역에 한해서 방문 신청 내역을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionExportVisit" xml:space="preserve">
+    <value>이 권한을 통해서 방문 정보를 파일로 내보낼 수 있습니다.</value>
+  </data>
+  <data name="DescriptionReturnCardVisit" xml:space="preserve">
+    <value>이 권한을 통해서 방문자 카드를 회수할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionViewHistoryVisit" xml:space="preserve">
+    <value>이 권한을 통해서 방문자 기록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAssignDoorVisit" xml:space="preserve">
+    <value>이 권한을 통해서 방문객에게 출입 가능한 문을 할당할 수 있습니다.</value>
+  </data>
+  <data name="VisitManagement" xml:space="preserve">
+    <value>방문자 관리</value>
+  </data>
+  <data name="ViewUserArmy" xml:space="preserve">
+    <value>군부대 사용자 보기</value>
+  </data>
+  <data name="AddUserArmy" xml:space="preserve">
+    <value>군부대 사용자 추가</value>
+  </data>
+  <data name="EditUserArmy" xml:space="preserve">
+    <value>군부대 사용자 수정</value>
+  </data>
+  <data name="DeleteUserArmy" xml:space="preserve">
+    <value>군부대 사용자 삭제</value>
+  </data>
+  <data name="DescriptionViewUserArmy" xml:space="preserve">
+    <value>이 권한을 통해서 군부대 사용자 목록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddUserArmy" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 군부대 사용자를 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditUserArmy" xml:space="preserve">
+    <value>이 권한을 통해서 군부대 사용자 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteUserArmy" xml:space="preserve">
+    <value>이 권한을 통해서 군부대 사용자를 삭제할 수 있습니다.</value>
+  </data>
+  <data name="UserArmy" xml:space="preserve">
+    <value>군부대 사용자</value>
+  </data>
+  <data name="ViewVisitArmy" xml:space="preserve">
+    <value>군부대 방문 정보 보기</value>
+  </data>
+  <data name="AddVisitArmy" xml:space="preserve">
+    <value>군부대 방문 신청</value>
+  </data>
+  <data name="EditVisitArmy" xml:space="preserve">
+    <value>군부대 방문자 정보 수정</value>
+  </data>
+  <data name="DeleteVisitArmy" xml:space="preserve">
+    <value>군부대 방문 신청 삭제</value>
+  </data>
+  <data name="DescriptionViewVisitArmy" xml:space="preserve">
+    <value>이 권한을 통해서 군부대 방문 정보를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddVisitArmy" xml:space="preserve">
+    <value>이 권한을 통해서 군부대에 신규 방문 신청을 할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditVisitArmy" xml:space="preserve">
+    <value>이 권한을 통해서 군부대 방문자 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteVisitArmy" xml:space="preserve">
+    <value>이 권한을 통해서 본인이 신청한 내역에 한해서 방문 신청 내역을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="VisitArmyManagement" xml:space="preserve">
+    <value>군부대 방문자</value>
+  </data>
+  <data name="ViewMonitoring" xml:space="preserve">
+    <value>실시간으로 이벤트 보기</value>
+  </data>
+  <data name="DescriptionViewMonitoring" xml:space="preserve">
+    <value>이 권한을 통해서 실시간으로 올라오는 이벤트를 확인할 수 있습니다.</value>
+  </data>
+  <data name="Monitoring" xml:space="preserve">
+    <value>모니터링</value>
+  </data>
+  <data name="ViewDeviceMonitoring" xml:space="preserve">
+    <value>디바이스 모니터링 페이지 내용 보기</value>
+  </data>
+  <data name="DescriptionViewDeviceMonitoring" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 모니터링 페이지의 내용을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DeviceMonitoring" xml:space="preserve">
+    <value>단말기 모니터링</value>
+  </data>
+  <data name="SendInstructionDeviceMonitoring" xml:space="preserve">
+    <value>단말기로 명령 전송</value>
+  </data>
+  <data name="DescriptionSendInstructionDeviceMonitoring" xml:space="preserve">
+    <value>이 권한을 통해서 단말기에 몇 가지 명령을 전송할 수 있습니다. 명령에는 '문 열기', '단말기 다시 시작', '현재 시간 전송' 등이 있습니다.</value>
+  </data>
+  <data name="ViewUserDepartment" xml:space="preserve">
+    <value>부서에 속한 사용자 목록 보기</value>
+  </data>
+  <data name="DescriptionViewUserDepartment" xml:space="preserve">
+    <value>이 권한을 통해서 특정 부서에 속해있는 사용자의 목록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="ExportUser" xml:space="preserve">
+    <value>사용자 목록을 파일로 내보내기</value>
+  </data>
+  <data name="DescriptionExportUser" xml:space="preserve">
+    <value>이 권한을 통해서 사용자 목록을 파일 형태로 내보내 저장할 수 있습니다.</value>
+  </data>
+  <data name="SetWorkingTimeUser" xml:space="preserve">
+    <value>근무 시간 설정</value>
+  </data>
+  <data name="DescriptionSetWorkingTimeUser" xml:space="preserve">
+    <value>이 권한을 통해서 사용자 별 근무시간을 설정할 수 있습니다.</value>
+  </data>
+  <data name="ViewDeviceSetting" xml:space="preserve">
+    <value>단말기 설정 페이지 내용 보기</value>
+  </data>
+  <data name="EditDeviceSetting" xml:space="preserve">
+    <value>단말기 정보 수정</value>
+  </data>
+  <data name="CopyDeviceSetting" xml:space="preserve">
+    <value>단말기 설정 복사</value>
+  </data>
+  <data name="ReinstallDeviceSetting" xml:space="preserve">
+    <value>단말기 재설치</value>
+  </data>
+  <data name="ViewHistoryDeviceSetting" xml:space="preserve">
+    <value>단말기 기록 보기</value>
+  </data>
+  <data name="DescriptionEditDeviceSetting" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 정보를 수정할 수 있습니다. 단말기는 모니터링, 단말기 모니터링,  단말기 설정 화면에서 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionViewDeviceSetting" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 설정 페이지를 볼 수 있습니다. 또한, '등록 사용자' 페이지의 단말기 목록을 보는데도 사용됩니다.</value>
+  </data>
+  <data name="DescriptionCopyDeviceSetting" xml:space="preserve">
+    <value>이 권한을 통해서 특정 단말기의 설정 정보를 복사하여 다른 단말기에 붙여널을 수 있습니다.</value>
+  </data>
+  <data name="DescriptionReinstallDeviceSetting" xml:space="preserve">
+    <value>이 권한을 통해서 장치를 다시 설치할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionViewHistoryDeviceSetting" xml:space="preserve">
+    <value>이 권한을 통해서 단말기 기록을 볼 수 있습니다. 단말기 기록은 단말기 모니터링 화면에서도 확인할 수 있습니다.</value>
+  </data>
+  <data name="DeviceSetting" xml:space="preserve">
+    <value>단말기 설정</value>
+  </data>
+  <data name="ViewReport" xml:space="preserve">
+    <value>리포트 페이지에서 자신의 이벤트만 보기</value>
+  </data>
+  <data name="ExportReport" xml:space="preserve">
+    <value>파일로 출입 기록 내보내기</value>
+  </data>
+  <data name="DescriptionViewReport" xml:space="preserve">
+    <value>이 권한을 통해서 리포트 페이지에서 자신의 과거의 출입 기록들을 검색하고 확인할 수 있습니다.</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>리포트</value>
+  </data>
+  <data name="DescriptionExportReport" xml:space="preserve">
+    <value>이 권한을 통해서 검색된 출입 기록을 파일로 내보낼 수 있습니다.</value>
+  </data>
+  <data name="ViewAccessibleDoor" xml:space="preserve">
+    <value>접근 가능한 문 목록 보기</value>
+  </data>
+  <data name="ExportAccessibleDoor" xml:space="preserve">
+    <value>접근 가능한 문 목록 내보내기</value>
+  </data>
+  <data name="DescriptionViewAccessibleDoor" xml:space="preserve">
+    <value>이 권한을 통해서 각 사용자가 접근할 수 있는 문 목록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionExportAccessibleDoor" xml:space="preserve">
+    <value>이 권한을 통해서 각 사용자가 접근할 수 있는 문 목록을 파일로 내보낼 수 있습니다.</value>
+  </data>
+  <data name="AccessibleDoor" xml:space="preserve">
+    <value>출입 가능 문</value>
+  </data>
+  <data name="ViewRegisteredUser" xml:space="preserve">
+    <value>등록된 사용자 목록 보기</value>
+  </data>
+  <data name="ExportRegisteredUser" xml:space="preserve">
+    <value>등록된 사용자 내보내기</value>
+  </data>
+  <data name="RegisteredUser" xml:space="preserve">
+    <value>등록 사용자</value>
+  </data>
+  <data name="DescriptionViewRegisteredUser" xml:space="preserve">
+    <value>이 권한을 통해서 각 단말기에 등록된 사용자 목록을 볼 수 있습니다.</value>
+  </data>
+  <data name="DescriptionExportRegisteredUser" xml:space="preserve">
+    <value>이 권한을 통해서 각 단말기에 등록된 사용자 목록을 파일로 내보낼 수 있습니다.</value>
+  </data>
+  <data name="EditAttendance" xml:space="preserve">
+    <value>근태 기록 수정</value>
+  </data>
+  <data name="ViewHistoryAttendance" xml:space="preserve">
+    <value>출입 기록 보기</value>
+  </data>
+  <data name="DescriptionEditAttendance" xml:space="preserve">
+    <value>이 권한을 가진 부서장은 근태 기록을 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionViewHistoryAttendance" xml:space="preserve">
+    <value>이 권한을 통해서 사용자의 출입 기록을 확인할 수 있습니다.</value>
+  </data>
+  <data name="ApproveVisit" xml:space="preserve">
+    <value>방문 승인</value>
+  </data>
+  <data name="DescriptionApproveVisit" xml:space="preserve">
+    <value>이 권한을 통해서 방문 대기 중인 방문 신청을 결재 할 수 있습니다.</value>
+  </data>
+  <data name="ViewVisitReport" xml:space="preserve">
+    <value>방문자 출입 기록 보기</value>
+  </data>
+  <data name="ExportVisitReport" xml:space="preserve">
+    <value>방문자 출입 기록 내보내기</value>
+  </data>
+  <data name="EditVisitSetting" xml:space="preserve">
+    <value>방문 결재자 변경</value>
+  </data>
+  <data name="DescriptionViewVisitReport" xml:space="preserve">
+    <value>이 권한을 통해서 방문자에 대한 출입 기록 리포트를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionExportVisitReport" xml:space="preserve">
+    <value>이 권한을 통해서 방문자에 대한 출입 기록 리포트를 파일로 내보낼 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditVisitSetting" xml:space="preserve">
+    <value>이 권한을 통해서 방문 승인 결재자를 변경할 수 있습니다.</value>
+  </data>
+  <data name="VisitReport" xml:space="preserve">
+    <value>방문 현황 리포트</value>
+  </data>
+  <data name="VisitSetting" xml:space="preserve">
+    <value>방문 시스템 설정</value>
+  </data>
+  <data name="ApproveUser" xml:space="preserve">
+    <value>사용자 출입 승인</value>
+  </data>
+  <data name="DescriptionApproveUser" xml:space="preserve">
+    <value>이 권한을 통해서 승인 대기 중인 사용자의 출입 신청을 결재 할 수 있습니다.</value>
+  </data>
+  <data name="AccessSetting" xml:space="preserve">
+    <value>출입 설정</value>
+  </data>
+  <data name="EditAccessSetting" xml:space="preserve">
+    <value>출입 설정 변경</value>
+  </data>
+  <data name="DescriptionEditAccessSetting" xml:space="preserve">
+    <value>이 권한을 통해서 출입 설정을 변경할 수 있습니다.</value>
+  </data>
+  <data name="VehicleManagement" xml:space="preserve">
+    <value>차량 관리</value>
+  </data>
+  <data name="CardIssuing" xml:space="preserve">
+    <value>카드 발급</value>
+  </data>
+  <data name="CardIssuingSetting" xml:space="preserve">
+    <value>카드 발급 설정</value>
+  </data>
+  <data name="CardIssuingLayout" xml:space="preserve">
+    <value>카드 발급 레이아웃</value>
+  </data>
+  <data name="AddVehicle" xml:space="preserve">
+    <value>차량 추가</value>
+  </data>
+  <data name="ViewVehicle" xml:space="preserve">
+    <value>차량 정보 보기</value>
+  </data>
+  <data name="EditVehicle" xml:space="preserve">
+    <value>차량 정보 수정</value>
+  </data>
+  <data name="DescriptionAddVehicle" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 차량을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionViewVehicle" xml:space="preserve">
+    <value>이 권한을 통해서 등록된 차량 정보를 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditVehicle" xml:space="preserve">
+    <value>이 권한을 통해서 차량 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="ViewCardIssuing" xml:space="preserve">
+    <value>카드 발급 정보 보기</value>
+  </data>
+  <data name="AddCardIssuing" xml:space="preserve">
+    <value>카드 발급 추가</value>
+  </data>
+  <data name="EditCardIssuing" xml:space="preserve">
+    <value>카드 발급 수정</value>
+  </data>
+  <data name="DescriptionAddCardIssuing" xml:space="preserve">
+    <value>이 권한을 통해서 카드 발급을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionViewCardIssuing" xml:space="preserve">
+    <value>이 권한을 통해서 카드 발급 정보를 확인할 수 있습니다.</value>
+  </data>
+  <data name="ViewCardIssuingSetting" xml:space="preserve">
+    <value>카드 발급 설정 확인</value>
+  </data>
+  <data name="ViewCardIssuingLayout" xml:space="preserve">
+    <value>카드 발급 레이아웃 확인</value>
+  </data>
+  <data name="AddCardIssuingLayout" xml:space="preserve">
+    <value>카드 발급 레이아웃 추가</value>
+  </data>
+  <data name="AddCardIssuingSetting" xml:space="preserve">
+    <value>카드 발급 설정 추가</value>
+  </data>
+  <data name="EditCardIssuingSetting" xml:space="preserve">
+    <value>카드 발급 설정 수정</value>
+  </data>
+  <data name="EditCardIssuingLayout" xml:space="preserve">
+    <value>카드 발급 레이아웃 수정</value>
+  </data>
+  <data name="DescriptionViewCardIssuingSetting" xml:space="preserve">
+    <value>이 권한을 통해서 카드 발급 설정을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionViewCardIssuingLayout" xml:space="preserve">
+    <value>이 권한을 통해서 카드 발급 레이아웃을 확인할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddCardIssuingSetting" xml:space="preserve">
+    <value>이 권한을 통해서 카드 발급 설정을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddCardIssuingLayout" xml:space="preserve">
+    <value>이 권한을 통해서 카드 발급 레이아웃을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditCardIssuingSetting" xml:space="preserve">
+    <value>이 권한을 통해서 카드 발급 설정을 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditCardIssuingLayout" xml:space="preserve">
+    <value>이 권한을 통해서 카드 발급 레이아웃을 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditCardIssuing" xml:space="preserve">
+    <value>이 권한을 통해서 카드 발급 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="ViewDashBoard" xml:space="preserve">
+    <value>대시보드 보기</value>
+  </data>
+  <data name="DescriptionViewDashBoard" xml:space="preserve">
+    <value>이 권한을 통해서 대시보드 페이지를 볼 수 있습니다.</value>
+  </data>
+  <data name="DashBoard" xml:space="preserve">
+    <value>대시보드</value>
+  </data>
+  <data name="EventManagement" xml:space="preserve">
+    <value>이벤트 관리</value>
+  </data>
+  <data name="ViewEventManagement" xml:space="preserve">
+    <value>회의 정보 조회</value>
+  </data>
+  <data name="AddEventManagement" xml:space="preserve">
+    <value>회의 추가</value>
+  </data>
+  <data name="EditEventManagement" xml:space="preserve">
+    <value>회의 수정</value>
+  </data>
+  <data name="DeleteEventManagement" xml:space="preserve">
+    <value>회의 삭제</value>
+  </data>
+  <data name="DescriptionViewEventManagement" xml:space="preserve">
+    <value>이 권한을 통해 미팅 페이지에서 미팅을 볼 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddEventManagement" xml:space="preserve">
+    <value>이 권한을 통해서 새 미팅을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditEventManagement" xml:space="preserve">
+    <value>이 권한을 통해 회의 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteEventManagement" xml:space="preserve">
+    <value>이 권한을 통해 미팅을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="LibraryManagement" xml:space="preserve">
+    <value>도서관 관리</value>
+  </data>
+  <data name="EditBook" xml:space="preserve">
+    <value>책 정보 수정</value>
+  </data>
+  <data name="AddBook" xml:space="preserve">
+    <value>책 정보 추가</value>
+  </data>
+  <data name="DeleteBook" xml:space="preserve">
+    <value>책 삭제</value>
+  </data>
+  <data name="DescriptionViewBook" xml:space="preserve">
+    <value>이 권한을 통해 책 목록을 볼 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddBook" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 책을 추가할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditBook" xml:space="preserve">
+    <value>이 권한을 통해 책 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteBook" xml:space="preserve">
+    <value>이 권한을 통해 책을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="Book" xml:space="preserve">
+    <value>도서 관리</value>
+  </data>
+  <data name="ViewBook" xml:space="preserve">
+    <value>책 정보 조회</value>
+  </data>
+  <data name="LeaveRequest" xml:space="preserve">
+    <value>외근 및 휴가 수정</value>
+  </data>
+  <data name="ViewLeaveRequest" xml:space="preserve">
+    <value>외근 및 휴가 신청 보기</value>
+  </data>
+  <data name="AddLeaveRequest" xml:space="preserve">
+    <value>외근 및 휴가 신청</value>
+  </data>
+  <data name="EditLeaveRequest" xml:space="preserve">
+    <value>외근 및 휴가 요청 수정</value>
+  </data>
+  <data name="DeleteLeaveRequest" xml:space="preserve">
+    <value>외근 및 휴가 요청 삭제</value>
+  </data>
+  <data name="DescriptionViewLeaveRequest" xml:space="preserve">
+    <value>이 권한을 통해 외근 및 휴가 요청 목록을 볼 수 있습니다.</value>
+  </data>
+  <data name="DescriptionAddLeaveRequest" xml:space="preserve">
+    <value>이 권한을 통해서 새로운 외근 및 휴가 신청을 할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionEditLeaveRequest" xml:space="preserve">
+    <value>이 권한을 통해 외근 및 휴가 요청을 수정할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionDeleteLeaveRequest" xml:space="preserve">
+    <value>이 권한을 통해서 외근 및 휴가 신청을 삭제 할 수 있습니다.</value>
+  </data>
+  <data name="ViewLeaveManagementLeaveRequest" xml:space="preserve">
+    <value>외근 및 휴가 관리 보기</value>
+  </data>
+  <data name="DescriptionViewLeaveManagementLeaveRequest" xml:space="preserve">
+    <value>이 권한을 통해 사용자의 휴가 요청 수를 볼 수 있습니다.</value>
+  </data>
+  <data name="UpdateUserSettingUser" xml:space="preserve">
+    <value>사용자 설정 정보 수정</value>
+  </data>
+  <data name="DescriptionUpdateUserSettingUser" xml:space="preserve">
+    <value>이 권한을 통해 사용자 설정을 업데이트할 수 있습니다.</value>
+  </data>
+  <data name="UpdateAttendanceSettingAttendance" xml:space="preserve">
+    <value>근태 설정 정보 수정</value>
+  </data>
+  <data name="DescriptionUpdateAttendanceSettingAttendance" xml:space="preserve">
+    <value>이 권한을 통해 근태 설정을 업데이트 할 수 있습니다.</value>
+  </data>
+  <data name="ViewVehicleAllocation" xml:space="preserve">
+    <value>차량 배차 정보 보기</value>
+  </data>
+  <data name="DescriptionViewVehicleAllocation" xml:space="preserve">
+    <value>이 권한을 통해서 차량 배차 정보를 확인할 수 있습니다.</value>
+  </data>
+  <data name="AddVehicleAllocation" xml:space="preserve">
+    <value>차량 배차 신청</value>
+  </data>
+  <data name="DescriptionAddVehicleAllocation" xml:space="preserve">
+    <value>이 권한을 통해서 차량 배차를 신청할 수 있습니다.</value>
+  </data>
+  <data name="VehicleAllocation" xml:space="preserve">
+    <value>차량 배차</value>
+  </data>
+  <data name="EditVehicleAllocation" xml:space="preserve">
+    <value>차량 배차 내역 수정</value>
+  </data>
+  <data name="DescriptionEditVehicleAllocation" xml:space="preserve">
+    <value>이 권한을 통해서 차량 배차 정보를 수정할 수 있습니다.</value>
+  </data>
+  <data name="DeleteVehicleAllocation" xml:space="preserve">
+    <value>차량 배차 정보 삭제</value>
+  </data>
+  <data name="DescriptionDeleteVehicleAllocation" xml:space="preserve">
+    <value>이 권한을 통해서 차량 배차 정보를 삭제할 수 있습니다.</value>
+  </data>
+  <data name="RunVehicleAllocation" xml:space="preserve">
+    <value>차량 운행 시작, 종료 설정</value>
+  </data>
+  <data name="DescriptionRunVehicleAllocation" xml:space="preserve">
+    <value>이 권한을 통해서 배차된 차량의 운행 서비스 시작 및 종료를 설정할 수 있습니다.</value>
+  </data>
+  <data name="UserArmyManagement" xml:space="preserve">
+    <value>병사 관리</value>
+  </data>
+  <data name="ViewUserArmyManagement" xml:space="preserve">
+    <value>병사 관리 내역 보기</value>
+  </data>
+  <data name="DescriptionViewUserArmyManagement" xml:space="preserve">
+    <value>이 권한을 통해서 병사 관리 내역을 확인 할 수 있습니다.</value>
+  </data>
+  <data name="AddUserArmyManagement" xml:space="preserve">
+    <value>병사 관리 내역 추가</value>
+  </data>
+  <data name="DescriptionAddUserArmyManagement" xml:space="preserve">
+    <value>이 권한을 통해서 병사의 외출 및 휴가 일정을 추가할 수 있습니다.</value>
+  </data>
+  <data name="EditUserArmyManagement" xml:space="preserve">
+    <value>병사 관리 내역 수정</value>
+  </data>
+  <data name="DescriptionEditUserArmyManagement" xml:space="preserve">
+    <value>이 권한을 통해서 병사의 외출 및 휴가 관리 일정을 수정할 수 있습니다.</value>
+  </data>
+  <data name="DeleteUserArmyManagement" xml:space="preserve">
+    <value>병사 관리 내역 삭제</value>
+  </data>
+  <data name="DescriptionDeleteUserArmyManagement" xml:space="preserve">
+    <value>이 권한을 통해서 병사의 외출 및 휴과 관리 내역을 삭제할 수 있습니다.</value>
+  </data>
+  <data name="RegCivilVisitArmyManagement" xml:space="preserve">
+    <value>민간인 방문 신청</value>
+  </data>
+  <data name="RegOtherVisitArmyManagement" xml:space="preserve">
+    <value>타 부대원 방문 신청</value>
+  </data>
+  <data name="DescriptionRegCivilVisitArmyManagement" xml:space="preserve">
+    <value>이 권한을 통해서 민간인 방문자를 신청할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionRegOtherVisitArmyManagement" xml:space="preserve">
+    <value>이 권한을 통해서 타 부대원 방문자를 신청할 수 있습니다.</value>
+  </data>
+  <data name="DescriptionRegiMasterBuilding" xml:space="preserve">
+    <value>이 권한을 통해서 건물 마스터를 등록할 수 있습니다.</value>
+  </data>
+  <data name="RegiMasterBuilding" xml:space="preserve">
+    <value>건물 마스터 등록</value>
+  </data>
+  <data name="DescriptionViewMasterBuilding" xml:space="preserve">
+    <value>이 권한을 통해서 건물 마스터 목록을 조회할 수 있습니다.</value>
+  </data>
+  <data name="ViewMasterBuilding" xml:space="preserve">
+    <value>건물 마스터 보기</value>
+  </data>
+  <data name="ViewAllReport" xml:space="preserve">
+    <value>모든 출입 이력 보기</value>
+  </data>
+  <data name="DescriptionViewAllReport" xml:space="preserve">
+    <value>이 권한을 통해서 리포트 페이지에서 모든 사용자의 이벤트를 조회할 수 있습니다.</value>
+  </data>
+  <data name="DeleteVehicle" xml:space="preserve">
+    <value>차량 정보 삭제</value>
+  </data>
+  <data name="DescriptionDeleteVehicle" xml:space="preserve">
+    <value>이 권한을 통해 차량 정보를 삭제할 수 있습니다.</value>
+  </data>
+  <data name="DeleteCardIssuing" xml:space="preserve">
+    <value>Delete Card Issuing</value>
+  </data>
+  <data name="DeleteCardIssuingLayout" xml:space="preserve">
+    <value>Delete Card Issuing Layout</value>
+  </data>
+  <data name="DeleteCardIssuingSetting" xml:space="preserve">
+    <value>Delete Card Issuing Setting</value>
+  </data>
+  <data name="DescriptionDeleteCardIssuing" xml:space="preserve">
+    <value>This permission allows you to delete a card issuing.</value>
+  </data>
+  <data name="DescriptionDeleteCardIssuingLayout" xml:space="preserve">
+    <value>This permission allows you to delete a card issuing layout.</value>
+  </data>
+  <data name="DescriptionDeleteCardIssuingSetting" xml:space="preserve">
+    <value>This permission allows you to delete a card issuing setting.</value>
+  </data>
+  <data name="ManageOwnRecordLeaveRequest" xml:space="preserve">
+    <value>Manage your own leave request</value>
+  </data>
+  <data name="DescriptionManageOwnRecordLeaveRequest" xml:space="preserve">
+    <value>This permission allows you to view/add/edit/delete your own leave request</value>
+  </data>
+
+  <data name="AccessSchedule" xml:space="preserve">
+    <value>Access Schedule</value>
+  </data>
+  <data name="ViewAccessSchedule" xml:space="preserve">
+    <value>View Access Schedule</value>
+  </data>
+  <data name="DescriptionViewAccessSchedule" xml:space="preserve">
+    <value>This permission allows you to view the access schedule.</value>
+  </data>
+  <data name="AddAccessSchedule" xml:space="preserve">
+    <value>Add Access Schedule</value>
+  </data>
+  <data name="DescriptionAddAccessSchedule" xml:space="preserve">
+    <value>This permission allows you to add the access schedule.</value>
+  </data>
+  <data name="EditAccessSchedule" xml:space="preserve">
+    <value>Edit Access Schedule</value>
+  </data>
+  <data name="DescriptionEditAccessSchedule" xml:space="preserve">
+    <value>This permission allows you to edit the access schedule.</value>
+  </data>
+  <data name="DeleteAccessSchedule" xml:space="preserve">
+    <value>Delete Access Schedule</value>
+  </data>
+  <data name="DescriptionDeleteAccessSchedule" xml:space="preserve">
+    <value>This permission allows you to delete the access schedule.</value>
+  </data>
+  <data name="DeviceReader" xml:space="preserve">
+    <value>Device Reader</value>
+  </data>
+  <data name="ViewDeviceReader" xml:space="preserve">
+    <value>View Device Reader</value>
+  </data>
+  <data name="DescriptionViewDeviceReader" xml:space="preserve">
+    <value>This permission allows you to view the device reader.</value>
+  </data>
+  <data name="AddDeviceReader" xml:space="preserve">
+    <value>Add Device Reader</value>
+  </data>
+  <data name="DescriptionAddDeviceReader" xml:space="preserve">
+    <value>This permission allows you to add the device reader.</value>
+  </data>
+  <data name="EditDeviceReader" xml:space="preserve">
+    <value>Edit Device Reader</value>
+  </data>
+  <data name="DescriptionEditDeviceReader" xml:space="preserve">
+    <value>This permission allows you to edit the device reader.</value>
+  </data>
+  <data name="DeleteDeviceReader" xml:space="preserve">
+    <value>Delete Device Reader</value>
+  </data>
+  <data name="DescriptionDeleteDeviceReader" xml:space="preserve">
+    <value>This permission allows you to delete the device reader.</value>
+  </data>
+  
+
+</root>

@@ -1,0 +1,44 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblAddNew" xml:space="preserve">
+    <value>Thêm loại mới</value>
+        <comment>새 카테고리 추가</comment>
+  </data>
+    <data name="lblCategoryName" xml:space="preserve">
+    <value>Tên loại</value>
+        <comment>카테고리 이름</comment>
+  </data>
+    <data name="lblParentCategoryName" xml:space="preserve">
+    <value>Tên loại cha</value>
+        <comment>상위 카테고리 명</comment>
+  </data>
+    <data name="lblOptionName" xml:space="preserve">
+    <value>Lựa chọn</value>
+  </data>
+    <data name="Category" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+    <data name="lblParentOptionName" xml:space="preserve">
+    <value>Tên lựa chọn cha</value>
+  </data>
+    <data name="lblUpdate" xml:space="preserve">
+    <value>Cập nhật dữ liện loại và lựa chon</value>
+  </data>
+    <data name="lblDelete" xml:space="preserve">
+    <value>Xoá loại</value>
+  </data>
+    <data name="msgDeleteFailChild" xml:space="preserve">
+    <value>Không thể khoá loại con.</value>
+  </data>
+</root>

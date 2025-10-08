@@ -1,0 +1,42 @@
+﻿@using DeMasterProCloud.DataModel;
+@{
+    ViewData["Title"] = "PdfView";
+}
+
+<h1>System Log Export</h1>
+
+@{
+    var data = ViewBag.Message;
+    
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class='header'><h1>DMPW SystemLog</h1></div>
+    <table align='center'>
+        <tr>
+            <th>User Account</th>
+            <th>Operation Time</th>
+            <th>Object Type</th>
+            <th>Action</th>
+            <th>Message</th>
+        </tr>
+
+        @foreach (var report in @data)
+        {
+            <tr>
+                <td>@report.UserAccount</td>
+                <td>@report.OperationTime</td>
+                <td>@report.OperationType</td>
+                <td>@report.Action</td>
+                <td>@report.Message</td>
+            </tr>
+        }
+
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblTemporaryAccessCard" xml:space="preserve">
+        <value>임시 출입 카드</value>
+    </data>
+  <data name="lblAccessCard" xml:space="preserve">
+        <value>출입 카드</value>
+    </data>
+  <data name="lblVisitCard" xml:space="preserve">
+        <value>방문 카드</value>
+    </data>
+  <data name="lblSoldier" xml:space="preserve">
+        <value>군인</value>
+    </data>
+  <data name="lblFamily" xml:space="preserve">
+        <value>가족</value>
+    </data>
+  <data name="lblRegularCivilian" xml:space="preserve">
+        <value>민간인</value>
+    </data>
+  <data name="lblResidentCivilian" xml:space="preserve">
+        <value>고정 출입자</value>
+    </data>
+  <data name="lblConstruction" xml:space="preserve">
+        <value>공사</value>
+    </data>
+  <data name="lblMeetingVisit" xml:space="preserve">
+        <value>회의</value>
+    </data>
+  <data name="lblTraning" xml:space="preserve">
+        <value>교육</value>
+    </data>
+  <data name="lblCardReader" xml:space="preserve">
+        <value>카드 인식기</value>
+    </data>
+  <data name="lblCardPrinter" xml:space="preserve">
+        <value>카드 프린터</value>
+    </data>
+  <data name="lblVerticalAlignment" xml:space="preserve">
+        <value>세로</value>
+    </data>
+  <data name="lblHorizontalAlignment" xml:space="preserve">
+        <value>가로</value>
+    </data>
+  <data name="msgIpAddressInUse" xml:space="preserve">
+        <value>해당 IP 주소가 이미 사용 중입니다</value>
+    </data>
+  <data name="msgNameInUse" xml:space="preserve">
+        <value>해당 이름이 이미 사용 중입니다</value>
+    </data>
+  <data name="lblCardLayout" xml:space="preserve">
+        <value>카드 레이아웃</value>
+    </data>
+  <data name="lblManagementNumber" xml:space="preserve">
+        <value>관리 번호</value>
+    </data>
+  <data name="lblAccidentType" xml:space="preserve">
+        <value>사고 유형</value>
+    </data>
+    <data name="lblPersonCardType" xml:space="preserve">
+        <value>개인 카드 유형</value>
+    </data>
+  <data name="msgDeviceConnectFailed" xml:space="preserve">
+        <value>장치 연결 실패</value>
+    </data>
+  <data name="msgDeviceConnectSuccess" xml:space="preserve">
+        <value>장치 연결 성공</value>
+    </data>
+  <data name="ConnectTimeout" xml:space="preserve">
+        <value>연결 시간 초과</value>
+    </data>
+  <data name="msgRequireConnectToDevice" xml:space="preserve">
+        <value>장치에 연결해주세요</value>
+    </data>
+  <data name="msgPleaseWaitForPrinting" xml:space="preserve">
+        <value>프린트를 기다려 주십시오</value>
+    </data>
+  <data name="msgPrintCardSuccess" xml:space="preserve">
+        <value>카드 프린트 성공</value>
+    </data>
+  <data name="msgPrintCardError" xml:space="preserve">
+        <value>카드 프린트 에러</value>
+    </data>
+  <data name="lblCardType" xml:space="preserve">
+        <value>카드 유형</value>
+    </data>
+  <data name="lblCardName" xml:space="preserve">
+        <value>카드명</value>
+    </data>
+  <data name="lblRegisteredDate" xml:space="preserve">
+        <value>등록일</value>
+    </data>
+  <data name="lblCardId" xml:space="preserve">
+        <value>카드 ID</value>
+    </data>
+  <data name="lblDepartment" xml:space="preserve">
+        <value>부서</value>
+    </data>
+  <data name="lblIssuedDate" xml:space="preserve">
+        <value>발급 일자</value>
+    </data>
+  <data name="lblIssuer" xml:space="preserve">
+        <value>발급자</value>
+    </data>
+    <data name="lblRemark" xml:space="preserve">
+        <value>주목</value>
+    </data>
+    <data name="lblReturnedDate" xml:space="preserve">
+        <value>반환 날짜</value>
+    </data>
+  <data name="lblPosition" xml:space="preserve">
+        <value>직책</value>
+    </data>
+  <data name="lblCardStatus" xml:space="preserve">
+        <value>카드 상태</value>
+    </data>
+  <data name="lblMsn" xml:space="preserve">
+        <value>MSN</value>
+    </data>
+  <data name="lblNewStatus" xml:space="preserve">
+        <value>새 상태</value>
+    </data>
+  <data name="lblOldStatus" xml:space="preserve">
+        <value>전 상태</value>
+    </data>
+  <data name="lblUpdatedOn" xml:space="preserve">
+        <value>수정일</value>
+    </data>
+  <data name="lblUpdatedBy" xml:space="preserve">
+        <value>수정자</value>
+    </data>
+    <data name="lblNote" xml:space="preserve">
+        <value>메모</value>
+    </data>
+  <data name="lblIDPSmartCardPrinter" xml:space="preserve">
+        <value>IDP Smart Card Printer</value>
+    </data>
+  <data name="lblBackGround" xml:space="preserve">
+        <value>배경</value>
+    </data>
+    <data name="lblPictureFixed" xml:space="preserve">
+        <value>그림</value>
+    </data>
+    <data name="lblPictureUser" xml:space="preserve">
+        <value>사진 사용자(아바타)</value>
+    </data>
+    <data name="lblTextFixed" xml:space="preserve">
+        <value>텍스트</value>
+    </data>
+    <data name="lblTextDbInfo" xml:space="preserve">
+        <value>Db에서 두 리에우</value>
+    </data>
+  <data name="lblIssueCount" xml:space="preserve">
+        <value>발급 차수</value>
+    </data>
+  <data name="msgUserAssignedCard" xml:space="preserve">
+        <value>이미 해당 사용자에게 카드가 발급되었습니다</value>
+    </data>
+  <data name="msgErrorCheckQueue" xml:space="preserve">
+    <value>인쇄 대기열을 확인하는 중 오류 발생</value>
+  </data>
+  <data name="msgPrintQueue" xml:space="preserve">
+    <value>{0} 건이 인쇄 대기 중입니다.</value>
+  </data>
+  <data name="msgNotFinishedYet" xml:space="preserve">
+    <value>이전 인쇄가 끝나지 않았습니다. 잠시 후 다시 시도해 주십시오. 만약 프린터가 현재 인쇄 중이 아닌 경우 프린터를 재부팅 해주세요.</value>
+  </data>
+    <data name="lblCXD80" xml:space="preserve">
+        <value>Card Printer CX-D80</value>
+    </data>
+</root>

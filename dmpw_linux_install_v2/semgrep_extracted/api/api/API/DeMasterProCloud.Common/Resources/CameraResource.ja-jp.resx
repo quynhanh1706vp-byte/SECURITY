@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DuplicateCameraId" xml:space="preserve">
+        <value>CameraId existed in system</value>
+    </data>
+    <data name="AccessTokenWrong" xml:space="preserve">
+        <value>Hanetシステムに接続できません。アクセス トークンを確認するか、新しい場所カメラを作成してください。</value>
+    </data>
+  <data name="NotificationProcess" xml:space="preserve">
+        <value>Update processing...</value>
+    </data>
+  <data name="QrInvalid" xml:space="preserve">
+        <value>QR code not valid</value>
+    </data>
+  <data name="UploadAvatarFailed" xml:space="preserve">
+        <value>Avatar person upload failed!</value>
+    </data>
+  <data name="SyncDataComplete" xml:space="preserve">
+        <value>Sync data complete</value>
+    </data>
+  <data name="SomethingWrong" xml:space="preserve">
+        <value>Something wrong!</value>
+    </data>
+  <data name="AllCamerasOffline" xml:space="preserve">
+        <value>All Cameras offline</value>
+    </data>
+  <data name="lblCameraHanet" xml:space="preserve">
+        <value>Camera Hanet</value>
+    </data>
+  <data name="lblCameraLPR" xml:space="preserve">
+        <value>Camera LPR</value>
+    </data>
+  <data name="lblCameraCCTV" xml:space="preserve">
+        <value>Camera CCTV</value>
+    </data>
+  <data name="InvalidCamera" xml:space="preserve">
+        <value>Invalid Camera</value>
+    </data>
+  <data name="CreateFaceIdSuccess" xml:space="preserve">
+        <value>Create FaceId success.</value>
+    </data>
+  <data name="titleCreateFaceId" xml:space="preserve">
+        <value>Create FaceId</value>
+    </data>
+  <data name="contentNewVisitWebhook" xml:space="preserve">
+        <value>Webhook add new visit</value>
+    </data>
+  <data name="contentNewUserWebhook" xml:space="preserve">
+        <value>Webhook add new user</value>
+    </data>
+  <data name="contentUpdateVisitWebhook" xml:space="preserve">
+        <value>Webhook update visit</value>
+    </data>
+  <data name="contentDeleteVisitWebhook" xml:space="preserve">
+        <value>Webhook delete visit</value>
+    </data>
+  <data name="contentUpdateUserWebhook" xml:space="preserve">
+        <value>Webhook update user</value>
+    </data>
+  <data name="contentDeleteUserWebhook" xml:space="preserve">
+        <value>Webhook delete user</value>
+    </data>
+    <data name="contentUpdateCameraSetting" xml:space="preserve">
+        <value>Update camera setting</value>
+    </data>
+    <data name="contentUpdateCameraSettingRefresh" xml:space="preserve">
+        <value>Update camera setting (Refresh token)</value>
+    </data>
+    <data name="lblChangeSetting" xml:space="preserve">
+        <value>Change setting</value>
+    </data>
+    <data name="lblCameraDC" xml:space="preserve">
+        <value>Camera DC</value>
+    </data>
+    <data name="lblCameraId" xml:space="preserve">
+        <value>CameraId</value>
+    </data>
+    <data name="lblCameraName" xml:space="preserve">
+        <value>Camera Name</value>
+    </data>
+    <data name="lblVideoLength" xml:space="preserve">
+        <value>Video length</value>
+    </data>
+</root>

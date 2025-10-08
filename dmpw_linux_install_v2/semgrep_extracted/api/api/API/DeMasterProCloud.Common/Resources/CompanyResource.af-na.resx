@@ -1,0 +1,101 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblAddNew" xml:space="preserve">
+    <value>Thêm mới công ty.</value>
+  </data>
+    <data name="lblAdmin" xml:space="preserve">
+    <value>Quản trị viên</value>
+  </data>
+    <data name="lblClear" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+    <data name="lblCompany" xml:space="preserve">
+    <value>Công ty</value>
+  </data>
+    <data name="lblCompanyCode" xml:space="preserve">
+    <value>Mã công ty</value>
+  </data>
+    <data name="lblCompanyList" xml:space="preserve">
+    <value>Danh sách công ty</value>
+  </data>
+    <data name="lblCompanyLogo" xml:space="preserve">
+    <value>Biểu tượng thương hiệu công ty</value>
+  </data>
+    <data name="lblCompanyMiniLogo" xml:space="preserve">
+    <value>Biểu tượng thương hiệu công ty nhỏ</value>
+  </data>
+    <data name="lblCompanyName" xml:space="preserve">
+    <value>Tên công ty</value>
+  </data>
+    <data name="lblConfirmPassword" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+  </data>
+    <data name="lblContact" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+    <data name="lblCreatedDate" xml:space="preserve">
+    <value>Tạo ngày</value>
+  </data>
+    <data name="lblDeleteMultiple" xml:space="preserve">
+    <value>Xóa nhiều công ty cùng một lúc</value>
+  </data>
+    <data name="lblExpiredDate" xml:space="preserve">
+    <value>Ngày hết hạn</value>
+  </data>
+    <data name="lblExpiredDateFrom" xml:space="preserve">
+    <value>Hết hạn từ ngày</value>
+  </data>
+    <data name="lblExpiredDateTo" xml:space="preserve">
+    <value>Đến</value>
+  </data>
+    <data name="lblOptimalSizeLogo" xml:space="preserve">
+    <value>Kích thước tối ưu 176 x 40 pixels</value>
+  </data>
+    <data name="lblOptimalSizeMiniLogo" xml:space="preserve">
+    <value>Kích thước tối ưu 59 x 40 pixels.&lt;br/&gt;Biểu tượng được sử dụng để thu gọn menu bên trái.</value>
+  </data>
+    <data name="lblPassword" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+    <data name="lblRemarks" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+    <data name="lblStatus" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+    <data name="lblUpdateCompany" xml:space="preserve">
+    <value>Cập nhật công ty</value>
+  </data>
+    <data name="lblUserName" xml:space="preserve">
+    <value>Quản trị viên tài khoản</value>
+  </data>
+    <data name="msgChangeAccount" xml:space="preserve">
+    <value>Tài khoản đã được thay đổi từ {0} sang {1}</value>
+  </data>
+    <data name="msgChangeContact" xml:space="preserve">
+    <value>Thông tin liên hệ đã được thay đổi từ {0} sang {1}</value>
+  </data>
+    <data name="msgChangePassword" xml:space="preserve">
+    <value>Mật khẩu đã được thay đổi</value>
+  </data>
+    <data name="msgNotDelete" xml:space="preserve">
+    <value>Công ty gốc không thể bị xóa.</value>
+  </data>
+    <data name="msgAssingDoors" xml:space="preserve">
+    <value>Điểm kiểm soát(s) cho công ty {0} (Tên công ty) thành công.</value>
+  </data>
+    <data name="msgDelete" xml:space="preserve">
+    <value>Xóa công ty.</value>
+  </data>
+</root>

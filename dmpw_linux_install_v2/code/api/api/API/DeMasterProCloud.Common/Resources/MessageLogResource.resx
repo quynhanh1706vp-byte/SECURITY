@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAccessControlResponseTopic" xml:space="preserve">
+    <value>Access Control Response</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblAccessControlTopic" xml:space="preserve">
+    <value>Access Control</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblAddUser" xml:space="preserve">
+    <value>Add User</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblConfigResponseTopic" xml:space="preserve">
+    <value>Config Response</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblConfigTopic" xml:space="preserve">
+    <value>Config</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblConnectionStatus" xml:space="preserve">
+    <value>Connection Status</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblDeleteDevice" xml:space="preserve">
+    <value>Delete Device</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblDeleteTimezone" xml:space="preserve">
+    <value>Delete Timezone</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblDeleteUser" xml:space="preserve">
+    <value>Delete User</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblDeviceInfoResponseTopic" xml:space="preserve">
+    <value>Device Info Response</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblDeviceInfoTopic" xml:space="preserve">
+    <value>Device Info</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblDeviceInstruction" xml:space="preserve">
+    <value>Device Instruction</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblDeviceInstructionResponseTopic" xml:space="preserve">
+    <value>Device Instruction Response</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblDeviceInstructionTopic" xml:space="preserve">
+    <value>Device Instruction</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblDeviceStatusTopic" xml:space="preserve">
+    <value>Device Status</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblEventLogJsonTopic" xml:space="preserve">
+    <value>Event Json</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblEventLogResponse" xml:space="preserve">
+    <value>Event Log Response</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblEventLogResponseTopic" xml:space="preserve">
+    <value>Event Log Response</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblEventLogTopic" xml:space="preserve">
+    <value>Event</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblExport" xml:space="preserve">
+    <value>Export</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblFileDownload" xml:space="preserve">
+    <value>File Download</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblFileTranferResponseTopic" xml:space="preserve">
+    <value>File Transfer Response</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblFileTranferTopic" xml:space="preserve">
+    <value>File Transfer</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblFromPublishedTime" xml:space="preserve">
+    <value>From Published Time</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblFromResponseTime" xml:space="preserve">
+    <value>From ResponseTime</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblHolidayResponseTopic" xml:space="preserve">
+    <value>Holiday Response</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblHolidayTopic" xml:space="preserve">
+    <value>Holiday</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblLoadDeviceInfo" xml:space="preserve">
+    <value>Load Device Info</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblLongProcessProgress" xml:space="preserve">
+    <value>Long Process Progress</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblLongProcessProgressTopic" xml:space="preserve">
+    <value>Long Process Progress</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblMessageLog" xml:space="preserve">
+    <value>Message Log</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblNotification" xml:space="preserve">
+    <value>Notification</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblNotificationTopic" xml:space="preserve">
+    <value>Notification</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblOnlineTopic" xml:space="preserve">
+    <value>Online</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblTimezoneResponseTopic" xml:space="preserve">
+    <value>Timezone Response</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblTimezoneTopic" xml:space="preserve">
+    <value>Timezone</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblToPublishedTime" xml:space="preserve">
+    <value>To Published Time</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblToResponseTime" xml:space="preserve">
+    <value>To Response Time</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblUpdateDeviceConfig" xml:space="preserve">
+    <value>Update Device Config</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblUpdateHoliday" xml:space="preserve">
+    <value>Update Holiday</value>
+    <comment>현재 사용 X</comment>
+  </data>
+  <data name="lblUpdateTimezone" xml:space="preserve">
+    <value>Update Timezone</value>
+    <comment>현재 사용 X</comment>
+  </data>
+</root>

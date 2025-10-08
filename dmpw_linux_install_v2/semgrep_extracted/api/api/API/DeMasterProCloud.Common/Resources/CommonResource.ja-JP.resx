@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>アクセスが拒否されました</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>追加する</value>
+  </data>
+  <data name="btnBack" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>削除する</value>
+  </data>
+  <data name="btnImport" xml:space="preserve">
+    <value>インポート</value>
+  </data>
+  <data name="btnOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>保存する</value>
+  </data>
+  <data name="btnSelect" xml:space="preserve">
+    <value>選択する</value>
+  </data>
+  <data name="btnSend" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>カード</value>
+  </data>
+  <data name="CardPW" xml:space="preserve">
+    <value>カードとパスワード</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>接続済み</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除する</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Disconnected" xml:space="preserve">
+    <value>切断されました</value>
+  </data>
+  <data name="ErrorPage" xml:space="preserve">
+    <value>エラーページ</value>
+  </data>
+  <data name="ForceClose" xml:space="preserve">
+    <value>強制終了</value>
+  </data>
+  <data name="ForceOpen" xml:space="preserve">
+    <value>強制オープン</value>
+  </data>
+  <data name="FullAccess" xml:space="preserve">
+    <value>全アクセス</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>全般</value>
+  </data>
+  <data name="Icu300" xml:space="preserve">
+    <value>ICU 300</value>
+  </data>
+  <data name="Icu300N" xml:space="preserve">
+    <value>ICU 300N</value>
+  </data>
+  <data name="In" xml:space="preserve">
+    <value>IN</value>
+  </data>
+  <data name="InOut" xml:space="preserve">
+    <value>In/Out</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>無効</value>
+  </data>
+  <data name="lblCardAndPw" xml:space="preserve">
+    <value>カードとパスワード</value>
+  </data>
+  <data name="lblCardOnly" xml:space="preserve">
+    <value>カードのみ</value>
+  </data>
+  <data name="lblCardOrPw" xml:space="preserve">
+    <value>カードまたはPW</value>
+  </data>
+  <data name="lblClear" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="lblConfirmDelete" xml:space="preserve">
+    <value>削除を確認</value>
+  </data>
+  <data name="lblDefaultSelectListItem" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="lblExport" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="lblFileFormat" xml:space="preserve">
+    <value>ファイル形式</value>
+  </data>
+  <data name="lblHome" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="lblLogout" xml:space="preserve">
+    <value>ログアウト</value>
+  </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="lblReceived" xml:space="preserve">
+    <value>受信</value>
+  </data>
+  <data name="lblSearch" xml:space="preserve">
+    <value>サーチ</value>
+  </data>
+  <data name="lblSending" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="lblSent" xml:space="preserve">
+    <value>送信済み</value>
+  </data>
+  <data name="lblSwaggerDescription" xml:space="preserve">
+    <value>Swaggerは、設計とドキュメント化からテストとデプロイまで、APIライフサイクル全体にわたる開発を支援します。</value>
+  </data>
+  <data name="lblSwaggerTerm" xml:space="preserve">
+    <value>利用規約</value>
+  </data>
+  <data name="lblSwaggerTitle" xml:space="preserve">
+    <value>DeMasterProサービス -  DeMasterPro HTTP API</value>
+  </data>
+  <data name="lblUnSent" xml:space="preserve">
+    <value>未送信</value>
+  </data>
+  <data name="lblYes" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>紛失</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+  <data name="msgLogout" xml:space="preserve">
+    <value>続行しますか？</value>
+  </data>
+  <data name="NoAccess" xml:space="preserve">
+    <value>アクセスなし</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>無し</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>カード有効（使用可能）</value>
+  </data>
+  <data name="NormalAccess" xml:space="preserve">
+    <value>一般出入</value>
+  </data>
+  <data name="NormalClose" xml:space="preserve">
+    <value>ノーマルクローズ</value>
+  </data>
+  <data name="NormalIn" xml:space="preserve">
+    <value>ノーマルアクセス</value>
+  </data>
+  <data name="NormalOpen" xml:space="preserve">
+    <value>ノーマルオープン</value>
+  </data>
+  <data name="NormalOut" xml:space="preserve">
+    <value>ノーマルアクセス(OUT)</value>
+  </data>
+  <data name="NormalUser" xml:space="preserve">
+    <value>一般ユーザー</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>オープン</value>
+  </data>
+  <data name="Out" xml:space="preserve">
+    <value>OUT</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>ページが見つかりません。</value>
+  </data>
+  <data name="PowerUser" xml:space="preserve">
+    <value>パワーユーザー</value>
+  </data>
+  <data name="PrimaryAdmin" xml:space="preserve">
+    <value>主管理者</value>
+  </data>
+  <data name="PW" xml:space="preserve">
+    <value>PW</value>
+  </data>
+  <data name="Release" xml:space="preserve">
+    <value>解除</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>再起動</value>
+  </data>
+  <data name="Retire" xml:space="preserve">
+    <value>退職</value>
+  </data>
+  <data name="ReturnToDashBoard" xml:space="preserve">
+    <value>DashBoardに戻る</value>
+  </data>
+  <data name="SecondaryAdmin" xml:space="preserve">
+    <value>副管理者</value>
+  </data>
+  <data name="SetTime" xml:space="preserve">
+    <value>Set Time</value>
+  </data>
+  <data name="SuperAdmin" xml:space="preserve">
+    <value>スーパー管理者</value>
+  </data>
+  <data name="Supervisor" xml:space="preserve">
+    <value>スーパーバイザー</value>
+  </data>
+  <data name="SystemError" xml:space="preserve">
+    <value>System Error</value>
+  </data>
+  <data name="Temp" xml:space="preserve">
+    <value>温度</value>
+  </data>
+  <data name="Valid" xml:space="preserve">
+    <value>有効</value>
+  </data>
+  <data name="VisitAccess" xml:space="preserve">
+    <value>訪問者のアクセス</value>
+  </data>
+  <data name="SystemAdmin" xml:space="preserve">
+    <value>システム管理者</value>
+  </data>
+  <data name="NotUse" xml:space="preserve">
+    <value>使用不可</value>
+  </data>
+  <data name="SoftAPB" xml:space="preserve">
+    <value>Soft Antipass-Back</value>
+  </data>
+  <data name="HardAPB" xml:space="preserve">
+    <value>Hard Antipass-Back</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="lblFileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="Failure" xml:space="preserve">
+    <value>失敗</value>
+  </data>
+  <data name="Visitor" xml:space="preserve">
+    <value>訪問者</value>
+  </data>
+  <data name="DynamicRole" xml:space="preserve">
+    <value>Dynamic role</value>
+  </data>
+  <data name="lblEnglish" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="lblJapanese" xml:space="preserve">
+    <value>ja-JP</value>
+  </data>
+  <data name="lblKorean" xml:space="preserve">
+    <value>ko-KR</value>
+  </data>
+  <data name="lblVietnamese" xml:space="preserve">
+    <value>vi-VN</value>
+  </data>
+  <data name="lblAttendance" xml:space="preserve">
+    <value>勤怠</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>転勤</value>
+  </data>
+  <data name="LostKey" xml:space="preserve">
+    <value>認証キー紛失</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>オフライン</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>オンライン</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="Null" xml:space="preserve">
+    <value>NULL</value>
+  </data>
+  <data name="Duplicate" xml:space="preserve">
+    <value>DUPLICATE</value>
+  </data>
+  <data name="lblVehicle" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+  <data name="WaitingForPrinting" xml:space="preserve">
+    <value>Waiting for printing</value>
+  </data>
+  <data name="WaitingForIssuance" xml:space="preserve">
+    <value>Waiting for issuance</value>
+  </data>
+  <data name="Issued" xml:space="preserve">
+    <value>Issued</value>
+  </data>
+  <data name="PersonalAccess" xml:space="preserve">
+    <value>Personal Access</value>
+  </data>
+  <data name="Exceed" xml:space="preserve">
+    <value>超える</value>
+  </data>
+  <data name="lblCardIssuingSystem" xml:space="preserve">
+    <value>カード発行システム</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>従業員</value>
+  </data>
+  <data name="lblVehicleAllocation" xml:space="preserve">
+    <value>配車</value>
+  </data>
+  <data name="lblVietnameseSchool" xml:space="preserve">
+    <value>af-NA</value>
+  </data>
+  <data name="lblEdit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="lblDateTimeRange" xml:space="preserve">
+    <value>日付範囲を検索します</value>
+  </data>
+</root>

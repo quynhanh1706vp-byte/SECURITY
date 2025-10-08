@@ -1,0 +1,69 @@
+{
+  "jwt": {
+    "secretKey": "F7peYX7825YkwztCxgjzZGF4yExvu4TK4mN8DLUtsVHMpnGa3V5jabYjFhGf",
+    "expiryMinutes": "300",
+    "expiryRefreshToken": "259200",
+    "issuer": "duali",
+    "validateLifetime": true
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConfigAppBuilder": {
+    "Host": "http://*:5001"
+  },
+  "Information": {
+    "Name": "Hat Dau Nho",
+    "CompanyCode": "",
+    "TimeOfThread":  5
+  },
+  "QueueConnectionSetting": {
+    "Host": "192.168.1.211",
+    "VirtualHost": "/",
+    "Port": 5672,
+    "UserName": "icuclient",
+    "Password": "icuclient123",
+    "EnableSsl": false,
+    "CertPassphrase": "",
+    "CertPath": "",
+    "DeviceCaCertificate": "",
+    "DeviceClientKey": "",
+    "DeviceClientCertificate": ""
+  },
+  "BioStarSetting": {
+    "SearchTimeout": 5000,
+    "GatewayCaFile": "/app/device_gateway/cert/ca.crt",
+    "GatewayAddress": "192.168.0.104",
+    "GatewayPort": 4000,
+    "StatusQueueSize": 16,
+    "DefaultSizeCsnCard": 32,
+    "QualityThreshold": 50,
+    "MonitoringQueueSize": 8,
+    "TimezoneUtcHour": 7,
+    "TimezoneUtcMinute": 0
+  },
+  "DoorDefaultConfig": {
+    "RelayPort": 0,
+    "SensorPort": 0,
+    "SensorType": "NormallyOpen",
+    "ButtonPort": 1,
+    "ButtonType": "NormallyOpen",
+    "AutoLockTimeout": 3,
+    "HeldOpenTimeout": 10,
+    "LiftActiveTimeout": 5,
+    "LiftDualAuthTimeout": 5
+  },
+  "HikvisionConfig": {
+    "HCPStreamIp": "171.244.130.53:554",
+    "HCPServerIp": "https://171.244.130.53:444",
+    "HCPAppKey": "28487408",
+    "HCPSecretKey": "fEOYHP7RBXbKiZRZdzQo",
+    "TimezoneUtcHour": 7,
+    "TimezoneUtcMinute": 0,
+    "UrlWebhook": "http://192.168.1.211/eventRcv",
+    "UrlDmp": "http://192.168.1.211:5000"
+  }
+}

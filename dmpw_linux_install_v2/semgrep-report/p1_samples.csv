@@ -1,0 +1,15 @@
+rule,severity,path,start_line,message
+csharp-missing-antiforgery-delete,ERROR,code/api/api/API/DeMasterProCloud.Api/Controllers/AccessScheduleController.cs,20,DELETE action missing [ValidateAntiForgeryToken].
+csharp-missing-antiforgery-post,ERROR,code/api/api/API/DeMasterProCloud.Api/Controllers/AccessScheduleController.cs,20,POST action missing [ValidateAntiForgeryToken].
+csharp-missing-antiforgery-put,ERROR,code/api/api/API/DeMasterProCloud.Api/Controllers/AccessScheduleController.cs,20,PUT action missing [ValidateAntiForgeryToken].
+csharp-missing-authorize-on-delete,ERROR,code/api/api/API/DeMasterProCloud.Api/Controllers/AccessScheduleController.cs,20,DELETE action missing [Authorize].
+csharp-missing-authorize-on-post,ERROR,code/api/api/API/DeMasterProCloud.Api/Controllers/AccessScheduleController.cs,20,POST action missing [Authorize].
+csharp-missing-authorize-on-put,ERROR,code/api/api/API/DeMasterProCloud.Api/Controllers/AccessScheduleController.cs,20,PUT action missing [Authorize].
+csharp-missing-authorize-on-patch,ERROR,code/api/api/API/DeMasterProCloud.Api/Controllers/AccountController.cs,33,PATCH action missing [Authorize].
+csharp-empty-catch,ERROR,code/api/api/API/DeMasterProCloud.Api/Controllers/AccountController.cs,614,Khối catch rỗng. Hãy log/handle phù hợp (tránh nuốt lỗi).
+generic-secrets-high,CRITICAL,code/api/api/API/DeMasterProCloud.Common/Infrastructure/Constants.cs,794,Hardcoded secret (API key / token / private key / password). Remove & rotate.
+csharp-path-traversal-filestream,ERROR,code/api/api/API/DeMasterProCloud.Common/Infrastructure/FileHelpers.cs,488,Possible path traversal in new FileStream(...). Normalize & enforce baseDir.
+csharp-aes-ecb-mode,ERROR,code/api/api/API/DeMasterProCloud.Service/AccountService.cs,3199,AES ở chế độ ECB không an toàn. Hãy dùng CBC/GCM + IV/nonce.
+csharp-ssrf-sendasync,ERROR,code/api/api/API/DeMasterProCloud.Service/AttendanceService.cs,958,SSRF risk: HttpClient.SendAsync(request) with user-controlled URL.
+js-domxss-innerhtml,ERROR,code/webapp/src/components/elements/TruncatedText.tsx,35,Dangerous HTML sink: innerHTML.
+csharp-cors-allow-any-origin,ERROR,semgrep_extracted/api/api/API/DeMasterProCloud.Api/Startup.cs,356,CORS quá rộng: AllowAnyOrigin(). Hãy dùng allowlist domain cụ thể.

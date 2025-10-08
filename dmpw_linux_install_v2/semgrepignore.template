@@ -1,0 +1,9 @@
+# Ignore generated reports and extracted artifacts
+reports/**
+semgrep_extracted/**
+**/*.min.js
+**/vendor/**
+**/third_party/**
+# Add project-specific large/generated dirs below
+# build/** 
+# dist/**

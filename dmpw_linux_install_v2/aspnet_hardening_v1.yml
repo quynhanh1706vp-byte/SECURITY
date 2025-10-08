@@ -1,0 +1,46 @@
+rules:
+  - id: jwt-validate-lifetime-disabled
+    message: "JWT tokens accepted without lifetime validation (ValidateLifetime=false)."
+    languages: [csharp]
+    severity: HIGH
+    patterns:
+      - pattern: |
+          new TokenValidationParameters { ... ValidateLifetime = false, ... }
+
+  - id: controller-missing-authorize-postlike
+    message: "POST-like action missing [Authorize] on controller/action."
+    languages: [csharp]
+    severity: HIGH
+    patterns:
+      - pattern-either:
+          - pattern: |
+              public class $C : Controller { public $RET $M(...){ ... } }
+          - pattern: |
+              public class $C : ControllerBase { public $RET $M(...){ ... } }
+      - metavariable-regex:
+          metavariable: $M
+          regex: "^(Create|Add|Update|Edit|Delete|Remove|Post|Put|Patch)"
+      - pattern-not: |
+          [Authorize] public class $C : Controller { ... }
+      - pattern-not: |
+          [Authorize] public class $C : ControllerBase { ... }
+      - pattern-not: |
+          [Authorize] public $RET $M(...){ ... }
+
+  - id: aes-ecb-mode
+    message: "AES ECB mode is insecure; use AEAD (AesGcm/ChaCha20Poly1305)."
+    languages: [csharp]
+    severity: HIGH
+    patterns:
+      - pattern: |
+          Aes.Create()
+      - pattern-inside: |
+          var $a = Aes.Create(); ...
+      - pattern: |
+          $a.Mode = CipherMode.ECB;
+
+  - id: react-dangerously-set-inner-html
+    message: "dangerouslySetInnerHTML used; sanitize strictly or avoid."
+    languages: [javascript, typescript]
+    severity: MEDIUM
+    pattern: dangerouslySetInnerHTML

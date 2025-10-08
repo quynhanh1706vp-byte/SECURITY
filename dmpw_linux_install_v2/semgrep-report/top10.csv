@@ -1,0 +1,11 @@
+rule,severity,count
+csharp-missing-antiforgery-post,ERROR,45
+csharp-missing-antiforgery-put,ERROR,43
+csharp-missing-antiforgery-delete,ERROR,39
+csharp-missing-authorize-on-post,ERROR,39
+generic-secrets-high,CRITICAL,36
+csharp-missing-authorize-on-delete,ERROR,35
+csharp-missing-authorize-on-put,ERROR,33
+csharp-empty-catch,ERROR,26
+csharp-logging-sensitive-data,MEDIUM,18
+csharp-missing-authorize-on-patch,ERROR,16

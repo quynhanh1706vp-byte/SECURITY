@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnClear" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="btnExport" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>サーチ</value>
+  </data>
+  <data name="IblSite2" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="lblAccessDateFrom" xml:space="preserve">
+    <value>アクセス開始日</value>
+  </data>
+  <data name="lblAccessDateTo" xml:space="preserve">
+    <value>アクセス終了日</value>
+  </data>
+  <data name="lblAccessDenied" xml:space="preserve">
+    <value>アクセス拒否</value>
+  </data>
+  <data name="lblAccessTime" xml:space="preserve">
+    <value>アクセス時間</value>
+  </data>
+  <data name="lblAccessTimeFrom" xml:space="preserve">
+    <value>アクセス開始時間</value>
+  </data>
+  <data name="lblAccessTimeTo" xml:space="preserve">
+    <value>アクセス終了時間</value>
+  </data>
+  <data name="lblAntiPassbackError" xml:space="preserve">
+    <value>アンチパスバックエラー</value>
+  </data>
+  <data name="lblApplicationIsRunning" xml:space="preserve">
+    <value>アプリ実行中</value>
+  </data>
+  <data name="lblAppOpen" xml:space="preserve">
+    <value>アプリ実行</value>
+  </data>
+  <data name="lblBirthDay" xml:space="preserve">
+    <value>生年月日</value>
+  </data>
+  <data name="lblBreakfast" xml:space="preserve">
+    <value>朝食</value>
+  </data>
+  <data name="lblBuilding" xml:space="preserve">
+    <value>ビル</value>
+  </data>
+  <data name="lblCard" xml:space="preserve">
+    <value>カード</value>
+  </data>
+  <data name="lblCardAccess" xml:space="preserve">
+    <value>カードアクセス：{0}</value>
+  </data>
+  <data name="lblCardAndPassword" xml:space="preserve">
+    <value>カードとPW</value>
+  </data>
+  <data name="lblCardId" xml:space="preserve">
+    <value>カードID</value>
+  </data>
+  <data name="lblCardStatus" xml:space="preserve">
+    <value>カード状態</value>
+  </data>
+  <data name="lblCardType" xml:space="preserve">
+    <value>カードタイプ</value>
+  </data>
+  <data name="lblCommunicationFailed" xml:space="preserve">
+    <value>通信失敗</value>
+  </data>
+  <data name="lblCommunicationSucceed" xml:space="preserve">
+    <value>通信成功</value>
+  </data>
+  <data name="lblCompany" xml:space="preserve">
+    <value>会社</value>
+  </data>
+  <data name="lblCompanyCode" xml:space="preserve">
+    <value>会社コード</value>
+  </data>
+  <data name="lblContact" xml:space="preserve">
+    <value>問合せ</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>部署</value>
+  </data>
+  <data name="lblDevice" xml:space="preserve">
+    <value>デバイス</value>
+  </data>
+  <data name="lblDeviceInstructionDeleteAllUser" xml:space="preserve">
+    <value>すべてのユーザー削除コマンド</value>
+  </data>
+  <data name="lblDeviceInstructionDeleteAllUserEvent" xml:space="preserve">
+    <value>すべてのユーザー,イベント削除コマンド</value>
+  </data>
+  <data name="lblDeviceInstructionDeleteAllUserEvent1" xml:space="preserve">
+    <value>再インストールコマンド</value>
+  </data>
+  <data name="lblDeviceInstructionForceClose" xml:space="preserve">
+    <value>強制クローズコマンド</value>
+  </data>
+  <data name="lblDeviceInstructionForceOpen" xml:space="preserve">
+    <value>強制オープンコマンド</value>
+  </data>
+  <data name="lblDeviceInstructionOpen" xml:space="preserve">
+    <value>ドアオープンコマンド</value>
+  </data>
+  <data name="lblDeviceInstructionRelease" xml:space="preserve">
+    <value>ドアリリースコマンド</value>
+  </data>
+  <data name="lblDeviceInstructionReset" xml:space="preserve">
+    <value>リセットコマンド</value>
+  </data>
+  <data name="lblDeviceInstructionSettime" xml:space="preserve">
+    <value>同期化コマンド</value>
+  </data>
+  <data name="lblDeviceIsRunning" xml:space="preserve">
+    <value>デバイス運営中</value>
+  </data>
+  <data name="lblDinner" xml:space="preserve">
+    <value>夕食</value>
+  </data>
+  <data name="lblDoorName" xml:space="preserve">
+    <value>ドア名</value>
+  </data>
+  <data name="lblDoorOpenManually" xml:space="preserve">
+    <value>ドア手動オープン</value>
+  </data>
+  <data name="lblEffectiveDateNotStarted" xml:space="preserve">
+    <value>有効期限はありません</value>
+  </data>
+  <data name="lblEmpNum" xml:space="preserve">
+    <value>社員番号</value>
+  </data>
+  <data name="lblEtcMeal" xml:space="preserve">
+    <value>他の食事</value>
+  </data>
+  <data name="lblEventDetail" xml:space="preserve">
+    <value>イベント詳細</value>
+  </data>
+  <data name="lblEventLog" xml:space="preserve">
+    <value>イベントログ</value>
+  </data>
+  <data name="lblEventType" xml:space="preserve">
+    <value>イベントタイプ</value>
+  </data>
+  <data name="lblExitApplication" xml:space="preserve">
+    <value>アプリ終了</value>
+  </data>
+  <data name="lblExpirationDate" xml:space="preserve">
+    <value>有効期限終了</value>
+  </data>
+  <data name="lblExpiredCard" xml:space="preserve">
+    <value>期限切れのカード</value>
+  </data>
+  <data name="lblExpiredCardAndPwd" xml:space="preserve">
+    <value>期限切れのカードとパスワード</value>
+  </data>
+  <data name="lblExpiredPwd" xml:space="preserve">
+    <value>期限切れパスワード</value>
+  </data>
+  <data name="lblFirmwareApplicationUpdate" xml:space="preserve">
+    <value>ファームウェア ダウンロード</value>
+  </data>
+  <data name="lblFirmwareDownloadFailed" xml:space="preserve">
+    <value>ファームウェア ダウンロード失敗</value>
+  </data>
+  <data name="lblIDX" xml:space="preserve">
+    <value>IDX</value>
+  </data>
+  <data name="lblInDevice" xml:space="preserve">
+    <value>イン</value>
+  </data>
+  <data name="lblInOut" xml:space="preserve">
+    <value>イン/アウト</value>
+  </data>
+  <data name="lblWrongAccessType" xml:space="preserve">
+    <value>無効な認証方法</value>
+  </data>
+  <data name="lblInvalidDoor" xml:space="preserve">
+    <value>ドア無効化</value>
+  </data>
+  <data name="lblIssueCount" xml:space="preserve">
+    <value>発行カウント</value>
+  </data>
+  <data name="lblKeyPadPassword" xml:space="preserve">
+    <value>キーパッドパスワード</value>
+  </data>
+  <data name="lblLateNightSnack" xml:space="preserve">
+    <value>夜間食</value>
+  </data>
+  <data name="lblLunch" xml:space="preserve">
+    <value>昼食</value>
+  </data>
+  <data name="lblMasterCardAccess" xml:space="preserve">
+    <value>マスターカード出入</value>
+  </data>
+  <data name="lblMPRAuth" xml:space="preserve">
+    <value>MPR認証</value>
+  </data>
+  <data name="lblMPRError" xml:space="preserve">
+    <value>MPRエラー</value>
+  </data>
+  <data name="lblMPRIntervalExpired" xml:space="preserve">
+    <value>MPR間隔タイムアウト</value>
+  </data>
+  <data name="lblNoAccessTime" xml:space="preserve">
+    <value>出入不可時間</value>
+  </data>
+  <data name="lblNoDoorActiveTime" xml:space="preserve">
+    <value>ドア出入不可時間</value>
+  </data>
+  <data name="lblNormalAccess" xml:space="preserve">
+    <value>一般出入</value>
+  </data>
+  <data name="lblNormalAccessMPR" xml:space="preserve">
+    <value>一般出入（MPR)</value>
+  </data>
+  <data name="lblNormalApp" xml:space="preserve">
+    <value>一般アプリ</value>
+  </data>
+  <data name="lblNoUserAccessTime" xml:space="preserve">
+    <value>カードタイプ 不一致</value>
+  </data>
+  <data name="lblOnlyAccessibleAtMealtime" xml:space="preserve">
+    <value>食事時にのみアクセス可能</value>
+  </data>
+  <data name="lblOutDevice" xml:space="preserve">
+    <value>アウト</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="lblPaswordAccess" xml:space="preserve">
+    <value>パスワード出入：{0}</value>
+  </data>
+  <data name="lblPowerApp" xml:space="preserve">
+    <value>電源アプリ</value>
+  </data>
+  <data name="lblReport" xml:space="preserve">
+    <value>レポート</value>
+  </data>
+  <data name="lblRID" xml:space="preserve">
+    <value>RID</value>
+  </data>
+  <data name="lblTimezone" xml:space="preserve">
+    <value>タイムゾーン</value>
+  </data>
+  <data name="lblTimezoneSchedule" xml:space="preserve">
+    <value>タイムゾーンスケジュール</value>
+  </data>
+  <data name="lblTryAccessInEmergencyClose" xml:space="preserve">
+    <value>緊急時にアクセス試図</value>
+  </data>
+  <data name="lblTryAccessInInvalidDoor" xml:space="preserve">
+    <value>無効なドアでアクセス試図</value>
+  </data>
+  <data name="lblType" xml:space="preserve">
+    <value>タイプ</value>
+  </data>
+  <data name="lblUnknown" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="lblUnRegisteredID" xml:space="preserve">
+    <value>未登録ID</value>
+  </data>
+  <data name="lblUnregisteredCardAndPwd" xml:space="preserve">
+    <value>未登録のカードとパスワード</value>
+  </data>
+  <data name="lblUnregisteredPwd" xml:space="preserve">
+    <value>未登録パスワード</value>
+  </data>
+  <data name="lblUpdateDeviceState" xml:space="preserve">
+    <value>ドアの状態を変更</value>
+  </data>
+  <data name="lblUserCode" xml:space="preserve">
+    <value>ユーザーコード</value>
+  </data>
+  <data name="lblUserName" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="lblValidDoor" xml:space="preserve">
+    <value>有効ドア</value>
+  </data>
+  <data name="lblVerifyMode" xml:space="preserve">
+    <value>認証モード</value>
+  </data>
+  <data name="lblWrongIssueCount" xml:space="preserve">
+    <value>間違った発行カウント</value>
+  </data>
+  <data name="lblWrongPwd" xml:space="preserve">
+    <value>間違ったパスワード</value>
+  </data>
+  <data name="lblDeviceInstructionDeleteAllEvent" xml:space="preserve">
+    <value>すべてのイベントを削除</value>
+  </data>
+  <data name="lblEventRecovery" xml:space="preserve">
+    <value>イベント復旧</value>
+  </data>
+  <data name="lblExpiredQrCode" xml:space="preserve">
+    <value>ExpiredQrCode</value>
+  </data>
+  <data name="lblQR" xml:space="preserve">
+    <value>QR</value>
+  </data>
+  <data name="lblPassCode" xml:space="preserve">
+    <value>PassCode</value>
+  </data>
+  <data name="lblPressedButton" xml:space="preserve">
+    <value>ボタン押え</value>
+  </data>
+  <data name="lblMeal1" xml:space="preserve">
+    <value>食事 1</value>
+  </data>
+  <data name="lblMeal2" xml:space="preserve">
+    <value>食事 2</value>
+  </data>
+  <data name="lblMeal3" xml:space="preserve">
+    <value>食事 3</value>
+  </data>
+  <data name="lblMeal4" xml:space="preserve">
+    <value>食事 4</value>
+  </data>
+  <data name="lblMeal5" xml:space="preserve">
+    <value>食事 5</value>
+  </data>
+  <data name="lblMeal6" xml:space="preserve">
+    <value>食事 6</value>
+  </data>
+  <data name="lblMeal7" xml:space="preserve">
+    <value>食事 7</value>
+  </data>
+  <data name="lblMeal8" xml:space="preserve">
+    <value>食事 8</value>
+  </data>
+  <data name="lblMeal9" xml:space="preserve">
+    <value>食事 9</value>
+  </data>
+  <data name="lblMeal10" xml:space="preserve">
+    <value>食事 10</value>
+  </data>
+  <data name="lblPassageAccessTimeOn" xml:space="preserve">
+    <value>通過アクセス時間ON</value>
+  </data>
+  <data name="lblPassageAccessTimeOff" xml:space="preserve">
+    <value>通過アクセス時間OFF</value>
+  </data>
+  <data name="lblErrTwoFactorAuth" xml:space="preserve">
+    <value>2段階認証失敗</value>
+  </data>
+  <data name="lblWrongQRcode" xml:space="preserve">
+    <value>間違ったORコード</value>
+  </data>
+  <data name="lblRetiredPerson" xml:space="preserve">
+    <value>退職者カード</value>
+  </data>
+  <data name="lblLostCard" xml:space="preserve">
+    <value>紛失カード</value>
+  </data>
+  <data name="lblTransferCard" xml:space="preserve">
+    <value>転勤者カード</value>
+  </data>
+  <data name="lblInvalidCard" xml:space="preserve">
+    <value>使用不可カード</value>
+  </data>
+  <data name="lblFace" xml:space="preserve">
+    <value>Face ID</value>
+  </data>
+  <data name="lblUnknownFace" xml:space="preserve">
+    <value>Unknown Face</value>
+  </data>
+  <data name="lblHFaceId" xml:space="preserve">
+    <value>H Face ID</value>
+  </data>
+  <data name="lblCameraResponseExpired" xml:space="preserve">
+    <value>Camera Response Expired</value>
+  </data>
+  <data name="lblVehicleId" xml:space="preserve">
+    <value>Vehicle Car</value>
+  </data>
+  <data name="lblBodyTemperature" xml:space="preserve">
+    <value>Body Temperature</value>
+  </data>
+  <data name="msgErrorLimitRangeDayExport" xml:space="preserve">
+    <value>Date range invalid. You only export report about {0} days.</value>
+  </data>
+  <data name="lblNotMatchCardType" xml:space="preserve">
+    <value>一致しないカードタイプ</value>
+  </data>
+  <data name="lblNormalVehicle" xml:space="preserve">
+    <value>普通車の出入り</value>
+  </data>
+  <data name="lblUnregisteredVehicle" xml:space="preserve">
+    <value>未登録車両</value>
+  </data>
+  <data name="lblViolationRule2" xml:space="preserve">
+    <value>Violation(2-part) vehicle</value>
+  </data>
+  <data name="lblViolationRule5" xml:space="preserve">
+    <value>Violation(5-part) vehicle</value>
+  </data>
+  <data name="lblExceptionVehicle" xml:space="preserve">
+    <value>例外車両</value>
+  </data>
+  <data name="lblViolatedVehicle" xml:space="preserve">
+    <value>違反車両</value>
+  </data>
+  <data name="lblIdCertifiedVehicle" xml:space="preserve">
+    <value>身分証明書車両</value>
+  </data>
+  <data name="lblRemoteOperation" xml:space="preserve">
+    <value>遠隔操作です</value>
+  </data>
+  <data name="lblPlateNumber" xml:space="preserve">
+    <value>プレート番号</value>
+  </data>
+  <data name="lblVehicleModel" xml:space="preserve">
+    <value>車両モデル</value>
+  </data>
+  <data name="lblAntiPassbackNormal" xml:space="preserve">
+    <value>Anti Passback Normal Access</value>
+  </data>
+  <data name="lblAntiPassbackDenied" xml:space="preserve">
+    <value>Anti Passback Denied</value>
+  </data>
+  <data name="lblHighTemperature" xml:space="preserve">
+    <value>High temperature</value>
+  </data>
+  <data name="lblHighTemperatureDeny" xml:space="preserve">
+    <value>High temperature(Access deny)</value>
+  </data>
+  <data name="lblAlarmActivated" xml:space="preserve">
+    <value>Alarm Activated</value>
+  </data>
+  <data name="lblVein" xml:space="preserve">
+    <value>Vein</value>
+  </data>
+  <data name="lblFireOn" xml:space="preserve">
+    <value>Fire Alarm On</value>
+  </data>
+  <data name="lblFireOff" xml:space="preserve">
+    <value>Fire Alarm Off</value>
+  </data>
+  <data name="lblVehicleImage" xml:space="preserve">
+    <value>車両イメージ</value>
+  </data>
+  <data name="lblVehicleEventLog" xml:space="preserve">
+    <value>Vehicle Event Log</value>
+  </data>
+  <data name="lblContinuousAbnormalAccess" xml:space="preserve">
+    <value>継続的な異常アクセス</value>
+  </data>
+  <data name="lblErrorReadingCard" xml:space="preserve">
+    <value>カード読込エラー</value>
+  </data>
+  <data name="lblNFCPhone" xml:space="preserve">
+    <value>NFC Phone</value>
+  </data>
+  <data name="lblDuplicatedMealEvent" xml:space="preserve">
+    <value>重複食</value>
+  </data>
+  <data name="lblPlateRFID" xml:space="preserve">
+    <value>Plate RFID</value>
+  </data>
+  <data name="lblVehicleType" xml:space="preserve">
+    <value>車両の種類</value>
+  </data>
+  <data name="lblVehicleClassification" xml:space="preserve">
+    <value>車両の分類</value>
+  </data>
+  <data name="lblDeviceInstructionSendAllUser" xml:space="preserve">
+    <value>すべてのユーザコマンドの送信</value>
+  </data>
+  <data name="lblCameraAlarm" xml:space="preserve">
+    <value>Camera Alarm</value>
+  </data>
+  <data name="msgPushNotificationToManager" xml:space="preserve">
+    <value>Warning: Event "{0}" occur at door "{1}"</value>
+  </data>
+  <data name="msgYourRequestExecuting" xml:space="preserve">
+    <value>Your request executing. Please wait for some minutes</value>
+  </data>
+  <data name="msgExportComplete" xml:space="preserve">
+    <value>File export (from {0} to {1}) event logs at {2} completed. Please go to page "Report&gt;Report" and click button "Backup Event Log" to download file {3}.</value>
+  </data>
+  <data name="msgExportError" xml:space="preserve">
+    <value>File export (from {0} to {1}) event logs at {2}  error ({3}). Please try again.</value>
+  </data>
+  <data name="lblVehicleName" xml:space="preserve">
+    <value>車両名</value>
+  </data>
+  <data name="lblNoMealPermission" xml:space="preserve">
+    <value>食事の許可なし</value>
+  </data>
+  <data name="msgLimitAllowExport" xml:space="preserve">
+    <value>You can not export data to file (allow maximum {0} records)</value>
+  </data>
+  <data name="lblWorkType" xml:space="preserve">
+    <value>Work type</value>
+  </data>
+  <data name="lblEventMemo" xml:space="preserve">
+    <value>Event Memo</value>
+  </data>
+  <data name="lblFingerPrint" xml:space="preserve">
+    <value>Finger Print</value>
+  </data>
+  <data name="lblSelfDevice" xml:space="preserve">
+    <value>Self</value>
+  </data>
+  <data name="lblPowerDevice" xml:space="preserve">
+    <value>Power</value>
+  </data>
+  <data name="lblNormalDevice" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="lblTimezoneDevice" xml:space="preserve">
+    <value>Timezone</value>
+  </data>
+  <data name="lblLFaceId" xml:space="preserve">
+    <value>L Face ID</value>
+  </data>
+  <data name="lblEbknFaceId" xml:space="preserve">
+    <value>Ebkn Face Id</value>
+  </data>
+  <data name="lblEbknFingerprint" xml:space="preserve">
+    <value>Ebkn Fingerprint</value>
+  </data>
+  <data name="lblBioFace" xml:space="preserve">
+    <value>Biostation Face Id</value>
+  </data>
+  <data name="lblAratekFingerPrint" xml:space="preserve">
+    <value>A Fingerprint</value>
+  </data>
+  <data name="lblRemark1" xml:space="preserve">
+    <value>Remark 1</value>
+  </data>
+  <data name="lblRemark2" xml:space="preserve">
+    <value>Remark 2</value>
+  </data>
+  <data name="lblSite2" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="lblDCFaceId" xml:space="preserve">
+    <value>DC Face ID</value>
+  </data>
+  <data name="lblVNID" xml:space="preserve">
+    <value>VNID Card</value>
+  </data>
+  <data name="lblTBFace" xml:space="preserve">
+    <value>TB Face ID</value>
+  </data>
+  <data name="lblVehicleMotoBikeId" xml:space="preserve">
+    <value>Vehicle Motobike</value>
+  </data>
+</root>

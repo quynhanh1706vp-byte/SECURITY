@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ViewAccessGroup" xml:space="preserve">
+    <value>View access group</value>
+  </data>
+  <data name="AddAccessGroup" xml:space="preserve">
+    <value>Add access group</value>
+  </data>
+  <data name="EditAccessGroup" xml:space="preserve">
+    <value>Edit access group</value>
+  </data>
+  <data name="DeleteAccessGroup" xml:space="preserve">
+    <value>Delete access group</value>
+  </data>
+  <data name="AssignDoorAccessGroup" xml:space="preserve">
+    <value>Assign doors to access group</value>
+  </data>
+  <data name="DescriptionViewAccessGroup" xml:space="preserve">
+    <value>This permission allows you to see an access group.</value>
+  </data>
+  <data name="DescriptionAddAccessGroup" xml:space="preserve">
+    <value>This permission allows you to add a new access group.</value>
+  </data>
+  <data name="DescriptionEditAccessGroup" xml:space="preserve">
+    <value>This permission allows you to edit an access group information.</value>
+  </data>
+  <data name="DescriptionDeleteAccessGroup" xml:space="preserve">
+    <value>This permission allows you to delete an access group.</value>
+  </data>
+  <data name="DescriptionAssignDoorAccessGroup" xml:space="preserve">
+    <value>This permission allows you to assign doors to an access group.</value>
+  </data>
+  <data name="AccessGroup" xml:space="preserve">
+    <value>Access group</value>
+  </data>
+  <data name="ViewAccount" xml:space="preserve">
+    <value>View account</value>
+  </data>
+  <data name="AddAccount" xml:space="preserve">
+    <value>Add account</value>
+  </data>
+  <data name="EditAccount" xml:space="preserve">
+    <value>Edit account</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>Delete account</value>
+  </data>
+  <data name="DescriptionViewAccount" xml:space="preserve">
+    <value>This permission allows you to see an account information.</value>
+  </data>
+  <data name="DescriptionAddAccount" xml:space="preserve">
+    <value>This permission allows you to add a new account.</value>
+  </data>
+  <data name="DescriptionEditAccount" xml:space="preserve">
+    <value>This permission allows you to edit an account information.</value>
+  </data>
+  <data name="DescriptionDeleteAccount" xml:space="preserve">
+    <value>This permission allows you to delete an account.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="ViewAttendance" xml:space="preserve">
+    <value>View attendance</value>
+  </data>
+  <data name="ExportAttendance" xml:space="preserve">
+    <value>Export attendance</value>
+  </data>
+  <data name="DescriptionViewAttendance" xml:space="preserve">
+    <value>This permission allows you to see the attendance of employee.</value>
+  </data>
+  <data name="DescriptionExportAttendance" xml:space="preserve">
+    <value>This permission allows you to export the attendance record to file.</value>
+  </data>
+  <data name="TimeAttendanceReport" xml:space="preserve">
+    <value>Time attendance report</value>
+  </data>
+  <data name="ViewBuilding" xml:space="preserve">
+    <value>View building</value>
+  </data>
+  <data name="AddBuilding" xml:space="preserve">
+    <value>Add buidling</value>
+  </data>
+  <data name="EditBuilding" xml:space="preserve">
+    <value>Edit buidling</value>
+  </data>
+  <data name="DeleteBuilding" xml:space="preserve">
+    <value>Delete buidling</value>
+  </data>
+  <data name="AssignDoorBuilding" xml:space="preserve">
+    <value>Assign door(s) to building</value>
+  </data>
+  <data name="DescriptionAssignDoorBuilding" xml:space="preserve">
+    <value>This permission allows you to assign door(s) to building.</value>
+  </data>
+  <data name="DescriptionViewBuilding" xml:space="preserve">
+    <value>This permission allows you to see a building information.</value>
+  </data>
+  <data name="DescriptionAddBuilding" xml:space="preserve">
+    <value>This permission allows you to add a new building.</value>
+  </data>
+  <data name="DescriptionEditBuilding" xml:space="preserve">
+    <value>This permission allows you to edit a building information.</value>
+  </data>
+  <data name="DescriptionDeleteBuilding" xml:space="preserve">
+    <value>This permission allows you to delete a building.</value>
+  </data>
+  <data name="Building" xml:space="preserve">
+    <value>Building</value>
+  </data>
+  <data name="ViewCategory" xml:space="preserve">
+    <value>View category and oprions</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Add category</value>
+  </data>
+  <data name="EditCategory" xml:space="preserve">
+    <value>Edit category</value>
+  </data>
+  <data name="DeleteCategory" xml:space="preserve">
+    <value>Delete category</value>
+  </data>
+  <data name="DescriptionViewCategory" xml:space="preserve">
+    <value>This permission allows you to see a list of category and options.</value>
+  </data>
+  <data name="DescriptionAddCategory" xml:space="preserve">
+    <value>This permission allows you to add a new category and option.</value>
+  </data>
+  <data name="DescriptionEditCategory" xml:space="preserve">
+    <value>This permission allows you to edit category and option information.</value>
+  </data>
+  <data name="DescriptionDeleteCategory" xml:space="preserve">
+    <value>This permission allows you to delete categories and options.</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ViewDepartment" xml:space="preserve">
+    <value>View department</value>
+  </data>
+  <data name="AddDepartment" xml:space="preserve">
+    <value>Add department</value>
+  </data>
+  <data name="EditDepartment" xml:space="preserve">
+    <value>Edit department</value>
+  </data>
+  <data name="DeleteDepartment" xml:space="preserve">
+    <value>Delete department</value>
+  </data>
+  <data name="ExportDepartment" xml:space="preserve">
+    <value>Export department</value>
+  </data>
+  <data name="DescriptionViewDepartment" xml:space="preserve">
+    <value>This permission allows you to see a department information.</value>
+  </data>
+  <data name="DescriptionAddDepartment" xml:space="preserve">
+    <value>This permission allows you to add a new department.</value>
+  </data>
+  <data name="DescriptionEditDepartment" xml:space="preserve">
+    <value>This permission allows you to edit a department information.</value>
+  </data>
+  <data name="DescriptionDeleteDepartment" xml:space="preserve">
+    <value>This permission allows you to delete departments.</value>
+  </data>
+  <data name="DescriptionExportDepartment" xml:space="preserve">
+    <value>This permission allows you to export a list of department to a file.</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="ViewDevice" xml:space="preserve">
+    <value>View device</value>
+  </data>
+  <data name="EditDevice" xml:space="preserve">
+    <value>Edit device</value>
+  </data>
+  <data name="SendInstructionDevice" xml:space="preserve">
+    <value>Send instruction to device</value>
+  </data>
+  <data name="ViewHistoryDevice" xml:space="preserve">
+    <value>View device history</value>
+  </data>
+  <data name="ReinstallDevice" xml:space="preserve">
+    <value>Reinstall device</value>
+  </data>
+  <data name="RebootDevice" xml:space="preserve">
+    <value>Reboot device</value>
+  </data>
+  <data name="CopyDevice" xml:space="preserve">
+    <value>Copy device setting</value>
+  </data>
+  <data name="DescriptionViewDevice" xml:space="preserve">
+    <value>This permission allows you to see a list of device.</value>
+  </data>
+  <data name="DescriptionEditDevice" xml:space="preserve">
+    <value>This permission allows you to edit a device information.</value>
+  </data>
+  <data name="DescriptionSendInstructionDevice" xml:space="preserve">
+    <value>This permission allows you to send instructions to device.</value>
+  </data>
+  <data name="DescriptionViewHistoryDevice" xml:space="preserve">
+    <value>This permission allows you to see a history of device.</value>
+  </data>
+  <data name="DescriptionReinstallDevice" xml:space="preserve">
+    <value>This permission allows you to reinstall a device.</value>
+  </data>
+  <data name="DescriptionRebootDevice" xml:space="preserve">
+    <value>This permission allows you to reboot a device.</value>
+  </data>
+  <data name="DescriptionCopyDevice" xml:space="preserve">
+    <value>This permission allows you to copy and paste device settings.</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="ViewDeviceMessage" xml:space="preserve">
+    <value>View device message</value>
+  </data>
+  <data name="EditDeviceMessage" xml:space="preserve">
+    <value>Edit device message</value>
+  </data>
+  <data name="DescriptionViewDeviceMessage" xml:space="preserve">
+    <value>This permission allows you to see a list of device screen message.</value>
+  </data>
+  <data name="DescriptionEditDeviceMessage" xml:space="preserve">
+    <value>This permission allows you to edit device screen messages.</value>
+  </data>
+  <data name="DeviceMessage" xml:space="preserve">
+    <value>Device message</value>
+  </data>
+  <data name="ViewEventLog" xml:space="preserve">
+    <value>View event log</value>
+  </data>
+  <data name="ExportEventLog" xml:space="preserve">
+    <value>Export event log</value>
+  </data>
+  <data name="DescriptionViewEventLog" xml:space="preserve">
+    <value>This permission allows you to see the event logs on report page.</value>
+  </data>
+  <data name="DescriptionExportEventLog" xml:space="preserve">
+    <value>This permission allows you to export the event logs to a file on report page.</value>
+  </data>
+  <data name="EventLog" xml:space="preserve">
+    <value>Event log</value>
+  </data>
+  <data name="ViewHoliday" xml:space="preserve">
+    <value>View holiday</value>
+  </data>
+  <data name="AddHoliday" xml:space="preserve">
+    <value>Add holiday</value>
+  </data>
+  <data name="EditHoliday" xml:space="preserve">
+    <value>Edit holiday</value>
+  </data>
+  <data name="DeleteHoliday" xml:space="preserve">
+    <value>Delete holiday</value>
+  </data>
+  <data name="DescriptionViewHoliday" xml:space="preserve">
+    <value>This permission allows you to see a list of holiday.</value>
+  </data>
+  <data name="DescriptionAddHoliday" xml:space="preserve">
+    <value>This permission allows you to add a new holiday.</value>
+  </data>
+  <data name="DescriptionEditHoliday" xml:space="preserve">
+    <value>This permission allows you to edit a holiday.</value>
+  </data>
+  <data name="DescriptionDeleteHoliday" xml:space="preserve">
+    <value>This permission allows you to delete a holiday.</value>
+  </data>
+  <data name="Holiday" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="ViewSetting" xml:space="preserve">
+    <value>View setting</value>
+  </data>
+  <data name="EditSetting" xml:space="preserve">
+    <value>Edit setting</value>
+  </data>
+  <data name="DescriptionViewSetting" xml:space="preserve">
+    <value>This permission allows you to see the system setting.</value>
+  </data>
+  <data name="DescriptionEditSetting" xml:space="preserve">
+    <value>This permission allows you to change the system setting value.</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>System setting</value>
+  </data>
+  <data name="ViewSystemLog" xml:space="preserve">
+    <value>View system log</value>
+  </data>
+  <data name="ExportSystemLog" xml:space="preserve">
+    <value>Export system log</value>
+  </data>
+  <data name="DescriptionViewSystemLog" xml:space="preserve">
+    <value>This permission allows you to see the system logs.</value>
+  </data>
+  <data name="DescriptionExportSystemLog" xml:space="preserve">
+    <value>This permissino allows you to export the system logs to a file.</value>
+  </data>
+  <data name="SystemLog" xml:space="preserve">
+    <value>System log</value>
+  </data>
+  <data name="ViewTimezone" xml:space="preserve">
+    <value>View timezone</value>
+  </data>
+  <data name="AddTimezone" xml:space="preserve">
+    <value>Add timezone</value>
+  </data>
+  <data name="EditTimezone" xml:space="preserve">
+    <value>Edit timezone</value>
+  </data>
+  <data name="DeleteTimezone" xml:space="preserve">
+    <value>Delete timezone</value>
+  </data>
+  <data name="DescriptionViewTimezone" xml:space="preserve">
+    <value>This permission allows you to see a list of timezone information.</value>
+  </data>
+  <data name="DescriptionAddTimezone" xml:space="preserve">
+    <value>This permission allows you to add a new timezone.</value>
+  </data>
+  <data name="DescriptionEditTimezone" xml:space="preserve">
+    <value>This permission allows you to edit a timezone information.</value>
+  </data>
+  <data name="DescriptionDeleteTimezone" xml:space="preserve">
+    <value>This permission allows you to delete timezones.</value>
+  </data>
+  <data name="Timezone" xml:space="preserve">
+    <value>Timezone</value>
+  </data>
+  <data name="ViewUser" xml:space="preserve">
+    <value>View user</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Add user</value>
+  </data>
+  <data name="EditUser" xml:space="preserve">
+    <value>Edit user</value>
+  </data>
+  <data name="DeleteUser" xml:space="preserve">
+    <value>Delete user</value>
+  </data>
+  <data name="DescriptionViewUser" xml:space="preserve">
+    <value>This permission allows you to see a list of user. It is also used to see a list of users on the 'Accessible Door' page.</value>
+  </data>
+  <data name="DescriptionAddUser" xml:space="preserve">
+    <value>This permission allows you to add a new user.</value>
+  </data>
+  <data name="DescriptionEditUser" xml:space="preserve">
+    <value>This permission allows you to edit users.</value>
+  </data>
+  <data name="DescriptionDeleteUser" xml:space="preserve">
+    <value>This permission allows you to delete users.</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="ViewWorkingTime" xml:space="preserve">
+    <value>View working type</value>
+  </data>
+  <data name="AddWorkingTime" xml:space="preserve">
+    <value>Add working type</value>
+  </data>
+  <data name="EditWorkingTime" xml:space="preserve">
+    <value>Edit working type</value>
+  </data>
+  <data name="DeleteWorkingTime" xml:space="preserve">
+    <value>Delete working type</value>
+  </data>
+  <data name="DescriptionViewWorkingTime" xml:space="preserve">
+    <value>This permission allows you to see a list of working type.</value>
+  </data>
+  <data name="DescriptionAddWorkingTime" xml:space="preserve">
+    <value>This permission allows you to add a new working type.</value>
+  </data>
+  <data name="DescriptionEditWorkingTime" xml:space="preserve">
+    <value>This permission allows you to edit a working type.</value>
+  </data>
+  <data name="DescriptionDeleteWorkingTime" xml:space="preserve">
+    <value>This permission allows you to delete working types.</value>
+  </data>
+  <data name="WorkingTime" xml:space="preserve">
+    <value>Working time type</value>
+  </data>
+  <data name="ViewVisit" xml:space="preserve">
+    <value>View visitor data</value>
+  </data>
+  <data name="AddVisit" xml:space="preserve">
+    <value>Apply for a visit</value>
+  </data>
+  <data name="EditVisit" xml:space="preserve">
+    <value>Edit visitor information</value>
+  </data>
+  <data name="DeleteVisit" xml:space="preserve">
+    <value>Delete visitor</value>
+  </data>
+  <data name="ExportVisit" xml:space="preserve">
+    <value>Export visitor data</value>
+  </data>
+  <data name="ReturnCardVisit" xml:space="preserve">
+    <value>Return visitor card</value>
+  </data>
+  <data name="ViewHistoryVisit" xml:space="preserve">
+    <value>View visitor history</value>
+  </data>
+  <data name="AssignDoorVisit" xml:space="preserve">
+    <value>Assign door(s) to visitor</value>
+  </data>
+  <data name="DescriptionViewVisit" xml:space="preserve">
+    <value>This permission allows you to see visitor data.</value>
+  </data>
+  <data name="DescriptionAddVisit" xml:space="preserve">
+    <value>This permission allows you to apply for a visit.</value>
+  </data>
+  <data name="DescriptionEditVisit" xml:space="preserve">
+    <value>This permission allows you to edit visitor information.</value>
+  </data>
+  <data name="DescriptionDeleteVisit" xml:space="preserve">
+    <value>This permission allows you to delete a visit application only if you have applied for it.</value>
+  </data>
+  <data name="DescriptionExportVisit" xml:space="preserve">
+    <value>This permission allows you to export visitor data to a file.</value>
+  </data>
+  <data name="DescriptionReturnCardVisit" xml:space="preserve">
+    <value>This permission allows you to retrieve a visitor's card.</value>
+  </data>
+  <data name="DescriptionViewHistoryVisit" xml:space="preserve">
+    <value>This permission allows you to see a history of visitor.</value>
+  </data>
+  <data name="DescriptionAssignDoorVisit" xml:space="preserve">
+    <value>This permission allows you to assign doors to visitor.</value>
+  </data>
+  <data name="VisitManagement" xml:space="preserve">
+    <value>Visit management</value>
+  </data>
+  <data name="ViewUserArmy" xml:space="preserve">
+    <value>View army user</value>
+  </data>
+  <data name="AddUserArmy" xml:space="preserve">
+    <value>Add army user</value>
+  </data>
+  <data name="EditUserArmy" xml:space="preserve">
+    <value>Edit army user</value>
+  </data>
+  <data name="DeleteUserArmy" xml:space="preserve">
+    <value>Delete army user</value>
+  </data>
+  <data name="DescriptionViewUserArmy" xml:space="preserve">
+    <value>This permission allows you to see a list of army user.</value>
+  </data>
+  <data name="DescriptionAddUserArmy" xml:space="preserve">
+    <value>This permission allows you to add a new army user.</value>
+  </data>
+  <data name="DescriptionEditUserArmy" xml:space="preserve">
+    <value>This permission allows you to edit a army user information.</value>
+  </data>
+  <data name="DescriptionDeleteUserArmy" xml:space="preserve">
+    <value>This permission allows you to delete army users.</value>
+  </data>
+  <data name="UserArmy" xml:space="preserve">
+    <value>Army user</value>
+  </data>
+  <data name="ViewVisitArmy" xml:space="preserve">
+    <value>View army visitor data</value>
+  </data>
+  <data name="AddVisitArmy" xml:space="preserve">
+    <value>Apply for a visit to army</value>
+  </data>
+  <data name="EditVisitArmy" xml:space="preserve">
+    <value>Edit army visitor information</value>
+  </data>
+  <data name="DeleteVisitArmy" xml:space="preserve">
+    <value>Delete army visitor</value>
+  </data>
+  <data name="DescriptionViewVisitArmy" xml:space="preserve">
+    <value>This permission allows you to see a army visitor data.</value>
+  </data>
+  <data name="DescriptionAddVisitArmy" xml:space="preserve">
+    <value>This permission allows you to apply for a visit to army.</value>
+  </data>
+  <data name="DescriptionEditVisitArmy" xml:space="preserve">
+    <value>This permission allows you to edit army visitor information.</value>
+  </data>
+  <data name="DescriptionDeleteVisitArmy" xml:space="preserve">
+    <value>This permission allows you to delete a visit application only if you have applied for it.</value>
+  </data>
+  <data name="VisitArmyManagement" xml:space="preserve">
+    <value>Army visitor</value>
+  </data>
+  <data name="ViewMonitoring" xml:space="preserve">
+    <value>View events in real time</value>
+  </data>
+  <data name="DescriptionViewMonitoring" xml:space="preserve">
+    <value>This permission allows you can see events are posted in real time.</value>
+  </data>
+  <data name="Monitoring" xml:space="preserve">
+    <value>Monitoring</value>
+  </data>
+  <data name="ViewDeviceMonitoring" xml:space="preserve">
+    <value>View the contents of the device monitoring page</value>
+  </data>
+  <data name="DescriptionViewDeviceMonitoring" xml:space="preserve">
+    <value>This permission allows you to see the contents of the device monitoring page.</value>
+  </data>
+  <data name="DeviceMonitoring" xml:space="preserve">
+    <value>Device monitoring</value>
+  </data>
+  <data name="SendInstructionDeviceMonitoring" xml:space="preserve">
+    <value>Send instructions to device</value>
+  </data>
+  <data name="DescriptionSendInstructionDeviceMonitoring" xml:space="preserve">
+    <value>This permission allows you to send several instructions to devices. The instructions include 'Open door', 'Restart device' and 'Send current time'.</value>
+  </data>
+  <data name="ViewUserDepartment" xml:space="preserve">
+    <value>View a list of users belonging to a department</value>
+  </data>
+  <data name="DescriptionViewUserDepartment" xml:space="preserve">
+    <value>This permission allows you to see a list of users belonging to a particular department.</value>
+  </data>
+  <data name="ExportUser" xml:space="preserve">
+    <value>Export a list of users to a file</value>
+  </data>
+  <data name="DescriptionExportUser" xml:space="preserve">
+    <value>This permission allows you to exort and save user lists in file form.</value>
+  </data>
+  <data name="SetWorkingTimeUser" xml:space="preserve">
+    <value>Set working hours</value>
+  </data>
+  <data name="DescriptionSetWorkingTimeUser" xml:space="preserve">
+    <value>This permission allows you to set the working hours for each user.</value>
+  </data>
+  <data name="ViewDeviceSetting" xml:space="preserve">
+    <value>View the contents of the device setting page</value>
+  </data>
+  <data name="EditDeviceSetting" xml:space="preserve">
+    <value>Edit device information</value>
+  </data>
+  <data name="CopyDeviceSetting" xml:space="preserve">
+    <value>Copy device settings</value>
+  </data>
+  <data name="ReinstallDeviceSetting" xml:space="preserve">
+    <value>Reinstall device</value>
+  </data>
+  <data name="ViewHistoryDeviceSetting" xml:space="preserve">
+    <value>View device's history</value>
+  </data>
+  <data name="DescriptionViewDeviceSetting" xml:space="preserve">
+    <value>This permission allows you to see the contents of the device setting page. It is also used to see a list of devices on the 'Registered user' page.</value>
+  </data>
+  <data name="DescriptionEditDeviceSetting" xml:space="preserve">
+    <value>This permission allows you to edit a device information. You can edit device information from the Monitoring, Device Monitoring and Device Setting page with this permission.</value>
+  </data>
+  <data name="DescriptionCopyDeviceSetting" xml:space="preserve">
+    <value>This permission allows you to copy specific device settings and paste it to other devices.</value>
+  </data>
+  <data name="DescriptionReinstallDeviceSetting" xml:space="preserve">
+    <value>This permission allows you to reinstall the device.</value>
+  </data>
+  <data name="DescriptionViewHistoryDeviceSetting" xml:space="preserve">
+    <value>This permission allows you to see device history. You can also see the device history on the device monitoring page.</value>
+  </data>
+  <data name="DeviceSetting" xml:space="preserve">
+    <value>Device setting</value>
+  </data>
+  <data name="ViewReport" xml:space="preserve">
+    <value>View only your own events on the Reports page</value>
+  </data>
+  <data name="ExportReport" xml:space="preserve">
+    <value>Export events to a file</value>
+  </data>
+  <data name="DescriptionViewReport" xml:space="preserve">
+    <value>This permission allows you to search and view only your own past access history on the Report page.</value>
+  </data>
+  <data name="DescriptionExportReport" xml:space="preserve">
+    <value>This permission allows you to export the  access records to a file.</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="ViewAccessibleDoor" xml:space="preserve">
+    <value>View a list of accessible door</value>
+  </data>
+  <data name="ExportAccessibleDoor" xml:space="preserve">
+    <value>Export a list of accessible devices</value>
+  </data>
+  <data name="DescriptionViewAccessibleDoor" xml:space="preserve">
+    <value>This permission allows you to see a list of devices that are accessible to each user.</value>
+  </data>
+  <data name="DescriptionExportAccessibleDoor" xml:space="preserve">
+    <value>This permission allows you to export a list of devices that are accessible to each user to a file.</value>
+  </data>
+  <data name="AccessibleDoor" xml:space="preserve">
+    <value>Accessible door</value>
+  </data>
+  <data name="ViewRegisteredUser" xml:space="preserve">
+    <value>View a list of Registered user</value>
+  </data>
+  <data name="ExportRegisteredUser" xml:space="preserve">
+    <value>Export a list of Registered user</value>
+  </data>
+  <data name="DescriptionViewRegisteredUser" xml:space="preserve">
+    <value>This permission allows you to view a list of users registered on each device.</value>
+  </data>
+  <data name="DescriptionExportRegisteredUser" xml:space="preserve">
+    <value>This permission allows you to export a list of users registered on each device to a file.</value>
+  </data>
+  <data name="RegisteredUser" xml:space="preserve">
+    <value>Registered user</value>
+  </data>
+  <data name="EditAttendance" xml:space="preserve">
+    <value>Edit attendance</value>
+  </data>
+  <data name="ViewHistoryAttendance" xml:space="preserve">
+    <value>View access history</value>
+  </data>
+  <data name="DescriptionEditAttendance" xml:space="preserve">
+    <value>Department manager with this permission can edit attendance.</value>
+  </data>
+  <data name="DescriptionViewHistoryAttendance" xml:space="preserve">
+    <value>This permission allows you to check user's access history. You can see the access history on the 'Monitoring' and 'Time attendance report' page.</value>
+  </data>
+  <data name="ApproveVisit" xml:space="preserve">
+    <value>Approve a visit</value>
+  </data>
+  <data name="DescriptionApproveVisit" xml:space="preserve">
+    <value>This permission allows you to approve a visit.</value>
+  </data>
+  <data name="ViewVisitReport" xml:space="preserve">
+    <value>View visitor access report</value>
+  </data>
+  <data name="ExportVisitReport" xml:space="preserve">
+    <value>Export visitor access report</value>
+  </data>
+  <data name="EditVisitSetting" xml:space="preserve">
+    <value>Change visit approvers</value>
+  </data>
+  <data name="DescriptionViewVisitReport" xml:space="preserve">
+    <value>This permission allows you to view an access report about visitor.</value>
+  </data>
+  <data name="DescriptionExportVisitReport" xml:space="preserve">
+    <value>This permission allows you to export access history reports for visitors to a file.</value>
+  </data>
+  <data name="DescriptionEditVisitSetting" xml:space="preserve">
+    <value>This permission allows you to change visit approvers.</value>
+  </data>
+  <data name="VisitReport" xml:space="preserve">
+    <value>Visit report</value>
+  </data>
+  <data name="VisitSetting" xml:space="preserve">
+    <value>Visit setting</value>
+  </data>
+  <data name="ApproveUser" xml:space="preserve">
+    <value>Approve a user</value>
+  </data>
+  <data name="DescriptionApproveUser" xml:space="preserve">
+    <value>This permission allows you to approve a user.</value>
+  </data>
+  <data name="AccessSetting" xml:space="preserve">
+    <value>Access setting</value>
+  </data>
+  <data name="EditAccessSetting" xml:space="preserve">
+    <value>Edit access setting</value>
+  </data>
+  <data name="DescriptionEditAccessSetting" xml:space="preserve">
+    <value>This permission allows you to edit an access setting.</value>
+  </data>
+  <data name="VehicleManagement" xml:space="preserve">
+    <value>Vehicle management</value>
+  </data>
+  <data name="CardIssuing" xml:space="preserve">
+    <value>Card issuing</value>
+  </data>
+  <data name="CardIssuingSetting" xml:space="preserve">
+    <value>Card issuing setting</value>
+  </data>
+  <data name="CardIssuingLayout" xml:space="preserve">
+    <value>Card issuing layout</value>
+  </data>
+  <data name="AddVehicle" xml:space="preserve">
+    <value>Add vehicle</value>
+  </data>
+  <data name="ViewVehicle" xml:space="preserve">
+    <value>View vehicle data</value>
+  </data>
+  <data name="EditVehicle" xml:space="preserve">
+    <value>Edit vehicle information</value>
+  </data>
+  <data name="DescriptionAddVehicle" xml:space="preserve">
+    <value>This permission allows you to add a vehicle.</value>
+  </data>
+  <data name="DescriptionViewVehicle" xml:space="preserve">
+    <value>This permission allows you to see a list of vehicle.</value>
+  </data>
+  <data name="DescriptionEditVehicle" xml:space="preserve">
+    <value>This permission allows you to edit vehicle information.</value>
+  </data>
+  <data name="ViewCardIssuing" xml:space="preserve">
+    <value>View card issuing</value>
+  </data>
+  <data name="AddCardIssuing" xml:space="preserve">
+    <value>Add card issuing</value>
+  </data>
+  <data name="EditCardIssuing" xml:space="preserve">
+    <value>Edit card issuing</value>
+  </data>
+  <data name="DescriptionAddCardIssuing" xml:space="preserve">
+    <value>This permission allows you to add card issuance.</value>
+  </data>
+  <data name="DescriptionViewCardIssuing" xml:space="preserve">
+    <value>This permission allows you to see a card issuance information.</value>
+  </data>
+  <data name="ViewCardIssuingSetting" xml:space="preserve">
+    <value>View card issuing setting</value>
+  </data>
+  <data name="ViewCardIssuingLayout" xml:space="preserve">
+    <value>View card issuing layout</value>
+  </data>
+  <data name="AddCardIssuingLayout" xml:space="preserve">
+    <value>Add card issuing layout</value>
+  </data>
+  <data name="AddCardIssuingSetting" xml:space="preserve">
+    <value>Add card issuing setting</value>
+  </data>
+  <data name="EditCardIssuingSetting" xml:space="preserve">
+    <value>Edit card issuing setting</value>
+  </data>
+  <data name="EditCardIssuingLayout" xml:space="preserve">
+    <value>Edit card issuing layout</value>
+  </data>
+  <data name="DescriptionViewCardIssuingSetting" xml:space="preserve">
+    <value>This permission allows you to see a card issuance setting.</value>
+  </data>
+  <data name="DescriptionViewCardIssuingLayout" xml:space="preserve">
+    <value>This permission allows you to see a card issuance layout.</value>
+  </data>
+  <data name="DescriptionAddCardIssuingSetting" xml:space="preserve">
+    <value>This permission allows you to add card issuance setting.</value>
+  </data>
+  <data name="DescriptionAddCardIssuingLayout" xml:space="preserve">
+    <value>This permission allows you to add card issuance layout.</value>
+  </data>
+  <data name="DescriptionEditCardIssuingSetting" xml:space="preserve">
+    <value>This permission allows you to edit card issuance setting.</value>
+  </data>
+  <data name="DescriptionEditCardIssuingLayout" xml:space="preserve">
+    <value>This permission allows you to edit card issuance layout.</value>
+  </data>
+  <data name="DescriptionEditCardIssuing" xml:space="preserve">
+    <value>This permission allows you to edit card issuance information.</value>
+  </data>
+  <data name="ViewDashBoard" xml:space="preserve">
+    <value>View dashoard</value>
+  </data>
+  <data name="DescriptionViewDashBoard" xml:space="preserve">
+    <value>This permission allows you to see dashboard page.</value>
+  </data>
+  <data name="DashBoard" xml:space="preserve">
+    <value>DashBoard</value>
+  </data>
+  <data name="EventManagement" xml:space="preserve">
+    <value>Event Management</value>
+  </data>
+  <data name="ViewEventManagement" xml:space="preserve">
+    <value>View meeting</value>
+  </data>
+  <data name="AddEventManagement" xml:space="preserve">
+    <value>Add meeting event</value>
+  </data>
+  <data name="EditEventManagement" xml:space="preserve">
+    <value>Edit event meeting</value>
+  </data>
+  <data name="DeleteEventManagement" xml:space="preserve">
+    <value>Delete event meeting</value>
+  </data>
+  <data name="DescriptionViewEventManagement" xml:space="preserve">
+    <value>This permission allows you to see the meetings on meeting page.</value>
+  </data>
+  <data name="DescriptionAddEventManagement" xml:space="preserve">
+    <value>This permission allows you to add a new meeting.</value>
+  </data>
+  <data name="DescriptionEditEventManagement" xml:space="preserve">
+    <value>This permission allows you to edit meeting information.</value>
+  </data>
+  <data name="DescriptionDeleteEventManagement" xml:space="preserve">
+    <value>This permission allows you to delete meeting.</value>
+  </data>
+  <data name="LibraryManagement" xml:space="preserve">
+    <value>Library Management</value>
+  </data>
+  <data name="EditBook" xml:space="preserve">
+    <value>Edit Book</value>
+  </data>
+  <data name="AddBook" xml:space="preserve">
+    <value>Add book</value>
+  </data>
+  <data name="DeleteBook" xml:space="preserve">
+    <value>Delete book</value>
+  </data>
+  <data name="DescriptionViewBook" xml:space="preserve">
+    <value>This permission allows you to see the list of books.</value>
+  </data>
+  <data name="DescriptionAddBook" xml:space="preserve">
+    <value>This permission allows you to add a new book.</value>
+  </data>
+  <data name="DescriptionEditBook" xml:space="preserve">
+    <value>This permission allows you to edit book.</value>
+  </data>
+  <data name="DescriptionDeleteBook" xml:space="preserve">
+    <value>This permission allows you to delete book.</value>
+  </data>
+  <data name="Book" xml:space="preserve">
+    <value>Book Manangement</value>
+  </data>
+  <data name="ViewBook" xml:space="preserve">
+    <value>View Book</value>
+  </data>
+  <data name="LeaveRequest" xml:space="preserve">
+    <value>Leave Request</value>
+  </data>
+  <data name="ViewLeaveRequest" xml:space="preserve">
+    <value>View Leave Request</value>
+  </data>
+  <data name="AddLeaveRequest" xml:space="preserve">
+    <value>Add Leave Request</value>
+  </data>
+  <data name="EditLeaveRequest" xml:space="preserve">
+    <value>Edit Leave Request</value>
+  </data>
+  <data name="DeleteLeaveRequest" xml:space="preserve">
+    <value>Delete Leave Request</value>
+  </data>
+  <data name="DescriptionViewLeaveRequest" xml:space="preserve">
+    <value>This permission allows you to see list of leave request.</value>
+  </data>
+  <data name="DescriptionAddLeaveRequest" xml:space="preserve">
+    <value>This permission allows you to add new leave request.</value>
+  </data>
+  <data name="DescriptionEditLeaveRequest" xml:space="preserve">
+    <value>This permission allows you to edit leave request.</value>
+  </data>
+  <data name="DescriptionDeleteLeaveRequest" xml:space="preserve">
+    <value>This permission allows you to delete leave request.</value>
+  </data>
+  <data name="ViewLeaveManagementLeaveRequest" xml:space="preserve">
+    <value>View Leave Management</value>
+  </data>
+  <data name="DescriptionViewLeaveManagementLeaveRequest" xml:space="preserve">
+    <value>This permission allows yo to see count of leave request with users.</value>
+  </data>
+  <data name="UpdateUserSettingUser" xml:space="preserve">
+    <value>Update User Setting</value>
+  </data>
+  <data name="DescriptionUpdateUserSettingUser" xml:space="preserve">
+    <value>This permission allows you to update user setting.</value>
+  </data>
+  <data name="UpdateAttendanceSettingAttendance" xml:space="preserve">
+    <value>Update Attendance Setting</value>
+  </data>
+  <data name="DescriptionUpdateAttendanceSettingAttendance" xml:space="preserve">
+    <value>This permission allows you to update attendance setting.</value>
+  </data>
+  <data name="ViewVehicleAllocation" xml:space="preserve">
+    <value>View vehicle allocation data</value>
+  </data>
+  <data name="DescriptionViewVehicleAllocation" xml:space="preserve">
+    <value>This permission allows you to see a vehicle allocation data.</value>
+  </data>
+  <data name="AddVehicleAllocation" xml:space="preserve">
+    <value>Add vehicle allocation</value>
+  </data>
+  <data name="DescriptionAddVehicleAllocation" xml:space="preserve">
+    <value>This permission allows you to request vehicle allocation.</value>
+  </data>
+  <data name="VehicleAllocation" xml:space="preserve">
+    <value>Vehicle Allocation</value>
+  </data>
+  <data name="EditVehicleAllocation" xml:space="preserve">
+    <value>Edit vehicle allocation</value>
+  </data>
+  <data name="DescriptionEditVehicleAllocation" xml:space="preserve">
+    <value>This permission allows you to edit vehicle allocation.</value>
+  </data>
+  <data name="DeleteVehicleAllocation" xml:space="preserve">
+    <value>Delete vehicle allocation</value>
+  </data>
+  <data name="DescriptionDeleteVehicleAllocation" xml:space="preserve">
+    <value>This permission allow you to delete vehicle allocation.</value>
+  </data>
+  <data name="RunVehicleAllocation" xml:space="preserve">
+    <value>Vehicle start, end setting</value>
+  </data>
+  <data name="DescriptionRunVehicleAllocation" xml:space="preserve">
+    <value>This permission allows you to set start and end of vehicle operation service.</value>
+  </data>
+  <data name="UserArmyManagement" xml:space="preserve">
+    <value>Army user management</value>
+  </data>
+  <data name="ViewUserArmyManagement" xml:space="preserve">
+    <value>View army user management</value>
+  </data>
+  <data name="DescriptionViewUserArmyManagement" xml:space="preserve">
+    <value>This permission allows you to see a list of army user management.</value>
+  </data>
+  <data name="AddUserArmyManagement" xml:space="preserve">
+    <value>Add army user management</value>
+  </data>
+  <data name="DescriptionAddUserArmyManagement" xml:space="preserve">
+    <value>This permission allows you to add soldiers' outings and vacation schedules.</value>
+  </data>
+  <data name="EditUserArmyManagement" xml:space="preserve">
+    <value>Edit military User Management</value>
+  </data>
+  <data name="DescriptionEditUserArmyManagement" xml:space="preserve">
+    <value>This permission allows you to edit the management of soldiers' outings and vacations.</value>
+  </data>
+  <data name="DeleteUserArmyManagement" xml:space="preserve">
+    <value>Delete army user management</value>
+  </data>
+  <data name="DescriptionDeleteUserArmyManagement" xml:space="preserve">
+    <value>This permission allows you to delete the management of soldiers' outings and vacations.</value>
+  </data>
+  <data name="RegCivilVisitArmyManagement" xml:space="preserve">
+    <value>Register for a civilian visit</value>
+  </data>
+  <data name="RegOtherVisitArmyManagement" xml:space="preserve">
+    <value>Register for an other unit member</value>
+  </data>
+  <data name="DescriptionRegCivilVisitArmyManagement" xml:space="preserve">
+    <value>This permission allows you to register for a civilian visitor.</value>
+  </data>
+  <data name="DescriptionRegOtherVisitArmyManagement" xml:space="preserve">
+    <value>This permission allows you to register for a visitor from other military unit.</value>
+  </data>
+  <data name="DescriptionRegiMasterBuilding" xml:space="preserve">
+    <value>This permission allows you to register building master.</value>
+  </data>
+  <data name="DescriptionViewMasterBuilding" xml:space="preserve">
+    <value>This permission allows you to view the building master list.</value>
+  </data>
+  <data name="ViewMasterBuilding" xml:space="preserve">
+    <value>View building master</value>
+  </data>
+  <data name="RegiMasterBuilding" xml:space="preserve">
+    <value>Register building master</value>
+  </data>
+  <data name="ViewAllReport" xml:space="preserve">
+    <value>View all events on the Report page</value>
+  </data>
+  <data name="DescriptionViewAllReport" xml:space="preserve">
+    <value>This permission allows you to search all events on report page.</value>
+  </data>
+  <data name="DeleteVehicle" xml:space="preserve">
+    <value>Delete vehicle</value>
+  </data>
+  <data name="DescriptionDeleteVehicle" xml:space="preserve">
+    <value>This permission allows you to delete the vehicle information.</value>
+  </data>
+  <data name="DeleteCardIssuing" xml:space="preserve">
+    <value>Delete Card Issuing</value>
+  </data>
+  <data name="DeleteCardIssuingLayout" xml:space="preserve">
+    <value>Delete Card Issuing Layout</value>
+  </data>
+  <data name="DeleteCardIssuingSetting" xml:space="preserve">
+    <value>Delete Card Issuing Setting</value>
+  </data>
+  <data name="DescriptionDeleteCardIssuing" xml:space="preserve">
+    <value>This permission allows you to delete a card issuing.</value>
+  </data>
+  <data name="DescriptionDeleteCardIssuingLayout" xml:space="preserve">
+    <value>This permission allows you to delete a card issuing layout.</value>
+  </data>
+  <data name="DescriptionDeleteCardIssuingSetting" xml:space="preserve">
+    <value>This permission allows you to delete a card issuing setting.</value>
+  </data>
+  <data name="ManageOwnRecordLeaveRequest" xml:space="preserve">
+    <value>Manage your own leave request</value>
+  </data>
+  <data name="DescriptionManageOwnRecordLeaveRequest" xml:space="preserve">
+    <value>This permission allows you to view/add/edit/delete your own leave request</value>
+  </data>
+
+  <data name="AccessSchedule" xml:space="preserve">
+    <value>Access Schedule</value>
+  </data>
+  <data name="ViewAccessSchedule" xml:space="preserve">
+    <value>View Access Schedule</value>
+  </data>
+  <data name="DescriptionViewAccessSchedule" xml:space="preserve">
+    <value>This permission allows you to view the access schedule.</value>
+  </data>
+  <data name="AddAccessSchedule" xml:space="preserve">
+    <value>Add Access Schedule</value>
+  </data>
+  <data name="DescriptionAddAccessSchedule" xml:space="preserve">
+    <value>This permission allows you to add the access schedule.</value>
+  </data>
+  <data name="EditAccessSchedule" xml:space="preserve">
+    <value>Edit Access Schedule</value>
+  </data>
+  <data name="DescriptionEditAccessSchedule" xml:space="preserve">
+    <value>This permission allows you to edit the access schedule.</value>
+  </data>
+  <data name="DeleteAccessSchedule" xml:space="preserve">
+    <value>Delete Access Schedule</value>
+  </data>
+  <data name="DescriptionDeleteAccessSchedule" xml:space="preserve">
+    <value>This permission allows you to delete the access schedule.</value>
+  </data>
+  <data name="DeviceReader" xml:space="preserve">
+    <value>Device Reader</value>
+  </data>
+  <data name="ViewDeviceReader" xml:space="preserve">
+    <value>View Device Reader</value>
+  </data>
+  <data name="DescriptionViewDeviceReader" xml:space="preserve">
+    <value>This permission allows you to view the device reader.</value>
+  </data>
+  <data name="AddDeviceReader" xml:space="preserve">
+    <value>Add Device Reader</value>
+  </data>
+  <data name="DescriptionAddDeviceReader" xml:space="preserve">
+    <value>This permission allows you to add the device reader.</value>
+  </data>
+  <data name="EditDeviceReader" xml:space="preserve">
+    <value>Edit Device Reader</value>
+  </data>
+  <data name="DescriptionEditDeviceReader" xml:space="preserve">
+    <value>This permission allows you to edit the device reader.</value>
+  </data>
+  <data name="DeleteDeviceReader" xml:space="preserve">
+    <value>Delete Device Reader</value>
+  </data>
+  <data name="DescriptionDeleteDeviceReader" xml:space="preserve">
+    <value>This permission allows you to delete the device reader.</value>
+  </data>
+</root>

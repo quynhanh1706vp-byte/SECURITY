@@ -1,0 +1,14 @@
+name: semgrep-csharp
+on: [push, pull_request]
+jobs:
+  semgrep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Semgrep (C# focused)
+        run: |
+          docker run --rm -v "$PWD":/src -w /src returntocorp/semgrep semgrep scan             --config p/r2c-security-audit             --config p/owasp-top-ten             --config p/secrets             --config p/csharp             --metrics on --timeout 1200 --jobs 6             --include '**/*.cs'             --sarif -o semgrep-results.sarif             code/api
+      - name: Upload SARIF to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: semgrep-results.sarif

@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="access_category" xml:space="preserve">
+    <value>Access</value>
+    <comment />
+  </data>
+  <data name="cache_buster_description" xml:space="preserve">
+    <value>Cache buster</value>
+    <comment />
+  </data>
+  <data name="cache_buster_title" xml:space="preserve">
+    <value>Cache buster</value>
+    <comment />
+  </data>
+  <data name="common_category" xml:space="preserve">
+    <value>Common setting</value>
+    <comment />
+  </data>
+  <data name="company_category" xml:space="preserve">
+    <value>Company</value>
+    <comment />
+  </data>
+  <data name="company_expiration_days_description" xml:space="preserve">
+    <value>Company expiration days</value>
+    <comment />
+  </data>
+  <data name="company_expiration_days_title" xml:space="preserve">
+    <value>Company expiration days</value>
+    <comment />
+  </data>
+  <data name="device_category" xml:space="preserve">
+    <value>Device</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_events" xml:space="preserve">
+    <value>Device Instruction Delete All Events</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_users_events" xml:space="preserve">
+    <value>Device Instruction Delete All Users, Events</value>
+    <comment />
+  </data>
+  <data name="device_instruction_force_close" xml:space="preserve">
+    <value>Device Instruction Force Close</value>
+    <comment />
+  </data>
+  <data name="device_instruction_force_open" xml:space="preserve">
+    <value>Device Instruction Force Open</value>
+    <comment />
+  </data>
+  <data name="device_instruction_open" xml:space="preserve">
+    <value>Device Instruction Open</value>
+    <comment />
+  </data>
+  <data name="device_instruction_release" xml:space="preserve">
+    <value>Device Instruction Release</value>
+    <comment />
+  </data>
+  <data name="device_instruction_reset" xml:space="preserve">
+    <value>Device Instruction Reset</value>
+    <comment />
+  </data>
+  <data name="device_instruction_settime" xml:space="preserve">
+    <value>Device Instruction Set Time</value>
+    <comment />
+  </data>
+  <data name="device_instruction_update_device_state" xml:space="preserve">
+    <value>Device Instruction Update Device State</value>
+    <comment />
+  </data>
+  <data name="device_max_copy_setting_door_description" xml:space="preserve">
+    <value>Max copy setting door</value>
+    <comment />
+  </data>
+  <data name="device_max_copy_setting_door_title" xml:space="preserve">
+    <value>Max copy setting door</value>
+    <comment />
+  </data>
+  <data name="device_max_icu_user_description" xml:space="preserve">
+    <value>Max icu user</value>
+    <comment />
+  </data>
+  <data name="device_max_icu_user_title" xml:space="preserve">
+    <value>Max icu user</value>
+    <comment />
+  </data>
+  <data name="email_content" xml:space="preserve">
+    <value>ICU device address {0} is {1}.</value>
+    <comment />
+  </data>
+  <data name="email_notification" xml:space="preserve">
+    <value>Demasterpro notification</value>
+    <comment />
+  </data>
+  <data name="email_content_device_disconnected" xml:space="preserve">
+    <value>Dear,\n      We detected that the controller of the door "{0} ({1})" in the {2} has been disconnected.\n      If this activity is not your own operation, please check the ethernet cable or Internet status of the building and contact us if the problem persists.\n      DeMasterPro Team\n      Automated message, please do not reply.</value>
+    <comment />
+  </data>
+  <data name="email_notification_device_disconnected" xml:space="preserve">
+    <value>Controller of the door "{0} ({1})" in the {2} has been disconnected.</value>
+    <comment />
+  </data>
+  <data name="email_content_device_connected" xml:space="preserve">
+    <value>Dear, \n            We detected that the controller of the door {0} - {1} in the {2} has been connected. \n            DeMasterPro Team \n            Automated message, please do not reply.    </value>
+    <comment />
+  </data>
+  <data name="company_building" xml:space="preserve">
+    <value>Building</value>
+    <comment />
+  </data>
+  <data name="email_notification_device_connected" xml:space="preserve">
+    <value>[DeMasterPro] Controller of the door {0} - {1} in the {2} has been connected successfully</value>
+    <comment />
+  </data>
+  <data name="enable_performance_log_description" xml:space="preserve">
+    <value>Enable performance log.</value>
+    <comment />
+  </data>
+  <data name="enable_performance_log_title" xml:space="preserve">
+    <value>Enable performance log.</value>
+    <comment />
+  </data>
+  <data name="holiday_category" xml:space="preserve">
+    <value>Holiday</value>
+    <comment />
+  </data>
+  <data name="holiday_max_items_description" xml:space="preserve">
+    <value>Max holiday items</value>
+    <comment />
+  </data>
+  <data name="holiday_max_items_title" xml:space="preserve">
+    <value>Max holiday items</value>
+    <comment />
+  </data>
+  <data name="lblCategory" xml:space="preserve">
+    <value>Category</value>
+    <comment />
+  </data>
+  <data name="lblKey" xml:space="preserve">
+    <value>Key</value>
+    <comment />
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Password</value>
+    <comment />
+  </data>
+  <data name="lblSetting" xml:space="preserve">
+    <value>Setting</value>
+    <comment />
+  </data>
+  <data name="lblValue" xml:space="preserve">
+    <value>Value</value>
+    <comment />
+  </data>
+  <data name="list_user_to_notification_category" xml:space="preserve">
+    <value>List of users to notification</value>
+    <comment />
+  </data>
+  <data name="list_user_to_notification_title" xml:space="preserve">
+    <value>List of user to notification</value>
+    <comment />
+  </data>
+  <data name="logo_title" xml:space="preserve">
+    <value>Logo</value>
+    <comment />
+  </data>
+  <data name="monitoring_category" xml:space="preserve">
+    <value>Monitoring</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_access_denied" xml:space="preserve">
+    <value>Access Denied</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_anti_passback_error" xml:space="preserve">
+    <value>AntiPassbackError</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_default_description" xml:space="preserve">
+    <value>Description</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_default_title" xml:space="preserve">
+    <value>Default value</value>
+    <comment />
+  </data>
+  <data name="effactive_date_not_started" xml:space="preserve">
+    <value>Effective Date Not Started.</value>
+    <comment />
+  </data>
+  <data name="wrong_issue_count" xml:space="preserve">
+    <value>Wrong Issue Count</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expiration_date" xml:space="preserve">
+    <value>Expiration Date</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expired_card" xml:space="preserve">
+    <value>Expired Card</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expired_card_and_pwd" xml:space="preserve">
+    <value>Expired Card And Password</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expired_pwd" xml:space="preserve">
+    <value>Expired Password</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_invalid_access_type" xml:space="preserve">
+    <value>Invalid Access Type</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_valid_door" xml:space="preserve">
+    <value>Valid Door</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_invalid_door" xml:space="preserve">
+    <value>Invalid Door</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_normal_access" xml:space="preserve">
+    <value>Normal Access</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_no_door_active_time" xml:space="preserve">
+    <value>No Door Active Time</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_no_user_access_time" xml:space="preserve">
+    <value>No User Access Time</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_passage_timezone_off" xml:space="preserve">
+    <value>Passage Timezone Off</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_passage_timezone_on" xml:space="preserve">
+    <value>Passage Timezone On</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_unregisterd_card" xml:space="preserve">
+    <value>Unregistered Card</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_unregisterd_card_and_pwd" xml:space="preserve">
+    <value>Unregistered Card And Password</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_unregistered_pwd" xml:space="preserve">
+    <value>Unregistered Password</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_wrong_pwd" xml:space="preserve">
+    <value>WrongPwd</value>
+    <comment />
+  </data>
+  <data name="monitoring_max_record_display_description" xml:space="preserve">
+    <value>Max record display in the page</value>
+    <comment />
+  </data>
+  <data name="monitoring_max_record_display_title" xml:space="preserve">
+    <value>Max record display in the page</value>
+    <comment />
+  </data>
+  <data name="mpr_category" xml:space="preserve">
+    <value>Multiple person rules</value>
+    <comment />
+  </data>
+  <data name="mpr_max_condition_description" xml:space="preserve">
+    <value>Max condition items</value>
+    <comment />
+  </data>
+  <data name="mpr_max_condition_title" xml:space="preserve">
+    <value>Max condition items</value>
+    <comment />
+  </data>
+  <data name="msgChangeSetting" xml:space="preserve">
+    <value>Change setting {0} from '{1}' to '{2}'.</value>
+    <comment />
+  </data>
+  <data name="msgChangeSettingMultiple" xml:space="preserve">
+    <value>Change setting multiple</value>
+    <comment />
+  </data>
+  <data name="msgInclusiveBetween" xml:space="preserve">
+    <value>The value must between from 0 to 9.</value>
+    <comment />
+  </data>
+  <data name="msgRequired" xml:space="preserve">
+    <value>You must fill in all the textbox.</value>
+    <comment />
+  </data>
+  <data name="notification_email_category" xml:space="preserve">
+    <value>Notification Email</value>
+    <comment />
+  </data>
+  <data name="notification_email_title" xml:space="preserve">
+    <value>Enable/disable notifications via email</value>
+    <comment />
+  </data>
+  <data name="pagination_title" xml:space="preserve">
+    <value>Pagination</value>
+    <comment />
+  </data>
+  <data name="pagination_description" xml:space="preserve">
+    <value>Default count of record displayed on a page</value>
+    <comment />
+  </data>
+  <data name="timezone_category" xml:space="preserve">
+    <value>Timezone</value>
+    <comment />
+  </data>
+  <data name="timezone_max_items_description" xml:space="preserve">
+    <value>Max timezone items</value>
+    <comment />
+  </data>
+  <data name="timezone_max_items_title" xml:space="preserve">
+    <value>Max timezone items</value>
+    <comment />
+  </data>
+  <data name="valid_image_extension_description" xml:space="preserve">
+    <value>Valid image extension in the system</value>
+    <comment />
+  </data>
+  <data name="valid_image_extension_title" xml:space="preserve">
+    <value>Valid image extension in the system</value>
+    <comment />
+  </data>
+  <data name="try_access_in_emergency_close" xml:space="preserve">
+    <value>Try Access In Emergency Close</value>
+    <comment />
+  </data>
+  <data name="try_access_in_invalid_door" xml:space="preserve">
+    <value>Try Access In Invalid Door</value>
+    <comment />
+  </data>
+  <data name="communication_failed" xml:space="preserve">
+    <value>Communication Failed</value>
+    <comment />
+  </data>
+  <data name="communication_succeed" xml:space="preserve">
+    <value>Communication Succeed</value>
+    <comment />
+  </data>
+  <data name="device_is_running" xml:space="preserve">
+    <value>Device Is Running</value>
+    <comment />
+  </data>
+  <data name="breakfast" xml:space="preserve">
+    <value>Breakfast</value>
+    <comment />
+  </data>
+  <data name="lunch" xml:space="preserve">
+    <value>Lunch</value>
+    <comment />
+  </data>
+  <data name="dinner" xml:space="preserve">
+    <value>Dinner</value>
+    <comment />
+  </data>
+  <data name="late_night_snack" xml:space="preserve">
+    <value>Late Night Snack</value>
+    <comment />
+  </data>
+  <data name="etc_meal" xml:space="preserve">
+    <value>Etc Meal</value>
+    <comment />
+  </data>
+  <data name="only_accessible_at_mealtime" xml:space="preserve">
+    <value>Only Accessible At Mealtime</value>
+    <comment />
+  </data>
+  <data name="firmware_application_update" xml:space="preserve">
+    <value>Firmware Application Update</value>
+    <comment />
+  </data>
+  <data name="firmware_download_failed" xml:space="preserve">
+    <value>Firmware Download Failed</value>
+    <comment />
+  </data>
+  <data name="application_is_running" xml:space="preserve">
+    <value>Application Is Running</value>
+    <comment />
+  </data>
+  <data name="exit_application" xml:space="preserve">
+    <value>Exit Application</value>
+    <comment />
+  </data>
+  <data name="mpr_interval_expired" xml:space="preserve">
+    <value>MPR Interval Expired</value>
+    <comment />
+  </data>
+  <data name="mpr_auth" xml:space="preserve">
+    <value>MPR Auth</value>
+    <comment />
+  </data>
+  <data name="normal_access_mpr" xml:space="preserve">
+    <value>Normal Access(MPR)</value>
+    <comment />
+  </data>
+  <data name="mpr_error" xml:space="preserve">
+    <value>MPR Error</value>
+    <comment />
+  </data>
+  <data name="mastercard_access" xml:space="preserve">
+    <value>MasterCard Access</value>
+    <comment />
+  </data>
+  <data name="debug_level_title" xml:space="preserve">
+    <value>Debug Level</value>
+    <comment />
+  </data>
+  <data name="procedure_omission_title" xml:space="preserve">
+    <value>Procedure Omission</value>
+    <comment />
+  </data>
+  <data name="language_title" xml:space="preserve">
+    <value>Default Language</value>
+    <comment />
+  </data>
+  <data name="door_open_manually" xml:space="preserve">
+    <value>Door Open Manually</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_users_events1" xml:space="preserve">
+    <value>Device Instruction Delete All Users, Events</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_users" xml:space="preserve">
+    <value>Device Instruction Delete All Users</value>
+    <comment />
+  </data>
+  <data name="vietnamese_language" xml:space="preserve">
+    <value>Vietnamese</value>
+    <comment />
+  </data>
+  <data name="english_language" xml:space="preserve">
+    <value>English</value>
+    <comment />
+  </data>
+  <data name="korean_language" xml:space="preserve">
+    <value>Korean</value>
+    <comment />
+  </data>
+  <data name="japan_language" xml:space="preserve">
+    <value>Japanese</value>
+    <comment />
+  </data>
+  <data name="gen_qr_code_for_user" xml:space="preserve">
+    <value>[DeMasterPro] QR code for user</value>
+    <comment />
+  </data>
+  <data name="gen_qr_code_for_user_content" xml:space="preserve">
+    <value>Dear {0},\n      This is QR code using for verify your identity in the company {1}.\n      Please do not delete this image.\n      If losing please contact to your manager to provide it again \n      DeMasterPro Team\n            Automated message, please do not reply.    </value>
+    <comment />
+  </data>
+  <data name="qr_code_auto_renew_period_title" xml:space="preserve">
+    <value>QR code auto renew period</value>
+    <comment />
+  </data>
+  <data name="auto_renew_qr_code_title" xml:space="preserve">
+    <value>QR code auto renew</value>
+    <comment />
+  </data>
+  <data name="expired_qr" xml:space="preserve">
+    <value>Expired QR</value>
+    <comment />
+  </data>
+  <data name="pressed_the_button" xml:space="preserve">
+    <value>Pressed Exit Button</value>
+    <comment />
+  </data>
+  <data name="qr_logo_title" xml:space="preserve">
+    <value>Square Logo for QR code</value>
+    <comment />
+  </data>
+  <data name="qr_logo_description" xml:space="preserve">
+    <value>Square Logo that embedded into QR code</value>
+    <comment />
+  </data>
+  <data name="camera_category" xml:space="preserve">
+    <value>Camera setting</value>
+    <comment />
+  </data>
+  <data name="lblLocalMqtt" xml:space="preserve">
+    <value>Setting local mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_category" xml:space="preserve">
+    <value>Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_host_title" xml:space="preserve">
+    <value>Host</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_host_description" xml:space="preserve">
+    <value>Host Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_port_title" xml:space="preserve">
+    <value>Port</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_port_description" xml:space="preserve">
+    <value>Port Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_username_title" xml:space="preserve">
+    <value>UserName</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_username_description" xml:space="preserve">
+    <value>UserName Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_password_title" xml:space="preserve">
+    <value>Password</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_password_description" xml:space="preserve">
+    <value>Password Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="phone_support_title" xml:space="preserve">
+    <value>Phone contact</value>
+    <comment />
+  </data>
+  <data name="setting_support" xml:space="preserve">
+    <value>Support Contact</value>
+    <comment />
+  </data>
+  <data name="name_support_title" xml:space="preserve">
+    <value>Name contact</value>
+    <comment />
+  </data>
+  <data name="email_support_title" xml:space="preserve">
+    <value>Email contact</value>
+    <comment />
+  </data>
+  <data name="phone_support_description" xml:space="preserve">
+    <value>Phone number support manager</value>
+    <comment />
+  </data>
+  <data name="name_support_description" xml:space="preserve">
+    <value>Name support manager</value>
+    <comment />
+  </data>
+  <data name="email_support_description" xml:space="preserve">
+    <value>Email support manager</value>
+    <comment />
+  </data>
+  <data name="time_period_qrcode_title" xml:space="preserve">
+    <value>Time Period Dynamic QR Code</value>
+    <comment />
+  </data>
+  <data name="time_period_qrcode_description" xml:space="preserve">
+    <value>seconds</value>
+    <comment />
+  </data>
+  <data name="webhook_setting" xml:space="preserve">
+    <value>Webhook Setting</value>
+    <comment />
+  </data>
+  <data name="webhook_eventlog_title" xml:space="preserve">
+    <value>Event Log</value>
+    <comment />
+  </data>
+  <data name="webhook_eventlog_description" xml:space="preserve">
+    <value>Link api receive data event log</value>
+    <comment />
+  </data>
+  <data name="employee_edit_avatar_title" xml:space="preserve">
+    <value>Enable/Disable employee edit avatar themself</value>
+    <comment />
+  </data>
+  <data name="employee_edit_avatar_description" xml:space="preserve">
+    <value>Permission setting to allow employee edit avatar themself</value>
+    <comment />
+  </data>
+  <data name="auto_generate_qrcode_title" xml:space="preserve">
+    <value>Auto generate QrCode</value>
+    <comment />
+  </data>
+  <data name="auto_generate_qrcode_description" xml:space="preserve">
+    <value>Enable/disable auto generate QrCode</value>
+    <comment />
+  </data>
+  <data name="ocr_setting" xml:space="preserve">
+    <value>OCR Setting</value>
+    <comment />
+  </data>
+  <data name="ocr_api_key_title" xml:space="preserve">
+    <value>API Key</value>
+    <comment />
+  </data>
+  <data name="ocr_api_key_description" xml:space="preserve">
+    <value>Api key setting using for authentication</value>
+    <comment />
+  </data>
+  <data name="ocr_api_info_identity_description" xml:space="preserve">
+    <value>Api get all information of National Identity Number</value>
+    <comment />
+  </data>
+  <data name="ocr_api_info_identity_title" xml:space="preserve">
+    <value>API Get Info NationalIdNumber</value>
+    <comment />
+  </data>
+  <data name="ocr_api_authentication_title" xml:space="preserve">
+    <value>Api Authentication</value>
+    <comment />
+  </data>
+  <data name="ocr_api_authentication_description" xml:space="preserve">
+    <value>Api using for authentication by API Key</value>
+    <comment />
+  </data>
+  <data name="use_auto_generate_nfc_phone_title" xml:space="preserve">
+    <value>Automatic generate NFC Phone</value>
+    <comment />
+  </data>
+  <data name="use_auto_generate_nfc_phone_description" xml:space="preserve">
+    <value>Enable/Disable automatic generate NFC Phone</value>
+    <comment />
+  </data>
+  <data name="monitoring_avatar_display_title" xml:space="preserve">
+    <value>Option to display user's avatar on the page</value>
+    <comment />
+  </data>
+  <data name="monitoring_avatar_display_description" xml:space="preserve">
+    <value>The monitoring page displays user's avatar for each event</value>
+    <comment />
+  </data>
+  <data name="notification_email_description" xml:space="preserve">
+    <value>Enable/disable notifications via email</value>
+    <comment />
+  </data>
+  <data name="logo_description" xml:space="preserve">
+    <value>Appears at the top left of the page</value>
+    <comment />
+  </data>
+  <data name="event_list_push_notification_category" xml:space="preserve">
+    <value>Events push notification</value>
+    <comment />
+  </data>
+  <data name="event_list_push_notification_title" xml:space="preserve">
+    <value>Event list</value>
+    <comment />
+  </data>
+  <data name="event_list_push_notification_description" xml:space="preserve">
+    <value>Choose list of event will push notification to app mobile</value>
+    <comment />
+  </data>
+  <data name="notification_SMS_description" xml:space="preserve">
+    <value>Enable/disable notifications via SMS</value>
+    <comment />
+  </data>
+  <data name="notification_SMS_title" xml:space="preserve">
+    <value>Notifications via SMS</value>
+    <comment />
+  </data>
+  <data name="army_work_type_default_title" xml:space="preserve">
+    <value>Military personnel classification type</value>
+    <comment />
+  </data>
+  <data name="army_work_type_default_description" xml:space="preserve">
+    <value>Select all types of people categorization to use</value>
+    <comment />
+  </data>
+  <data name="work_type_default_title" xml:space="preserve">
+    <value>Personnel classification type</value>
+    <comment />
+  </data>
+  <data name="work_type_default_description" xml:space="preserve">
+    <value>Select all types of people categorization to use</value>
+    <comment />
+  </data>
+  <data name="kakao_setting" xml:space="preserve">
+    <value>Kakao Setting</value>
+    <comment />
+  </data>
+  <data name="kakao_app_key_title" xml:space="preserve">
+    <value>App Key</value>
+    <comment />
+  </data>
+  <data name="kakao_app_key_description" xml:space="preserve">
+    <value>Kakao config: AppKey</value>
+    <comment />
+  </data>
+  <data name="kakao_secret_key_title" xml:space="preserve">
+    <value>Secret Key</value>
+    <comment />
+  </data>
+  <data name="kakao_secret_key_description" xml:space="preserve">
+    <value>Kakao config: SecretKey</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_key_title" xml:space="preserve">
+    <value>Sender Key</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_key_description" xml:space="preserve">
+    <value>Kakao config: SenderKey</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_name_title" xml:space="preserve">
+    <value>Sender Name</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_name_description" xml:space="preserve">
+    <value>Kakao config: SenderName</value>
+    <comment />
+  </data>
+  <data name="allow_generate_qrcode_offline_title" xml:space="preserve">
+    <value>Allow generate QrCode offline</value>
+    <comment />
+  </data>
+  <data name="allow_generate_qrcode_offline_description" xml:space="preserve">
+    <value>Enable/disable allow generate QrCode offline</value>
+    <comment />
+  </data>
+  <data name="use_static_qrcode_title" xml:space="preserve">
+    <value>Use static QrCode</value>
+    <comment />
+  </data>
+  <data name="use_static_qrcode_description" xml:space="preserve">
+    <value>Enable/disable Use static QrCode</value>
+    <comment />
+  </data>
+  <data name="link_user_to_account_title" xml:space="preserve">
+    <value>Link user to account</value>
+    <comment />
+  </data>
+  <data name="link_user_to_account_description" xml:space="preserve">
+    <value>Show button open modal link user to account in Account Management Page</value>
+    <comment />
+  </data>
+  <data name="anti_passback_lift_for_visitor_title" xml:space="preserve">
+    <value>Enable/Disable auto set lift of elevator for visitor</value>
+  </data>
+  <data name="anti_passback_lift_for_visitor_description" xml:space="preserve">
+    <value>If enable this property, Elevator will active same as feature anti-passback</value>
+  </data>
+  <data name="overwrite_floor_lift_for_visitor_title" xml:space="preserve">
+    <value>Set floor default for feature visitor's elevator</value>
+  </data>
+  <data name="overwrite_floor_lift_for_visitor_description" xml:space="preserve">
+    <value>Array list of floors reset default visitor's elevator</value>
+  </data>
+  <data name="lblHeaderSetting" xml:space="preserve">
+    <value>Header setting</value>
+  </data>
+  <data name="lblDoorListSetting" xml:space="preserve">
+    <value>Door List Setting</value>
+  </data>
+  <data name="lblMonitoringEventsSetting" xml:space="preserve">
+    <value>Monitoring Events Setting</value>
+  </data>
+  <data name="lblBuildingListSetting" xml:space="preserve">
+    <value>Building list setting</value>
+  </data>
+  <data name="vietnamese_school_language" xml:space="preserve">
+    <value>Vietnamese (School)</value>
+  </data>
+  <data name="white_list_ip_address_title" xml:space="preserve">
+    <value>White List Of IP Address</value>
+  </data>
+  <data name="white_list_ip_address_description" xml:space="preserve">
+    <value>List of IP addresses allowed to log into the system</value>
+  </data>
+  <data name="allow_mobile_access_without_white_list_title" xml:space="preserve">
+    <value>Allow/Disallow mobile app always access to system</value>
+  </data>
+  <data name="allow_mobile_access_without_white_list_description" xml:space="preserve">
+    <value>Allow mobile apps to always access the system (bypassing the allowed IP list check)</value>
+  </data>
+  <data name="company_device_password_title" xml:space="preserve">
+    <value>Password of Device</value>
+  </data>
+  <data name="company_device_password_description" xml:space="preserve">
+    <value>The password used to log in to the device</value>
+  </data>
+  <data name="require_password_change_on_first_login_title" xml:space="preserve">
+    <value>Require password change on first login</value>
+  </data>
+  <data name="require_password_change_on_first_login_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_require_uppercase_title" xml:space="preserve">
+    <value>Password must contain uppercase</value>
+  </data>
+  <data name="password_require_uppercase_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_require_number_title" xml:space="preserve">
+    <value>Password must contain number(1,2,...)</value>
+  </data>
+  <data name="password_require_number_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_require_special_char_title" xml:space="preserve">
+    <value>Password must contain special character(@,#,...)</value>
+  </data>
+  <data name="password_require_special_char_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_time_need_to_change_title" xml:space="preserve">
+    <value>Time to change password(minutes)</value>
+  </data>
+  <data name="password_time_need_to_change_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_max_valid_time_title" xml:space="preserve">
+    <value>Maximum time of use with valid password(minutes)</value>
+  </data>
+  <data name="password_max_valid_time_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="max_failed_login_attempts_title" xml:space="preserve">
+    <value>Maximum number of failed login attempts</value>
+  </data>
+  <data name="max_failed_login_attempts_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="lockout_duration_minutes_title" xml:space="preserve">
+    <value>Waiting time corresponding to the maximum number of failed login attempts (minutes)</value>
+  </data>
+  <data name="lockout_duration_minutes_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="time_session_timeout_title" xml:space="preserve">
+    <value>Login session timeout (minutes)</value>
+  </data>
+  <data name="time_session_timeout_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="login_setting" xml:space="preserve">
+    <value>Login setting</value>
+  </data>
+</root>

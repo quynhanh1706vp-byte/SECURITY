@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true"></xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PlugInCommon" xml:space="preserve">
+        <value>Comon</value>
+    </data>
+  <data name="PlugInCardIssuing" xml:space="preserve">
+        <value>Card Issuing</value>
+    </data>
+  <data name="PlugInAccessControl" xml:space="preserve">
+        <value>Access Control</value>
+    </data>
+  <data name="PlugInTimeAttendance" xml:space="preserve">
+        <value>Time Attendance</value>
+    </data>
+  <data name="PlugInVisitManagement" xml:space="preserve">
+        <value>Visit Management</value>
+    </data>
+  <data name="PlugInCanteenManagement" xml:space="preserve">
+        <value>Canteen Management</value>
+    </data>
+  <data name="PlugInQrCode" xml:space="preserve">
+        <value>Qr Code</value>
+    </data>
+  <data name="PlugInScreenMessage" xml:space="preserve">
+        <value>Screen Message</value>
+    </data>
+  <data name="PlugInPassCode" xml:space="preserve">
+        <value>Pass Code</value>
+    </data>
+  <data name="PlugInCameraPlugIn" xml:space="preserve">
+    <value>Camera PlugIn 1</value>
+  </data>
+  <data name="PlugInArmyManagement" xml:space="preserve">
+        <value>Army Management</value>
+    </data>
+  <data name="DescPlugInAccessControl" xml:space="preserve">
+    <value>This plugins enable for the company that need to control door. This including Access-Group, Access-Time, Holiday, etc.</value>
+  </data>
+  <data name="DescPlugInArmyManagement" xml:space="preserve">
+    <value>This plugins includes features for military units. Enabling this option significantly changes user- and visitor-related features.</value>
+  </data>
+  <data name="DescPlugInCameraPlugIn" xml:space="preserve">
+    <value>This plugins enable for the company that use cameras for face recognition when entering and leaving.</value>
+  </data>
+  <data name="DescPlugInCanteenManagement" xml:space="preserve">
+    <value>This plugins includes many features for restaurants.
+&lt;br&gt;Enabling this option adds/changes many features for restaurant management.</value>
+  </data>
+  <data name="DescPlugInCardIssuing" xml:space="preserve">
+    <value>This plugins used for print card, issue card,...</value>
+  </data>
+  <data name="DescPlugInCommon" xml:space="preserve">
+    <value>This plugins applies to all companies by default.</value>
+  </data>
+  <data name="DescPlugInPassCode" xml:space="preserve">
+    <value>This plugins enable for the company that use Pass Code as identification.
+&lt;br&gt;Use supported device such as: DE960, iTouchPop 2A, iTouchPop X, etc.</value>
+  </data>
+  <data name="DescPlugInQrCode" xml:space="preserve">
+    <value>This plugins enable for the company that use QR code as identification.</value>
+  </data>
+  <data name="DescPlugInScreenMessage" xml:space="preserve">
+    <value>This plugins enable for the company that use readers that have screen.  E.g iTouchPop 2A, iTouchPop X, etc.
+&lt;br&gt;This option makes to be able to change screen message.</value>
+  </data>
+  <data name="DescPlugInTimeAttendance" xml:space="preserve">
+    <value>This plugins is for the company that need to record clock-in/clock-out, manage attendance, set working hours, and request leave.</value>
+  </data>
+  <data name="DescPlugInVisitManagement" xml:space="preserve">
+    <value>This plugins enable to manage visitors.
+&lt;br&gt;This option makes you can activate this option to apply for a visit, invite visitors, and manage visitors.</value>
+  </data>
+  <data name="PlugInEventManagement" xml:space="preserve">
+    <value>Event Management</value>
+  </data>
+  <data name="DescPlugInEventManagement" xml:space="preserve">
+    <value>Event Management</value>
+  </data>
+  <data name="DescPlugInVehiclePlugIn" xml:space="preserve">
+    <value>This plugins enable for using vehicle functions.</value>
+  </data>
+  <data name="PlugInVehiclePlugIn" xml:space="preserve">
+    <value>Vehicle PlugIn</value>
+  </data>
+  <data name="DescPlugInCovid19" xml:space="preserve">
+    <value>Covid-19</value>
+  </data>
+  <data name="PlugInCovid19" xml:space="preserve">
+    <value>Covid19</value>
+  </data>
+  <data name="PlugInBuildingMaster" xml:space="preserve">
+    <value>Master by Building</value>
+  </data>
+  <data name="DescPlugInBuildingMaster" xml:space="preserve">
+    <value>This plugins enables to set up master for each building.</value>
+  </data>
+  <data name="PlugInCameraPlugIn2" xml:space="preserve">
+    <value>Camera PlugIn 2</value>
+  </data>
+  <data name="DescPlugInCameraPlugIn2" xml:space="preserve">
+    <value>PlugIn camera 2. Using sync all usersfrom hanet to system</value>
+  </data>
+  <data name="PlugInElevator" xml:space="preserve">
+    <value>Elevator PlugIn</value>
+  </data>
+  <data name="DescPlugInElevator" xml:space="preserve">
+    <value>Elevator PlugIn</value>
+  </data>
+  <data name="PlugInVideoDoorbell" xml:space="preserve">
+    <value>Video Doorbell PlugIn</value>
+  </data>
+  <data name="DescPlugInVideoDoorbell" xml:space="preserve">
+    <value>Integrated Jitsi video conference used as a doorbell</value>
+  </data>
+  <data name="PlugInFaceRecognition" xml:space="preserve">
+    <value>Face Recognition</value>
+  </data>
+  <data name="DescPlugInFaceRecognition" xml:space="preserve">
+    <value>This plugins enables the use of face recognition devices.</value>
+  </data>
+  <data name="PlugInVein" xml:space="preserve">
+    <value>Vein PlugIn</value>
+  </data>
+  <data name="DescPlugInVein" xml:space="preserve">
+    <value>This plugins enable for using vein recognition devices.</value>
+  </data>
+  <data name="PlugInLibraryManagement" xml:space="preserve">
+    <value>Library Management</value>
+  </data>
+  <data name="DescPlugInLibraryManagement" xml:space="preserve">
+    <value>This plugins enable to management library </value>
+  </data>
+  <data name="PlugInUnKnownPersonManagement" xml:space="preserve">
+    <value>Unknown Person Management</value>
+  </data>
+  <data name="DescPlugInUnknownPersonManagement" xml:space="preserve">
+    <value>If enable this plugin, the company will manage access history of unknown person (unknown face)</value>
+  </data>
+  <data name="PlugInFingerPrint" xml:space="preserve">
+    <value>Finger Print PlugIn</value>
+  </data>
+  <data name="DescPlugInFingerPrint" xml:space="preserve">
+    <value>This plugins enable for use finger print device </value>
+  </data>
+  <data name="PlugInKakao" xml:space="preserve">
+    <value>Kakao PlugIn</value>
+  </data>
+  <data name="DescPlugInKakao" xml:space="preserve">
+    <value>This plugins enable for use send message by Kakao</value>
+  </data>
+  <data name="PlugInDeptAcGrpConn" xml:space="preserve">
+    <value>Connection between Department and AccessGroup</value>
+  </data>
+  <data name="DescPlugInDeptAcGrpConn" xml:space="preserve">
+    <value>Basic AccessGroup is set for each department through the connection between the Department and AccessGroup.</value>
+  </data>
+  <data name="PlugInDepartmentAccessLevel" xml:space="preserve">
+    <value>Department Access Level</value>
+  </data>
+  <data name="DescPlugInDepartmentAccessLevel" xml:space="preserve">
+    <value>This plugins enable for allows device management for each department</value>
+  </data>
+  <data name="DescPlugInCustomizeLanguage" xml:space="preserve">
+    <value>If enable this plugin, the company will set default some languagues and the user not change to other languague</value>
+  </data>
+  <data name="PlugInCustomizeLanguage" xml:space="preserve">
+    <value>Customize Language</value>
+  </data>
+</root>

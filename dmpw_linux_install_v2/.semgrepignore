@@ -1,0 +1,24 @@
+# build artifacts
+**/bin/**
+**/obj/**
+**/dist/**
+**/build/**
+**/out/**
+
+# dependencies
+**/node_modules/**
+**/packages/**
+
+# VCS / cache
+**/.git/**
+**/.cache/**
+
+# generated / large files
+**/*.min.js
+**/*.bundle.js
+**/*.map
+**/*.lock
+**/*.zip
+**/*.tar
+**/*.tar.gz
+**/*.tgz

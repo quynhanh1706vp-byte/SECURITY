@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="titleRequestApproval" xml:space="preserve">
+        <value>Thư yêu cầu duyệt khách mời</value>
+    </data>
+  <data name="titleApprovalVisit" xml:space="preserve">
+        <value>Thư mời gửi cho khách</value>
+    </data>
+  <data name="titleRejectVisit" xml:space="preserve">
+        <value>Thư từ chối khách mời</value>
+    </data>
+  <data name="titleLinkRegisterVisit" xml:space="preserve">
+        <value>Thư gửi link đăng kí khách mời</value>
+    </data>
+  <data name="titleWelcomeUserEmail" xml:space="preserve">
+        <value>Thư chào mừng người dùng mới</value>
+    </data>
+  <data name="titleSendPassCodeEmail" xml:space="preserve">
+        <value>Thư gửi mã số cho người dùng</value>
+    </data>
+  <data name="descriptionApprovalVisit" xml:space="preserve">
+        <value>Thư mời gửi cho khách, bao gồm  QR , đỉa chỉ  công ty, thời gian.</value>
+    </data>
+  <data name="descriptionLinkRegisterVisit" xml:space="preserve">
+        <value>Thư gửi link đăng kí khách mời.</value>
+    </data>
+  <data name="descriptionRejectVisit" xml:space="preserve">
+        <value>Thư từ chối gửi cho khách mời.</value>
+    </data>
+  <data name="descriptionRequestApproval" xml:space="preserve">
+        <value>Thư gửi cho quản lý để duyệt khách mời.</value>
+    </data>
+  <data name="descriptionSendPassCodeEmail" xml:space="preserve">
+        <value>Thư gửi mã số cho người dùng.</value>
+    </data>
+  <data name="descriptionWelcomeUserEmail" xml:space="preserve">
+        <value>Thư chào mừng người dùng mới. Thư có bao gồm thông tin tải ửng dụng dị động, đặt mật khẩu.</value>
+    </data>
+    <data name="titleSendQREmail" xml:space="preserve">
+        <value>Thư gửi ảnh mã QR cho khách mời</value>
+    </data>
+    <data name="descriptionSendQREmail" xml:space="preserve">
+        <value>Thư gửi cho khách mời kèm theo mã QR</value>
+    </data>
+  <data name="titleWelcomeMailForManager" xml:space="preserve">
+        <value>Thư chào mừng người dùng quản lý mới</value>
+    </data>
+  <data name="descriptionWelcomeMailForManager" xml:space="preserve">
+        <value>Thư chào mừng người dùng quản lý mới. Thư có bao gồm thông tin tải ửng dụng dị động, đặt mật khẩu, link đến trang quản trị.</value>
+    </data>
+  <data name="descriptionWelcomeMailForAdmin" xml:space="preserve">
+        <value>Mail is sent to admin include: account and link reset password.</value>
+    </data>
+    <data name="titleWelcomeMailForAdmin" xml:space="preserve">
+        <value>Thư gửi tài khoản / mật khẩu cho quản trị hệ thống</value>
+    </data>
+  <data name="descriptionAddress" xml:space="preserve">
+        <value>Địa chỉ công ty</value>
+    </data>
+  <data name="descriptionAndroidIcon" xml:space="preserve">
+        <value>Icon Android</value>
+    </data>
+  <data name="descriptionApprovalName" xml:space="preserve">
+        <value>Tên người mời</value>
+    </data>
+  <data name="descriptionCompanyName" xml:space="preserve">
+        <value>Tên công ty</value>
+    </data>
+    <data name="descriptionApprovalCount" xml:space="preserve">
+        <value>Số lượng phê duyệt khách mời</value>
+    </data>
+  <data name="descriptionEmailWelcome" xml:space="preserve">
+        <value>The user's email account is created</value>
+    </data>
+  <data name="descriptionImageQRCode" xml:space="preserve">
+        <value>Mã QR</value>
+    </data>
+  <data name="descriptionIosIcon" xml:space="preserve">
+        <value>Icon Ios</value>
+    </data>
+  <data name="descriptionLogoImageId" xml:space="preserve">
+        <value>Logo công ty</value>
+    </data>
+  <data name="descriptionPassCode" xml:space="preserve">
+        <value>Mã số</value>
+    </data>
+  <data name="descriptionToken" xml:space="preserve">
+        <value>Link thay đổi mật khẩu</value>
+    </data>
+  <data name="descriptionUserName" xml:space="preserve">
+        <value>Tên đăng nhập</value>
+    </data>
+  <data name="descriptionUserNameWelcome" xml:space="preserve">
+        <value>Tên đăng nhập mới</value>
+    </data>
+  <data name="descriptionVisitEmail" xml:space="preserve">
+        <value>Địa chỉ email của khách mời</value>
+    </data>
+  <data name="descriptionVisitLink" xml:space="preserve">
+        <value>Link đến trang quản lý khách mời</value>
+    </data>
+  <data name="descriptionVisitLinkQrCode" xml:space="preserve">
+        <value>Link đăng kí khách mời</value>
+    </data>
+  <data name="descriptionVisitorName" xml:space="preserve">
+        <value>Tên khách mời</value>
+    </data>
+  <data name="descriptionVisitorPhone" xml:space="preserve">
+        <value>Số  điện thoại của khách mời</value>
+    </data>
+    <data name="descriptionVisitReason" xml:space="preserve">
+        <value>Mục đích</value>
+    </data>
+    <data name="descriptionVisitTargetName" xml:space="preserve">
+        <value>Tên người cần gặp</value>
+    </data>
+  <data name="descriptionVisitTimeAccess" xml:space="preserve">
+        <value>Thời gian chuyến thăm</value>
+    </data>
+  <data name="descriptionVisitUserCreate" xml:space="preserve">
+        <value>Tên người mời</value>
+    </data>
+  <data name="descriptionVisitUserReject" xml:space="preserve">
+        <value>Tên người duyệt từ chối</value>
+    </data>
+  <data name="descriptionPasswordDefault" xml:space="preserve">
+        <value>Mật khẩu mặc định</value>
+    </data>
+    <data name="descriptionFireCrackerIcon" xml:space="preserve">
+        <value>Fire Cracker Icon</value>
+    </data>
+    <data name="descriptionGetItOnGooglePlayIcon" xml:space="preserve">
+        <value>Google Play Icon</value>
+    </data>
+    <data name="descriptionDownloadOnAppStoreIcon" xml:space="preserve">
+        <value>App Store Icon</value>
+    </data>
+    <data name="descriptionCompanyLogo" xml:space="preserve">
+        <value>Logo Công ty</value>
+    </data>
+    <data name="descriptionTimeIcon" xml:space="preserve">
+        <value>Icon thời gian</value>
+    </data>
+    <data name="descriptionLocationIcon" xml:space="preserve">
+        <value>Icon Địa chỉ</value>
+    </data>
+    <data name="descriptionDoorIcon" xml:space="preserve">
+        <value>Icon cửa truy cập</value>
+    </data>
+    <data name="descriptionDoorListVisitAccess" xml:space="preserve">
+        <value>Danh sách cửa được truy cập</value>
+    </data>
+    <data name="descriptionPhoneIcon" xml:space="preserve">
+        <value>Icon liên hệ</value>
+    </data>
+    <data name="descriptionContactVisitTarget" xml:space="preserve">
+        <value>Thông tin người liên hệ</value>
+    </data>
+    <data name="titleNotifyOverDueBook" xml:space="preserve">
+        <value>Thư gửi thông báo sách được mượn đã bị quá hạn</value>
+    </data>
+    <data name="descriptionNotifyOverDueBook" xml:space="preserve">
+        <value>Thư gửi cho người dùng để thông báo sách mượn đã quá hạn.</value>
+    </data>
+    <data name="descriptionUserNameBorrowBook" xml:space="preserve">
+        <value>Tên người mượn sách</value>
+    </data>
+    <data name="descriptionBookNameBorrowBook" xml:space="preserve">
+        <value>Tên sách</value>
+    </data>
+    <data name="descriptionBorrowDateBorrowBook" xml:space="preserve">
+        <value>Ngày mượn sách</value>
+    </data>
+    <data name="descriptionDeadlineDateBorrowBook" xml:space="preserve">
+        <value>Ngày trả sách</value>
+    </data>
+    <data name="descriptionNameOfUser" xml:space="preserve">
+        <value>Tên của thành viên</value>
+    </data>
+    <data name="descriptionLeaveType" xml:space="preserve">
+        <value>Loại ngày nghỉ phép</value>
+    </data>
+    <data name="descriptionLeaveFromDate" xml:space="preserve">
+        <value>Bắt đầu ngày nghỉ</value>
+    </data>
+    <data name="descriptionLeaveToDate" xml:space="preserve">
+        <value>Kết thúc ngày nghỉ</value>
+    </data>
+    <data name="descriptionLeaveReason" xml:space="preserve">
+        <value>Lý do nghỉ phép</value>
+    </data>
+    <data name="descriptionLeaveRejectReason" xml:space="preserve">
+        <value>Lý do từ chối đơn xin nghỉ phép</value>
+    </data>
+    <data name="titleLeaveRequestReview" xml:space="preserve">
+        <value>Thư gửi cho quản lý phê duyệt đơn xin nghỉ của nhân viên trong công ty</value>
+    </data>
+    <data name="descriptionLeaveRequestReview" xml:space="preserve">
+        <value>Thư yêu cầu quản lý phê duyệt đơn xin nghỉ phép của nhân viên</value>
+    </data>
+    <data name="descriptionLeaveRequestLink" xml:space="preserve">
+        <value>Đường dẫn trang quản lý danh sách đơn xin nghỉ</value>
+    </data>
+    <data name="descriptionManagerApproval" xml:space="preserve">
+        <value>Tên của quản lý phê duyệt</value>
+    </data>
+    <data name="descriptionLeaveUserName" xml:space="preserve">
+        <value>Tên người dùng tạo đơn xin nghỉ phép</value>
+    </data>
+    <data name="titleLeaveRequestApproval" xml:space="preserve">
+        <value>Đơn xin nghỉ phép đã được phê duyệt</value>
+    </data>
+    <data name="descriptionLeaveRequestApproval" xml:space="preserve">
+        <value>Thư thông báo cho người dùng đơn xin phép được phê duyệt</value>
+    </data>
+    <data name="titleLeaveRequestReject" xml:space="preserve">
+        <value>Đơn xin nghỉ phép đã bị từ chối</value>
+    </data>
+    <data name="descriptionLeaveRequestReject" xml:space="preserve">
+        <value>Thư thông báo cho người dùng đơn xin nghỉ đã bị từ chối</value>
+    </data>
+    <data name="lblEmailTemplate" xml:space="preserve">
+        <value>Mẫu Thư điện tử</value>
+    </data>
+
+    <data name="lblNoteScanQR" xml:space="preserve">
+        <value>Quét mã QR này để vào cửa.</value>
+    </data>
+    <data name="lblTextInvite" xml:space="preserve">
+        <value>Bạn được mời bởi</value>
+    </data>
+    <data name="lblTextPowerBy" xml:space="preserve">
+        <value>Được cung cấp bởi Duall Master</value>
+    </data>
+    <data name="SubjectCardQRTemplate" xml:space="preserve">
+        <value>Mẫu QR thẻ</value>
+    </data>
+    <data name="titleQRCardTemplate" xml:space="preserve">
+        <value>Mẫu QR thẻ</value>
+    </data>
+
+    <data name="descriptionImgVisit1" xml:space="preserve">
+        <value>Đường dẫn ảnh của người mời</value>
+    </data>
+  <data name="descriptionImgVisit2" xml:space="preserve">
+        <value>Đường dẫn ảnh của người đến thăm</value>
+    </data>
+  <data name="descriptionNoteScanQR" xml:space="preserve">
+        <value>Mô tả bên dưới mã QR</value>
+    </data>
+  <data name="descriptionTextPowerBy" xml:space="preserve">
+        <value>Mô tả về tổ chức cung cấp thẻ</value>
+    </data>
+     <data name="descriptionTextInvite" xml:space="preserve">
+        <value>Tiêu đề của thẻ</value>
+  </data>
+  <data name="descriptionLogoSquare" xml:space="preserve">
+        <value>Lô gô của công ty</value>
+  </data>
+    <data name="titleMonitoringTemplate" xml:space="preserve">
+        <value>Mẫu màn hình</value>
+    </data>
+    <data name="descriptionMonitoringTemplate" xml:space="preserve">
+        <value>Mẫu được sử dụng để xem màn hình hiển thị trong trang màn hình thiết bị.</value>
+    </data>
+    <data name="descriptionResultCheckin" xml:space="preserve">
+        <value>Ảnh Checkin.</value>
+    </data>
+    <data name="descriptionVisitorAvatar" xml:space="preserve">
+        <value>Ảnh của khách mời</value>
+    </data>
+    <data name="descriptionVisitorPosition" xml:space="preserve">
+        <value>Vị trí chức vụ của khách mời.</value>
+    </data>
+</root>

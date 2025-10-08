@@ -1,0 +1,80 @@
+# Semgrep Minimal Pack v3.1 (safe starter)
+rules:
+
+# 1) C# — Missing [Authorize] on write methods
+- id: csharp-missing-authorize-on-modifying-actions
+  message: >
+    State-changing action (POST/PUT/PATCH/DELETE) is missing [Authorize] (or equivalent).
+    Enforce deny-by-default and require explicit authorization on write operations.
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-either:
+        - pattern: |
+            public class $CTRL : $BASE {
+              ...
+              [HttpPost(...)]
+              public $T $M(...){ ... }
+            }
+        - pattern: |
+            public class $CTRL : $BASE {
+              ...
+              [HttpPut(...)]
+              public $T $M(...){ ... }
+            }
+        - pattern: |
+            public class $CTRL : $BASE {
+              ...
+              [HttpPatch(...)]
+              public $T $M(...){ ... }
+            }
+        - pattern: |
+            public class $CTRL : $BASE {
+              ...
+              [HttpDelete(...)]
+              public $T $M(...){ ... }
+            }
+    - pattern-not-inside: |
+        [Authorize(...)]
+        public class $CTRL : $BASE { ... }
+    - pattern-not: |
+        [Authorize(...)]
+        public $T $M(...){ ... }
+  metadata: { category: broken-access-control, impact: high }
+
+# 2) C# — Path traversal only when reaching I/O sinks
+- id: csharp-path-traversal-io-sinks
+  message: >
+    Possible path traversal into file I/O sink. Normalize with Path.GetFullPath and enforce baseDir prefix
+    or use Path.GetFileName for filenames.
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-either:
+        - pattern: File.$F(...)
+        - pattern: Directory.$F(...)
+        - pattern: new FileStream(...)
+    - metavariable-pattern:
+        metavariable: $F
+        pattern: (Open|OpenRead|OpenWrite|ReadAll.*|WriteAll.*|Create|Delete|Move|Copy|Exists)
+    - pattern-not: |
+        Path.Combine(...)
+  metadata: { category: path-traversal, impact: high }
+
+# 3) Generic — Secrets (high-signal regex)
+- id: generic-secrets-high
+  message: 'Hardcoded secret (API key / token / private key / password). Remove & rotate.'
+  severity: CRITICAL
+  languages: [generic]
+  patterns:
+    - pattern-regex: (?i)(aws_.{0,20}secret|access[_-]?key|api[_-]?key|apikey|token|private[_-]?key|jwt[_-]?secret|password)\s*[:=]\s*["'][A-Za-z0-9/\+_=:\-]{12,}["']
+  metadata: { category: secrets, impact: critical }
+
+# 4) C# — Logging sensitive values
+- id: csharp-logging-sensitive-data
+  message: 'Avoid logging sensitive values (passwords, tokens, secrets).'
+  severity: MEDIUM
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (?i)Log(Information|Debug|Warning|Error)\(.*(password|secret|token).*
+  metadata: { category: sensitive-logging, impact: medium }

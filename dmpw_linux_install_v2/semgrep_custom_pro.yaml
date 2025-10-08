@@ -1,0 +1,308 @@
+# Semgrep Pro-grade Custom Pack (C# + JS/TS + Docker/IaC)
+# Goal: widen coverage, cut noise, align severity with your policy (CRITICAL/HIGH/MEDIUM).
+
+rules:
+
+# ----------------------------
+# 1) Broken Access Control
+# ----------------------------
+- id: csharp-missing-authorize-on-modifying-actions
+  message: >-
+    Controller action that modifies state (POST/PUT/PATCH/DELETE) is missing [Authorize] (or equivalent).
+    Enforce deny-by-default and require explicit authorization on write operations.
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-either:
+        - pattern: |
+            [$RET]
+            public class $CTRL : $BASE {
+              ...
+              [HttpPost(...)] 
+              public $T $M(...){ ... }
+            }
+        - pattern: |
+            [$RET]
+            public class $CTRL : $BASE {
+              ...
+              [HttpPut(...)] 
+              public $T $M(...){ ... }
+            }
+        - pattern: |
+            [$RET]
+            public class $CTRL : $BASE {
+              ...
+              [HttpPatch(...)] 
+              public $T $M(...){ ... }
+            }
+        - pattern: |
+            [$RET]
+            public class $CTRL : $BASE {
+              ...
+              [HttpDelete(...)] 
+              public $T $M(...){ ... }
+            }
+    - pattern-not-inside: |
+        [Authorize(...)] 
+        public class $CTRL : $BASE { ... }
+    - pattern-not: |
+        [Authorize(...)] 
+        public $T $M(...){ ... }
+  metadata:
+    category: broken-access-control
+    impact: high
+    references:
+      - https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+
+- id: csharp-authz-fallbackpolicy-missing-or-permissive
+  message: >-
+    Authorization FallbackPolicy is missing or permissive. Use deny-by-default and require [Authorize] unless explicitly allowed.
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-either:
+        - pattern: |
+            services.AddAuthorization(options => {
+              // no FallbackPolicy or set to PermitAll
+              ...
+            });
+        - pattern: |
+            builder.Services.AddAuthorization(options => {
+              // no FallbackPolicy or set to PermitAll
+              ...
+            });
+  metadata:
+    category: broken-access-control
+    impact: high
+    notes: This is heuristic; verify in review.
+
+# ----------------------------
+# 2) Path Traversal with I/O
+# ----------------------------
+- id: csharp-path-traversal-io-sinks
+  message: >-
+    Possible path traversal into file I/O sink. Normalize path with Path.GetFullPath and enforce baseDir prefix or use Path.GetFileName for file names.
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-either:
+        - pattern: File.$F(...)
+        - pattern: Directory.$F(...)
+        - pattern: new FileStream(...)
+        - pattern: PhysicalFile(...)
+        - pattern: FileResult(...)
+    - metavariable-pattern:
+        metavariable: $F
+        pattern: (Open|OpenRead|OpenWrite|ReadAll.*|WriteAll.*|Create|Delete|Move|Copy|Exists)
+  pattern-not: |
+    Path.Combine(...)
+  metadata:
+    category: path-traversal
+    impact: high
+    recommended_fixes:
+      - Use Path.GetFullPath(userPath) and check StartsWith(baseDir + Path.DirectorySeparatorChar)
+      - For filenames only, use Path.GetFileName(userInput)
+
+# ----------------------------
+# 3) Secrets (generic high-signal)
+# ----------------------------
+- id: generic-secrets-high
+  message: 'Hardcoded secret detected (API key / token / private key / password). Remove from repo and rotate.'
+  severity: CRITICAL
+  languages: [generic]
+  patterns:
+    - pattern-regex: |
+        (?i)(aws_.{0,20}secret|access[_-]?key|api[_-]?key|apikey|token|private[_-]?key|jwt[_-]?secret|password)\s*[:=]\s*["'][A-Za-z0-9/\+_=:\-]{12,}["']
+  metadata:
+    category: secrets
+    impact: critical
+    references:
+      - https://owasp.org/www-community/vulnerabilities/Use_of_hard-coded_password
+
+# ----------------------------
+# 4) DOM XSS (JS/TS/React)
+# ----------------------------
+- id: js-domxss-dangerous-innerhtml
+  message: 'Dangerous HTML sink (innerHTML/outerHTML/document.write) with possibly user-controlled content.'
+  severity: ERROR
+  languages: [javascript, typescript]
+  patterns:
+    - pattern-either:
+        - pattern: $EL.innerHTML = $X
+        - pattern: $EL.outerHTML = $X
+        - pattern: document.write($X)
+  metadata:
+    category: xss
+    impact: high
+
+# ----------------------------
+# 5) CSRF (ASP.NET MVC/Minimal APIs)
+# ----------------------------
+- id: csharp-missing-antiforgery-token
+  message: 'State-changing controller action missing anti-forgery validation.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-either:
+        - pattern: |
+            public class $C : $BASE {
+              ...
+              [HttpPost(...)] 
+              public $T $M(...){ ... }
+            }
+        - pattern: |
+            public class $C : $BASE {
+              ...
+              [HttpPut(...)] 
+              public $T $M(...){ ... }
+            }
+        - pattern: |
+            public class $C : $BASE {
+              ...
+              [HttpDelete(...)] 
+              public $T $M(...){ ... }
+            }
+    - pattern-not: |
+        [ValidateAntiForgeryToken]
+        public $T $M(...){ ... }
+  metadata:
+    category: csrf
+    impact: high
+
+# ----------------------------
+# 6) SQL Injection (raw/concat)
+# ----------------------------
+- id: csharp-sql-injection-concat
+  message: 'Possible SQL injection via string concatenation/interpolation. Use parameterized queries.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-either:
+        - pattern: $DB.Execute(... + $UNTRUSTED + ...)
+        - pattern: $DB.Query(... + $UNTRUSTED + ...)
+        - pattern: $DB.Execute($"..." + $UNTRUSTED + "...")
+        - pattern: $DB.Query($"..." + $UNTRUSTED + "...")
+        - pattern: $CTX.Database.ExecuteSqlRaw(... + $UNTRUSTED + ...)
+        - pattern: $CTX.Database.ExecuteSqlInterpolated($"..." + $UNTRUSTED + "...")
+  metadata:
+    category: injection
+    impact: high
+
+# ----------------------------
+# 7) SSRF (user-controlled URL)
+# ----------------------------
+- id: csharp-ssrf-user-controlled-url
+  message: 'SSRF risk: outbound HTTP with user-controlled URL. Enforce allowlist and block link-local/metadata ranges.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-either:
+        - pattern: $HC.SendAsync($REQ)
+        - pattern: HttpClient.$M($URL)
+        - pattern: WebRequest.Create($URL)
+    - metavariable-pattern:
+        metavariable: $URL
+        pattern: $X
+  metadata:
+    category: ssrf
+    impact: high
+    notes: Verify dataflow (source → sink) in review.
+
+- id: js-ssrf-fetch-axios
+  message: 'Client SSRF/callback abuse: fetch/axios with user-controlled URL.'
+  severity: MEDIUM
+  languages: [javascript, typescript]
+  patterns:
+    - pattern-either:
+        - pattern: fetch($U, ...)
+        - pattern: axios($U, ...)
+  metadata:
+    category: ssrf
+    impact: medium
+
+# ----------------------------
+# 8) WebSocket over ws://
+# ----------------------------
+- id: insecure-websocket-ws
+  message: 'Insecure WebSocket (ws://). Use wss:// and TLS.'
+  severity: ERROR
+  languages: [csharp, javascript, typescript]
+  patterns:
+    - pattern-regex: |
+        (?i)ws://
+  metadata:
+    category: transport
+    impact: high
+
+# ----------------------------
+# 9) Container hardening (Dockerfile)
+# ----------------------------
+- id: docker-nonroot-and-capabilities
+  message: 'Harden Dockerfile: run as non-root, drop capabilities, set readOnlyRootFilesystem when possible.'
+  severity: ERROR
+  languages: [dockerfile]
+  patterns:
+    - pattern-either:
+        - pattern: |
+            FROM $BASE
+            ...
+            USER root
+        - pattern-not: |
+            USER $NONROOT
+  metadata:
+    category: container
+    impact: high
+
+# ----------------------------
+# 10) IaC (Kubernetes) hardening
+# ----------------------------
+- id: k8s-hardening-basics
+  message: 'K8s hardening: drop capabilities, readOnlyRootFilesystem, runAsNonRoot, seccompProfile.'
+  severity: ERROR
+  languages: [yaml]
+  patterns:
+    - pattern: |
+        apiVersion: $V
+        kind: Pod
+        metadata: ...
+        spec:
+          containers:
+            - name: $N
+              securityContext: $SC
+  pattern-not: |
+    securityContext:
+      runAsNonRoot: true
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+  metadata:
+    category: iac
+    impact: high
+
+# ----------------------------
+# 11) JWT misuse
+# ----------------------------
+- id: csharp-jwt-without-validate
+  message: 'JWT is parsed without signature/claims validation. Ensure ValidateToken is used with proper parameters.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        var token = new JwtSecurityTokenHandler().ReadToken($S);
+  pattern-not: |
+    new JwtSecurityTokenHandler().ValidateToken(...)
+  metadata:
+    category: authn
+    impact: high
+
+# ----------------------------
+# 12) Logging sensitive data
+# ----------------------------
+- id: csharp-logging-sensitive-data
+  message: 'Avoid logging sensitive values (passwords, tokens, secrets).'
+  severity: MEDIUM
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (?i)Log(Information|Debug|Warning|Error)\(.*(password|secret|token).*
+  metadata:
+    category: sensitive-logging
+    impact: medium

@@ -1,0 +1,48 @@
+﻿@using DeMasterProCloud.DataModel;
+@{
+    ViewData["Title"] = "EventLogPdfView";
+}
+
+<h1>Event Log Export</h1>
+
+
+@{
+    var data = ViewBag.Message;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class='header'><h1>DMPW EventLog</h1></div>
+    <table align='center'>
+        <tr>
+            <th>Access Time</th>
+            <th>User Name</th>
+            <th>Card Id</th>
+            <th>Device</th>
+            <th>Door Name</th>
+            <th>Card Type</th>
+            <th>IN/OUT</th>
+            <th>Event Detail</th>
+        </tr>
+
+        @foreach (var report in @data)
+        {
+            <tr>
+                <td>@report.AccessTime</td>
+                <td>@report.UserName</td>
+                <td>@report.CardId</td>
+                <td>@report.Device</td>
+                <td>@report.DoorName</td>
+                <td>@report.CardType</td>
+                <td>@report.InOut</td>
+                <td>@report.EventDetail</td>
+            </tr>
+        }
+
+
+    </table>
+</body>
+</html>

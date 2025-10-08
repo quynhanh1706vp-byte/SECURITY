@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAccessGroup" xml:space="preserve">
+    <value>출입그룹</value>
+  </data>
+  <data name="lblAccessGroupName" xml:space="preserve">
+    <value>출입그룹 이름</value>
+  </data>
+  <data name="msgAssignDoors" xml:space="preserve">
+    <value>출입그룹에 출입문이 등록되었습니다.</value>
+  </data>
+  <data name="msgAssignUsers" xml:space="preserve">
+    <value>출입그룹에 사용자가 등록되었습니다.</value>
+  </data>
+  <data name="msgCanNotDeleteAccessGroup" xml:space="preserve">
+    <value>출입그룹 {0}은(는) 삭제할 수 없습니다.</value>
+  </data>
+  <data name="msgChangeAccessGroupName" xml:space="preserve">
+    <value>출입그룹 이름이 '{0}'에서 '{1}'로 변경되었습니다.</value>
+  </data>
+  <data name="msgHasNoAccessGroupDeviceData" xml:space="preserve">
+    <value>출입그룹에 등록된 출입문이 없습니다.</value>
+  </data>
+  <data name="msgUnableToAssignOverMaxUser" xml:space="preserve">
+    <value>{0}개 이상의 카드 정보를 {1} 출입문에 등록할 수 없습니다.</value>
+  </data>
+  <data name="msgUnAssignDoors" xml:space="preserve">
+    <value>출입그룹에 출입문이 제외되었습니다.</value>
+  </data>
+  <data name="msgUnAssignUsers" xml:space="preserve">
+    <value>출입그룹에 사용자가 제외되었습니다.</value>
+  </data>
+  <data name="msgChangeAccessGroupWithDefault" xml:space="preserve">
+    <value>DAG가 출입 그룹ID {0}(으)로 변경되었습니다.</value>
+  </data>
+  <data name="lblAssignDoor" xml:space="preserve">
+    <value>출입문 등록</value>
+  </data>
+  <data name="lblAssignUser" xml:space="preserve">
+    <value>사용자 등록</value>
+  </data>
+  <data name="lblUnAssignUser" xml:space="preserve">
+    <value>사용자 제외</value>
+  </data>
+  <data name="msgChangeDefaultAccessGroup" xml:space="preserve">
+    <value>{0}이(가) 기본 출입 그룹으로 변경되었습니다.</value>
+  </data>
+  <data name="lblUnAssignDoor" xml:space="preserve">
+    <value>출입문 제외</value>
+  </data>
+  <data name="msgChangeAccessGroup" xml:space="preserve">
+    <value>출입그룹 정보 변경.</value>
+  </data>
+  <data name="msgCanNotUpdateAccessGroup" xml:space="preserve">
+    <value>{0} 출입그룹은 변경될 수 없습니다!</value>
+  </data>
+  <data name="msgChangeTimezone" xml:space="preserve">
+    <value>출입문의 타임존이 변경되었습니다.</value>
+  </data>
+  <data name="msgCanNotChangeTimezone" xml:space="preserve">
+    <value>FAG의 타임존은 변경될 수 없습니다.</value>
+  </data>
+  <data name="msgCanNotDeleteDevice" xml:space="preserve">
+    <value>출입그룹에서 출입문을 제외할 수 없습니다.</value>
+  </data>
+  <data name="msgAddAccessGroup" xml:space="preserve">
+    <value>새로운 출입 그룹 추가</value>
+  </data>
+  <data name="msgDeleteAccessGroup" xml:space="preserve">
+    <value>출입 그룹이 삭제되었습니다.</value>
+  </data>
+  <data name="lblAccessGroupCount" xml:space="preserve">
+    <value>출입 그룹 수</value>
+  </data>
+  <data name="msgEmptyUser" xml:space="preserve">
+    <value>최소 한 명 이상의 유저를 할당해주세요.</value>
+  </data>
+  <data name="assingedVisitAuthor" xml:space="preserve">
+    <value>최종 승인자만 문을 할당할 수 있습니다.</value>
+  </data>
+  <data name="assingedVisitNotApproval" xml:space="preserve">
+    <value>방문자는 승인을 먼저 받아야 합니다.</value>
+  </data>
+  <data name="lblCustomGroup" xml:space="preserve">
+    <value>사용자 정의 그룹</value>
+  </data>
+  <data name="msgEmptyDoors" xml:space="preserve">
+    <value>Unable to delete empty doors from all access groups</value>
+  </data>
+  <data name="msgNotFoundAccessGroup" xml:space="preserve">
+    <value>Can not found access group</value>
+  </data>
+  <data name="msgNotFoundTimezoneOrDoor" xml:space="preserve">
+    <value>Time zone or door can not found</value>
+  </data>
+  <data name="msgEmptyDoorAssign" xml:space="preserve">
+    <value>Please assign at least one door.</value>
+  </data>
+  <data name="msgCannotAssignDevices" xml:space="preserve">
+    <value>You do not have permission to assign these devices.</value>
+  </data>
+  <data name="msgCannotUnAssignDevices" xml:space="preserve">
+    <value>You do not have permission to unassign these devices.</value>
+  </data>
+  <data name="msgNotPermissionDevices" xml:space="preserve">
+    <value>You do not have permission to access this device.</value>
+  </data>
+  <data name="msgCannotAssignUsers" xml:space="preserve">
+    <value>You do not have permission to assign these users.</value>
+  </data>
+  <data name="msgCannotUnAssignUsers" xml:space="preserve">
+    <value>You do not have permission to unassign these users.</value>
+  </data>
+  <data name="msgNotPermissionChangeDefaultAg" xml:space="preserve">
+    <value>You do not have permission to change this access group to default.</value>
+  </data>
+  <data name="msgNotPermissionAddDefaultAg" xml:space="preserve">
+    <value>You do not have permission to add access group with default.</value>
+  </data>
+  <data name="msgAssignFoors" xml:space="preserve">
+    <value>액세스 그룹에 층이 성공적으로 할당되었습니다.</value>
+  </data>
+  <data name="msgUnAssignFoors" xml:space="preserve">
+    <value>액세스 그룹에서 층이 성공적으로 할당 해제되었습니다.</value>
+  </data>
+  <data name="msgAssignUsersToDoor" xml:space="preserve">
+    <value>사용자(들)를 문에 성공적으로 할당했습니다.</value>
+  </data>
+  <data name="msgUnAssignUsersFromDoor" xml:space="preserve">
+    <value>사용자(들)를 문에서 성공적으로 해제했습니다.</value>
+  </data>
+  <data name="lblOldAccessGroupName" xml:space="preserve">
+    <value>기존 출입 그룹</value>
+  </data>
+  <data name="lblDefaultAccessGroup" xml:space="preserve">
+    <value>기본 출입 그룹</value>
+  </data>
+  <data name="msgNoDefaultAG" xml:space="preserve">
+    <value>알 수 없는 오류로 인해 기본 출입 그룹이 사라졌으므로 시스템에서 기본 출입 그룹을 지정합니다.</value>
+  </data>
+</root>

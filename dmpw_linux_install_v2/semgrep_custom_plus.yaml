@@ -1,0 +1,208 @@
+# Semgrep Custom PLUS (refined) — bổ sung coverage & giảm nhiễu logger
+# Lưu ý: các rule logger dùng pattern-regex đa dòng (?s) và chỉ check trong WRITE ops.
+
+rules:
+
+# ========= AUDIT LOG (thiếu log ở WRITE ops) =========
+- id: csharp-auditlog-missing-on-post
+  message: 'Write op (POST) không thấy audit log (ILogger.Log*). Hãy log action/actor/resource/CorrelationId.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $C : $B {
+          ...
+          [HttpPost(...)]
+          public $RT $M(...){ ... }
+        }
+    - pattern-not-inside: Log(Information|Warning|Error|Critical)\(
+  metadata: { category: observability, impact: high }
+
+- id: csharp-auditlog-missing-on-put
+  message: 'Write op (PUT) không thấy audit log (ILogger.Log*).'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $C : $B {
+          ...
+          [HttpPut(...)]
+          public $RT $M(...){ ... }
+        }
+    - pattern-not-inside: Log(Information|Warning|Error|Critical)\(
+  metadata: { category: observability, impact: high }
+
+- id: csharp-auditlog-missing-on-patch
+  message: 'Write op (PATCH) không thấy audit log (ILogger.Log*).'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $C : $B {
+          ...
+          [HttpPatch(...)]
+          public $RT $M(...){ ... }
+        }
+    - pattern-not-inside: Log(Information|Warning|Error|Critical)\(
+  metadata: { category: observability, impact: high }
+
+- id: csharp-auditlog-missing-on-delete
+  message: 'Write op (DELETE) không thấy audit log (ILogger.Log*).'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $C : $B {
+          ...
+          [HttpDelete(...)]
+          public $RT $M(...){ ... }
+        }
+    - pattern-not-inside: Log(Information|Warning|Error|Critical)\(
+  metadata: { category: observability, impact: high }
+
+# ========= LOGGER (đã siết để giảm nhiễu) =========
+- id: csharp-logging-missing-correlationid
+  message: 'Log WRITE op thiếu CorrelationId trong thông điệp/props.'
+  severity: WARNING
+  languages: [csharp]
+  # Tìm method có HttpPost/Put/Patch/Delete chứa Log* nhưng KHÔNG có "CorrelationId" trong lời gọi log
+  pattern-regex: (?s)\[(?:HttpPost|HttpPut|HttpPatch|HttpDelete)\][^\{]*\{[^}]*Log(?:Trace|Debug|Information|Warning|Error|Critical)\((?!.*CorrelationId).*?\);
+
+  metadata: { category: observability, impact: medium }
+
+- id: csharp-logger-missing-eventid
+  message: 'ILogger.Log* thiếu EventId (chỉ kiểm tra trong WRITE ops).'
+  severity: WARNING
+  languages: [csharp]
+  # Tìm method WRITE có Log* nhưng KHÔNG truyền new EventId(...)
+  pattern-regex: (?s)\[(?:HttpPost|HttpPut|HttpPatch|HttpDelete)\][^\{]*\{[^}]*Log(?:Trace|Debug|Information|Warning|Error|Critical)\(\s*(?!new\s+EventId\().*?\);
+
+  metadata: { category: observability, impact: medium }
+
+# ========= ROUTING / HARDENING =========
+- id: csharp-internal-route-without-authorize
+  message: 'Route "/internal" không có [Authorize]. Nên yêu cầu auth/role/allowlist IP.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: \[(Route|HttpGet|HttpPost|HttpPut|HttpPatch|HttpDelete)\(\s*"(?:.*/)?internal/?".*\)\]
+    - pattern-not: |
+        [Authorize(...)]
+        public $RT $M(...){ ... }
+    - pattern-not-inside: |
+        [Authorize(...)]
+        public class $C : $B { ... }
+  metadata: { category: hardening, impact: high }
+
+- id: csharp-endpoint-missing-producesresponsetype
+  message: 'Endpoint thiếu [ProducesResponseType] (OpenAPI contract yếu).'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern: |
+        public class $C : $B {
+          ...
+          [$HTTP(...)]
+          public $RT $M(...){ ... }
+        }
+    - metavariable-pattern:
+        metavariable: $HTTP
+        pattern: (HttpGet|HttpPost|HttpPut|HttpPatch|HttpDelete)
+    - pattern-not: |
+        [ProducesResponseType(...)]
+        public $RT $M(...){ ... }
+  metadata: { category: documentation, impact: medium }
+
+# ========= SECURITY HEADERS / POLICY =========
+- id: csharp-missing-hsts
+  message: 'Thiếu HSTS (app.UseHsts) khi đã app.UseHttpsRedirection. Bật HSTS ở production.'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern: app.UseHttpsRedirection();
+    - pattern-not: app.UseHsts();
+  metadata: { category: headers, impact: medium }
+
+- id: csharp-cors-allow-any-origin
+  message: 'CORS quá rộng: AllowAnyOrigin(). Hãy dùng allowlist domain cụ thể.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: \.AllowAnyOrigin\(\)
+  metadata: { category: headers, impact: high }
+
+- id: csharp-missing-csp-header
+  message: 'Không thấy đặt header Content-Security-Policy. Bật CSP để giảm XSS.'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern: app.UseRouting();
+    - pattern-not: Content-Security-Policy
+  metadata: { category: headers, impact: medium }
+
+- id: csharp-missing-xfo
+  message: 'Thiếu X-Frame-Options hoặc CSP frame-ancestors để chống clickjacking.'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern: app.UseRouting();
+    - pattern-not: (X-Frame-Options|frame-ancestors)
+  metadata: { category: headers, impact: medium }
+
+# ========= EXCEPTION HANDLING =========
+- id: csharp-empty-catch
+  message: 'Khối catch rỗng. Hãy log/handle phù hợp (tránh nuốt lỗi).'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: catch\s*\([^)]+\)\s*\{\s*(//.*)?\s*\}
+  metadata: { category: exceptions, impact: high }
+
+- id: csharp-rethrow-loses-stack
+  message: 'Dùng "throw ex;" làm mất stack. Hãy dùng "throw;" để giữ stack trace.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: catch\s*\([^)]+\)\s*\{[^}]*throw\s+[A-Za-z_][A-Za-z0-9_]*\s*;\s*[^}]*\}
+  metadata: { category: exceptions, impact: high }
+
+- id: csharp-expose-exception-in-response
+  message: 'Trả exception ra client (ex.ToString()/Message). Rò rỉ nội bộ.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (BadRequest|Content|Problem|StatusCode)\s*\(\s*([A-Za-z_][A-Za-z0-9_]*\.)?(ToString\(\)|Message)\s*\)
+  metadata: { category: exceptions, impact: high }
+
+# ========= CRYPTO CONFIG =========
+- id: csharp-weak-hash-md5-sha1
+  message: 'Dùng MD5/SHA1 không an toàn. Hãy dùng SHA-256/512 hoặc thuật toán hiện đại.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (MD5|SHA1)\.Create\s*\(
+  metadata: { category: crypto, impact: high }
+
+- id: csharp-insecure-random
+  message: 'Dùng System.Random cho mục đích bảo mật. Dùng RandomNumberGenerator.'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern: new Random($X)
+  metadata: { category: crypto, impact: medium }
+
+- id: csharp-aes-ecb-mode
+  message: 'AES ở chế độ ECB không an toàn. Hãy dùng CBC/GCM + IV/nonce.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: \.Mode\s*=\s*CipherMode\.ECB
+  metadata: { category: crypto, impact: high }
+
+- id: csharp-jwt-validation-disabled
+  message: 'TokenValidationParameters.ValidateIssuerSigningKey = false. Không được vô hiệu hoá xác thực chữ ký.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: TokenValidationParameters\s*\{[^}]*ValidateIssuerSigningKey\s*=\s*false
+  metadata: { category: crypto, impact: high }

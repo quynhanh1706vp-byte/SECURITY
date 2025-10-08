@@ -1,0 +1,146 @@
+# Semgrep Custom PLUS3 — bổ sung vùng phủ còn thiếu (heuristic an toàn)
+
+rules:
+
+# ===== C# — RCE / Command Injection =====
+- id: csharp-rce-process-start
+  message: 'Khả năng RCE: Process.Start/StartInfo với đầu vào có thể từ user. Xác minh nguồn & escape/avoid shell.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (System\.)?Diagnostics\.Process\.Start\s*\(
+  metadata: { category: rce, impact: high }
+
+# ===== C# — Cookie flags thiếu =====
+- id: csharp-cookie-flags-missing
+  message: 'CookieOptions có thể thiếu Secure/HttpOnly/SameSite. Đặt Secure=true, HttpOnly=true, SameSite=Strict/Lax.'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern-regex: new\s+CookieOptions\s*\{[^\}]*\}
+  metadata: { category: headers, impact: medium }
+
+# ===== C# — JWT Validation bị tắt =====
+- id: csharp-jwt-missing-issuer-validation
+  message: 'TokenValidationParameters: ValidateIssuer = false. Không được tắt xác thực Issuer.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: TokenValidationParameters\s*\{[^}]*ValidateIssuer\s*=\s*false
+  metadata: { category: authn, impact: high }
+
+- id: csharp-jwt-missing-audience-validation
+  message: 'TokenValidationParameters: ValidateAudience = false. Không được tắt xác thực Audience.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: TokenValidationParameters\s*\{[^}]*ValidateAudience\s*=\s*false
+  metadata: { category: authn, impact: high }
+
+- id: csharp-jwt-missing-lifetime-validation
+  message: 'TokenValidationParameters: ValidateLifetime = false. Không được tắt kiểm tra hạn token.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: TokenValidationParameters\s*\{[^}]*ValidateLifetime\s*=\s*false
+  metadata: { category: authn, impact: high }
+
+- id: csharp-jwt-missing-exp
+  message: 'TokenValidationParameters: RequireExpirationTime = false. Bắt buộc exp cho token.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: TokenValidationParameters\s*\{[^}]*RequireExpirationTime\s*=\s*false
+  metadata: { category: authn, impact: high }
+
+# ===== C# — Host header / X-Forwarded-* trust =====
+- id: csharp-host-header-trust
+  message: 'Có thể dùng Request.Host/X-Forwarded-* để build URL mà không validate. Dễ Host header injection/open redirect.'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (Request\.Host|X-Forwarded-Host|X-Forwarded-Proto)
+  metadata: { category: hardening, impact: medium }
+
+# ===== FE (JS/TS) — localStorage giữ token =====
+- id: fe-localstorage-token
+  message: 'Không nên lưu token/bearer vào localStorage (dễ XSS). Dùng cookie httpOnly/sameSite.'
+  severity: WARNING
+  languages: [javascript, typescript]
+  patterns:
+    - pattern-regex: localStorage\.setItem\s*\(\s*(['"])(token|auth|access|bearer)\1
+  metadata: { category: storage, impact: medium }
+
+# ===== C# — EF/Dapper/ADO raw SQL nối chuỗi =====
+- id: csharp-dapper-ado-concat
+  message: 'SQL Injection risk (Dapper/ADO): Query/Execute/SqlCommand với chuỗi nối hoặc interpolated.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (Query|Execute)\s*\(\s*(\$"|".*\+)|new\s+SqlCommand\s*\(\s*(\$"|".*\+)
+  metadata: { category: sqli, impact: high }
+
+- id: csharp-ef-rawsql-concat-plus
+  message: 'EF Raw SQL: FromSqlRaw/ExecuteSqlRaw dùng chuỗi nối hoặc interpolated không tham số hoá đúng.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (FromSqlRaw|ExecuteSqlRaw)\s*\(\s*(\$"|".*\+)
+  metadata: { category: sqli, impact: high }
+
+# ===== K8s RBAC wildcard =====
+- id: k8s-rbac-wildcard
+  message: 'RBAC quá rộng: resources:["*"] hoặc verbs:["*"]. Thu hẹp quyền.'
+  severity: ERROR
+  languages: [yaml]
+  patterns:
+    - pattern-regex: 'apiVersion:\s*rbac\.authorization\.k8s\.io/.*\nrules:'
+    - pattern-regex: '(resources:\s*\[\s*"\*"\s*\]|verbs:\s*\[\s*"\*"\s*\])'
+  metadata: { category: iac, impact: high }
+
+# ===== K8s Service public =====
+- id: k8s-service-public
+  message: 'Service type public (NodePort/LoadBalancer). Chỉ dùng khi cần thiết, xem xét NetworkPolicy.'
+  severity: WARNING
+  languages: [yaml]
+  patterns:
+    - pattern-regex: 'kind:\s*Service'
+    - pattern-regex: 'type:\s*(NodePort|LoadBalancer)'
+  metadata: { category: iac, impact: medium }
+
+# ===== K8s Ingress không TLS =====
+- id: k8s-ingress-no-tls
+  message: 'Ingress thiếu TLS. Thêm tls: và secretName.'
+  severity: ERROR
+  languages: [yaml]
+  patterns:
+    - pattern-regex: 'kind:\s*Ingress'
+  pattern-not: tls:
+  metadata: { category: iac, impact: high }
+
+# ===== Dockerfile — latest tag =====
+- id: docker-latest-tag
+  message: 'Docker FROM dùng :latest. Hãy pin phiên bản cụ thể.'
+  severity: ERROR
+  languages: [dockerfile]
+  patterns:
+    - pattern-regex: ^\s*FROM\s+[^\s:]+:latest\b
+  metadata: { category: supplychain, impact: high }
+
+# ===== Dockerfile — USER root =====
+- id: docker-user-root
+  message: 'Container chạy với USER root. Chạy non-root hoặc đặt USER cụ thể.'
+  severity: WARNING
+  languages: [dockerfile]
+  patterns:
+    - pattern-regex: ^\s*USER\s+root\b
+  metadata: { category: hardening, impact: medium }
+
+# ===== Dockerfile — ADD thay cho COPY =====
+- id: docker-add-instead-of-copy
+  message: 'Dùng ADD thay vì COPY. COPY an toàn & rõ ràng hơn.'
+  severity: WARNING
+  languages: [dockerfile]
+  patterns:
+    - pattern-regex: ^\s*ADD\s+
+  metadata: { category: hardening, impact: medium }

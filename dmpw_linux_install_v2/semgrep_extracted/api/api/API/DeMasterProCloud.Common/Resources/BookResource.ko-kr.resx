@@ -1,0 +1,92 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblBook" xml:space="preserve">
+        <value>책</value>
+    </data>
+    <data name="msgIsbnNumberExisted" xml:space="preserve">
+        <value>ISBN 번호가 시스템에 존재합니다.</value>
+    </data>
+    <data name="lblAvailable" xml:space="preserve">
+        <value>대출가능</value>
+    </data>
+    <data name="lblRented" xml:space="preserve">
+        <value>대여됨</value>
+    </data>
+    <data name="msgBookRented" xml:space="preserve">
+        <value>책이 대여되었습니다.</value>
+    </data>
+    <data name="lblBookArea" xml:space="preserve">
+        <value>책 영역</value>
+    </data>
+    <data name="msgNameBookAreaExisted" xml:space="preserve">
+        <value>도서 영역 이름이 존재함</value>
+    </data>
+    <data name="msgBookAreaNotExisted" xml:space="preserve">
+        <value>도서 영역이 시스템에 존재하지 않음</value>
+    </data>
+    <data name="msgBookNotExisted" xml:space="preserve">
+        <value>도서가 시스템에 존재하지 않음</value>
+    </data>
+    <data name="msgBorrowBookSuccess" xml:space="preserve">
+        <value>도서 대출 성공</value>
+    </data>
+    <data name="msgReturnBookSuccess" xml:space="preserve">
+        <value>도서 반납 성공</value>
+    </data>
+    <data name="msgDeadlineRequired" xml:space="preserve">
+        <value>반납 시간은 대출 시간보다 커야 합니다.</value>
+    </data>
+    <data name="lblPaid" xml:space="preserve">
+        <value>반납완료</value>
+    </data>
+    <data name="lblUnPaid" xml:space="preserve">
+        <value>대출중</value>
+    </data>
+    <data name="lblBookName" xml:space="preserve">
+        <value>책 이름</value>
+    </data>
+    <data name="lblAuthor" xml:space="preserve">
+        <value>저자</value>
+    </data>
+    <data name="lblIsbnNumber" xml:space="preserve">
+        <value>ISBN 번호</value>
+    </data>
+    <data name="lblRentingStatus" xml:space="preserve">
+        <value>대여 상태</value>
+    </data>
+    <data name="lblBorrowerName" xml:space="preserve">
+        <value>대출인</value>
+    </data>
+    <data name="lblDeadlineDate" xml:space="preserve">
+        <value>마감일</value>
+    </data>
+    <data name="lblReturnDate" xml:space="preserve">
+        <value>반납일</value>
+    </data>
+    <data name="lblBorrowDate" xml:space="preserve">
+        <value>대출일</value>
+    </data>
+    <data name="msgExtendBookSuccess" xml:space="preserve">
+        <value>도서 성공 연장</value>
+    </data>
+    <data name="lblCreatedOn" xml:space="preserve">
+        <value>생성일</value>
+    </data>
+    <data name="msgImportBookProcess" xml:space="preserve">
+        <value>가져오는 도서 목록입니다. 잠시만 기다려 주세요...</value>
+    </data>
+    <data name="msgImportBookComplete" xml:space="preserve">
+        <value>도서 목록이 완전히 가져왔습니다!</value>
+    </data>
+</root>

@@ -1,0 +1,1541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AnUnexpectedErrorOccurred" xml:space="preserve">
+    <value>Đã xảy ra lỗi. Vui lòng thử lại</value>
+  </data>
+  <data name="AuthenticationRequired" xml:space="preserve">
+    <value>Yêu cầu xác thực</value>
+    <comment />
+  </data>
+  <data name="BadRequest" xml:space="preserve">
+    <value>Yêu cầu không hợp lệ</value>
+  </data>
+  <data name="Between" xml:space="preserve">
+    <value>{0} phải nằm trong khoảng {1} và {2}.</value>
+    <comment />
+  </data>
+  <data name="CannotIncludeUnicodeCharacter" xml:space="preserve">
+    <value>{0} không được bao gồm kí tự đặc biệt.</value>
+    <comment />
+  </data>
+  <data name="CommandCanBeNotEmpty" xml:space="preserve">
+    <value>Command không thể để trống.</value>
+    <comment />
+  </data>
+  <data name="Compare" xml:space="preserve">
+    <value>{0} and {1} không khớp nhau.</value>
+    <comment />
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa {0}?</value>
+    <comment />
+  </data>
+  <data name="ConfirmDeleteAll" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa danh sách {0}?</value>
+    <comment />
+  </data>
+  <data name="ConfirmImport" xml:space="preserve">
+    <value>Việc nhập liệu có thể ảnh hưởng lớn đến việc quản lý truy cập, bạn có muốn tiếp tục?</value>
+    <comment />
+  </data>
+  <data name="\" xml:space="preserve">
+    <value>Bạn có muốn thoát ra?</value>
+    <comment />
+  </data>
+  <data name="ConfirmMoveUser" xml:space="preserve">
+    <value>Bạn có muốn chuyển người được chọn sang bộ phận khác?</value>
+    <comment />
+  </data>
+  <data name="CopySuccess" xml:space="preserve">
+    <value>Sao chép danh sách {0} thành công.</value>
+    <comment />
+  </data>
+  <data name="DataIndexIsLessThanMaxIndexPlusOne" xml:space="preserve">
+    <value>Chỉ số dữ liệu nhỏ hơn chỉ số tối đa cho phép đồng bộ.</value>
+    <comment />
+  </data>
+  <data name="EmailDoestNotExist" xml:space="preserve">
+    <value>Email không tồn tại.</value>
+    <comment />
+  </data>
+  <data name="EmailMaxLength" xml:space="preserve">
+    <value>Email Không được phép lớn hơn 50 kí tự.</value>
+    <comment />
+  </data>
+  <data name="EmergencyPasswordInCorrect" xml:space="preserve">
+    <value>Mật khẩu khẩn cấp không chính xác.</value>
+    <comment />
+  </data>
+  <data name="EqualValidator" xml:space="preserve">
+    <value>{PropertyName} và {ComparisonValue} không khớp nhau.</value>
+    <comment />
+  </data>
+  <data name="Exist" xml:space="preserve">
+    <value>{0} đã tồn tại trong hệ thống.</value>
+  </data>
+  <data name="ExpiredToken" xml:space="preserve">
+    <value>Token đã hết hạn.</value>
+    <comment />
+  </data>
+  <data name="Forbidden" xml:space="preserve">
+    <value>Không có quyền</value>
+  </data>
+  <data name="GreaterThan" xml:space="preserve">
+    <value>{0} phải lớn hơn {1}.</value>
+    <comment />
+  </data>
+  <data name="GreaterThanOrEqual" xml:space="preserve">
+    <value>{0} phải lớn hơn hoặc bằng {1}.</value>
+    <comment />
+  </data>
+  <data name="GreaterThanOrEqualValidator" xml:space="preserve">
+    <value>{PropertyName} phải lớn hơn hoặc bằng {ComparisonValue}.</value>
+    <comment />
+  </data>
+  <data name="GreaterThanValidator" xml:space="preserve">
+    <value>{PropertyName} phải lớn hơn {ComparisonValue}.</value>
+    <comment />
+  </data>
+  <data name="InclusiveBetweenValidator" xml:space="preserve">
+    <value>{PropertyName} phải nằm trong khoảng {From} đến {To}.</value>
+    <comment />
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Email hoặc mật khẩu không hợp lệ.</value>
+    <comment />
+  </data>
+  <data name="InvalidDateFormat" xml:space="preserve">
+    <value>{0} phải khớp với định dạng {1}</value>
+    <comment />
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>{0} phải dài hơn {1}.</value>
+    <comment />
+  </data>
+  <data name="InvalidDeleteBuildingFormat" xml:space="preserve">
+    <value>Không thể xóa đơn vị mặc định.</value>
+    <comment />
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>File nhập không hợp lệ. Chỉ hỗ trợ các phần mở rộng {0}.</value>
+    <comment />
+  </data>
+  <data name="InvalidFormat" xml:space="preserve">
+    <value>Định dạng không hợp lệ. Xin vui lòng kiểm tra lại file.</value>
+    <comment />
+  </data>
+  <data name="InvalidImageExtension" xml:space="preserve">
+    <value>{0} chỉ support định dạng {1}.</value>
+    <comment />
+  </data>
+  <data name="InvalidImportFormat" xml:space="preserve">
+    <value>Có vài bản ghi không hợp lệ. Xin vui lòng sửa và nhập lại.</value>
+    <comment />
+  </data>
+  <data name="InvalidInformation" xml:space="preserve">
+    <value>Thông tin không hợp lệ.</value>
+    <comment />
+  </data>
+  <data name="InvalidIpAddress" xml:space="preserve">
+    <value>{0} Địa chỉ Ip không hợp lệ.</value>
+    <comment />
+  </data>
+  <data name="InvalidParameter" xml:space="preserve">
+    <value>Tham số không hợp lệ.</value>
+    <comment />
+  </data>
+  <data name="InvalidTimeFormat" xml:space="preserve">
+    <value>{0} định dạng thời gian không hợp lệ.</value>
+    <comment />
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>Token không hợp lệ.</value>
+    <comment />
+  </data>
+  <data name="InvalidUserName" xml:space="preserve">
+    <value>{0} chỉ được chứa chữ thường , số , dấu gạch ngang/ dấu gạch dưới.</value>
+    <comment />
+  </data>
+  <data name="IsReinstalling" xml:space="preserve">
+    <value>Thiết bị đang được cài đặt lại .</value>
+    <comment />
+  </data>
+  <data name="LengthNotGreaterThan" xml:space="preserve">
+    <value>{0} độ dài không thể lớn hơn {1} kí tự.</value>
+    <comment />
+  </data>
+  <data name="LengthNotLessThan" xml:space="preserve">
+    <value>{0} độ dài không thể nhỏ hơn {1} kí tự.</value>
+    <comment />
+  </data>
+  <data name="LengthValidator" xml:space="preserve">
+    <value>{PropertyName} phải ơ giữa khoảng {MinLength} và {MaxLength}.</value>
+    <comment />
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>{0} phải nhỏ hơn {1}.</value>
+    <comment />
+  </data>
+  <data name="LessThanOrEqualValidator" xml:space="preserve">
+    <value>{PropertyName} phải nhỏ hơn hoặc bằng {ComparisonValue}.</value>
+    <comment />
+  </data>
+  <data name="LessThanValidator" xml:space="preserve">
+    <value>{PropertyName} độ dài không thể nhỏ hơn {ComparisonValue}.</value>
+    <comment />
+  </data>
+  <data name="MaximumLengthValidator" xml:space="preserve">
+    <value>{PropertyName} độ dài không thể lớn hơn {MaxLength} kí tự</value>
+    <comment />
+  </data>
+  <data name="MessageAddSuccess" xml:space="preserve">
+    <value>Tạo mới {0} thành công.</value>
+  </data>
+  <data name="MessageCanNotBlank" xml:space="preserve">
+    <value>{0} không thể để trống!</value>
+    <comment />
+  </data>
+  <data name="MessageDeleteMultipleSuccess" xml:space="preserve">
+    <value>Xóa nhiều {0} thành công.</value>
+  </data>
+  <data name="MessageDeleteSuccess" xml:space="preserve">
+    <value>Xóa {0} thành công.</value>
+    <comment />
+  </data>
+  <data name="MessageEmailNotRegister" xml:space="preserve">
+    <value>Email chưa được đăng ký!</value>
+    <comment />
+  </data>
+  <data name="MessageExportDataIsZero" xml:space="preserve">
+    <value>Dữ liệu rỗng</value>
+    <comment />
+  </data>
+  <data name="MessageExportSuccess" xml:space="preserve">
+    <value>Xuất người dùng thành công.</value>
+    <comment />
+  </data>
+  <data name="MessageImportSuccess" xml:space="preserve">
+    <value>Nhập dữ liệu {0} thành công.</value>
+    <comment />
+  </data>
+  <data name="MessageImportFail" xml:space="preserve">
+    <value>Nhập dữ liệu {0} lỗi. Xin vui lòng kiểm tra lại file.</value>
+    <comment />
+  </data>
+  <data name="MessageMoveUserSucess" xml:space="preserve">
+    <value>Chuyển người dùng đến phòng ban thành công.</value>
+    <comment />
+  </data>
+  <data name="MessageMultipleSuccess" xml:space="preserve">
+    <value>Gửi đa tin nhắn  {0} thành công.</value>
+    <comment />
+  </data>
+  <data name="MessagePasswordAreNotSame" xml:space="preserve">
+    <value>Mật khẩu mới và xác nhận mật khẩu mới không giống nhau.</value>
+    <comment />
+  </data>
+  <data name="MessageResetPassSuccess" xml:space="preserve">
+    <value>Cập nhật mật khẩu thành công.</value>
+    <comment />
+  </data>
+  <data name="MessageSendEmailSuccess" xml:space="preserve">
+    <value>Email đã được gửi vào hòm thư của bạn. Xin vui lòng kiểm tra email.</value>
+    <comment />
+  </data>
+  <data name="MessageUpdateMissingDeviceSuccess" xml:space="preserve">
+    <value>Cập nhật thiết bị bị thiếu thành công.</value>
+    <comment />
+  </data>
+  <data name="MessageUpdateSuccess" xml:space="preserve">
+    <value>Cập nhật {0} {1} thành công.</value>
+    <comment />
+  </data>
+  <data name="MessageLogoUpdateSuccess" xml:space="preserve">
+    <value>Cập nhật logo cho {0} thành công.</value>
+    <comment />
+  </data>
+  <data name="MinimumLengthValidator" xml:space="preserve">
+    <value>{PropertyName} độ dài không được nhỏ hơn {MinLength} ký tự.</value>
+    <comment />
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>Không có dữ liệu.</value>
+    <comment />
+  </data>
+  <data name="NonExist" xml:space="preserve">
+    <value>{0} không tồn tại trong hệ thống.</value>
+    <comment />
+  </data>
+  <data name="NonExistedToken" xml:space="preserve">
+    <value>Token không tồn tại.</value>
+    <comment />
+  </data>
+  <data name="NonIcuExisted" xml:space="preserve">
+    <value>Thiết bị ICU không tồn tại.</value>
+    <comment />
+  </data>
+  <data name="NoRightsToOpenDoor" xml:space="preserve">
+    <value>Thiết bị này không có quyền mở cửa.</value>
+    <comment />
+  </data>
+  <data name="NoRightsToSyncDoor" xml:space="preserve">
+    <value>Thiết bị này không có quyền đồng bộ hóa cửa.</value>
+    <comment />
+  </data>
+  <data name="NotEmptyValidator" xml:space="preserve">
+    <value>{PropertyName} không thể để trống.</value>
+  </data>
+  <data name="NotEqualValidator" xml:space="preserve">
+    <value>{PropertyName} không nên bằng {ComparisonValue}.</value>
+    <comment />
+  </data>
+  <data name="NotGreaterThan" xml:space="preserve">
+    <value>{0} không thể lớn hơn {1}.</value>
+    <comment />
+  </data>
+  <data name="NotLessThan" xml:space="preserve">
+    <value>{0} không thể nhỏ hơn {1}.</value>
+    <comment />
+  </data>
+  <data name="NotNullValidator" xml:space="preserve">
+    <value>{0} Không thể để trống.</value>
+    <comment />
+  </data>
+  <data name="NotNullValidator1" xml:space="preserve">
+    <value>{0} không thể vô giá trị.</value>
+    <comment />
+  </data>
+  <data name="NotSelected" xml:space="preserve">
+    <value>Bạn phải chọn một {0}.</value>
+    <comment />
+  </data>
+  <data name="NoUserInformation" xml:space="preserve">
+    <value>Không có thông tin người dùng.</value>
+    <comment />
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>{0} phải là số.</value>
+    <comment />
+  </data>
+  <data name="PasswordLength" xml:space="preserve">
+    <value>Mật khẩu phải chứa ít nhất {0} kí tự.</value>
+    <comment />
+  </data>
+  <data name="PublishMessageToGetInfoDevice" xml:space="preserve">
+    <value>Gửi tin {0} thành công</value>
+    <comment />
+  </data>
+  <data name="RangeFromTo" xml:space="preserve">
+    <value>Giá trị của {0} phải từ 1 đến 10.</value>
+    <comment />
+  </data>
+  <data name="RangeFromToInterval" xml:space="preserve">
+    <value>Giá trị của {0} phải từ 1 đến 180.</value>
+    <comment />
+  </data>
+  <data name="RecordNotFound" xml:space="preserve">
+    <value>Không tìm thấy bản ghi.</value>
+    <comment />
+  </data>
+  <data name="RefreshTokenNotFound" xml:space="preserve">
+    <value>Không tìm thấy refresh token</value>
+  </data>
+  <data name="RefreshTokenRevoked" xml:space="preserve">
+    <value>Refresh token đã bị thu hồi</value>
+  </data>
+  <data name="RegularExpressionValidator" xml:space="preserve">
+    <value>{PropertyName} không đúng định dạng.</value>
+    <comment />
+  </data>
+  <data name="ReinstallError" xml:space="preserve">
+    <value>Cài đặt lại {0} gặp lỗi</value>
+    <comment />
+  </data>
+  <data name="ReinstallSuccess" xml:space="preserve">
+    <value>Cài đặt lại {0} thành công</value>
+    <comment />
+  </data>
+  <data name="msgFileNameError" xml:space="preserve">
+    <value>tên file phải chứa {0}.</value>
+    <comment />
+  </data>
+  <data name="RequestTimeout" xml:space="preserve">
+    <value>Yêu cầu hết hạn.</value>
+    <comment />
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>{0} Không thể để trống.</value>
+    <comment />
+  </data>
+  <data name="RequiredFile" xml:space="preserve">
+    <value>Vui lòng nhập tệp đính kèm</value>
+  </data>
+  <data name="ResetAppPasswordInCorrect" xml:space="preserve">
+    <value>Đặt lại mật khẩu ứng dụng không đúng.</value>
+  </data>
+  <data name="ResourceNotFound" xml:space="preserve">
+    <value>Không tìm thấy nguồn.</value>
+    <comment />
+  </data>
+  <data name="SendMessageDeviceInstruction" xml:space="preserve">
+    <value>Đăng thông báo {0} thành công</value>
+    <comment />
+  </data>
+  <data name="SyncingRangeOfIndexIsGreaterThanMaxIndexPlusOne" xml:space="preserve">
+    <value>Phạm vi đồng bộ hóa của chỉ mục lớn hơn chỉ mục tối đa cho phép đồng bộ hóa.</value>
+    <comment />
+  </data>
+  <data name="SystemError" xml:space="preserve">
+    <value>Lỗi hệ thống , Xin vui lòng thử lại .</value>
+    <comment />
+  </data>
+  <data name="TableNoData" xml:space="preserve">
+    <value>Không có dữ liệu trong bảng.</value>
+    <comment />
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Không được phép</value>
+    <comment />
+  </data>
+  <data name="UnprocessableEntity" xml:space="preserve">
+    <value>Thực thể không thể xử lý</value>
+    <comment />
+  </data>
+  <data name="UploadFile" xml:space="preserve">
+    <value>Các tệp đang được tải lên.</value>
+    <comment />
+  </data>
+  <data name="msgStopSuccess" xml:space="preserve">
+    <value>Phiên bản phần cứng đã dừng lại.</value>
+    <comment />
+  </data>
+  <data name="msgLoadUser" xml:space="preserve">
+    <value>Đăng tải thông báo để tải thông tin người dùng thành công.</value>
+    <comment />
+  </data>
+  <data name="msgTransmitSuccess" xml:space="preserve">
+    <value>Truyền tất cả dữ liệu thành công.</value>
+    <comment />
+  </data>
+  <data name="UserLoginFailed" xml:space="preserve">
+    <value>Tên đăng nhập hoặc mật khẩu không hợp lệ.</value>
+    <comment />
+  </data>
+  <data name="ValidateDelete" xml:space="preserve">
+    <value>Không thể xóa Nhóm truy cập.</value>
+    <comment />
+  </data>
+  <data name="ValidationFailed" xml:space="preserve">
+    <value>Lỗi xác nhận.</value>
+    <comment />
+  </data>
+  <data name="msgErrorFileExtension" xml:space="preserve">
+    <value>Tệp mở rộng phải là {0}.</value>
+    <comment />
+  </data>
+  <data name="msgFailLengthFile" xml:space="preserve">
+    <value>Độ dài của tệp lớn hơn 0.</value>
+    <comment />
+  </data>
+  <data name="msgSendInstructionFailure" xml:space="preserve">
+    <value>Gửi lệnh cho thiết bị gặp .</value>
+    <comment />
+  </data>
+  <data name="msgUploadFileError" xml:space="preserve">
+    <value>Tải tệp tin lên icu gặp lỗi.</value>
+    <comment />
+  </data>
+  <data name="msgSendDeviceConfigError" xml:space="preserve">
+    <value>Gửi cấu hình lên thiết bị gặp lỗi</value>
+    <comment />
+  </data>
+  <data name="lblExport" xml:space="preserve">
+    <value>Xuất</value>
+    <comment />
+  </data>
+  <data name="msgEventRecoverySuccess" xml:space="preserve">
+    <value>Phục hồi sự kiện thành công</value>
+    <comment />
+  </data>
+  <data name="msgOpenInEmergencyError" xml:space="preserve">
+    <value>Không thể mở của khẩn cấp.</value>
+    <comment />
+  </data>
+  <data name="msgDeviceDisconnected" xml:space="preserve">
+    <value>Thiết bị {0} mất kết nối.</value>
+    <comment />
+  </data>
+  <data name="ReinstallTimeout" xml:space="preserve">
+    <value>Lệnh cài đặt không thể được công bố.</value>
+    <comment />
+  </data>
+  <data name="DeviceInstructionSuccess" xml:space="preserve">
+    <value>Thiết bị {0} nhận lệnh thành công</value>
+    <comment />
+  </data>
+  <data name="DeviceConfigSuccess" xml:space="preserve">
+    <value>Thiết bị {0} cấu hình thành công</value>
+    <comment />
+  </data>
+  <data name="msgOfflineDevice" xml:space="preserve">
+    <value>Kiểm tra trạng thái của thiết bị ({0})</value>
+    <comment />
+  </data>
+  <data name="msgSendUserError" xml:space="preserve">
+    <value>Send User Error ({0})</value>
+    <comment />
+  </data>
+  <data name="TransmitSuccess" xml:space="preserve">
+    <value>Chuyển giao tất cả dữ liệu từ thiết bị {0} thành công</value>
+    <comment />
+  </data>
+  <data name="InstallSuccess" xml:space="preserve">
+    <value>Cài đặt thiết bị {0} thành công</value>
+    <comment />
+  </data>
+  <data name="TransmitError" xml:space="preserve">
+    <value>Chuyển giao dữ liệu từ thiết bị {0} gặp lỗi</value>
+    <comment />
+  </data>
+  <data name="MessageAssignSuccess" xml:space="preserve">
+    <value>Chỉ định {0} thành công.</value>
+    <comment />
+  </data>
+  <data name="MsgFail" xml:space="preserve">
+    <value>Yêu cầu không thành công, hãy thử lại.</value>
+    <comment />
+  </data>
+  <data name="msgChangeInfo" xml:space="preserve">
+    <value>{0} thay đổi từ {1} thành {2}.</value>
+    <comment />
+  </data>
+  <data name="CardIdBlank" xml:space="preserve">
+    <value>Mã thẻ không thể trống.</value>
+    <comment />
+  </data>
+  <data name="CardIdLength" xml:space="preserve">
+    <value>Mã thẻ quá dài.</value>
+    <comment />
+  </data>
+  <data name="ExistUser" xml:space="preserve">
+    <value>Người dùng đã tồn tại.</value>
+    <comment />
+  </data>
+  <data name="IssueCountMax" xml:space="preserve">
+    <value> Số lần cấp phải nhỏ hơn 100.</value>
+    <comment />
+  </data>
+  <data name="MissingContent" xml:space="preserve">
+    <value>{0} được yêu cầu.</value>
+    <comment />
+  </data>
+  <data name="ExistedQrCode" xml:space="preserve">
+    <value>Mã QR đã tồn tại</value>
+    <comment />
+  </data>
+  <data name="TimeNotIncorrect" xml:space="preserve">
+    <value>Giờ đến phải trước giờ về</value>
+    <comment />
+  </data>
+  <data name="TypeisNotDefine" xml:space="preserve">
+    <value>Sai phân loại</value>
+    <comment />
+  </data>
+  <data name="NotIsDepartmentManager" xml:space="preserve">
+    <value>Bạn không thể chỉnh sửa lịch sử chấm công của người dùng này.</value>
+    <comment />
+  </data>
+  <data name="UpdateSuccessAttendance" xml:space="preserve">
+    <value>Cập nhật chấm công thành công</value>
+    <comment />
+  </data>
+  <data name="ExistedPassCode" xml:space="preserve">
+    <value>PassCode đã tồn tại</value>
+    <comment />
+  </data>
+  <data name="DepartmentDontHaveDepartmentManager" xml:space="preserve">
+    <value>Phòng ban không có người quản lý. Vui lòng chỉ định người quản lý phòng ban.</value>
+    <comment />
+  </data>
+  <data name="UserIsNotValidation" xml:space="preserve">
+    <value>Người dùng {0} không tồn tại.</value>
+    <comment />
+  </data>
+  <data name="EmailEmpty" xml:space="preserve">
+    <value>Vui lòng nhập một địa chỉ email.</value>
+    <comment />
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>Đây là địa chỉ email không hợp lệ.</value>
+    <comment />
+  </data>
+  <data name="InvalidIssueCountFormat" xml:space="preserve">
+    <value>Wrong Format of issue count</value>
+    <comment />
+  </data>
+  <data name="MessageEnabledSuccess" xml:space="preserve">
+    <value>Kích hoạt {0} thành công.</value>
+    <comment />
+  </data>
+  <data name="InvalidQrCode" xml:space="preserve">
+    <value>Mã QR sai</value>
+    <comment />
+  </data>
+  <data name="msgFailedToImportDetails" xml:space="preserve">
+    <value>{0} of {1} record(s) không nhập được. Vui lòng kiểm tra tệp và nhật ký hệ thống.</value>
+    <comment />
+  </data>
+  <data name="msgSuccessToImportDetails" xml:space="preserve">
+    <value>Nhập thành công {0} dữ liệu.</value>
+    <comment />
+  </data>
+  <data name="msgUserIsInValid" xml:space="preserve">
+    <value>Người dùng không hợp lệ</value>
+    <comment />
+  </data>
+  <data name="msgDynamicQrExpired" xml:space="preserve">
+    <value>Mã QR quá hạn</value>
+    <comment />
+  </data>
+  <data name="msgValidationUser" xml:space="preserve">
+    <value>Người dùng {0} hợp lệ</value>
+    <comment />
+  </data>
+  <data name="InvalidDevice" xml:space="preserve">
+    <value>Thiết bị không hợp lệ </value>
+    <comment />
+  </data>
+  <data name="NotFoundDepartment" xml:space="preserve">
+    <value>Không tìm thấy bộ phận</value>
+    <comment />
+  </data>
+  <data name="ImportError" xml:space="preserve">
+    <value>Nhập {0} người dùng thành công, {1} người dùng bị lỗi</value>
+  </data>
+  <data name="ImportSuccess" xml:space="preserve">
+    <value>Nhập {0} dữ liệu thành công(thêm : {1}, cập nhật : {2})</value>
+  </data>
+  <data name="NoContentInFile" xml:space="preserve">
+    <value>Không có nội dung trong tệp</value>
+    <comment />
+  </data>
+  <data name="RequiredEmail" xml:space="preserve">
+    <value>Công ty của bạn cần gửi email cho người dùng đã tạo</value>
+    <comment />
+  </data>
+  <data name="AccountIsInValid" xml:space="preserve">
+    <value>Tài khoản {0} không hợp lệ</value>
+    <comment />
+  </data>
+  <data name="DepartmentNumberNotFound" xml:space="preserve">
+    <value>Không tìm thấy số phòng ban</value>
+    <comment />
+  </data>
+  <data name="CannotContinueApproved" xml:space="preserve">
+    <value>Không thể tiếp tục được phê duyệt cho khách ghé thăm.</value>
+    <comment />
+  </data>
+  <data name="PermissionforApproved" xml:space="preserve">
+    <value>Bạn không có quyền để được phê duyệt.</value>
+    <comment />
+  </data>
+  <data name="CannotAssignedCard" xml:space="preserve">
+    <value>Không thể gán thẻ cho khách ghé thăm</value>
+    <comment />
+  </data>
+  <data name="CannotAssignedDoorVisitor" xml:space="preserve">
+    <value>Không thể điểm kiểm soát cho khách vì có nhiều thẻ</value>
+    <comment />
+  </data>
+  <data name="RejectSuccess" xml:space="preserve">
+    <value>Từ chối yêu cầu truy cập thành công</value>
+    <comment />
+  </data>
+  <data name="RejectFailed" xml:space="preserve">
+    <value>Đã xảy ra sự cố khi từ chối yêu cầu được truy cập</value>
+    <comment />
+  </data>
+  <data name="CannotFinishedVisitor" xml:space="preserve">
+    <value>Không thể lấy lại thẻ từ khách ghé thăm.</value>
+    <comment />
+  </data>
+  <data name="FinishedVisitor" xml:space="preserve">
+    <value>Nhận lại thẻ từ khách ghé thăm thành công</value>
+    <comment />
+  </data>
+  <data name="ApprovedSuccessfully" xml:space="preserve">
+    <value>Đã phê duyệt thành công</value>
+    <comment />
+  </data>
+  <data name="CannotAssignedCardNotApproved" xml:space="preserve">
+    <value>Không thể gán thẻ cho khách ghé thăm vì khách truy cập chưa được phê duyệt.</value>
+    <comment />
+  </data>
+  <data name="Approvedisrequired" xml:space="preserve">
+    <value>Bắt buộc phê duyệt.</value>
+    <comment />
+  </data>
+  <data name="DeletedVisitFailed" xml:space="preserve">
+    <value>Bạn không thể xóa lời mời ghé thăm này!</value>
+    <comment />
+  </data>
+  <data name="DeletedVisitFailedRegisterPermission" xml:space="preserve">
+    <value>Lời mời ghé thăm chỉ được xóa bởi người tạo!</value>
+    <comment />
+  </data>
+  <data name="msgDuplicatedData" xml:space="preserve">
+    <value>{0} được sao chép trong dữ liệu này.</value>
+    <comment />
+  </data>
+  <data name="EditVisitFailed" xml:space="preserve">
+    <value>Chỉ có thể thay đổi khách ghé thăm khi ở trạng thái Đang chờ</value>
+    <comment />
+  </data>
+  <data name="EditVisitFailedByAuthor" xml:space="preserve">
+    <value>Khách thăm chỉ có thể chỉnh sửa bởi người tạo lời mời</value>
+    <comment />
+  </data>
+  <data name="VisitorNameInValid" xml:space="preserve">
+    <value>Tên khách thăm không hợp lệ</value>
+    <comment />
+  </data>
+  <data name="MessageSuccessIssueCard" xml:space="preserve">
+    <value>Thẻ đã được phát hành bình thường.</value>
+    <comment />
+  </data>
+  <data name="msgFailedDeleteRole" xml:space="preserve">
+    <value>Không thể xóa quyền vì đã tồn tại tài khoản cho quyền đó.</value>
+    <comment />
+  </data>
+  <data name="InvalidRoleUpdate" xml:space="preserve">
+    <value>Không thể sửa đổi quyền mặc định.</value>
+    <comment />
+  </data>
+  <data name="PhoneMaxLength" xml:space="preserve">
+    <value>Số điện thoại không được phép lớn hơn 30 kí tự.</value>
+    <comment />
+  </data>
+  <data name="CompanyInformationMissing" xml:space="preserve">
+    <value>Thông tin công ty bị thiếu.</value>
+    <comment />
+  </data>
+  <data name="msgFailedDeleteBasicRole" xml:space="preserve">
+    <value>Không thể xóa quyền cơ bản.</value>
+    <comment />
+  </data>
+  <data name="msgChangedPlugIn" xml:space="preserve">
+    <value>Plug-in đã được thay đổi.</value>
+    <comment />
+  </data>
+  <data name="CannotAssignedQRNotApproved" xml:space="preserve">
+    <value>Không thể chỉ định QR cho khách ghé thăm vì khách ghé thăm chưa sẵn sàng được phê duyệt.</value>
+    <comment />
+  </data>
+  <data name="MessageSuccessIssueQR" xml:space="preserve">
+    <value>The QR đã được phát hành.</value>
+    <comment />
+  </data>
+  <data name="NullFrontEndURL" xml:space="preserve">
+    <value>The URL không được đăng ký. Vui lòng liên hệ với người quản lý hệ thống.</value>
+    <comment />
+  </data>
+  <data name="ExistAccount" xml:space="preserve">
+    <value>Tài khoản này đã tồn tại trong công ty này.</value>
+    <comment />
+  </data>
+  <data name="FB_Title_UnregisteredID" xml:space="preserve">
+    <value>ID chưa đăng ký</value>
+    <comment />
+  </data>
+  <data name="FB_Body_UnregisteredID" xml:space="preserve">
+    <value>Mã QR không được đăng ký ở cửa này.</value>
+    <comment />
+  </data>
+  <data name="FB_Title_ExpiredQR" xml:space="preserve">
+    <value>Mã QR đã hết hạn</value>
+    <comment />
+  </data>
+  <data name="FB_Body_ExpiredQR" xml:space="preserve">
+    <value>Mã QR đã hết hạn!</value>
+    <comment />
+  </data>
+  <data name="FB_Title_WrongQR" xml:space="preserve">
+    <value>Mã QR không chính xác</value>
+    <comment />
+  </data>
+  <data name="FB_Body_WrongQR" xml:space="preserve">
+    <value>Mã QR không chính xác.</value>
+    <comment />
+  </data>
+  <data name="FB_Title_NoUserAccessTime" xml:space="preserve">
+    <value>Bạn không được phép ra vào cửa này</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NoUserAccessTime" xml:space="preserve">
+    <value>Bạn không được phép ra vào cửa này.</value>
+    <comment />
+  </data>
+  <data name="FB_Title_EffectiveDateNotStarted" xml:space="preserve">
+    <value>Ngày hiệu lực chưa bắt đầu</value>
+    <comment />
+  </data>
+  <data name="FB_Body_EffectiveDateNotStarted" xml:space="preserve">
+    <value>Không thể vào cửa này cho đến ngày có hiệu lực.</value>
+    <comment />
+  </data>
+  <data name="FB_Title_ExpiredAccount" xml:space="preserve">
+    <value>Tài khoản đã hết hạn.</value>
+    <comment />
+  </data>
+  <data name="FB_Body_ExpiredAccount" xml:space="preserve">
+    <value>Tài khoản đã hết hạn, hãy yêu cầu hỗ trợ từ người quản lý!</value>
+    <comment />
+  </data>
+  <data name="FB_Title_InvalidDoor" xml:space="preserve">
+    <value>Cửa này không thể ra vào.</value>
+    <comment />
+  </data>
+  <data name="FB_Body_InvalidDoor" xml:space="preserve">
+    <value>Cửa này hiện không thể ra vào, hãy yêu cầu hỗ trợ từ người quản lý!</value>
+    <comment />
+  </data>
+  <data name="FB_Title_WrongAccessType" xml:space="preserve">
+    <value>Phương pháp xác thực sai</value>
+    <comment />
+  </data>
+  <data name="FB_Body_WrongAccessType" xml:space="preserve">
+    <value>Phương pháp xác thực không đúng, hãy liên hệ với người quản lý để nhận hỗ trợ!</value>
+    <comment />
+  </data>
+  <data name="FB_Title_TryAccessInEmergencyClose" xml:space="preserve">
+    <value>Cửa này đóng trong tình huống khẩn cấp.</value>
+    <comment />
+  </data>
+  <data name="FB_Title_FailTwoFactorAuth" xml:space="preserve">
+    <value>Xác thực 2 yếu tố thất bại</value>
+    <comment />
+  </data>
+  <data name="FB_Body_FailTwoFactorAuth" xml:space="preserve">
+    <value>Cánh cửa này cần xác thực 2 yêú tố nên xin hãy xác nhận lại chính xác!</value>
+    <comment />
+  </data>
+  <data name="FB_Body_TryAccessInEmergencyClose" xml:space="preserve">
+    <value>Cửa này đã đóng trong tình huống khẩn cấp, hãy yêu cầu hỗ trợ từ quản lý.</value>
+    <comment />
+  </data>
+  <data name="FB_Title_NormalAccess" xml:space="preserve">
+    <value>Truy cập thành công</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_0" xml:space="preserve">
+    <value>Xin chào {0}! </value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_1" xml:space="preserve">
+    <value>Xin chào {0}! Chúc bạn ngày mới tốt lành!</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_2" xml:space="preserve">
+    <value>Xin chào {0}! Chúc bạn ngày mới vui vẻ !</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_3" xml:space="preserve">
+    <value>Xin chào {0}! Chúc bạn có một ngày mới thật hạnh phúc!</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_4" xml:space="preserve">
+    <value>Xin chào {0}! Mong bạn có thật nhiều khoảnh khắc vui vẻ  trong hôm nay!</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_5" xml:space="preserve">
+    <value>Xin chào {0}! Ngày mới tốt lành nha!</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_6" xml:space="preserve">
+    <value>Xin chào {0}! Chúc bạn ngày mới hạnh phúc!</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_7" xml:space="preserve">
+    <value>Xin chào {0}! Hôm nay sẽ là một ngày tuyệt vời! Bạn tin tôi đi!</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_8" xml:space="preserve">
+    <value>Xin chào {0}! Chúc bạn ngày mới tràn ngập niềm vui!</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_9" xml:space="preserve">
+    <value>Xin chào {0}! Chúc bạn ngày mới tràn ngập niềm vui!!</value>
+    <comment />
+  </data>
+  <data name="FB_Body_NormalAccess_10" xml:space="preserve">
+    <value>Xin chào {0}! Chúc bạn ngày mới tràn ngập niềm vui!</value>
+    <comment />
+  </data>
+  <data name="msgDeleteUnregisteredDevice" xml:space="preserve">
+    <value>Các thiết bị không đăng ký đã bị xóa.</value>
+    <comment />
+  </data>
+  <data name="ExistedNFCPhone" xml:space="preserve">
+    <value>NFC Phone đã tồn tại</value>
+    <comment />
+  </data>
+  <data name="LengthMustEqual" xml:space="preserve">
+    <value>Chiều dài {0} phải là {1} ký tự.</value>
+    <comment />
+  </data>
+  <data name="DeletedFailed" xml:space="preserve">
+    <value>Một vài {0} đang ở trạng thái không thể xóa. ({1})</value>
+    <comment />
+  </data>
+  <data name="msgNotSuitableDevice" xml:space="preserve">
+    <value>Thiết bị này không phù hợp để thực hiện các yêu cầu.</value>
+    <comment />
+  </data>
+  <data name="LastDepartment" xml:space="preserve">
+    <value>Đây là phòng ban cuối cùng.</value>
+    <comment />
+  </data>
+  <data name="MessageUpdateFailed" xml:space="preserve">
+    <value>Không cập nhật được {0}.</value>
+    <comment />
+  </data>
+  <data name="VisitSettingMustHaveAccessTime" xml:space="preserve">
+    <value>Cài đặt lượt truy cập phải có Thời gian truy cập.</value>
+    <comment />
+  </data>
+  <data name="MessageAddNewFailed" xml:space="preserve">
+    <value>Thêm mới {0} thất bại.</value>
+    <comment />
+  </data>
+  <data name="msgCannotUpdate" xml:space="preserve">
+    <value>{0} không thể thay đổi.</value>
+    <comment />
+  </data>
+  <data name="MessageSuccess" xml:space="preserve">
+    <value>Cập nhật thành công</value>
+    <comment />
+  </data>
+  <data name="FB_Title_Warning" xml:space="preserve">
+    <value>Cảnh báo</value>
+    <comment />
+  </data>
+  <data name="ExistedFaceId" xml:space="preserve">
+    <value>Face Id đã tồn tại</value>
+    <comment />
+  </data>
+  <data name="msgNotPermission" xml:space="preserve">
+    <value>Bạn không có quyền.</value>
+    <comment />
+  </data>
+  <data name="msgAlreadyApproved" xml:space="preserve">
+    <value>Bạn không có quyền phê duyệt người dùng này.</value>
+  </data>
+  <data name="DuplicatedVehicle" xml:space="preserve">
+    <value>Phương tiện này đã được đăng ký trong hệ thống.</value>
+    <comment />
+  </data>
+  <data name="FB_Title_AntiPassbackError" xml:space="preserve">
+    <value>Anti Passback Error</value>
+    <comment />
+  </data>
+  <data name="FB_Body_AntiPassbackError" xml:space="preserve">
+    <value>Anti Passback Error</value>
+    <comment />
+  </data>
+  <data name="FB_Title_AntiPassbackDenied" xml:space="preserve">
+    <value>Anti Passback Denied</value>
+    <comment />
+  </data>
+  <data name="FB_Body_AntiPassbackDenied" xml:space="preserve">
+    <value>Anti Passback Denied</value>
+    <comment />
+  </data>
+  <data name="msgProcessed" xml:space="preserve">
+    <value>Đã được {0} xử lý.</value>
+    <comment />
+  </data>
+  <data name="msgExistNotApproved" xml:space="preserve">
+    <value>Không thể thay đổi bước phê duyệt vì có người dùng đang chờ phê duyệt.</value>
+    <comment />
+  </data>
+  <data name="msgCanNotUpdateWaiting" xml:space="preserve">
+    <value>{0} không thể thay đổi trong khi chờ phê duyệt.</value>
+    <comment />
+  </data>
+  <data name="msgMqttConfigError" xml:space="preserve">
+    <value>Config Error (Check config MQTT)</value>
+    <comment />
+  </data>
+  <data name="ImportRecordsError" xml:space="preserve">
+    <value>Nhập {0} dữ liệu thành công(thêm : {1}, cập nhật : {2}) những có {3} dữ liệu lỗi</value>
+  </data>
+  <data name="msgUserImportSuccess" xml:space="preserve">
+    <value>Nhập người dùng thành công</value>
+    <comment />
+  </data>
+  <data name="msgUserImporting" xml:space="preserve">
+    <value>Đang thêm người dùng...</value>
+    <comment />
+  </data>
+  <data name="msgUserImporting2" xml:space="preserve">
+    <value>{0} người dùng đã được nhập vào hệ thống. Nhập thêm...</value>
+    <comment />
+  </data>
+  <data name="MessageCanNotAddCardType" xml:space="preserve">
+    <value>Bạn không thể thêm loại thẻ này.</value>
+    <comment />
+  </data>
+  <data name="ChangedAccessGroup" xml:space="preserve">
+    <value>Có những người dùng bị thay đổi nhóm truy cập. Bạn có muốn tiếp tục không? {0}</value>
+    <comment />
+  </data>
+  <data name="msgDemasterKeyInvalid" xml:space="preserve">
+    <value>DeMasterPro Key không hợp lệ</value>
+    <comment />
+  </data>
+  <data name="msgVerifyLicenseSuccess" xml:space="preserve">
+    <value>License Key được xác minh</value>
+    <comment />
+  </data>
+  <data name="msgVerifyLicenseFalied" xml:space="preserve">
+    <value>Khởi động không thành công</value>
+    <comment />
+  </data>
+  <data name="msgUnassignDefaultGroup" xml:space="preserve">
+    <value>Không thể bỏ gán người dùng khỏi nhóm truy cập mặc định.</value>
+    <comment />
+  </data>
+  <data name="msgAccountNotActivated" xml:space="preserve">
+    <value>Tài khoản chưa được kích hoạt</value>
+    <comment />
+  </data>
+  <data name="MessageNoExtension" xml:space="preserve">
+    <value>Phần mở rộng không tồn tại trong tập tin. Vui lòng kiểm tra lại tệp tin.</value>
+    <comment />
+  </data>
+  <data name="msgFailedDelete" xml:space="preserve">
+    <value>The {0} cannot be deleted because there are some {1} that is using this {0}.</value>
+    <comment />
+  </data>
+  <data name="CannotDesignateDeptManager" xml:space="preserve">
+    <value>Người dùng này không thể được chỉ định làm trưởng bộ phận.</value>
+    <comment />
+  </data>
+  <data name="NoLoginAccount" xml:space="preserve">
+    <value>Không có thông tin tài khoản nào để đăng nhập.</value>
+    <comment />
+  </data>
+  <data name="msgConfigError" xml:space="preserve">
+    <value>Cài đặt cấu hình có lỗi</value>
+    <comment />
+  </data>
+  <data name="msgAssignSuccessFail" xml:space="preserve">
+    <value>Assign {1} {0} success, but {2} {0} failed. (Duplicated {0} : {3})</value>
+    <comment />
+  </data>
+  <data name="CannotAssignCardStatus" xml:space="preserve">
+    <value>Khách truy cập không được cấp thẻ.</value>
+  </data>
+  <data name="msgReturnCardSuccess" xml:space="preserve">
+    <value>Thẻ đã được trả thành công.</value>
+    <comment />
+  </data>
+  <data name="msgReturnCardSuccessFail" xml:space="preserve">
+    <value>Trả {0} thẻ thành công, nhưng {1} thẻ lỗi. (Thẻ không khớp : {2})</value>
+    <comment />
+  </data>
+  <data name="msgNotMatched" xml:space="preserve">
+    <value>Thông tin thẻ và khách không khớp với nhau.</value>
+    <comment />
+  </data>
+  <data name="msgCannotAutoApproved" xml:space="preserve">
+    <value>Do các xác lập hệ thống viếng thăm, nên không có tính năng tự động chấp thuận.</value>
+    <comment />
+  </data>
+  <data name="DuplicatedVisitors" xml:space="preserve">
+    <value>Có những thông tin khách truy cập trùng lặp. ({0})</value>
+    <comment />
+  </data>
+  <data name="msgAssignDoorSuccess" xml:space="preserve">
+    <value>Phân công cửa thành công.</value>
+    <comment />
+  </data>
+  <data name="msgUnassignDoorSuccess" xml:space="preserve">
+    <value>Đã gỡ bỏ thành công cửa.</value>
+    <comment />
+  </data>
+  <data name="NoVisitorInformation" xml:space="preserve">
+    <value>Không có thông tin khách thăm.</value>
+    <comment />
+  </data>
+  <data name="DuplicatedVehicles" xml:space="preserve">
+    <value>Có những thông tin trùng lặp về xe cộ. ({0})</value>
+    <comment />
+  </data>
+  <data name="msgExistNotApprovedVIsitor" xml:space="preserve">
+    <value>Không thể thay đổi bước phê duyệt vì có người dùng đang chờ phê duyệt.</value>
+    <comment />
+  </data>
+  <data name="msgRequiredVehicle" xml:space="preserve">
+    <value>Để thêm thông tin xe, bạn phải nhập {0}.</value>
+    <comment />
+  </data>
+  <data name="msgFireOn" xml:space="preserve">
+    <value>Phát hiện hỏa hoạn ở {0}.</value>
+    <comment />
+  </data>
+  <data name="msgFireOff" xml:space="preserve">
+    <value>Ngọn lửa trong đơn vị {0} đã được dập tắt.</value>
+    <comment />
+  </data>
+  <data name="msgCannotDeleteStatus" xml:space="preserve">
+    <value>Khách truy cập chỉ có thể bị xóa khi họ {0}.</value>
+    <comment />
+  </data>
+  <data name="msgCannotTerminate" xml:space="preserve">
+    <value>Không thể kết thúc chuyến thăm nếu khách truy cập ở trạng thái {0}.</value>
+    <comment />
+  </data>
+  <data name="msgSuccessTerminateVisit" xml:space="preserve">
+    <value>Cuộc viếng thăm đã kết thúc thành công.</value>
+    <comment />
+  </data>
+  <data name="CannotUpdateWorkTypeList" xml:space="preserve">
+    <value>Không thể thay đổi vì vẫn còn người dùng loại bỏ chọn lọc. ({0})</value>
+    <comment />
+  </data>
+  <data name="msgMeetingTimeOverlap" xml:space="preserve">
+    <value>Thời gian đăng ký bị trùng</value>
+    <comment />
+  </data>
+  <data name="ImportVehicleAllocationError" xml:space="preserve">
+    <value>Nhập {0} dữ liệu thành công(thêm : {1}) but {2} bản ghi bị lỗi.</value>
+    <comment />
+  </data>
+  <data name="ImportVehicleAllocationSuccess" xml:space="preserve">
+    <value>Nhập {0} dữ liệu thành công(thêm : {1})</value>
+    <comment />
+  </data>
+  <data name="msgCannotUpdateStatus" xml:space="preserve">
+    <value>Nếu ở trạng thái không thích hợp để thực hiện hành động này.</value>
+    <comment />
+  </data>
+  <data name="ExistWaitingVisitor" xml:space="preserve">
+    <value>Khách mời đang chờ được phê duyệt.</value>
+    <comment />
+  </data>
+  <data name="ExistedFingerPrint" xml:space="preserve">
+    <value>Vân tay đã tồn tại</value>
+    <comment />
+  </data>
+  <data name="msgUserImporting3" xml:space="preserve">
+    <value>{0} người dùng đã được nhập vào hệ thống. Nhập thêm... ({0} / {1})</value>
+    <comment />
+  </data>
+  <data name="msgAddBuildingMaster" xml:space="preserve">
+    <value>Thêm mới toàn nhà master vào đơn vị {0}.</value>
+    <comment />
+  </data>
+  <data name="msgDeleteBuildingMaster" xml:space="preserve">
+    <value>Xóa đơn vị master hiện tại khỏi toàn nhà {0}.</value>
+    <comment />
+  </data>
+  <data name="msgSuccessToSend" xml:space="preserve">
+    <value>Chuyển thành công.</value>
+    <comment />
+  </data>
+  <data name="msgZeroIdCornerSetting" xml:space="preserve">
+    <value>Định danh của cấu hình góc phải khác 0</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundDevice" xml:space="preserve">
+    <value>Không thể tìm thấy thiết bị</value>
+    <comment />
+  </data>
+  <data name="msgStopProcess" xml:space="preserve">
+    <value>Bạn phải chọn ít nhất 1 tiến trình để dừng</value>
+    <comment />
+  </data>
+  <data name="msgFileNotFound" xml:space="preserve">
+    <value>Không tìm thấy tài liệu</value>
+    <comment />
+  </data>
+  <data name="msgEmptyTransmit" xml:space="preserve">
+    <value>Loại chuyển giao không thể trống.</value>
+    <comment />
+  </data>
+  <data name="msgControllerDeviceNotFound" xml:space="preserve">
+    <value>Không thể tìm thấy thiết bị điều khiển.</value>
+    <comment />
+  </data>
+  <data name="msgCompanyNotMatch" xml:space="preserve">
+    <value>Công ty của thiết bị không khớp với công ty của thiết bị điều khiển.</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundElevator" xml:space="preserve">
+    <value>Không thể tìm thấy thang máy</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundEventLog" xml:space="preserve">
+    <value>Không thể tìm thấy nhật ký sự kiện</value>
+    <comment />
+  </data>
+  <data name="msgVerifyHashFailed" xml:space="preserve">
+    <value>Verify hash MD5 failed</value>
+    <comment />
+  </data>
+  <data name="ExceptionalMeal" xml:space="preserve">
+    <value>Bữa ăn đặc biệt</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundHoliday" xml:space="preserve">
+    <value>Không thể tìm thấy ngày nghỉ lễ</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundEmailTemplate" xml:space="preserve">
+    <value>Không thể tìm thấy mẫu email</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundMealEventLog" xml:space="preserve">
+    <value>Không thể tìm thấy nhật ký sự kiện bữa ăn</value>
+    <comment />
+  </data>
+  <data name="msgZeroIdMealSetting" xml:space="preserve">
+    <value>Định danh của cấu hình bữa ăn phải khác 0</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundMealSetting" xml:space="preserve">
+    <value>Không thể tìm thấy cấu hình bữa ăn</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundMealType" xml:space="preserve">
+    <value>Không thể tìm thấy loại bữa ăn</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundMeeting" xml:space="preserve">
+    <value>Không thể tìm thấy bữa tiệc</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundUser" xml:space="preserve">
+    <value>Không thể tìm thấy người dùng</value>
+    <comment />
+  </data>
+  <data name="msgNotMatchKey" xml:space="preserve">
+    <value>Key không khớp</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundPlugin" xml:space="preserve">
+    <value>Plug-in không thể tìm thấy</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundRole" xml:space="preserve">
+    <value>Không thể tìm thấy role</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundSetting" xml:space="preserve">
+    <value>Không thể tìm thấy cài đặt</value>
+    <comment />
+  </data>
+  <data name="lblHeader" xml:space="preserve">
+    <value>Tiêu đề</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundUnknownPerson" xml:space="preserve">
+    <value>Không thể tìm thấy người không xác định</value>
+    <comment />
+  </data>
+  <data name="lblUnknownPerson" xml:space="preserve">
+    <value>Người không xác định</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundUnregistedDevice" xml:space="preserve">
+    <value>Không thể tìm thấy thiết bị chưa đăng ký</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundCard" xml:space="preserve">
+    <value>Không thể tìm thấy thẻ</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundCompany" xml:space="preserve">
+    <value>Không thể tìm thấy công ty</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundVehicle" xml:space="preserve">
+    <value>Không thể tìm thấy phương tiện</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundVisit" xml:space="preserve">
+    <value>Không thể tìm thấy khách</value>
+    <comment />
+  </data>
+  <data name="msgErrorReCaptcha" xml:space="preserve">
+    <value>Recaptcha không đúng</value>
+    <comment />
+  </data>
+  <data name="msgErrorSendEmail" xml:space="preserve">
+    <value>Email hoặc đường link mời không đúng</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundQrCode" xml:space="preserve">
+    <value>Không thể tìm thấy qrcode</value>
+    <comment />
+  </data>
+  <data name="lblDoor" xml:space="preserve">
+    <value>Cửa</value>
+    <comment />
+  </data>
+  <data name="VisitIdBlank" xml:space="preserve">
+    <value>Mã khách không thể trống.</value>
+    <comment />
+  </data>
+  <data name="msgIsAllowUserTarget" xml:space="preserve">
+    <value>Không được phép lấy danh sách người dùng</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundPath" xml:space="preserve">
+    <value>Không thể tìm thấy đường dẫn</value>
+    <comment />
+  </data>
+  <data name="msgNotFoundWorkingType" xml:space="preserve">
+    <value>Không thể tìm thấy loại việc làm</value>
+    <comment />
+  </data>
+  <data name="pointVisitNotEnough" xml:space="preserve">
+    <value>Điểm của công ty không đủ.</value>
+    <comment />
+  </data>
+  <data name="msgConnectDeptAcGrp" xml:space="preserve">
+    <value>Bộ phận đã kết nối thành công với nhóm truy cập.</value>
+  </data>
+  <data name="msgDisconnectDeptAcGrp" xml:space="preserve">
+    <value>(Các) bộ phận và nhóm truy cập đã bị ngắt kết nối thành công.</value>
+  </data>
+  <data name="msgCannotAssignAgToUser" xml:space="preserve">
+    <value>Bạn không thể gán nhóm truy cập cho người dùng này.</value>
+  </data>
+  <data name="msgExportCardQrFail" xml:space="preserve">
+  <value>Xuất thẻ qr không thành công</value>
+  </data>
+  <data name="msgExportCardQrSuccess" xml:space="preserve">
+  <value>Xuất thẻ qr hoàn tất, bấm ngay để tải xuống: {0}</value>
+  </data>
+  <data name="msgExportingCardQr" xml:space="preserve">
+  <value>Đang xuất QR thẻ...</value>
+  </data>
+  <data name="msgNotFoundMeetingRoom" xml:space="preserve">
+    <value>Không thể tìm thấy phòng họp</value>
+  </data>
+  <data name="msgNotPermissionAddAnotherDept" xml:space="preserve">
+    <value>Bạn không có quyền tạo phòng ban không thuộc phòng ban của bạn quản lý.</value>
+  </data>
+  <data name="msgExistSystemAccount" xml:space="preserve">
+    <value>Tài khoản này là quản trị viên hệ thống</value>
+  </data>
+  <data name="lblSystem" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="ExpiredTokenAndRefreshTokenMismatched" xml:space="preserve">
+    <value>Mã truy cập và mã làm mới không khớp.</value>
+  </data>
+  <data name="FB_Body_NormalAccess" xml:space="preserve">
+    <value>Xin chào!</value>
+  </data>
+  <data name="Welcome {0}! FB_Body_NormalAccess_10" xml:space="preserve">
+    <value>Chúc bạn một ngày tuyệt vời!</value>
+  </data>
+  <data name="msgCardIdExisted" xml:space="preserve">
+    <value>Mã thẻ đã tồn tại trong hệ thống {0}.</value>
+  </data>
+  <data name="msgPartnerIdInvalid" xml:space="preserve">
+    <value>Partner id không hợp lệ</value>
+  </data>
+  <data name="msgSchoolCodeInvalid" xml:space="preserve">
+    <value>School Code không hợp lệ</value>
+  </data>
+  <data name="msgRollCallDayInvalid" xml:space="preserve">
+    <value>Roll Call Day invalid</value>
+  </data>
+  <data name="msgNotAllowIpAddres" xml:space="preserve">
+    <value>Địa chỉ IP của bạn không được phép đăng nhập vào công ty này</value>
+  </data>
+  <data name="msgExportFailed" xml:space="preserve">
+    <value>Xuất tệp thất bại</value>
+  </data>
+  <data name="ExistCardData" xml:space="preserve">
+    <value>{0} đã tồn tại</value>
+  </data>
+  <data name="msgInvalidFile" xml:space="preserve">
+    <value>Invalid file, please check the file again.</value>
+  </data>
+  <data name="msgNoRecoverEventsInFile" xml:space="preserve">
+    <value>There are no events to recover in that file. Please check the query conditions and files again.</value>
+  </data>
+  <data name="msgImageInvalid" xml:space="preserve">
+    <value>Ảnh không hợp lệ</value>
+  </data>
+  <data name="msgCameraIsExisted" xml:space="preserve">
+    <value>Camera {0} đã tồn tại trong hệ thống</value>
+  </data>
+  <data name="roleIsAssignedAndCannotDelete" xml:space="preserve">
+    <value>Role này đã được gán cho người dùng và không thể xóa.</value>
+  </data>
+  <data name="msgNotFoundAccessSchedule" xml:space="preserve">
+    <value>Không thể tìm thấy lịch trực</value>
+  </data>
+  <data name="msgAccessScheduleTimeOverlap" xml:space="preserve">
+    <value>Nhân viên đã được phân công một lịch trực khác trong cùng khoảng thời gian.</value>
+  </data>
+  <data name="msgNotFoundWorkShift" xml:space="preserve">
+    <value>Không thể tìm thấy ca trực</value>
+  </data>
+  <data name="msgStartLessEnd" xml:space="preserve">
+    <value>Ngày bắt đầu phải nhỏ hơn ngày kết thúc</value>
+  </data>
+  <data name="msgInvalidInput" xml:space="preserve">
+    <value>{0} Không được chứa ký tự đặc biệt hoặc đoạn mã code.</value>
+  </data>
+  <data name="MustBeGreaterThanZero" xml:space="preserve">
+    <value>{0} phải lớn hơn {1} và nhỏ hơn {2}. (Giây)</value>
+  </data>
+  <data name="msgDateMustBeInPast" xml:space="preserve">
+    <value>{0} phải ở trong quá khứ</value>
+  </data>
+  <data name="InvalidEmailFormat" xml:space="preserve">
+    <value>Email không đúng định dạng</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>hoặc</value>
+  </data>
+  <data name="msgCannotDeleteBecauseRef" xml:space="preserve">
+    <value>Không thể xóa {0} do vẫn còn liên kết với {1}.</value>
+  </data>
+  <data name="msgVehicleImporting" xml:space="preserve">
+    <value>{0} phương tiện đã được nhập vào hệ thống. Nhập thêm... ({1} / {2})</value>
+  </data>
+  <data name="msgFileIncorrectFormat" xml:space="preserve">
+    <value>Tệp tin không đúng định dạng. Không thể đọc tệp Excel.</value>
+  </data>
+  <data name="msgFileIncorrectFormatColumns" xml:space="preserve">
+    <value>Tệp tin không đúng định dạng. Cần {0} cột, nhưng tìm thấy {1} cột.</value>
+  </data>
+  <data name="msgFileIncorrectFormatHeader" xml:space="preserve">
+    <value>Tệp tin không đúng định dạng. Cần tiêu đề '{0}' ở cột {1}, nhưng tìm thấy '{2}'.</value>
+  </data>
+</root>

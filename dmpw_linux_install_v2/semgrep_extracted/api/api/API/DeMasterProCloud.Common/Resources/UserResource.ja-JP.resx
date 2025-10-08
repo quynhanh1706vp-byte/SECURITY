@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAccessGroup" xml:space="preserve">
+    <value>アクセスグループ</value>
+  </data>
+  <data name="lblAccessGroupId" xml:space="preserve">
+    <value>アクセスグループ ID</value>
+  </data>
+  <data name="lblAccessibleDoors" xml:space="preserve">
+    <value>アクセス可能なドア</value>
+  </data>
+  <data name="lblAccessLevel" xml:space="preserve">
+    <value>アクセスレベル</value>
+  </data>
+  <data name="lblAddNew" xml:space="preserve">
+    <value>新規ユーザーの追加</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>アドレス</value>
+  </data>
+  <data name="lblAvatar" xml:space="preserve">
+    <value>アバター</value>
+  </data>
+  <data name="lblCardId" xml:space="preserve">
+    <value>カードID</value>
+  </data>
+  <data name="lblCardStatus" xml:space="preserve">
+    <value>カード状態</value>
+  </data>
+  <data name="lblCity" xml:space="preserve">
+    <value>市</value>
+  </data>
+  <data name="lblClear" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="lblCompanyPhone" xml:space="preserve">
+    <value>会社電話番号</value>
+  </data>
+  <data name="lblContractWorker" xml:space="preserve">
+    <value>契約職</value>
+  </data>
+  <data name="lblDelete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="lblDeleteMultiple" xml:space="preserve">
+    <value>複数ユーザーを削除</value>
+  </data>
+  <data name="lblCard" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>部署</value>
+  </data>
+  <data name="lblDepartmentName" xml:space="preserve">
+    <value>部署名</value>
+  </data>
+  <data name="lblDepartmentNumber" xml:space="preserve">
+    <value>部署番号</value>
+  </data>
+  <data name="lblDetails" xml:space="preserve">
+    <value>細部</value>
+  </data>
+  <data name="lblDeviceAuthority" xml:space="preserve">
+    <value>デバイス権限</value>
+  </data>
+  <data name="lblEffectiveDate" xml:space="preserve">
+    <value>発効日</value>
+  </data>
+  <data name="lblEmergencyPassword" xml:space="preserve">
+    <value>緊急パスワード</value>
+  </data>
+  <data name="lblEmployeeNumber" xml:space="preserve">
+    <value>社員番号</value>
+  </data>
+  <data name="lblErrorData" xml:space="preserve">
+    <value>ErrorData</value>
+  </data>
+  <data name="lblExpiredDate" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="lblExport" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="lblExportAccessibleDoor" xml:space="preserve">
+    <value>アクセス可能なドアエクスポート</value>
+  </data>
+  <data name="lblFemale" xml:space="preserve">
+    <value>女性</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>名前1</value>
+  </data>
+  <data name="lblGender" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="lblGeneral" xml:space="preserve">
+    <value>一般的</value>
+  </data>
+  <data name="lblHomePhone" xml:space="preserve">
+    <value>自宅電話番号</value>
+  </data>
+  <data name="lblId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="lblImport" xml:space="preserve">
+    <value>インポート</value>
+  </data>
+  <data name="lblIndex" xml:space="preserve">
+    <value>索引</value>
+  </data>
+  <data name="lblInValid" xml:space="preserve">
+    <value>無効</value>
+  </data>
+  <data name="lblInvalidImport" xml:space="preserve">
+    <value>無効インポート</value>
+  </data>
+  <data name="lblIsMasterCard" xml:space="preserve">
+    <value>マスターカード可否</value>
+  </data>
+  <data name="lblIssueCount" xml:space="preserve">
+    <value>発行カウント</value>
+  </data>
+  <data name="lblIssuedDate" xml:space="preserve">
+    <value>発行日</value>
+  </data>
+  <data name="lblJob" xml:space="preserve">
+    <value>担当業務</value>
+  </data>
+  <data name="lblKeyPadPassword" xml:space="preserve">
+    <value>キーパッドパスワード</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>名前2</value>
+  </data>
+  <data name="lblLost" xml:space="preserve">
+    <value>紛失</value>
+  </data>
+  <data name="lblMale" xml:space="preserve">
+    <value>男性</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="lblNationality" xml:space="preserve">
+    <value>国籍</value>
+  </data>
+  <data name="lblNormal" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="lblNote" xml:space="preserve">
+    <value>メモ</value>
+  </data>
+  <data name="lblNotUse" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="lblOfficePhone" xml:space="preserve">
+    <value>会社電話番号</value>
+  </data>
+  <data name="lblOptimalSize" xml:space="preserve">
+    <value>最適サイズ230 x 230ピクセル</value>
+  </data>
+  <data name="lblPartTimeWorker" xml:space="preserve">
+    <value>パートタイマー</value>
+  </data>
+  <data name="lblPassCard" xml:space="preserve">
+    <value>出入証</value>
+  </data>
+  <data name="lblPermanentWorker" xml:space="preserve">
+    <value>正社員</value>
+  </data>
+  <data name="lblPleaseChoose" xml:space="preserve">
+    <value>選択してください</value>
+  </data>
+  <data name="lblPosition" xml:space="preserve">
+    <value>職級</value>
+  </data>
+  <data name="lblPostCode" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="lblRemarks" xml:space="preserve">
+    <value>リマーク</value>
+  </data>
+  <data name="lblResidentWorker" xml:space="preserve">
+    <value>常駐者</value>
+  </data>
+  <data name="lblResponsibility" xml:space="preserve">
+    <value>責任分野</value>
+  </data>
+  <data name="lblRetire" xml:space="preserve">
+    <value>退職</value>
+  </data>
+  <data name="lblSelectDepartment" xml:space="preserve">
+    <value>部署選択</value>
+  </data>
+  <data name="lblSex" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="lblSyncTime" xml:space="preserve">
+    <value>同期時間</value>
+  </data>
+  <data name="lblSystemAdmin" xml:space="preserve">
+    <value>システム管理者</value>
+  </data>
+  <data name="lblTemp" xml:space="preserve">
+    <value>一時</value>
+  </data>
+  <data name="lblUpdate" xml:space="preserve">
+    <value>ユーザーアップデート</value>
+  </data>
+  <data name="lblUse" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="lblUser" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="lblUserCode" xml:space="preserve">
+    <value>ユーザーコード</value>
+  </data>
+  <data name="lblUserInfomation" xml:space="preserve">
+    <value>ユーザー情報</value>
+  </data>
+  <data name="lblUserList" xml:space="preserve">
+    <value>ユーザーリスト</value>
+  </data>
+  <data name="lblUsers" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="lblVisitCard" xml:space="preserve">
+    <value>訪問証</value>
+  </data>
+  <data name="msgCardIDIsBeingUsedByAnother" xml:space="preserve">
+    <value>カードIDは他のユーザーがユーザーコード{0}で使用しています</value>
+  </data>
+  <data name="msgCardIDIsBeingUsedByAnotherInSystem" xml:space="preserve">
+    <value>カードIDがシステム内の他のユーザーによって使用されています。</value>
+  </data>
+  <data name="msgChangeUserInfor" xml:space="preserve">
+    <value>ユーザー情報の変更（{0}）：{1}（ユーザーコード）</value>
+  </data>
+  <data name="msgChangeUserInforUserCode" xml:space="preserve">
+    <value>ユーザー情報を変更{0}（ユーザーコード）</value>
+  </data>
+  <data name="msgDeleteMultipleUserCode" xml:space="preserve">
+    <value>複数のユーザー削除（ユーザーコード）</value>
+  </data>
+  <data name="msgExportAccessibleDoorList" xml:space="preserve">
+    <value>アクセス可能なドアリストのエクスポート - {0}</value>
+  </data>
+  <data name="msgExportSuccess" xml:space="preserve">
+    <value>エクスポートしました。</value>
+  </data>
+  <data name="msgExportUserList" xml:space="preserve">
+    <value>ユーザーリストのエクスポート：{0}（ログイン：{1}）</value>
+  </data>
+  <data name="msgImportSuccess" xml:space="preserve">
+    <value>インポートしました。</value>
+  </data>
+  <data name="msgImportUserList" xml:space="preserve">
+    <value>ユーザーリストのインポート: {0} (Login: {1})</value>
+  </data>
+  <data name="msgInValidAvatar" xml:space="preserve">
+    <value>アバターはフォーマット{0}のみをサポートします。</value>
+  </data>
+  <data name="msgInvalidRecord" xml:space="preserve">
+    <value>無効なレコードがいくつかあります。 修正してもう一度インポートしてください。</value>
+  </data>
+  <data name="msgKeyPadPwdBeingUsedByAnother" xml:space="preserve">
+    <value>キーパッドのパスワードは、ユーザーコード{0}の他のユーザーによって使用されています。</value>
+  </data>
+  <data name="msgKeyPadPwdBeingUsedByAnotherInSystem" xml:space="preserve">
+    <value>キーパッドパスワードはシステム内の他のユーザーよって使用されています。</value>
+  </data>
+  <data name="msgNoData" xml:space="preserve">
+    <value>データはありません。</value>
+  </data>
+  <data name="msgUserCodeIsBeingUsedByAnother" xml:space="preserve">
+    <value>ユーザーコードは他のユーザーによって使用されています。</value>
+  </data>
+  <data name="PresentDate" xml:space="preserve">
+    <value>現在日付</value>
+  </data>
+  <data name="lblBirthday" xml:space="preserve">
+    <value>誕生日</value>
+  </data>
+  <data name="msgAddNewCertification" xml:space="preserve">
+    <value>新しい {0} がユーザに追加されます({1})。</value>
+  </data>
+  <data name="lblQR" xml:space="preserve">
+    <value>QR</value>
+  </data>
+  <data name="lblUserCount" xml:space="preserve">
+    <value>ユーザー数</value>
+  </data>
+  <data name="lblWorkingType" xml:space="preserve">
+    <value>Working Type</value>
+  </data>
+  <data name="lblLateIn" xml:space="preserve">
+    <value>Late In</value>
+  </data>
+  <data name="lblEarlyOut" xml:space="preserve">
+    <value>Early Out</value>
+  </data>
+  <data name="lblAbsentNoReason" xml:space="preserve">
+    <value>Absent No Reason</value>
+  </data>
+  <data name="lblOverTime" xml:space="preserve">
+    <value>Over Time</value>
+  </data>
+  <data name="lblBusinessTrip" xml:space="preserve">
+    <value>Business Trip</value>
+  </data>
+  <data name="lblVacation" xml:space="preserve">
+    <value>Vacation</value>
+  </data>
+  <data name="lblSickness" xml:space="preserve">
+    <value>Sickness</value>
+  </data>
+  <data name="lblLateInEarlyOut" xml:space="preserve">
+    <value>Late In Early Out</value>
+  </data>
+  <data name="lblRemote" xml:space="preserve">
+    <value>Remote</value>
+  </data>
+  <data name="lblAbNormal" xml:space="preserve">
+    <value>AbNormal</value>
+  </data>
+  <data name="lblPlugIn" xml:space="preserve">
+    <value>PlugIn</value>
+  </data>
+  <data name="lblCardType" xml:space="preserve">
+    <value>CardType</value>
+  </data>
+  <data name="lblHoliday" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="msgUserCodeLength" xml:space="preserve">
+    <value>ユーザーコードの長さが長すぎます。</value>
+  </data>
+  <data name="lblActiveDutySoldier" xml:space="preserve">
+    <value>Active-duty soldier</value>
+  </data>
+  <data name="lblCivilianWorker" xml:space="preserve">
+    <value>Civilian worker in the military</value>
+  </data>
+  <data name="lblSoldier" xml:space="preserve">
+    <value>Soldier</value>
+  </data>
+  <data name="lblMilitaryNumber" xml:space="preserve">
+    <value>軍人番号</value>
+  </data>
+  <data name="lblEnlistmentDate" xml:space="preserve">
+    <value>入隊日</value>
+  </data>
+  <data name="lblCategoryOptionId" xml:space="preserve">
+    <value>Category option</value>
+  </data>
+  <data name="lblValidUser" xml:space="preserve">
+    <value>有効なユーザーのみ</value>
+  </data>
+  <data name="lblInvalidUser" xml:space="preserve">
+    <value>無効なユーザーのみ</value>
+  </data>
+  <data name="lblAllUser" xml:space="preserve">
+    <value>すべてのユーザー</value>
+  </data>
+  <data name="msgDuplicatedFaceData" xml:space="preserve">
+    <value>登録済みの顔です。 削除後、もう一度登録してください。</value>
+  </data>
+  <data name="lblMaster" xml:space="preserve">
+    <value>マスター</value>
+  </data>
+  <data name="lblSoldierFamily" xml:space="preserve">
+    <value>Soldier family</value>
+  </data>
+  <data name="lblApprovalWaiting1" xml:space="preserve">
+    <value>Waiting 1st approval</value>
+  </data>
+  <data name="lblApprovalWaiting2" xml:space="preserve">
+    <value>Waiting 2nd approval</value>
+  </data>
+  <data name="lblApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="lblRejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="lblApproval" xml:space="preserve">
+    <value>Approval</value>
+  </data>
+  <data name="lblReject" xml:space="preserve">
+    <value>Rejection</value>
+  </data>
+  <data name="lblAccessSetting" xml:space="preserve">
+    <value>Access setting</value>
+  </data>
+  <data name="lblNotUseApproval" xml:space="preserve">
+    <value>承認使用せず</value>
+  </data>
+  <data name="lblApprovalStatus" xml:space="preserve">
+    <value>承認の可否</value>
+  </data>
+  <data name="lblUpdateWaiting1" xml:space="preserve">
+    <value>Waiting 1st update approval</value>
+  </data>
+  <data name="lblUpdateWaiting2" xml:space="preserve">
+    <value>Waiting 2nd update approval</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="lblWorkType" xml:space="preserve">
+    <value>Type of work</value>
+  </data>
+  <data name="lblSecretIssuanceBasis" xml:space="preserve">
+    <value>秘密発行基準</value>
+  </data>
+  <data name="lblColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="lblBlackBox" xml:space="preserve">
+    <value>Black box</value>
+  </data>
+  <data name="lblModel" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="lblImageFileName" xml:space="preserve">
+    <value>Image file name</value>
+  </data>
+  <data name="lblArmyWorkType" xml:space="preserve">
+    <value>Work type</value>
+  </data>
+  <data name="msgMaximumAddUser" xml:space="preserve">
+    <value>You can not add new user. (Count of users maximum: {0})</value>
+  </data>
+  <data name="lblContractorStaff" xml:space="preserve">
+    <value>lblContractorStaff</value>
+  </data>
+  <data name="lblPersonnel" xml:space="preserve">
+    <value>幹部</value>
+  </data>
+  <data name="lblArmyUserFamilyName" xml:space="preserve">
+    <value>Army user family's name</value>
+  </data>
+  <data name="lblArmyUserFamilyRank" xml:space="preserve">
+    <value>Army user family's rank</value>
+  </data>
+  <data name="lblArmyUserFamilyDepartment" xml:space="preserve">
+    <value>Army user family's department</value>
+  </data>
+  <data name="msgDeleteCard" xml:space="preserve">
+    <value>{0}カードがユーザー（{1}）から削除されました。</value>
+  </data>
+  <data name="lblVehicle" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+  <data name="lblOfficer" xml:space="preserve">
+    <value>将校</value>
+  </data>
+  <data name="lblNCOfficer" xml:space="preserve">
+    <value>下士官</value>
+  </data>
+  <data name="lblPublicOfficer" xml:space="preserve">
+    <value>公務員</value>
+  </data>
+  <data name="lblFixedWorker" xml:space="preserve">
+    <value>Fixed Worker</value>
+  </data>
+  <data name="lblResidedWorker" xml:space="preserve">
+    <value>Resided Worker</value>
+  </data>
+  <data name="lblReservedArmy" xml:space="preserve">
+    <value>Reserved Army</value>
+  </data>
+  <data name="lblCivilian" xml:space="preserve">
+    <value>民間人</value>
+  </data>
+  <data name="lblWaitingApproval" xml:space="preserve">
+    <value>承認待ち</value>
+  </data>
+  <data name="lblWaitingService" xml:space="preserve">
+    <value>車両の出発を待っています</value>
+  </data>
+  <data name="lblVehicleInService" xml:space="preserve">
+    <value>車両運行中</value>
+  </data>
+  <data name="lblFinishedVehicleService" xml:space="preserve">
+    <value>サービス終了</value>
+  </data>
+  <data name="lblVehicleAllocationManager" xml:space="preserve">
+    <value>車両配車マネージャー</value>
+  </data>
+  <data name="lblVehicleAllocationDriver" xml:space="preserve">
+    <value>配車ドライバー</value>
+  </data>
+  <data name="lblParentDepartment" xml:space="preserve">
+    <value>Parent Department Name</value>
+  </data>
+  <data name="lblTypeOfWork" xml:space="preserve">
+    <value>Type Of Work</value>
+  </data>
+  <data name="msgDataFingerprintInvalid" xml:space="preserve">
+    <value>Data fingerprint invalid</value>
+  </data>
+  <data name="lblAction" xml:space="preserve">
+    <value>アクション</value>
+  </data>
+  <data name="DeleteDefaultWorkingType" xml:space="preserve">
+    <value>デフォルトの作業タイプを削除できません。</value>
+  </data>
+  <data name="DeleteWorkingTypeUserWorkingOn" xml:space="preserve">
+    <value>すでにユーザーに割り当てられている作業タイプは削除できません。</value>
+  </data>
+  <data name="lblParmanentOfficer" xml:space="preserve">
+    <value>常勤役員</value>
+  </data>
+  <data name="msgUserListNotChanged" xml:space="preserve">
+    <value>User data remains unchanged</value>
+  </data>
+  <data name="lblAddAccessPermission" xml:space="preserve">
+    <value>アクセス権を取得します</value>
+  </data>
+  <data name="lblLostAccessPermission" xml:space="preserve">
+    <value>アクセス権が失われました</value>
+  </data>
+  <data name="msgChangeDepartment" xml:space="preserve">
+    <value>ユーザー部門が変更されました。</value>
+  </data>
+  <data name="lblStudent" xml:space="preserve">
+    <value>Student</value>
+  </data>
+  <data name="lblTeacher" xml:space="preserve">
+    <value>Teacher</value>
+  </data>
+  <data name="lblSyncData" xml:space="preserve">
+    <value>Sync Data</value>
+  </data>
+  <data name="lblCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lblNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="lblFaceAndIris" xml:space="preserve">
+    <value>Face and Iris</value>
+  </data>
+  <data name="lblFaceOnly" xml:space="preserve">
+    <value>Face only</value>
+  </data>
+  <data name="lblIrisOnly" xml:space="preserve">
+    <value>Iris only</value>
+  </data>
+  <data name="lblOffDutyBreak" xml:space="preserve">
+    <value>Off Duty Break</value>
+  </data>
+  <data name="DeletedUserFailed" xml:space="preserve">
+    <value>Delete user failed. {0}</value>
+  </data>
+</root>

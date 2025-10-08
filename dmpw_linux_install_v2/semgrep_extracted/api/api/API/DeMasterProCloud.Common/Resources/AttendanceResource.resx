@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAttendance" xml:space="preserve">
+    <value>Attendance</value>
+    <comment/>
+  </data>
+  <data name="headerName" xml:space="preserve">
+    <value>Name</value>
+    <comment/>
+  </data>
+  <data name="headerDate" xml:space="preserve">
+    <value>Date</value>
+    <comment/>
+  </data>
+  <data name="headerClockIn" xml:space="preserve">
+    <value>Clock-in</value>
+    <comment/>
+  </data>
+  <data name="headerClockOut" xml:space="preserve">
+    <value>Clock-out</value>
+    <comment/>
+  </data>
+  <data name="headerUnfulfilledTime" xml:space="preserve">
+    <value>Unfulfilled time</value>
+    <comment/>
+  </data>
+  <data name="headerOverTime" xml:space="preserve">
+    <value>Over time</value>
+    <comment/>
+  </data>
+  <data name="headerTotalTime" xml:space="preserve">
+    <value>Working hours</value>
+    <comment/>
+  </data>
+  <data name="headerDayOfWeek" xml:space="preserve">
+    <value>Day of week</value>
+    <comment/>
+  </data>
+  <data name="lblSunday" xml:space="preserve">
+    <value>Sun</value>
+    <comment/>
+  </data>
+  <data name="lblMonday" xml:space="preserve">
+    <value>Mon</value>
+    <comment/>
+  </data>
+  <data name="lblTuesday" xml:space="preserve">
+    <value>Tue</value>
+    <comment/>
+  </data>
+  <data name="lblWednesday" xml:space="preserve">
+    <value>Wed</value>
+    <comment/>
+  </data>
+  <data name="lblThursday" xml:space="preserve">
+    <value>Thu</value>
+    <comment/>
+  </data>
+  <data name="lblFriday" xml:space="preserve">
+    <value>Fri</value>
+    <comment/>
+  </data>
+  <data name="lblSaturday" xml:space="preserve">
+    <value>Sat</value>
+    <comment/>
+  </data>
+  <data name="headerDiffTime" xml:space="preserve">
+    <value>Diff time</value>
+    <comment/>
+  </data>
+  <data name="lblTotalWorkingHour" xml:space="preserve">
+    <value>Total working hours</value>
+    <comment/>
+  </data>
+  <data name="lblTotalDiffTime" xml:space="preserve">
+    <value>Total diff time</value>
+    <comment/>
+  </data>
+  <data name="lblWeekWorkingHour" xml:space="preserve">
+    <value>Weekly working hours</value>
+    <comment/>
+  </data>
+  <data name="lblWeekDiffTime" xml:space="preserve">
+    <value>Weekly diff time</value>
+    <comment/>
+  </data>
+  <data name="lblWeekly" xml:space="preserve">
+    <value>WEEKLY</value>
+    <comment/>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>TOTAL</value>
+    <comment/>
+  </data>
+  <data name="lblOnlyInOffice" xml:space="preserve">
+    <value>The hours spent only in the office</value>
+    <comment/>
+  </data>
+  <data name="lblTotalInOffice" xml:space="preserve">
+    <value>Total hours from clock-in to out</value>
+    <comment/>
+  </data>
+  <data name="lblStatusWaiting" xml:space="preserve">
+    <value>Waiting</value>
+    <comment/>
+  </data>
+  <data name="lblStatusAprroval" xml:space="preserve">
+    <value>Approved</value>
+    <comment/>
+  </data>
+  <data name="lblStatusReject" xml:space="preserve">
+    <value>Rejected</value>
+    <comment/>
+  </data>
+  <data name="contentRegisterAttenance" xml:space="preserve">
+    <value>There is new leave request needed to review of {0}</value>
+    <comment/>
+  </data>
+  <data name="contentAcceptAttendanceLeave" xml:space="preserve">
+    <value>Leave request has been accepted by {0}</value>
+    <comment/>
+  </data>
+  <data name="contentRejectAttendanceLeave" xml:space="preserve">
+    <value>Leave request has been rejected by {0}</value>
+    <comment/>
+  </data>
+  <data name="messageRegisterSuccess" xml:space="preserve">
+    <value>The request was successfully created</value>
+    <comment/>
+  </data>
+  <data name="requestAttendanceExist" xml:space="preserve">
+    <value>Your leave request for submited date is already exists</value>
+    <comment/>
+  </data>
+  <data name="headerAttendanceType" xml:space="preserve">
+    <value>Attendance type</value>
+    <comment/>
+  </data>
+  <data name="cannotDeleteRequest" xml:space="preserve">
+    <value>You can not delete leave request</value>
+    <comment/>
+  </data>
+  <data name="cannotEditRequest" xml:space="preserve">
+    <value>You can not edit leave request</value>
+    <comment/>
+  </data>
+  <data name="titleNoticationLeaveRequest" xml:space="preserve">
+    <value>Attendance Leave Request</value>
+    <comment/>
+  </data>
+  <data name="lblHHmmss" xml:space="preserve">
+    <value>hour:min:sec</value>
+    <comment/>
+  </data>
+  <data name="lblHHmm" xml:space="preserve">
+    <value>hour:min</value>
+    <comment/>
+  </data>
+  <data name="msgAddNewWorkingType" xml:space="preserve">
+    <value>Add a new working type</value>
+    <comment/>
+  </data>
+  <data name="msgUpdateWorkingType" xml:space="preserve">
+    <value>Update working type</value>
+    <comment/>
+  </data>
+  <data name="msgDeleteWorkingType" xml:space="preserve">
+    <value>Delete working type</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType1" xml:space="preserve">
+    <value>Type 1</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType0" xml:space="preserve">
+    <value>Type default</value>
+    <comment/>
+  </data>
+  <data name="headerBodyTemperature" xml:space="preserve">
+    <value>Body Temperature</value>
+    <comment/>
+  </data>
+  <data name="headerDepartment" xml:space="preserve">
+    <value>Department</value>
+    <comment/>
+  </data>
+  <data name="msgNotifyCheckinLate" xml:space="preserve">
+    <value>It seem you forgot to check-in, please do it soon!</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveUserName" xml:space="preserve">
+    <value>Username</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveType" xml:space="preserve">
+    <value>Leave Type</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveFromDate" xml:space="preserve">
+    <value>From Date</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveToDate" xml:space="preserve">
+    <value>To Date</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveReason" xml:space="preserve">
+    <value>Reason</value>
+    <comment/>
+  </data>
+  <data name="lblLeaveRejectReason" xml:space="preserve">
+    <value>Reject reason</value>
+    <comment/>
+  </data>
+  <data name="lblButtonCheckLeaveRequest" xml:space="preserve">
+    <value>Check Leave Request</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType2" xml:space="preserve">
+    <value>Type 2</value>
+    <comment/>
+  </data>
+  <data name="titleAttendanceReportType2" xml:space="preserve">
+    <value>ATTENDANCE REPORT IN/OUT OF DEPARTMENT {0}</value>
+    <comment/>
+  </data>
+  <data name="titleAttendanceReportDateType2" xml:space="preserve">
+    <value>(from {0} to {1})</value>
+    <comment/>
+  </data>
+  <data name="lblNote" xml:space="preserve">
+    <value>Note</value>
+    <comment/>
+  </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>No</value>
+    <comment/>
+  </data>
+  <data name="lblFullName" xml:space="preserve">
+    <value>Full Name</value>
+    <comment/>
+  </data>
+  <data name="lblTimeIn" xml:space="preserve">
+    <value>Time In</value>
+    <comment/>
+  </data>
+  <data name="lblTimeOut" xml:space="preserve">
+    <value>Time out</value>
+    <comment/>
+  </data>
+  <data name="lblDefineLateIn" xml:space="preserve">
+    <value>Background color black, text color white: Late in</value>
+    <comment/>
+  </data>
+  <data name="lblDefineAbsence" xml:space="preserve">
+    <value>Black ground gray: Absence no reason</value>
+    <comment/>
+  </data>
+  <data name="lblDefineEarlyOut" xml:space="preserve">
+    <value>Background color gray, text italic: Early Out</value>
+    <comment/>
+  </data>
+  <data name="lblWork" xml:space="preserve">
+    <value>Work</value>
+    <comment/>
+  </data>
+  <data name="lblAnnualVacation" xml:space="preserve">
+    <value>An annual vacation</value>
+    <comment/>
+  </data>
+  <data name="lblOfficialVacation" xml:space="preserve">
+    <value>An official vacation</value>
+    <comment/>
+  </data>
+  <data name="lblPetitionVacation" xml:space="preserve">
+    <value>A petition vacation</value>
+    <comment/>
+  </data>
+  <data name="lblSpecialVacation" xml:space="preserve">
+    <value>A special vacation</value>
+    <comment/>
+  </data>
+  <data name="lblSleepOut" xml:space="preserve">
+    <value>Sleep out</value>
+    <comment/>
+  </data>
+  <data name="lblGoOut" xml:space="preserve">
+    <value>Go out</value>
+    <comment/>
+  </data>
+  <data name="lblVisitOut" xml:space="preserve">
+    <value>Visit out</value>
+    <comment/>
+  </data>
+  <data name="lblHospitalization" xml:space="preserve">
+    <value>Hospitalization</value>
+    <comment/>
+  </data>
+  <data name="lblStartDate" xml:space="preserve">
+    <value>Start Date</value>
+    <comment/>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>End Date</value>
+    <comment/>
+  </data>
+  <data name="titleAttendanceReportDateType3" xml:space="preserve">
+    <value>Hourly timesheet from: {0} to {1}</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType3" xml:space="preserve">
+    <value>Type 3</value>
+    <comment/>
+  </data>
+  <data name="lblUserCode" xml:space="preserve">
+    <value>User Code</value>
+    <comment/>
+  </data>
+  <data name="lblPosition" xml:space="preserve">
+    <value>Position</value>
+    <comment/>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>Department</value>
+    <comment/>
+  </data>
+  <data name="lblDateOfMonth" xml:space="preserve">
+    <value>Date of month</value>
+    <comment/>
+  </data>
+  <data name="lblAttendanceReportType4" xml:space="preserve">
+    <value>Type 4</value>
+    <comment/>
+  </data>
+  <data name="headerShift" xml:space="preserve">
+    <value>Shift</value>
+    <comment/>
+  </data>
+  <data name="headerLateIn" xml:space="preserve">
+    <value>Late In</value>
+    <comment/>
+  </data>
+  <data name="headerEarlyOut" xml:space="preserve">
+    <value>Early Out</value>
+    <comment/>
+  </data>
+  <data name="headerActualWorkingHour" xml:space="preserve">
+    <value>Actual Working Hour</value>
+    <comment/>
+  </data>
+  <data name="headerRealWorkingHour" xml:space="preserve">
+    <value>Real Working Hour</value>
+    <comment/>
+  </data>
+  <data name="headerOvertimeDurationBefore" xml:space="preserve">
+    <value>Overtime Duration Before</value>
+    <comment/>
+  </data>
+  <data name="headerOvertimeDurationAfter" xml:space="preserve">
+    <value>Overtime Duration After</value>
+    <comment/>
+  </data>
+  <data name="msgNotifyCheckinFirst" xml:space="preserve">
+    <value>You have successfully check in your time today</value>
+    <comment/>
+  </data>
+  <data name="lblHHmmDot" xml:space="preserve">
+    <value>hour.min</value>
+    <comment/>
+  </data>
+  <data name="msgWorkingTimeNameExisted" xml:space="preserve">
+    <value>Working time name existed in system</value>
+  </data>
+  <data name="msgValidationWorkingType" xml:space="preserve">
+    <value>Working type config failed</value>
+  </data>
+  <data name="msgValidationWorkingTime" xml:space="preserve">
+    <value>Working time config failed</value>
+  </data>
+  <data name="msgValidationWorkingDay" xml:space="preserve">
+    <value>Working day config failed</value>
+  </data>
+  <data name="msgValidationLunchTime" xml:space="preserve">
+    <value>Lunch time config failed</value>
+  </data>
+</root>

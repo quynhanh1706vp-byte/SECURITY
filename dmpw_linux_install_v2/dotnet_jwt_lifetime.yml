@@ -1,0 +1,10 @@
+rules:
+- id: csharp.dotnet.security.jwt-validatelifetime-false
+  languages: [csharp]
+  severity: HIGH
+  message: "JWT ValidateLifetime=false → token không hết hạn."
+  pattern: |
+    new TokenValidationParameters { ..., ValidateLifetime = false, ... }
+  metadata:
+    owasp: ["A02: Cryptographic Failures"]
+    fix: "Đặt ValidateLifetime=true; cấu hình Issuer/Audience/ClockSkew hợp lý."

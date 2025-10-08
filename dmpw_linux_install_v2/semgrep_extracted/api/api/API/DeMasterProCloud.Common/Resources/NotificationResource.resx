@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="TitleNotificationAccess" xml:space="preserve">
+        <value>Access Notification</value>
+    </data>
+    <data name="TitleNotificationAttendance" xml:space="preserve">
+        <value>Attendance Notification</value>
+    </data>
+    <data name="TitleNotificationVisit" xml:space="preserve">
+        <value>Visit Notification</value>
+    </data>
+    <data name="TitleNotificationDoors" xml:space="preserve">
+        <value>Doors Notification</value>
+    </data>
+    <data name="TitleNotificationInform" xml:space="preserve">
+        <value>Inform</value>
+    </data>
+    <data name="TitleNotificationWarning" xml:space="preserve">
+        <value>Warning</value>
+    </data>
+    <data name="TitleNotificationAction" xml:space="preserve">
+        <value>Action</value>
+    </data>
+    <data name="TitleNotificationEmergency" xml:space="preserve">
+        <value>Emergency</value>
+    </data>
+    <data name="TitlleNotificationNotice" xml:space="preserve">
+        <value>Notice</value>
+    </data>
+    <data name="msgCreateSuccessNewLFaceId" xml:space="preserve">
+        <value>Create new card LFaceId successfully</value>
+    </data>
+    <data name="msgCreateErrorNewLFaceId" xml:space="preserve">
+        <value>Face registration error</value>
+    </data>
+    <data name="msgCreateSuccessNewBioFaceId" xml:space="preserve">
+        <value>Create new card BioFaceId successfully</value>
+    </data>
+    <data name="msgCreateErrorNewBioFaceId" xml:space="preserve">
+        <value>Create new card BioFaceId error</value>
+    </data>
+    <data name="msgCreateErrorNewDCFaceId" xml:space="preserve">
+        <value>Create card DCFaceId error</value>
+    </data>
+    <data name="msgCreateSuccessNewDCFaceId" xml:space="preserve">
+        <value>Create new card DCFaceId successfully</value>
+    </data>
+</root>

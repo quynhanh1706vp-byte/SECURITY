@@ -1,0 +1,44 @@
+﻿@using DeMasterProCloud.DataModel;
+
+@{
+    ViewData["Title"] = "DepartmentPdfView";
+}
+
+<h1>DepartmentPdfView</h1>
+
+
+
+<h1>Department Export</h1>
+
+
+@{
+    var data = ViewBag.Message;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class='header'><h1>DMPW Department</h1></div>
+    <table align='center'>
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Parent Name</th>
+        </tr>
+
+        @foreach (var report in @data)
+        {
+            <tr>
+                <td>@report.DepartNo</td>
+                <td>@report.DepartName</td>
+                <td>@report.Parent?.DepartName</td>
+
+            </tr>
+        }
+
+
+    </table>
+</body>
+</html>

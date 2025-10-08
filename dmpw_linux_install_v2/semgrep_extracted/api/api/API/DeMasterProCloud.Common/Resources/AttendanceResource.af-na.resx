@@ -1,0 +1,397 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblAttendance" xml:space="preserve">
+    <value>Chấm công</value>
+        <comment/>
+  </data>
+    <data name="headerName" xml:space="preserve">
+    <value>Tên người dùng</value>
+        <comment/>
+  </data>
+    <data name="headerDate" xml:space="preserve">
+    <value>Ngày</value>
+        <comment/>
+  </data>
+    <data name="headerClockIn" xml:space="preserve">
+    <value>Giờ đến</value>
+        <comment/>
+  </data>
+    <data name="headerClockOut" xml:space="preserve">
+    <value>Giờ về</value>
+        <comment/>
+  </data>
+    <data name="headerUnfulfilledTime" xml:space="preserve">
+    <value>Thời gian chưa hoàn thành</value>
+        <comment/>
+  </data>
+    <data name="headerOverTime" xml:space="preserve">
+    <value>Làm thêm giờ</value>
+        <comment/>
+  </data>
+    <data name="headerTotalTime" xml:space="preserve">
+    <value>Tổng thời gian làm việc</value>
+        <comment/>
+  </data>
+    <data name="headerDayOfWeek" xml:space="preserve">
+    <value>Các ngày trong tuần</value>
+        <comment/>
+  </data>
+    <data name="lblSunday" xml:space="preserve">
+    <value>Chủ nhật</value>
+        <comment/>
+  </data>
+    <data name="lblMonday" xml:space="preserve">
+    <value>Thứ Hai</value>
+        <comment/>
+  </data>
+    <data name="lblTuesday" xml:space="preserve">
+    <value>Thứ Ba</value>
+        <comment/>
+  </data>
+    <data name="lblWednesday" xml:space="preserve">
+    <value>Thứ Tư</value>
+        <comment/>
+  </data>
+    <data name="lblThursday" xml:space="preserve">
+    <value>Thứ Năm</value>
+        <comment/>
+  </data>
+    <data name="lblFriday" xml:space="preserve">
+    <value>Thứ Sáu</value>
+        <comment/>
+  </data>
+    <data name="lblSaturday" xml:space="preserve">
+    <value>Thứ Bảy</value>
+        <comment/>
+  </data>
+    <data name="headerDiffTime" xml:space="preserve">
+    <value>Thời gian khác</value>
+        <comment/>
+  </data>
+    <data name="lblTotalDiffTime" xml:space="preserve">
+    <value>Tổng số thời gian khác</value>
+        <comment/>
+  </data>
+    <data name="lblWeekWorkingHour" xml:space="preserve">
+    <value>Giờ làm việc hàng tuần</value>
+        <comment/>
+  </data>
+    <data name="lblWeekDiffTime" xml:space="preserve">
+    <value>Thời gian khác hàng tuần</value>
+        <comment/>
+  </data>
+    <data name="lblWeekly" xml:space="preserve">
+    <value>HÀNG TUẦN</value>
+        <comment/>
+  </data>
+    <data name="lblTotal" xml:space="preserve">
+    <value>TỔNG SỐ</value>
+        <comment/>
+  </data>
+    <data name="lblOnlyInOffice" xml:space="preserve">
+    <value>Số thời gian chỉ khi ở văn phòng</value>
+        <comment/>
+  </data>
+    <data name="lblTotalInOffice" xml:space="preserve">
+    <value>Tổng số giờ từ lúc tới đến lúc về</value>
+        <comment/>
+  </data>
+    <data name="lblStatusWaiting" xml:space="preserve">
+    <value>Chờ duyệt</value>
+        <comment/>
+  </data>
+    <data name="lblStatusAprroval" xml:space="preserve">
+    <value>Đã duyệt</value>
+        <comment/>
+  </data>
+    <data name="lblStatusReject" xml:space="preserve">
+    <value>Từ chối</value>
+        <comment/>
+  </data>
+    <data name="contentRegisterAttenance" xml:space="preserve">
+    <value>Bạn có đơn xin nghỉ  phép cần duyệt từ {0}</value>
+        <comment/>
+  </data>
+    <data name="contentAcceptAttendanceLeave" xml:space="preserve">
+    <value>Đơn xin nghỉ phép đã được duyệt bởi  {0}</value>
+        <comment/>
+  </data>
+    <data name="contentRejectAttendanceLeave" xml:space="preserve">
+    <value>Đơn xin nghỉ phép đã bị từ chối bởi {0}</value>
+        <comment/>
+  </data>
+    <data name="messageRegisterSuccess" xml:space="preserve">
+    <value>Đơn xin nghỉ được tạo thành công</value>
+        <comment/>
+  </data>
+    <data name="requestAttendanceExist" xml:space="preserve">
+    <value>Đơn xin nghỉ cho ngày bạn chọn đã tồn tại</value>
+        <comment/>
+  </data>
+    <data name="headerAttendanceType" xml:space="preserve">
+    <value>Các loại chấm công</value>
+        <comment/>
+  </data>
+    <data name="cannotDeleteRequest" xml:space="preserve">
+    <value>Bạn không thể xóa đơn xin nghỉ</value>
+        <comment/>
+  </data>
+    <data name="cannotEditRequest" xml:space="preserve">
+    <value>Bạn không thể sửa đơn xin nghỉ</value>
+        <comment/>
+  </data>
+    <data name="titleNoticationLeaveRequest" xml:space="preserve">
+    <value>Đơn xin nghỉ</value>
+        <comment/>
+  </data>
+    <data name="lblHHmmss" xml:space="preserve">
+    <value>giờ:phút:giây</value>
+        <comment/>
+  </data>
+    <data name="lblHHmm" xml:space="preserve">
+    <value>giờ:phút</value>
+        <comment/>
+  </data>
+    <data name="lblTotalWorkingHour" xml:space="preserve">
+    <value>Tổng số giờ làm việc</value>
+        <comment/>
+  </data>
+    <data name="msgAddNewWorkingType" xml:space="preserve">
+    <value>Thêm một giờ làm việc mới</value>
+        <comment/>
+  </data>
+  <data name="msgUpdateWorkingType" xml:space="preserve">
+    <value>Cập nhật giờ làm việc</value>
+    <comment/>
+  </data>
+  <data name="msgDeleteWorkingType" xml:space="preserve">
+    <value>Xóa giờ làm việc</value>
+    <comment/>
+  </data>
+    <data name="lblAttendanceReportType0" xml:space="preserve">
+    <value>Mẫu báo cáo mặc định</value>
+        <comment/>
+  </data>
+    <data name="lblAttendanceReportType1" xml:space="preserve">
+    <value>Mẫu báo cáo loại 1</value>
+        <comment/>
+  </data>
+    <data name="headerBodyTemperature" xml:space="preserve">
+    <value>Nhiệt độ cơ thể</value>
+        <comment/>
+  </data>
+    <data name="headerDepartment" xml:space="preserve">
+    <value>Phòng ban</value>
+        <comment/>
+  </data>
+    <data name="msgNotifyCheckinLate" xml:space="preserve">
+    <value>Có vẻ bạn quên chấm công, hay chấm công sớm nhất có thể!</value>
+        <comment/>
+  </data>
+    <data name="lblLeaveUserName" xml:space="preserve">
+    <value>Tên thành viên</value>
+        <comment/>
+  </data>
+    <data name="lblLeaveType" xml:space="preserve">
+    <value>Loại ngày nghỉ</value>
+        <comment/>
+  </data>
+    <data name="lblLeaveFromDate" xml:space="preserve">
+    <value>Ngày nghỉ bắt đầu</value>
+        <comment/>
+  </data>
+    <data name="lblLeaveToDate" xml:space="preserve">
+    <value>Ngày nghỉ kết thúc</value>
+        <comment/>
+  </data>
+    <data name="lblLeaveReason" xml:space="preserve">
+    <value>Lý do nghỉ</value>
+        <comment/>
+  </data>
+    <data name="lblLeaveRejectReason" xml:space="preserve">
+    <value>Lý do từ chối</value>
+        <comment/>
+  </data>
+    <data name="lblButtonCheckLeaveRequest" xml:space="preserve">
+    <value>Kiểm tra đơn xin nghỉ</value>
+        <comment/>
+  </data>
+    <data name="lblAttendanceReportType2" xml:space="preserve">
+    <value>Mẫu báo cáo loại 2</value>
+        <comment/>
+  </data>
+    <data name="titleAttendanceReportType2" xml:space="preserve">
+    <value>THỐNG KÊ GIỜ RA VÀO TRONG {0}</value>
+        <comment/>
+  </data>
+    <data name="titleAttendanceReportDateType2" xml:space="preserve">
+    <value>(từ {0} đến {1})</value>
+        <comment/>
+  </data>
+    <data name="lblNote" xml:space="preserve">
+    <value>Ghi chú</value>
+        <comment/>
+  </data>
+    <data name="lblNo" xml:space="preserve">
+    <value>STT</value>
+        <comment/>
+  </data>
+    <data name="lblFullName" xml:space="preserve">
+    <value>Họ tên</value>
+        <comment/>
+  </data>
+    <data name="lblTimeIn" xml:space="preserve">
+    <value>Giờ vào</value>
+        <comment/>
+  </data>
+    <data name="lblTimeOut" xml:space="preserve">
+    <value>Giờ ra</value>
+        <comment/>
+  </data>
+    <data name="lblDefineLateIn" xml:space="preserve">
+    <value>Ô đen chữ trắng: Đi làm muộn</value>
+        <comment/>
+  </data>
+    <data name="lblDefineAbsence" xml:space="preserve">
+    <value>Ô in xám: Không báo danh</value>
+        <comment/>
+  </data>
+    <data name="lblDefineEarlyOut" xml:space="preserve">
+    <value>Ô xám chữ nghiêng: về sớm</value>
+        <comment/>
+  </data>
+    <data name="lblWork" xml:space="preserve">
+    <value>Work</value>
+        <comment/>
+  </data>
+    <data name="lblAnnualVacation" xml:space="preserve">
+    <value>An annual vacation</value>
+        <comment/>
+  </data>
+    <data name="lblOfficialVacation" xml:space="preserve">
+    <value>An official vacation</value>
+        <comment/>
+  </data>
+    <data name="lblPetitionVacation" xml:space="preserve">
+    <value>A petition vacation</value>
+        <comment/>
+  </data>
+    <data name="lblSpecialVacation" xml:space="preserve">
+    <value>A special vacation</value>
+        <comment/>
+  </data>
+    <data name="lblSleepOut" xml:space="preserve">
+    <value>Sleep out</value>
+        <comment/>
+  </data>
+    <data name="lblGoOut" xml:space="preserve">
+    <value>Go out</value>
+        <comment/>
+  </data>
+    <data name="lblVisitOut" xml:space="preserve">
+    <value>Visit out</value>
+        <comment/>
+  </data>
+    <data name="lblHospitalization" xml:space="preserve">
+    <value>nhập viện</value>
+        <comment/>
+  </data>
+    <data name="lblStartDate" xml:space="preserve">
+    <value>Ngày bắt đầu</value>
+        <comment/>
+  </data>
+    <data name="lblEndDate" xml:space="preserve">
+    <value>Ngày kết thúc</value>
+        <comment/>
+  </data>
+    <data name="titleAttendanceReportDateType3" xml:space="preserve">
+    <value>Bảng chấm công theo giờ từ: {0} đến {1} </value>
+        <comment/>
+  </data>
+    <data name="lblAttendanceReportType3" xml:space="preserve">
+    <value>Mẫu báo cáo loại 3</value>
+        <comment/>
+  </data>
+    <data name="lblUserCode" xml:space="preserve">
+    <value>Mã nhân viên</value>
+        <comment/>
+  </data>
+    <data name="lblPosition" xml:space="preserve">
+    <value>Chức vụ</value>
+        <comment/>
+  </data>
+    <data name="lblDepartment" xml:space="preserve">
+    <value>Phòng/Ban</value>
+        <comment/>
+  </data>
+    <data name="lblDateOfMonth" xml:space="preserve">
+    <value>Ngày trong tháng</value>
+        <comment/>
+  </data>
+    <data name="lblAttendanceReportType4" xml:space="preserve">
+    <value>Mẫu báo cáo loại 4</value>
+        <comment/>
+  </data>
+    <data name="headerShift" xml:space="preserve">
+    <value>Loại ngày</value>
+        <comment/>
+  </data>
+    <data name="headerLateIn" xml:space="preserve">
+    <value>Đến muộn</value>
+        <comment/>
+  </data>
+    <data name="headerEarlyOut" xml:space="preserve">
+    <value>Về sớm</value>
+        <comment/>
+  </data>
+    <data name="headerActualWorkingHour" xml:space="preserve">
+    <value>Số giờ cần làm</value>
+        <comment/>
+  </data>
+    <data name="headerRealWorkingHour" xml:space="preserve">
+    <value>Giờ làm việc thực tế</value>
+        <comment/>
+  </data>
+    <data name="headerOvertimeDurationBefore" xml:space="preserve">
+    <value>Thời gian vào sớm</value>
+        <comment/>
+  </data>
+    <data name="headerOvertimeDurationAfter" xml:space="preserve">
+    <value>Thời gian ra muộn</value>
+        <comment/>
+  </data>
+    <data name="msgNotifyCheckinFirst" xml:space="preserve">
+    <value>Bạn đã chấm công cho ngày hôm nay thành công</value>
+        <comment/>
+  </data>
+    <data name="lblHHmmDot" xml:space="preserve">
+    <value>giờ.phút</value>
+        <comment/>
+  </data>
+    <data name="msgWorkingTimeNameExisted" xml:space="preserve">
+        <value>Tên thời gian làm việc đã tồn tại trong hệ thống</value>
+    </data>
+    <data name="msgValidationLunchTime" xml:space="preserve">
+        <value>Cấu hình thời gian nghỉ trưa không đúng</value>
+    </data>
+    <data name="msgValidationWorkingDay" xml:space="preserve">
+        <value>Cấu hình ngày làm việc không đúng</value>
+    </data>
+    <data name="msgValidationWorkingTime" xml:space="preserve">
+        <value>Cấu hình giờ làm việc không đúng</value>
+    </data>
+    <data name="msgValidationWorkingType" xml:space="preserve">
+        <value>Cấu hình loại làm việc không đúng</value>
+    </data>
+</root>

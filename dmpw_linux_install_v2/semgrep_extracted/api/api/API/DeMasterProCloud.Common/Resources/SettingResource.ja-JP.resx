@@ -1,0 +1,957 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="access_category" xml:space="preserve">
+    <value>アクセス</value>
+    <comment />
+  </data>
+  <data name="application_is_running" xml:space="preserve">
+    <value>アプリケーション実行中</value>
+    <comment />
+  </data>
+  <data name="breakfast" xml:space="preserve">
+    <value>朝食</value>
+    <comment />
+  </data>
+  <data name="cache_buster_description" xml:space="preserve">
+    <value>キャッシュバスター</value>
+    <comment />
+  </data>
+  <data name="cache_buster_title" xml:space="preserve">
+    <value>キャッシュバスター</value>
+    <comment />
+  </data>
+  <data name="common_category" xml:space="preserve">
+    <value>共通設定</value>
+    <comment />
+  </data>
+  <data name="communication_failed" xml:space="preserve">
+    <value>通信失敗</value>
+    <comment />
+  </data>
+  <data name="communication_succeed" xml:space="preserve">
+    <value>通信成功</value>
+    <comment />
+  </data>
+  <data name="company_category" xml:space="preserve">
+    <value>会社</value>
+    <comment />
+  </data>
+  <data name="company_expiration_days_description" xml:space="preserve">
+    <value>会社の有効期限</value>
+    <comment />
+  </data>
+  <data name="company_expiration_days_title" xml:space="preserve">
+    <value>会社の有効期限</value>
+    <comment />
+  </data>
+  <data name="debug_level_title" xml:space="preserve">
+    <value>デバッグ レベル</value>
+    <comment />
+  </data>
+  <data name="device_category" xml:space="preserve">
+    <value>デバイス</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_events" xml:space="preserve">
+    <value>全イベント削除コマンド</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_users_events" xml:space="preserve">
+    <value>全ユーザー削除コマンド</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_users_events1" xml:space="preserve">
+    <value>再インストールコマンド</value>
+    <comment />
+  </data>
+  <data name="device_instruction_force_close" xml:space="preserve">
+    <value>強制クローズコマンド</value>
+    <comment />
+  </data>
+  <data name="device_instruction_force_open" xml:space="preserve">
+    <value>強制オープンコマンド</value>
+    <comment />
+  </data>
+  <data name="device_instruction_open" xml:space="preserve">
+    <value>ドアオープンコマンド</value>
+    <comment />
+  </data>
+  <data name="device_instruction_release" xml:space="preserve">
+    <value>リリースドアコマンド</value>
+    <comment />
+  </data>
+  <data name="device_instruction_reset" xml:space="preserve">
+    <value>リセットコマンド</value>
+    <comment />
+  </data>
+  <data name="device_instruction_settime" xml:space="preserve">
+    <value>同期化コマンド</value>
+    <comment />
+  </data>
+  <data name="device_instruction_update_device_state" xml:space="preserve">
+    <value>デバイス状態変更コマンド</value>
+    <comment />
+  </data>
+  <data name="device_is_running" xml:space="preserve">
+    <value>デバイス運営中</value>
+    <comment />
+  </data>
+  <data name="device_max_copy_setting_door_description" xml:space="preserve">
+    <value>最大コピー設定ドア</value>
+    <comment />
+  </data>
+  <data name="device_max_copy_setting_door_title" xml:space="preserve">
+    <value>最大コピー設定ドア</value>
+    <comment />
+  </data>
+  <data name="device_max_icu_user_description" xml:space="preserve">
+    <value>最大ICUユーザー</value>
+    <comment />
+  </data>
+  <data name="device_max_icu_user_title" xml:space="preserve">
+    <value>最大ICUユーザー</value>
+    <comment />
+  </data>
+  <data name="dinner" xml:space="preserve">
+    <value>夕食</value>
+    <comment />
+  </data>
+  <data name="door_open_manually" xml:space="preserve">
+    <value>ドア手動オープン</value>
+    <comment />
+  </data>
+  <data name="effactive_date_not_started" xml:space="preserve">
+    <value>発効日が始まっていない。</value>
+    <comment />
+  </data>
+  <data name="email_content" xml:space="preserve">
+    <value>ICU装置アドレス{0}は{1}です。</value>
+    <comment />
+  </data>
+  <data name="email_notification" xml:space="preserve">
+    <value>Demasterpro通知</value>
+    <comment />
+  </data>
+  <data name="enable_performance_log_description" xml:space="preserve">
+    <value>ログを有効にする。</value>
+    <comment />
+  </data>
+  <data name="enable_performance_log_title" xml:space="preserve">
+    <value>ログを有効にする。</value>
+    <comment />
+  </data>
+  <data name="etc_meal" xml:space="preserve">
+    <value>他の食事</value>
+    <comment />
+  </data>
+  <data name="exit_application" xml:space="preserve">
+    <value>アプリ終了</value>
+    <comment />
+  </data>
+  <data name="firmware_application_update" xml:space="preserve">
+    <value>ファームウェア ダウンロード</value>
+    <comment />
+  </data>
+  <data name="firmware_download_failed" xml:space="preserve">
+    <value>ファームウェア ダウンロード失敗</value>
+    <comment />
+  </data>
+  <data name="holiday_category" xml:space="preserve">
+    <value>休日</value>
+    <comment />
+  </data>
+  <data name="holiday_max_items_description" xml:space="preserve">
+    <value>最大休日</value>
+    <comment />
+  </data>
+  <data name="holiday_max_items_title" xml:space="preserve">
+    <value>最大休日</value>
+    <comment />
+  </data>
+  <data name="late_night_snack" xml:space="preserve">
+    <value>夜間食事</value>
+    <comment />
+  </data>
+  <data name="lblCategory" xml:space="preserve">
+    <value>カテゴリー</value>
+    <comment />
+  </data>
+  <data name="lblKey" xml:space="preserve">
+    <value>キー</value>
+    <comment />
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>パスワード</value>
+    <comment />
+  </data>
+  <data name="lblSetting" xml:space="preserve">
+    <value>設定</value>
+    <comment />
+  </data>
+  <data name="lblValue" xml:space="preserve">
+    <value>値</value>
+    <comment />
+  </data>
+  <data name="list_user_to_notification_category" xml:space="preserve">
+    <value>通知するユーザーリスト</value>
+    <comment />
+  </data>
+  <data name="list_user_to_notification_title" xml:space="preserve">
+    <value>通知するユーザーリスト</value>
+    <comment />
+  </data>
+  <data name="logo_title" xml:space="preserve">
+    <value>Logo</value>
+    <comment />
+  </data>
+  <data name="lunch" xml:space="preserve">
+    <value>昼食</value>
+    <comment />
+  </data>
+  <data name="mastercard_access" xml:space="preserve">
+    <value>マスターカード出入</value>
+    <comment />
+  </data>
+  <data name="monitoring_category" xml:space="preserve">
+    <value>モニタリング</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_access_denied" xml:space="preserve">
+    <value>アクセス拒否</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_anti_passback_error" xml:space="preserve">
+    <value>アンチパスバックエラー</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_default_description" xml:space="preserve">
+    <value>説明</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_default_title" xml:space="preserve">
+    <value>デフォルト値</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expiration_date" xml:space="preserve">
+    <value>有効期間満了</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expired_card" xml:space="preserve">
+    <value>期限切れのカード</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expired_card_and_pwd" xml:space="preserve">
+    <value>期限切れのカードとパスワード</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expired_pwd" xml:space="preserve">
+    <value>期限切れパスワード</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_invalid_access_type" xml:space="preserve">
+    <value>無効なアクセスタイプ</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_invalid_door" xml:space="preserve">
+    <value>ドア無効化</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_normal_access" xml:space="preserve">
+    <value>一般のアクセス</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_no_door_active_time" xml:space="preserve">
+    <value>ドアアクセス不可時間</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_no_user_access_time" xml:space="preserve">
+    <value>ユーザーアクセス不可時間</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_passage_timezone_off" xml:space="preserve">
+    <value>パッセージタイムゾーンOFF</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_passage_timezone_on" xml:space="preserve">
+    <value>パッセージタイムゾーンON</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_unregisterd_card" xml:space="preserve">
+    <value>未登録カード</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_unregisterd_card_and_pwd" xml:space="preserve">
+    <value>未登録のカードとパスワード</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_unregistered_pwd" xml:space="preserve">
+    <value>未登録パスワード</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_valid_door" xml:space="preserve">
+    <value>ドア有効化</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_wrong_pwd" xml:space="preserve">
+    <value>間違ったパスワード</value>
+    <comment />
+  </data>
+  <data name="monitoring_max_record_display_description" xml:space="preserve">
+    <value>ページ内の最大レコード表示</value>
+    <comment />
+  </data>
+  <data name="monitoring_max_record_display_title" xml:space="preserve">
+    <value>ページ内の最大レコード表示</value>
+    <comment />
+  </data>
+  <data name="mpr_auth" xml:space="preserve">
+    <value>MPR認証</value>
+    <comment />
+  </data>
+  <data name="mpr_category" xml:space="preserve">
+    <value>Multiple person rules</value>
+    <comment />
+  </data>
+  <data name="mpr_error" xml:space="preserve">
+    <value>MPRエラー</value>
+    <comment />
+  </data>
+  <data name="mpr_interval_expired" xml:space="preserve">
+    <value>MPR間隔タイムアウト</value>
+    <comment />
+  </data>
+  <data name="mpr_max_condition_description" xml:space="preserve">
+    <value>最大条件アイテム</value>
+    <comment />
+  </data>
+  <data name="mpr_max_condition_title" xml:space="preserve">
+    <value>最大条件アイテム</value>
+    <comment />
+  </data>
+  <data name="msgChangeSetting" xml:space="preserve">
+    <value>{0}に対する設定 '{1}'を '{2}'に変更。</value>
+    <comment />
+  </data>
+  <data name="msgChangeSettingMultiple" xml:space="preserve">
+    <value>複数設定変更</value>
+    <comment />
+  </data>
+  <data name="msgInclusiveBetween" xml:space="preserve">
+    <value>値は0から9の間でなければなりません。</value>
+    <comment />
+  </data>
+  <data name="msgRequired" xml:space="preserve">
+    <value>すべてのテキストボックスに記入してください。</value>
+    <comment />
+  </data>
+  <data name="normal_access_mpr" xml:space="preserve">
+    <value>一般出入（MPR)</value>
+    <comment />
+  </data>
+  <data name="notification_email_category" xml:space="preserve">
+    <value>通知メール</value>
+    <comment />
+  </data>
+  <data name="notification_email_title" xml:space="preserve">
+    <value>通知を有効/無効にする</value>
+    <comment />
+  </data>
+  <data name="only_accessible_at_mealtime" xml:space="preserve">
+    <value>食事時にのみアクセス可能</value>
+    <comment />
+  </data>
+  <data name="pagination_title" xml:space="preserve">
+    <value>ページ付け</value>
+    <comment />
+  </data>
+  <data name="pagination_description" xml:space="preserve">
+    <value>ページに表示されるデフォルトのレコード数</value>
+    <comment />
+  </data>
+  <data name="procedure_omission_title" xml:space="preserve">
+    <value>申請手続き省略</value>
+    <comment />
+  </data>
+  <data name="language_title" xml:space="preserve">
+    <value>Default Language</value>
+    <comment />
+  </data>
+  <data name="timezone_category" xml:space="preserve">
+    <value>タイムゾーン</value>
+    <comment />
+  </data>
+  <data name="timezone_max_items_description" xml:space="preserve">
+    <value>最大タイムゾーン項目</value>
+    <comment />
+  </data>
+  <data name="timezone_max_items_title" xml:space="preserve">
+    <value>最大タイムゾーン項目</value>
+    <comment />
+  </data>
+  <data name="try_access_in_invalid_door" xml:space="preserve">
+    <value>無効なドアでアクセス</value>
+    <comment />
+  </data>
+  <data name="try_access_in_emergency_close" xml:space="preserve">
+    <value>緊急時にアクセス試図</value>
+    <comment />
+  </data>
+  <data name="valid_image_extension_description" xml:space="preserve">
+    <value>システム内の有効なイメージ</value>
+    <comment />
+  </data>
+  <data name="valid_image_extension_title" xml:space="preserve">
+    <value>システム内の有効なイメージ</value>
+    <comment />
+  </data>
+  <data name="wrong_issue_count" xml:space="preserve">
+    <value>間違った発行カウント</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_users" xml:space="preserve">
+    <value>Device Instruction Delete All Users</value>
+    <comment />
+  </data>
+  <data name="vietnamese_language" xml:space="preserve">
+    <value>Vietnamese</value>
+    <comment />
+  </data>
+  <data name="english_language" xml:space="preserve">
+    <value>English</value>
+    <comment />
+  </data>
+  <data name="korean_language" xml:space="preserve">
+    <value>Korean</value>
+    <comment />
+  </data>
+  <data name="japan_language" xml:space="preserve">
+    <value>Japanese</value>
+    <comment />
+  </data>
+  <data name="company_building" xml:space="preserve">
+    <value>Building</value>
+    <comment />
+  </data>
+  <data name="email_content_device_disconnected" xml:space="preserve">
+    <value>親愛なる,\n{2}にある"{0} ({1})"ドアの端末の接続が切断されました。\n意図した作業でない場合、建物のイーサネットケーブルまたはインターネットの状態を確認し、問題が続く場合は当社にお問い合わせください。\nDeMaster Pro Team\n本メールは自動メッセージであるため、返信できません。</value>
+    <comment />
+  </data>
+  <data name="email_notification_device_disconnected" xml:space="preserve">
+    <value>{2}建物の"{0}({1})"端末の接続が切断されました。</value>
+    <comment />
+  </data>
+  <data name="gen_qr_code_for_user" xml:space="preserve">
+    <value>[DeMasterPro] QR code for user</value>
+    <comment />
+  </data>
+  <data name="gen_qr_code_for_user_content" xml:space="preserve">
+    <value>Dear {0},\n      This is QR code using for verify your identity in the company {1}.\n      Please do not delete this image.\n      If losing please contact with your manager to provide it again \n      DeMasterPro Team\n            Automated message, please do not reply.    </value>
+    <comment />
+  </data>
+  <data name="email_content_device_connected" xml:space="preserve">
+    <value>親愛なる, \n            {2}にある{0}-{1}ドアのコントローラが連結されていることを感知した。 \n            DeMasterProチーム\n            自動メッセージです。 応答しなくてもいいです。    </value>
+    <comment />
+  </data>
+  <data name="expired_qr" xml:space="preserve">
+    <value>Expired QR</value>
+    <comment />
+  </data>
+  <data name="pressed_the_button" xml:space="preserve">
+    <value>ボタン押え</value>
+    <comment />
+  </data>
+  <data name="qr_logo_title" xml:space="preserve">
+    <value>QRコード用ロゴイメージ</value>
+    <comment />
+  </data>
+  <data name="qr_logo_description" xml:space="preserve">
+    <value>QRコードに内蔵されたスクエアロゴ</value>
+    <comment />
+  </data>
+  <data name="camera_category" xml:space="preserve">
+    <value>Camera setting</value>
+    <comment />
+  </data>
+  <data name="lblLocalMqtt" xml:space="preserve">
+    <value>Setting local mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_category" xml:space="preserve">
+    <value>Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_host_title" xml:space="preserve">
+    <value>Host</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_host_description" xml:space="preserve">
+    <value>Host Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_port_title" xml:space="preserve">
+    <value>Port</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_port_description" xml:space="preserve">
+    <value>Port Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_username_title" xml:space="preserve">
+    <value>UserName</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_username_description" xml:space="preserve">
+    <value>UserName Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_password_title" xml:space="preserve">
+    <value>Password</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_password_description" xml:space="preserve">
+    <value>Password Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="phone_support_title" xml:space="preserve">
+    <value>Phone contact</value>
+    <comment />
+  </data>
+  <data name="setting_support" xml:space="preserve">
+    <value>Support Contact</value>
+    <comment />
+  </data>
+  <data name="name_support_title" xml:space="preserve">
+    <value>Name contact</value>
+    <comment />
+  </data>
+  <data name="email_support_title" xml:space="preserve">
+    <value>Email contact</value>
+    <comment />
+  </data>
+  <data name="phone_support_description" xml:space="preserve">
+    <value>Phone number support manager</value>
+    <comment />
+  </data>
+  <data name="name_support_description" xml:space="preserve">
+    <value>Name support manager</value>
+    <comment />
+  </data>
+  <data name="email_support_description" xml:space="preserve">
+    <value>Email support manager</value>
+    <comment />
+  </data>
+  <data name="time_period_qrcode_title" xml:space="preserve">
+    <value>Time Period Dynamic QR Code</value>
+    <comment />
+  </data>
+  <data name="time_period_qrcode_description" xml:space="preserve">
+    <value>seconds</value>
+    <comment />
+  </data>
+  <data name="webhook_setting" xml:space="preserve">
+    <value>Webhook Setting</value>
+    <comment />
+  </data>
+  <data name="webhook_eventlog_title" xml:space="preserve">
+    <value>Event Log</value>
+    <comment />
+  </data>
+  <data name="webhook_eventlog_description" xml:space="preserve">
+    <value>Link api receive data event log</value>
+    <comment />
+  </data>
+  <data name="employee_edit_avatar_title" xml:space="preserve">
+    <value>Enable/Disable employee edit avatar themself</value>
+    <comment />
+  </data>
+  <data name="employee_edit_avatar_description" xml:space="preserve">
+    <value>Permission setting to allow employee edit avatar themself</value>
+    <comment />
+  </data>
+  <data name="auto_generate_qrcode_title" xml:space="preserve">
+    <value>Auto generate QrCode</value>
+    <comment />
+  </data>
+  <data name="qr_code_auto_renew_period_title" xml:space="preserve">
+    <value>QRコード自動更新期間</value>
+    <comment />
+  </data>
+  <data name="auto_generate_qrcode_description" xml:space="preserve">
+    <value>Enable/disable auto generate QrCode</value>
+    <comment />
+  </data>
+  <data name="auto_renew_qr_code_title" xml:space="preserve">
+    <value>QRコード自動更新</value>
+    <comment />
+  </data>
+  <data name="email_notification_device_connected" xml:space="preserve">
+    <value>[DeMasterPro] Controller of the door {0} - {1} in the {2} has been connected successfully</value>
+    <comment />
+  </data>
+  <data name="ocr_setting" xml:space="preserve">
+    <value>OCR Setting</value>
+    <comment />
+  </data>
+  <data name="ocr_api_key_title" xml:space="preserve">
+    <value>API Key</value>
+    <comment />
+  </data>
+  <data name="ocr_api_key_description" xml:space="preserve">
+    <value>Api key setting using for authentication</value>
+    <comment />
+  </data>
+  <data name="ocr_api_info_identity_description" xml:space="preserve">
+    <value>Api get all information of National Identity Number</value>
+    <comment />
+  </data>
+  <data name="ocr_api_info_identity_title" xml:space="preserve">
+    <value>API Get Info NationalIdNumber</value>
+    <comment />
+  </data>
+  <data name="ocr_api_authentication_title" xml:space="preserve">
+    <value>Api Authentication</value>
+    <comment />
+  </data>
+  <data name="ocr_api_authentication_description" xml:space="preserve">
+    <value>Api using for authentication by API Key</value>
+    <comment />
+  </data>
+  <data name="use_auto_generate_nfc_phone_title" xml:space="preserve">
+    <value>Automatic generate NFC Phone</value>
+    <comment />
+  </data>
+  <data name="use_auto_generate_nfc_phone_description" xml:space="preserve">
+    <value>Enable/Disable automatic generate NFC Phone</value>
+    <comment />
+  </data>
+  <data name="monitoring_avatar_display_title" xml:space="preserve">
+    <value>イベントモニタリングページにユーザーのアバターを表示するオプション</value>
+    <comment />
+  </data>
+  <data name="monitoring_avatar_display_description" xml:space="preserve">
+    <value>このオプションをオンにすると、監視ページに各イベントのユーザのアバターが表示されます</value>
+    <comment />
+  </data>
+  <data name="logo_description" xml:space="preserve">
+    <value>ページ左上に表記</value>
+    <comment />
+  </data>
+  <data name="event_list_push_notification_category" xml:space="preserve">
+    <value>Events push notification</value>
+    <comment />
+  </data>
+  <data name="event_list_push_notification_title" xml:space="preserve">
+    <value>Event list</value>
+    <comment />
+  </data>
+  <data name="event_list_push_notification_description" xml:space="preserve">
+    <value>Choose list of event will push notification to app mobile</value>
+    <comment />
+  </data>
+  <data name="notification_SMS_description" xml:space="preserve">
+    <value>SMS通知を有効化/無効化する</value>
+    <comment />
+  </data>
+  <data name="notification_SMS_title" xml:space="preserve">
+    <value>SMS通知</value>
+    <comment />
+  </data>
+  <data name="army_work_type_default_title" xml:space="preserve">
+    <value>Military personnel classification type</value>
+    <comment />
+  </data>
+  <data name="army_work_type_default_description" xml:space="preserve">
+    <value>Select all types of people categorization to use</value>
+    <comment />
+  </data>
+  <data name="work_type_default_title" xml:space="preserve">
+    <value>Personnel classification type</value>
+    <comment />
+  </data>
+  <data name="work_type_default_description" xml:space="preserve">
+    <value>Select all types of people categorization to use</value>
+    <comment />
+  </data>
+  <data name="kakao_setting" xml:space="preserve">
+    <value>Kakao Setting</value>
+    <comment />
+  </data>
+  <data name="kakao_app_key_title" xml:space="preserve">
+    <value>App Key</value>
+    <comment />
+  </data>
+  <data name="kakao_app_key_description" xml:space="preserve">
+    <value>Kakao config: AppKey</value>
+    <comment />
+  </data>
+  <data name="kakao_secret_key_title" xml:space="preserve">
+    <value>Secret Key</value>
+    <comment />
+  </data>
+  <data name="kakao_secret_key_description" xml:space="preserve">
+    <value>Kakao config: SecretKey</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_key_title" xml:space="preserve">
+    <value>Sender Key</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_key_description" xml:space="preserve">
+    <value>Kakao config: SenderKey</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_name_title" xml:space="preserve">
+    <value>Sender Name</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_name_description" xml:space="preserve">
+    <value>Kakao config: SenderName</value>
+    <comment />
+  </data>
+  <data name="allow_generate_qrcode_offline_title" xml:space="preserve">
+    <value>Allow generate QrCode offline</value>
+    <comment />
+  </data>
+  <data name="allow_generate_qrcode_offline_description" xml:space="preserve">
+    <value>Enable/disable allow generate QrCode offline</value>
+    <comment />
+  </data>
+  <data name="use_static_qrcode_title" xml:space="preserve">
+    <value>Use static QrCode</value>
+    <comment />
+  </data>
+  <data name="use_static_qrcode_description" xml:space="preserve">
+    <value>Enable/disable Use static QrCode</value>
+    <comment />
+  </data>
+  <data name="link_user_to_account_title" xml:space="preserve">
+    <value>Link user to account</value>
+    <comment />
+  </data>
+  <data name="link_user_to_account_description" xml:space="preserve">
+    <value>Show button open modal link user to account in Account Management Page</value>
+    <comment />
+  </data>
+  <data name="anti_passback_lift_for_visitor_title" xml:space="preserve">
+    <value>Enable/Disable auto set lift of elevator for visitor</value>
+  </data>
+  <data name="anti_passback_lift_for_visitor_description" xml:space="preserve">
+    <value>If enable this property, Elevator will active same as feature anti-passback</value>
+  </data>
+  <data name="overwrite_floor_lift_for_visitor_title" xml:space="preserve">
+    <value>Set floor default for feature visitor's elevator</value>
+  </data>
+  <data name="overwrite_floor_lift_for_visitor_description" xml:space="preserve">
+    <value>Array list of floors reset default visitor's elevator</value>
+  </data>
+  <data name="lblHeaderSetting" xml:space="preserve">
+    <value>ヘッダー設定</value>
+  </data>
+  <data name="lblDoorListSetting" xml:space="preserve">
+    <value>ドアリストの設定</value>
+  </data>
+  <data name="lblMonitoringEventsSetting" xml:space="preserve">
+    <value>モニタリング イベントの設定</value>
+  </data>
+  <data name="lblBuildingListSetting" xml:space="preserve">
+    <value>ビルディング リストの設定</value>
+  </data>
+  <data name="vietnamese_school_language" xml:space="preserve">
+    <value>Vietnamese (School)</value>
+  </data>
+  <data name="white_list_ip_address_title" xml:space="preserve">
+    <value>IPアドレスのホワイトリスト</value>
+  </data>
+  <data name="white_list_ip_address_description" xml:space="preserve">
+    <value>システムへのログインを許可する IP アドレスのリスト</value>
+  </data>
+  <data name="notification_email_description" xml:space="preserve">
+    <value>Enable/disable notifications via email</value>
+  </data>
+  <data name="allow_mobile_access_without_white_list_title" xml:space="preserve">
+    <value>モバイルアプリによるシステムへのアクセスを常に許可/禁止する</value>
+  </data>
+  <data name="allow_mobile_access_without_white_list_description" xml:space="preserve">
+    <value>モバイル アプリケーションが常にシステムにアクセスできるようにします (許可された IP リストのチェックをスキップします)。</value>
+  </data>
+  <data name="company_device_password_title" xml:space="preserve">
+    <value>デバイスのパスワード</value>
+  </data>
+  <data name="company_device_password_description" xml:space="preserve">
+    <value>デバイスにログインするために使用するパスワード</value>
+  </data>
+  <data name="require_password_change_on_first_login_title" xml:space="preserve">
+    <value>初回ログイン時のパスワード変更を要求する</value>
+  </data>
+  <data name="require_password_change_on_first_login_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_require_uppercase_title" xml:space="preserve">
+    <value>パスワードには大文字を含める必要があります</value>
+  </data>
+  <data name="password_require_uppercase_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_require_number_title" xml:space="preserve">
+    <value>パスワードには数字を含める必要があります(1,2,...)</value>
+  </data>
+  <data name="password_require_number_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_require_special_char_title" xml:space="preserve">
+    <value>パスワードには特殊文字を含める必要があります(@,#,...)</value>
+  </data>
+  <data name="password_require_special_char_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_time_need_to_change_title" xml:space="preserve">
+    <value>パスワード変更が必要となるまでの時間（分）</value>
+  </data>
+  <data name="password_time_need_to_change_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_max_valid_time_title" xml:space="preserve">
+    <value>有効なパスワードの最大利用期間（分）</value>
+  </data>
+  <data name="password_max_valid_time_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="max_failed_login_attempts_title" xml:space="preserve">
+    <value>ログイン失敗の最大試行回数</value>
+  </data>
+  <data name="max_failed_login_attempts_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="lockout_duration_minutes_title" xml:space="preserve">
+    <value>ログイン失敗の最大試行回数に対応する待機時間（分）</value>
+  </data>
+  <data name="lockout_duration_minutes_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="time_session_timeout_title" xml:space="preserve">
+    <value>ログインセッションの有効期限（分）</value>
+  </data>
+  <data name="time_session_timeout_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="login_setting" xml:space="preserve">
+    <value>Login setting</value>
+  </data>
+</root>

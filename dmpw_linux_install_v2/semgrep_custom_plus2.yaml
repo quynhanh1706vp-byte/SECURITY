@@ -1,0 +1,162 @@
+# Semgrep Custom PLUS2 — mở rộng phủ rủi ro còn thiếu
+# Lưu ý: dùng pattern-regex/heuristic để tương thích engine OSS, hạn chế false negative.
+
+rules:
+
+# ========== C# — OPEN REDIRECT ==========
+- id: csharp-open-redirect
+  message: 'Open Redirect: Redirect/LocalRedirect với tham số có thể do user kiểm soát. Dùng LocalRedirect + allowlist.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (Redirect|LocalRedirect|RedirectPermanent|RedirectPreserveMethod)\s*\(\s*[^")]+
+  metadata: { category: redirect, impact: high }
+
+# ========== C# — TLS/CERT PINNING BYPASS ==========
+- id: csharp-cert-validation-bypass
+  message: 'TLS bypass: ServerCertificateCustomValidationCallback trả về true. Không được bỏ qua xác thực chứng chỉ.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: ServerCertificateCustomValidationCallback\s*=\s*(delegate|\(.*\)\s*=>)\s*(true|_=>\s*true)
+  metadata: { category: tls, impact: high }
+
+# ========== C# — XXE / XML UNSAFE ==========
+- id: csharp-xml-xxe-insecure
+  message: 'XXE/unsafe XML: XmlDocument/XmlReader không vô hiệu DTD/XmlResolver. Set DtdProcessing=Prohibit và XmlResolver = null.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (new\s+XmlDocument\s*\(\)|XmlReader\.Create\s*\()
+  pattern-not: XmlResolver\s*=\s*null
+  metadata: { category: xml, impact: high }
+
+# ========== C# — INSECURE DESERIALIZATION ==========
+- id: csharp-insecure-deserialization
+  message: 'Insecure deserialization: BinaryFormatter/LosFormatter/NetDataContractSerializer.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (new\s+BinaryFormatter\s*\(|new\s+LosFormatter\s*\(|new\s+NetDataContractSerializer\s*\()
+  metadata: { category: deserialization, impact: high }
+
+# ========== C# — SQL/NoSQL NÂNG CAO ==========
+# EF Core raw SQL nối chuỗi hoặc string interpolation
+- id: csharp-ef-rawsql-concat
+  message: 'SQL Injection risk: FromSqlRaw/ExecuteSqlRaw dùng string interpolation hoặc nối chuỗi.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (FromSqlRaw|ExecuteSqlRaw|ExecuteSqlInterpolated)\s*\(\s*(\$"|".*\+)
+  metadata: { category: sqli, impact: high }
+
+# Mongo/NoSQL heuristics (WARNING)
+- id: csharp-nosql-tainted-filter
+  message: 'NoSQL query heuristic: Builders/Filter sử dụng biểu thức có thể từ input chưa lọc. Kiểm chứng & sanitize.'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern-regex: Builders\s*<[^>]+>\s*\.\s*Filter\s*\.
+  metadata: { category: nosql, impact: medium }
+
+# ========== C# — OPEN FILE UPLOAD / SAVE ==========
+- id: csharp-upload-unvalidated
+  message: 'Upload không kiểm soát MIME/extension/size trước khi lưu. Validate content-type, whitelist extension, giới hạn kích thước.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: IFormFile\s+[A-Za-z_][A-Za-z0-9_]*.*\n.*(CopyTo\(|CopyToAsync\(|SaveAs\()
+  metadata: { category: upload, impact: high }
+
+# ========== C# — ZIP SLIP ==========
+- id: csharp-zip-slip
+  message: 'Zip Slip: giải nén ZipArchiveEntry mà không chuẩn hoá đường dẫn (entry.FullName). Normalize + StartsWith(baseDir).'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: ZipArchiveEntry\s+[A-Za-z_][A-Za-z0-9_]*|ExtractToFile\s*\(
+  metadata: { category: archive, impact: high }
+
+# ========== FE (JS/TS/TSX) — OPEN REDIRECT ==========
+- id: fe-open-redirect
+  message: 'FE Open Redirect: gán window.location*/location.assign/href bằng giá trị có thể từ input.'
+  severity: ERROR
+  languages: [javascript, typescript]
+  patterns:
+    - pattern-regex: (window\.)?location\.(href|assign|replace)\s*=\s*[A-Za-z_][A-Za-z0-9_]*
+
+# ========== FE (JSX/TSX) — TABNABBING ==========
+- id: fe-target-blank-no-noopener
+  message: 'target="_blank" thiếu rel="noopener". Thêm rel="noopener noreferrer".'
+  severity: WARNING
+  languages: [typescript, javascript]
+  patterns:
+    - pattern-regex: <a\b[^>]*target="_blank"[^>]*(?<!rel=)
+  metadata: { category: clickjacking, impact: medium }
+
+# ========== C# — REGEX DoS / THIẾU TIMEOUT ==========
+- id: csharp-regex-without-timeout
+  message: 'Regex không đặt timeout — có thể DoS. Dùng Regex.Match/IsMatch với overload có timeout.'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern-regex: new\s+Regex\s*\(
+  pattern-not: RegexOptions
+  metadata: { category: dos, impact: medium }
+
+# ========== C# — MASS ASSIGNMENT / IDOR HEURISTICS ==========
+- id: csharp-ef-blind-update
+  message: 'Heuristic Mass Assignment: gán trạng thái Modified/Update trực tiếp từ DTO. Xác thực trường cho phép sửa (whitelist).'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (Entry\(\s*[A-Za-z_][A-Za-z0-9_]*\s*\)\.State\s*=\s*EntityState\.Modified|Update\(\s*[A-Za-z_][A-Za-z0-9_]*\s*\))
+  metadata: { category: authz, impact: medium }
+
+# ========== C# — PASSWORD POLICY/HASHING ==========
+- id: csharp-password-raw-sha
+  message: 'Không dùng SHA* trực tiếp để hash password. Dùng PBKDF2/BCrypt/Argon2.'
+  severity: ERROR
+  languages: [csharp]
+  patterns:
+    - pattern-regex: (SHA1|SHA256|SHA512)\.Create\s*\(\)
+  metadata: { category: password, impact: high }
+
+- id: csharp-pbkdf2-low-iteration
+  message: 'PBKDF2 iteration thấp (<10000). Tăng lên >= 100000 (tuỳ chuẩn nội bộ).'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern-regex: Rfc2898DeriveBytes\s*\(\s*[^,]+,\s*[^,]+,\s*(\d{1,4})\s*\)
+  metadata: { category: password, impact: medium }
+
+# ========== C# — HTTPS ENFORCEMENT (THIẾU) ==========
+- id: csharp-missing-https-redirect
+  message: 'Thiếu app.UseHttpsRedirection(). Bật chuyển hướng HTTPS.'
+  severity: WARNING
+  languages: [csharp]
+  patterns:
+    - pattern-regex: app\.UseRouting\s*\(\s*\)\s*;
+  pattern-not: app\.UseHttpsRedirection\(\s*\)
+  metadata: { category: tls, impact: medium }
+
+# ========== K8s / Infra (YAML) — HARDENING ==========
+# Pod/Deployment phải có securityContext.runAsNonRoot/readOnlyRootFilesystem và drop capabilities
+- id: k8s-securitycontext-basics
+  message: 'K8s hardening: thêm runAsNonRoot: true, readOnlyRootFilesystem: true, drop capabilities.'
+  severity: ERROR
+  languages: [yaml]
+  patterns:
+    - pattern-regex: 'kind:\s*(Deployment|Pod|StatefulSet|DaemonSet)'
+  pattern-not: (runAsNonRoot:\s*true|readOnlyRootFilesystem:\s*true|capabilities:\s*\n\s*drop:)
+  metadata: { category: iac, impact: high }
+
+# seccomp (annotation) & apparmor gợi ý (WARNING)
+- id: k8s-seccomp-apparmor-missing
+  message: 'K8s: thiếu seccompProfile type RuntimeDefault và/hoặc AppArmor profile.'
+  severity: WARNING
+  languages: [yaml]
+  patterns:
+    - pattern-regex: 'kind:\s*(Deployment|Pod|StatefulSet|DaemonSet)'
+  pattern-not: (seccompProfile:\s*\n\s*type:\s*RuntimeDefault|container\.apparmor\.security\.beta\.kubernetes\.io)
+  metadata: { category: iac, impact: medium }

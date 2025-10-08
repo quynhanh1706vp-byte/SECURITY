@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="titleRequestApproval" xml:space="preserve">
+        <value>방문 신청 검토 요청 메일 형식</value>
+    </data>
+  <data name="titleApprovalVisit" xml:space="preserve">
+        <value>초대 메일 형식</value>
+    </data>
+  <data name="titleRejectVisit" xml:space="preserve">
+        <value>방문 신청 거절 메일 형식</value>
+    </data>
+  <data name="titleLinkRegisterVisit" xml:space="preserve">
+        <value>방문 등록 페이지 링크 메일 형식</value>
+    </data>
+  <data name="titleWelcomeUserEmail" xml:space="preserve">
+        <value>새 사용자 환영 메일</value>
+    </data>
+  <data name="titleSendPassCodeEmail" xml:space="preserve">
+        <value>사용자에게 보내는 Passcode 메일</value>
+    </data>
+  <data name="descriptionApprovalVisit" xml:space="preserve">
+        <value>방문자에게 요청 수락 메일을 발송합니다. 메일에는 QR 이미지, 회사 주소, 방문 시간 등이 포함됩니다.</value>
+    </data>
+  <data name="descriptionLinkRegisterVisit" xml:space="preserve">
+        <value>방문 등록 링크를 포함한 메일이 사용자에게 전송됩니다.</value>
+    </data>
+  <data name="descriptionRejectVisit" xml:space="preserve">
+        <value>방문자에게 요청 거절 메일을 발송합니다.</value>
+    </data>
+  <data name="descriptionRequestApproval" xml:space="preserve">
+        <value>담당자에게 방문 신청 검토를 요청하는 메일을 발송합니다.</value>
+    </data>
+  <data name="descriptionSendPassCodeEmail" xml:space="preserve">
+        <value>사용자에게 비밀번호를 발송합니다.</value>
+    </data>
+  <data name="descriptionWelcomeUserEmail" xml:space="preserve">
+        <value>새로운 사용자에게 환영 메일을 발송합니다. 메일에는 초기 비밀번호 설정, 모바일 다운로드 링크가 포함됩니다.</value>
+    </data>
+  <data name="descriptionSendQREmail" xml:space="preserve">
+        <value>방문자에게 QR 이미지를 나타내는 메일을 발송합니다.</value>
+    </data>
+  <data name="titleWelcomeMailForManager" xml:space="preserve">
+        <value>새 관리자 환영 메일</value>
+    </data>
+  <data name="descriptionWelcomeMailForManager" xml:space="preserve">
+        <value>관리자에게 환영 메일을 발송합니다. 메일에는 모바일 다운로드, 비밀번호 설정, 관리 페이지 연결 링크 등이 포함됩니다.</value>
+    </data>
+  <data name="descriptionWelcomeMailForAdmin" xml:space="preserve">
+        <value>관리자에게 계정과 암호 재설정 링크가 포함된 메일을 발송합니다.</value>
+    </data>
+  <data name="titleWelcomeMailForAdmin" xml:space="preserve">
+        <value>담당자에게 보내는 계정/비밀번호 메일</value>
+    </data>
+  <data name="descriptionAddress" xml:space="preserve">
+        <value>회사 주소</value>
+    </data>
+  <data name="descriptionAndroidIcon" xml:space="preserve">
+        <value>Android 아이콘</value>
+    </data>
+  <data name="descriptionApprovalName" xml:space="preserve">
+        <value>신청자(또는 방문 대상자) 이름</value>
+    </data>
+  <data name="descriptionCompanyName" xml:space="preserve">
+        <value>회사 이름</value>
+    </data>
+  <data name="descriptionApprovalCount" xml:space="preserve">
+        <value>방문 승인 건수</value>
+    </data>
+  <data name="descriptionEmailWelcome" xml:space="preserve">
+        <value>사용자의 이메일 계정이 생성되었습니다</value>
+    </data>
+  <data name="descriptionImageQRCode" xml:space="preserve">
+        <value>방문자에게 전송될 QR 이미지</value>
+    </data>
+  <data name="descriptionIosIcon" xml:space="preserve">
+        <value>IOS 아이콘</value>
+    </data>
+  <data name="descriptionLogoImageId" xml:space="preserve">
+        <value>회사 로고 이미지</value>
+    </data>
+  <data name="descriptionPassCode" xml:space="preserve">
+        <value>사용자에게 전송될 Passcode</value>
+    </data>
+  <data name="descriptionToken" xml:space="preserve">
+        <value>비밀번호 변경 링크</value>
+    </data>
+  <data name="descriptionUserName" xml:space="preserve">
+        <value>로그인 이름</value>
+    </data>
+  <data name="descriptionUserNameWelcome" xml:space="preserve">
+        <value>새 로그인 이름</value>
+    </data>
+  <data name="descriptionVisitEmail" xml:space="preserve">
+        <value>방문자 이메일 주소</value>
+    </data>
+  <data name="descriptionVisitLink" xml:space="preserve">
+        <value>방문자 관리 페이지 링크</value>
+    </data>
+  <data name="descriptionVisitLinkQrCode" xml:space="preserve">
+        <value>방문자 등록 페이지 링크</value>
+    </data>
+  <data name="descriptionVisitorName" xml:space="preserve">
+        <value>방문자 이름</value>
+    </data>
+  <data name="descriptionVisitorPhone" xml:space="preserve">
+        <value>방문자 연락처</value>
+    </data>
+  <data name="descriptionVisitReason" xml:space="preserve">
+        <value>방문 거절 사유</value>
+    </data>
+  <data name="descriptionVisitTargetName" xml:space="preserve">
+        <value>방문 대상자 이름</value>
+    </data>
+  <data name="descriptionVisitTimeAccess" xml:space="preserve">
+        <value>방문 시간</value>
+    </data>
+  <data name="descriptionVisitUserCreate" xml:space="preserve">
+        <value>방문 대상자 이름</value>
+    </data>
+  <data name="descriptionVisitUserReject" xml:space="preserve">
+        <value>거절 승인자 이름</value>
+    </data>
+  <data name="titleSendQREmail" xml:space="preserve">
+    <value>사용자에게 보내는 QR 이미지 메일</value>
+  </data>
+    <data name="descriptionPasswordDefault" xml:space="preserve">
+        <value>Password default</value>
+    </data>
+    <data name="descriptionFireCrackerIcon" xml:space="preserve">
+        <value>Fire Cracker Icon</value>
+    </data>
+    <data name="descriptionGetItOnGooglePlayIcon" xml:space="preserve">
+        <value>Google Play Icon</value>
+    </data>
+    <data name="descriptionDownloadOnAppStoreIcon" xml:space="preserve">
+        <value>App Store Icon</value>
+    </data>
+    <data name="descriptionCompanyLogo" xml:space="preserve">
+        <value>Company Logo</value>
+    </data>
+    <data name="descriptionTimeIcon" xml:space="preserve">
+        <value>Visit Time Icon</value>
+    </data>
+    <data name="descriptionLocationIcon" xml:space="preserve">
+        <value>Location Icon</value>
+    </data>
+    <data name="descriptionDoorIcon" xml:space="preserve">
+        <value>Door Icon</value>
+    </data>
+    <data name="descriptionDoorListVisitAccess" xml:space="preserve">
+        <value>Door of Visit Access</value>
+    </data>
+    <data name="descriptionPhoneIcon" xml:space="preserve">
+        <value>Phone Icon</value>
+    </data>
+    <data name="descriptionContactVisitTarget" xml:space="preserve">
+        <value>Contact Visit Target</value>
+    </data>
+    <data name="titleNotifyOverDueBook" xml:space="preserve">
+        <value>Notify Over Due Book</value>
+    </data>
+    <data name="descriptionNotifyOverDueBook" xml:space="preserve">
+        <value>Mail is sent to user: notify over due book.</value>
+    </data>
+    <data name="descriptionUserNameBorrowBook" xml:space="preserve">
+        <value>Borrower name</value>
+    </data>
+    <data name="descriptionBookNameBorrowBook" xml:space="preserve">
+        <value>Book name</value>
+    </data>
+    <data name="descriptionBorrowDateBorrowBook" xml:space="preserve">
+        <value>Borrow date</value>
+    </data>
+    <data name="descriptionDeadlineDateBorrowBook" xml:space="preserve">
+        <value>Deadline date</value>
+    </data>
+    <data name="descriptionNameOfUser" xml:space="preserve">
+        <value>Username</value>
+    </data>
+    <data name="descriptionLeaveType" xml:space="preserve">
+        <value>Leave Type</value>
+    </data>
+    <data name="descriptionLeaveFromDate" xml:space="preserve">
+        <value>From Date</value>
+    </data>
+    <data name="descriptionLeaveToDate" xml:space="preserve">
+        <value>To Date</value>
+    </data>
+    <data name="descriptionLeaveReason" xml:space="preserve">
+        <value>Leave Request Reason</value>
+    </data>
+    <data name="descriptionLeaveRejectReason" xml:space="preserve">
+        <value>Leave Request Reject Reason</value>
+    </data>
+    <data name="titleLeaveRequestReview" xml:space="preserve">
+        <value>Form Leave Request for approval review mail template</value>
+    </data>
+    <data name="descriptionLeaveRequestReview" xml:space="preserve">
+        <value>Mail is sent to manager that form leave request</value>
+    </data>
+    <data name="descriptionLeaveRequestLink" xml:space="preserve">
+        <value>Link page Leave Request</value>
+    </data>
+    <data name="descriptionManagerApproval" xml:space="preserve">
+        <value>Name of manager approval</value>
+    </data>
+    <data name="descriptionLeaveUserName" xml:space="preserve">
+        <value>Name of user that created form</value>
+    </data>
+    <data name="titleLeaveRequestApproval" xml:space="preserve">
+        <value>From Leave Request is Approved</value>
+    </data>
+    <data name="descriptionLeaveRequestApproval" xml:space="preserve">
+        <value>Mail is sent to user that form leave request approved</value>
+    </data>
+    <data name="titleLeaveRequestReject" xml:space="preserve">
+        <value>From Leave Request is Rejected</value>
+    </data>
+    <data name="descriptionLeaveRequestReject" xml:space="preserve">
+        <value>Mail is sent to user that form leave request rejected</value>
+    </data>
+    <data name="lblEmailTemplate" xml:space="preserve">
+        <value>Email Template</value>
+    </data>
+    <data name="lblNoteScanQR" xml:space="preserve">
+        <value>이 QR 코드를 스캔하면 문에 접근할 수 있습니다.</value>
+    </data>
+    <data name="lblTextInvite" xml:space="preserve">
+        <value>귀하를 초대한 사람은 다음과 같습니다</value>
+    </data>
+    <data name="lblTextPowerBy" xml:space="preserve">
+        <value>Duall Master에 의해 구동됩니다.</value>
+    </data>
+    <data name="SubjectCardQRTemplate" xml:space="preserve">
+        <value>카드 QR 템플릿</value>
+    </data>
+    <data name="titleQRCardTemplate" xml:space="preserve">
+        <value>카드 QR 템플릿</value>
+    </data>
+
+    <data name="descriptionImgVisit1" xml:space="preserve">
+        <value>방문자 링크 이미지</value>
+    </data>
+  <data name="descriptionImgVisit2" xml:space="preserve">
+        <value>방문객 링크 이미지</value>
+    </data>
+  <data name="descriptionNoteScanQR" xml:space="preserve">
+        <value>QR 코드 아래 메모</value>
+    </data>
+  <data name="descriptionTextPowerBy" xml:space="preserve">
+        <value>기관에서 제공한 카드를 설명하는 텍스트</value>
+    </data>
+ <data name="descriptionTextInvite" xml:space="preserve">
+        <value>카드 제목</value>
+  </data>
+  <data name="descriptionLogoSquare" xml:space="preserve">
+        <value>회사 로고</value>
+  </data>
+    <data name="titleMonitoringTemplate" xml:space="preserve">
+        <value>Monitoring Template</value>
+    </data>
+    <data name="descriptionMonitoringTemplate" xml:space="preserve">
+        <value>Template used to view monitoring in page Device Monitoring</value>
+    </data>
+    <data name="descriptionResultCheckin" xml:space="preserve">
+        <value>Image result checkin</value>
+    </data>
+    <data name="descriptionVisitorAvatar" xml:space="preserve">
+        <value>Avatar of visit</value>
+    </data>
+    <data name="descriptionVisitorPosition" xml:space="preserve">
+        <value>Position of visit</value>
+    </data>
+</root>

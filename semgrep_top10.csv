@@ -1,0 +1,54 @@
+[
+  "rank",
+  "check_id",
+  "check_name",
+  "count"
+]
+[
+  "1",
+  "csharp.dotnet.security.audit.missing-or-broken-authorization.missing-or-broken-authorization",
+  "",
+  "54"
+]
+[
+  "2",
+  "csharp.dotnet.crypto.ciphers.cbc-mode.cbc-mode",
+  "",
+  "12"
+]
+[
+  "3",
+  "csharp.dotnet-core.path-traversal.runtime-file-taint.runtime-file-taint",
+  "",
+  "8"
+]
+[
+  "4",
+  "typescript.react.react-dangerouslysetinnerhtml-prop.react-dangerouslysetinnerhtml-prop",
+  "",
+  "8"
+]
+[
+  "5",
+  "typescript.react.security.audit.react-dangerouslysetinnerhtml.react-dangerouslysetinnerhtml",
+  "",
+  "8"
+]
+[
+  "6",
+  "csharp.dotnet.crypto.hash.insecure-crypto-hash.insecure-crypto-hash",
+  "",
+  "6"
+]
+[
+  "7",
+  "csharp.dotnet-core.web.cors.servicebuilder-wildcard-origin.servicebuilder-wildcard-origin",
+  "",
+  "2"
+]
+[
+  "8",
+  "csharp.lang.security.ad.jwt-tokenvalidationparameters-no-expiry-validation.jwt-tokenvalidationparameters-no-expiry-validation",
+  "",
+  "2"
+]
