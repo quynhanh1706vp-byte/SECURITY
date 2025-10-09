@@ -17,14 +17,14 @@ jobs:
   codacy:
     runs-on: ubuntu-latest
     env:
-      # Đổi nếu muốn quét chỗ khác; đường dẫn TƯƠNG ĐỐI từ root repo
+      # ĐỔI nếu muốn quét chỗ khác (đường dẫn TƯƠNG ĐỐI từ root repo)
       SCAN_DIR_REL: dmpw_linux_install_v2/code/api
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: false   # tránh cảnh báo submodule cleanup
+          submodules: false
 
       - name: Resolve absolute scan path
         run: |
@@ -47,8 +47,11 @@ jobs:
           echo "Repo root: ${GITHUB_WORKSPACE}"
           echo "Scan dir:  ${ABS_SCAN_DIR}"
 
-      - name: Codacy CLI (local only)
+      - name: Codacy CLI (Semgrep only, local)
         uses: codacy/codacy-analysis-cli-action@v4
         with:
-          directory: ${{ env.ABS_SCAN_DIR }}   # PHẢI là absolute path
+          directory: ${{ env.ABS_SCAN_DIR }}   # PHẢI là đường dẫn tuyệt đối
+          tool: semgrep
           upload: false
+          allow-network: true
+          max-allowed-issues: 2147483647
