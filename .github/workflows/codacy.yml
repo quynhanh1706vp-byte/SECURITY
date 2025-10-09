@@ -1,48 +1,30 @@
 name: Codacy Security Scan
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "**" ]
   pull_request:
-  workflow_dispatch:
 
 permissions:
   contents: read
 
-concurrency:
-  group: codacy-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   codacy:
     runs-on: ubuntu-latest
-    env:
-      # Đổi thư mục này nếu bạn muốn quét phần khác
-      SCAN_DIR: dmpw_linux_install_v2/code/api
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: recursive
 
       - name: Sanity
         run: |
-          set -euo pipefail
-          echo "Scanning $SCAN_DIR on $GITHUB_REF"
-          [ -d "$SCAN_DIR" ] || (echo "Not found: $SCAN_DIR" && exit 1)
+          echo "Repo checked out at $GITHUB_SHA"
+          ls -la | head -n 50
 
-      - name: Codacy Security Scan (upload if token)
-        if: ${{ secrets.CODACY_PROJECT_TOKEN != '' }}
+      - name: Codacy CLI (local only)
         uses: codacy/codacy-analysis-cli-action@v4
         with:
-          directory: ${{ env.SCAN_DIR }}
-          upload: true
-          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-
-      - name: Codacy Security Scan (local only)
-        if: ${{ secrets.CODACY_PROJECT_TOKEN == '' }}
-        uses: codacy/codacy-analysis-cli-action@v4
-        with:
-          directory: ${{ env.SCAN_DIR }}
+          directory: .
           upload: false
