@@ -1,5 +1,8 @@
 name: _DEBUG
-on: { workflow_dispatch: {}, push: { branches: [ "**" ] } }
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "**" ]
 jobs:
   debug:
     runs-on: ubuntu-latest
