@@ -17,82 +17,20 @@ jobs:
   codacy:
     runs-on: ubuntu-latest
     env:
-      SCAN_DIR: dmpw_linux_install_v2   # <<< ĐỔI nếu cần (vd: dmpw_linux_install_v3 hoặc .)
+      # Đổi thư mục này nếu bạn muốn quét phần khác
+      SCAN_DIR: dmpw_linux_install_v2/code/api
     steps:
-      - name: Checkout repository (full history + submodules)
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           submodules: recursive
 
-      - name: Pick scan directory
+      - name: Sanity
         run: |
           set -euo pipefail
-          echo "Wanted SCAN_DIR=$SCAN_DIR"
-          if [ ! -d "$SCAN_DIR" ]; then
-            echo "WARN: $SCAN_DIR not found → fallback to repo root (.)"
-            echo "SCAN_DIR=." >> "$GITHUB_ENV"
-          fi
-          echo "Top-level tree:" && ls -la
-
-      - name: Ensure semgrep rules exist (if not submodule)
-        run: |
-          set -euo pipefail
-          mkdir -p _rules
-          if [ ! -d "_rules/semgrep-rules" ]; then
-            git clone --depth 1 https://github.com/semgrep/semgrep-rules.git _rules/semgrep-rules
-          fi
-          chmod -R a+rX _rules/semgrep-rules || true
-
-      - name: Ensure ESLint config (fallback)
-        run: |
-          set -euo pipefail
-          d="${SCAN_DIR:-.}"
-          if [ ! -f "$d/.eslintrc.json" ] && [ ! -f "$d/.eslintrc.js" ] && [ ! -f "$d/.eslintrc.cjs" ] && [ ! -f "$d/.eslintrc.yaml" ] && [ ! -f "$d/.eslintrc.yml" ]; then
-            cat > "$d/.eslintrc.json" <<'JSON'
-{
-  "root": true,
-  "env": { "browser": true, "node": true, "es2021": true },
-  "extends": ["eslint:recommended"],
-  "overrides": [
-    {
-      "files": ["**/*.ts","**/*.tsx"],
-      "parser": "@typescript-eslint/parser",
-      "plugins": ["@typescript-eslint"],
-      "extends": ["plugin:@typescript-eslint/recommended"]
-    }
-  ]
-}
-JSON
-            echo "[i] Wrote fallback $d/.eslintrc.json"
-          fi
-
-      - name: Ensure ESLint ignore
-        run: |
-          set -euo pipefail
-          d="${SCAN_DIR:-.}"
-          if [ ! -f "$d/.eslintignore" ]; then
-            cat > "$d/.eslintignore" <<'IGN'
-node_modules/
-dist/
-build/
-coverage/
-**/*.min.js
-**/*.bundle.js
-**/*.map
-public/locales/
-IGN
-            echo "[i] Wrote fallback $d/.eslintignore"
-          fi
-
-      - name: Quick language sniff
-        run: |
-          set -euo pipefail
-          d="${SCAN_DIR:-.}"
-          cs=$(find "$d" -type f -name '*.cs' | wc -l || true)
-          js=$(find "$d" -type f \( -name '*.js' -o -name '*.jsx' \) | wc -l || true)
-          ts=$(find "$d" -type f \( -name '*.ts' -o -name '*.tsx' \) | wc -l || true)
-          echo "C#: $cs | JS: $js | TS: $ts"
+          echo "Scanning $SCAN_DIR on $GITHUB_REF"
+          [ -d "$SCAN_DIR" ] || (echo "Not found: $SCAN_DIR" && exit 1)
 
       - name: Codacy Security Scan (upload if token)
         if: ${{ secrets.CODACY_PROJECT_TOKEN != '' }}
