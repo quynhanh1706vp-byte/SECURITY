@@ -2,8 +2,9 @@ name: Codacy Security Scan
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "**" ]
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,7 +22,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Codacy Security Scan (upload to Codacy if token exists)
+      - name: Codacy Security Scan (upload if token)
         if: ${{ secrets.CODACY_PROJECT_TOKEN != '' }}
         uses: codacy/codacy-analysis-cli-action@v4
         with:
@@ -29,7 +30,7 @@ jobs:
           upload: true
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
 
-      - name: Codacy Security Scan (local only, no upload)
+      - name: Codacy Security Scan (local only)
         if: ${{ secrets.CODACY_PROJECT_TOKEN == '' }}
         uses: codacy/codacy-analysis-cli-action@v4
         with:
