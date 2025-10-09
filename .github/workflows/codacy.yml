@@ -17,6 +17,12 @@ jobs:
   codacy:
     runs-on: ubuntu-latest
     steps:
+      - name: Sanity check (no external action)
+        run: |
+          echo "Runner OK on ${{ github.ref }}"
+          git --version
+          uname -a
+
       - name: Checkout repository (full history)
         uses: actions/checkout@v4
         with:
