@@ -1,0 +1,17 @@
+rules:
+  - id: dotnet-ssrf-httpclient-url
+    languages: [csharp]
+    severity: HIGH
+    message: "Potential SSRF: outbound HTTP with externally-controlled URL. Validate/allowlist hosts."
+    metadata:
+      cwe: "CWE-918"
+    # new HttpClient().GetAsync(URL) | PostAsync(URL,...) | SendAsync(...)
+    pattern-regex: "\\bnew\\s+HttpClient\\s*\\(\\)\\s*\\.\\s*\\w+Async\\s*\\(\\s*[^\\)]+\\)"
+
+  - id: dotnet-ssrf-webrequest-create
+    languages: [csharp]
+    severity: HIGH
+    message: "Potential SSRF: WebRequest.Create(URL) from untrusted input. Validate/allowlist."
+    metadata:
+      cwe: "CWE-918"
+    pattern-regex: "\\bWebRequest\\s*\\.\\s*Create\\s*\\("

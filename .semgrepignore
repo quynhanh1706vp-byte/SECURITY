@@ -1,0 +1,20 @@
+# Ignore rules, reports, và file không phải code
+_rules/
+_reports/
+**/_reports/**
+**/_rules/**
+**/*.yml
+**/*.yaml
+**/*.json
+**/*.md
+**/*.png
+**/*.jpg
+
+# Thư mục build / IDE
+node_modules/
+dist/
+build/
+bin/
+obj/
+.vscode/
+.idea/

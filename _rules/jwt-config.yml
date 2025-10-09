@@ -1,0 +1,14 @@
+rules:
+  - id: jwt-none-algorithm
+    languages: [csharp]
+    severity: HIGH
+    message: "JWT dùng 'SecurityAlgorithms.None' (không an toàn)."
+    metadata: { cwe: "CWE-327" }
+    pattern-regex: "\\bSecurityAlgorithms\\.None\\b"
+
+  - id: jwt-hardcoded-symmetric-key
+    languages: [csharp]
+    severity: HIGH
+    message: "JWT symmetric key có vẻ hard-code qua Encoding.GetBytes(...)."
+    metadata: { cwe: "CWE-321" }
+    pattern-regex: "new\\s+SymmetricSecurityKey\\(\\s*Encoding\\.(?:ASCII|UTF8)\\.GetBytes\\(\\s*['\\\"][^'\\\"]+['\\\"]\\s*\\)\\s*\\)"

@@ -1,0 +1,187 @@
+rules:
+  ########################################################################
+  # AUTHORIZATION / CSRF (C#) – dùng AST pattern đơn giản, an toàn
+  ########################################################################
+  - id: csharp-missing-authorization-post
+    message: "POST action thiếu [Authorize] (có thể bypass ACL)."
+    languages: [csharp]
+    severity: ERROR
+    patterns:
+      - pattern: |
+          [HttpPost(...)]
+          public $RET $M($...ARGS) { ... }
+      - pattern-not: |
+          [Authorize(...)]
+          [HttpPost(...)]
+          public $RET $M($...ARGS) { ... }
+      - pattern-not: |
+          [HttpPost(...)]
+          [Authorize(...)]
+          public $RET $M($...ARGS) { ... }
+      - pattern-not: |
+          [AllowAnonymous(...)]
+          [HttpPost(...)]
+          public $RET $M($...ARGS) { ... }
+
+  - id: csharp-missing-antiforgery-post
+    message: "POST thiếu [ValidateAntiForgeryToken] → nguy cơ CSRF."
+    languages: [csharp]
+    severity: WARNING
+    patterns:
+      - pattern: |
+          [HttpPost(...)]
+          public $RET $M($...ARGS) { ... }
+      - pattern-not: |
+          [ValidateAntiForgeryToken(...)]
+          [HttpPost(...)]
+          public $RET $M($...ARGS) { ... }
+      - pattern-not: |
+          [HttpPost(...)]
+          [ValidateAntiForgeryToken(...)]
+          public $RET $M($...ARGS) { ... }
+      - pattern-not: |
+          [IgnoreAntiforgeryToken(...)]
+          [HttpPost(...)]
+          public $RET $M($...ARGS) { ... }
+
+  ########################################################################
+  # PATH TRAVERSAL (C#)
+  ########################################################################
+  - id: csharp-path-traversal-combine
+    message: "Path.Combine với input chưa kiểm soát → nguy cơ traversal."
+    languages: [csharp]
+    severity: ERROR
+    pattern: |
+      Path.Combine($BASE, $USERINPUT, $...REST)
+
+  - id: csharp-file-io-untrusted
+    message: "File I/O với đường dẫn có thể không tin cậy. Cần chuẩn hoá GetFullPath + prefix check."
+    languages: [csharp]
+    severity: ERROR
+    pattern-either:
+      - pattern: new FileStream($P, ...)
+      - pattern: File.Open($P, ...)
+      - pattern: File.ReadAllText($P)
+      - pattern: File.WriteAllText($P, ...)
+      - pattern: File.ReadAllBytes($P)
+      - pattern: File.WriteAllBytes($P, ...)
+
+  ########################################################################
+  # SQL INJECTION (C#) – heuristic
+  ########################################################################
+  - id: csharp-sql-injection-sqlcommand-plus
+    message: "Có thể SQLi: nối chuỗi trong SqlCommand(). Hãy dùng SqlParameter."
+    languages: [csharp]
+    severity: ERROR
+    pattern-regex: "(?s)\\bnew\\s+SqlCommand\\s*\\(\\s*[^\\)]*\\+[^\\)]*\\)"
+
+  - id: csharp-sql-injection-commandtext-plus
+    message: "Có thể SQLi: CommandText gán từ chuỗi nối. Hãy tham số hoá."
+    languages: [csharp]
+    severity: ERROR
+    pattern-regex: "(?m)\\bCommandText\\s*=\\s*.*\\+.*;"
+
+  ########################################################################
+  # SSRF (C#) – heuristic, bỏ literal URL
+  ########################################################################
+  - id: csharp-ssrf-httpclient
+    message: "SSRF: HttpClient/WebRequest với URL biến. Dùng Uri.TryCreate + allowlist host."
+    languages: [csharp]
+    severity: ERROR
+    patterns:
+      - pattern-either:
+          - pattern: $C.GetAsync($U)
+          - pattern: $C.PostAsync($U, $B)
+          - pattern: $C.SendAsync($REQ)
+          - pattern: WebRequest.Create($U)
+      - pattern-not: $C.GetAsync("...")
+      - pattern-not: $C.PostAsync("...", $B)
+      - pattern-not: WebRequest.Create("...")
+
+  ########################################################################
+  # CRYPTO / JWT / COOKIE (C#)
+  ########################################################################
+  - id: csharp-aes-ecb-mode
+    message: "AES dùng ECB mode → không an toàn. Dùng GCM hoặc CBC+HMAC."
+    languages: [csharp]
+    severity: ERROR
+    pattern-regex: "(Aes(?:Create|Managed)\\(\\).*?Mode\\s*=\\s*CipherMode\\.ECB)"
+
+  - id: csharp-weak-hash-md5-sha1
+    message: "Thuật toán băm yếu (MD5/SHA1)."
+    languages: [csharp]
+    severity: ERROR
+    pattern-either:
+      - pattern: MD5.Create()
+      - pattern: SHA1.Create()
+
+  - id: csharp-jwt-none
+    message: "JWT dùng SecurityAlgorithms.None (không ký)."
+    languages: [csharp]
+    severity: ERROR
+    pattern-regex: "\\bSecurityAlgorithms\\.None\\b"
+
+  - id: csharp-cookie-missing-flags
+    message: "Cookie thiếu Secure/HttpOnly/SameSite."
+    languages: [csharp]
+    severity: WARNING
+    pattern-either:
+      - pattern: Response.Cookies.Append($NAME, $VAL)
+      - pattern: Response.Cookies.Append($NAME, $VAL, new CookieOptions { })
+
+  ########################################################################
+  # XSS / DOM (FE)
+  ########################################################################
+  - id: js-domxss-innerhtml
+    message: "DOM XSS: innerHTML/insertAdjacentHTML — nhớ sanitize."
+    languages: [javascript, typescript, html]
+    severity: ERROR
+    pattern-regex: "(\\.innerHTML\\s*=|\\.insertAdjacentHTML\\s*\\()"
+
+  - id: react-dangerouslysetinnerhtml
+    message: "React dangerouslySetInnerHTML — chỉ dùng khi đã sanitize."
+    languages: [javascript, typescript]
+    severity: ERROR
+    pattern-regex: "dangerouslySetInnerHTML\\s*:"
+
+  ########################################################################
+  # SECRETS (pattern thực + entropy)
+  ########################################################################
+  - id: secret-private-key-block
+    message: "Private key block trong repo."
+    languages: [generic]
+    severity: CRITICAL
+    pattern-regex: "(?s)-----BEGIN (?:RSA |EC |)?PRIVATE KEY-----.*?-----END (?:RSA |EC |)?PRIVATE KEY-----"
+
+  - id: secret-aws-access-key-id
+    message: "AWS Access Key ID."
+    languages: [generic]
+    severity: CRITICAL
+    pattern-regex: "\\bAKIA[0-9A-Z]{16}\\b"
+
+  - id: secret-high-entropy
+    message: "Chuỗi entropy cao (kiểm tra & rotate nếu đúng là secret)."
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: "(?<![A-Za-z0-9_])[A-Za-z0-9_\\/+\\-=]{32,}(?![A-Za-z0-9_])"
+
+  ########################################################################
+  # DOCKER / K8S HARDENING
+  ########################################################################
+  - id: docker-user-root
+    message: "Dockerfile chạy bằng user root."
+    languages: [dockerfile]
+    severity: WARNING
+    pattern-regex: "(?m)^\\s*USER\\s+root\\b"
+
+  - id: k8s-run-as-non-root-false
+    message: "K8s: runAsNonRoot: false → container chạy root."
+    languages: [yaml]
+    severity: ERROR
+    pattern-regex: "(?m)^\\s*runAsNonRoot:\\s*false\\b"
+
+  - id: k8s-readonlyrootfs-false
+    message: "K8s: readOnlyRootFilesystem: false."
+    languages: [yaml]
+    severity: WARNING
+    pattern-regex: "(?m)\\breadOnlyRootFilesystem:\\s*false\\b"

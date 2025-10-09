@@ -1,0 +1,16 @@
+rules:
+  - id: aes-ecb
+    languages: [csharp]
+    severity: HIGH
+    message: "AES in ECB mode is insecure. Prefer AES-GCM or AES-CBC with AEAD."
+    metadata: { cwe: "CWE-327" }
+    # Tìm Aes.Create()/AesManaged() set Mode = CipherMode.ECB
+    pattern-regex: "(Aes(?:Create|Managed)\\(\\).*?Mode\\s*=\\s*CipherMode\\.ECB)"
+
+  - id: insecure-rng-or-static-key
+    languages: [csharp]
+    severity: HIGH
+    message: "Non-crypto RNG or hard-coded key material."
+    # new Random(...
+    # hoặc Encoding.ASCII/UTF8.GetBytes('...') (hard-coded key)
+    pattern-regex: "(new\\s+Random\\(|Encoding\\.(?:ASCII|UTF8)\\.GetBytes\\(\\s*['\\\"][^'\\\"]+['\\\"]\\s*\\))"

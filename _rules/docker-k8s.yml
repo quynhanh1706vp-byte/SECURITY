@@ -1,0 +1,18 @@
+rules:
+  - id: k8s-run-as-non-root-false
+    languages: [yaml]
+    severity: HIGH
+    message: "K8s: runAsNonRoot: false. Hãy đặt runAsNonRoot: true và user không phải root."
+    pattern-regex: "(?m)^\\s*runAsNonRoot:\\s*false\\b"
+
+  - id: k8s-readonlyrootfs-false
+    languages: [yaml]
+    severity: MEDIUM
+    message: "K8s: readOnlyRootFilesystem: false. Nên bật true khi có thể."
+    pattern-regex: "(?m)\\breadOnlyRootFilesystem:\\s*false\\b"
+
+  - id: dockerfile-expose-sensitive
+    languages: [dockerfile]
+    severity: MEDIUM
+    message: "Dockerfile: EXPOSE 22/2375 là nhạy cảm."
+    pattern-regex: "(?m)\\bEXPOSE\\s+(22|2375)\\b"
