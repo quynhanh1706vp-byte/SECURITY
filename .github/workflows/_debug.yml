@@ -1,0 +1,10 @@
+name: _DEBUG
+on: { workflow_dispatch: {}, push: { branches: [ "**" ] } }
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hi from ${{ github.ref }}"
+          git --version
+          uname -a
