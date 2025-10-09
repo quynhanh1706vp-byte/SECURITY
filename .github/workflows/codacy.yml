@@ -3,28 +3,52 @@ name: Codacy Security Scan
 on:
   workflow_dispatch:
   push:
-    branches: [ "**" ]
+    branches: ["**"]
   pull_request:
 
 permissions:
   contents: read
 
+concurrency:
+  group: codacy-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   codacy:
     runs-on: ubuntu-latest
+    env:
+      # Đổi nếu muốn quét chỗ khác; đường dẫn TƯƠNG ĐỐI từ root repo
+      SCAN_DIR_REL: dmpw_linux_install_v2/code/api
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: false   # tránh cảnh báo submodule cleanup
 
-      - name: Sanity
+      - name: Resolve absolute scan path
         run: |
-          echo "Repo checked out at $GITHUB_SHA"
-          ls -la | head -n 50
+          set -euo pipefail
+          ROOT="${GITHUB_WORKSPACE}"
+          REL="${SCAN_DIR_REL:-.}"
+          if [ -d "${ROOT}/${REL}" ]; then
+            ABS="${ROOT}/${REL}"
+          else
+            echo "WARN: ${REL} not found → fallback to repo root"
+            ABS="${ROOT}"
+          fi
+          echo "ABS_SCAN_DIR=${ABS}" >> "$GITHUB_ENV"
+          echo "Using ABS_SCAN_DIR=${ABS}"
+
+      - name: Sanity (list a few files)
+        run: |
+          set -euo pipefail
+          ls -la "${ABS_SCAN_DIR}" | head -n 50
+          echo "Repo root: ${GITHUB_WORKSPACE}"
+          echo "Scan dir:  ${ABS_SCAN_DIR}"
 
       - name: Codacy CLI (local only)
         uses: codacy/codacy-analysis-cli-action@v4
         with:
-          directory: .
+          directory: ${{ env.ABS_SCAN_DIR }}   # PHẢI là absolute path
           upload: false
