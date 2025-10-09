@@ -16,23 +16,51 @@ concurrency:
 jobs:
   codacy:
     runs-on: ubuntu-latest
+    env:
+      SCAN_DIR: dmpw_linux_install_v3   # <<< đổi sang thư mục chứa code nếu khác
     steps:
-      - name: Sanity check (no external action)
-        run: |
-          echo "Runner OK on ${{ github.ref }}"
-          git --version
-          uname -a
-
-      - name: Checkout repository (full history)
+      - name: Checkout repository (full history + submodules)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: recursive
+
+      - name: Pick scan directory
+        run: |
+          set -euo pipefail
+          echo "Wanted SCAN_DIR=$SCAN_DIR"
+          if [ ! -d "$SCAN_DIR" ]; then
+            echo "WARN: $SCAN_DIR not found → fallback to repo root (.)"
+            echo "SCAN_DIR=." >> "$GITHUB_ENV"
+          fi
+          echo "Tree (top level):"
+          ls -la
+
+      - name: Ensure semgrep rules exist (if not submodule)
+        run: |
+          set -euo pipefail
+          mkdir -p _rules
+          if [ ! -d "_rules/semgrep-rules" ]; then
+            echo "Cloning semgrep-rules…"
+            git clone --depth 1 https://github.com/semgrep/semgrep-rules.git _rules/semgrep-rules
+          fi
+          chmod -R a+rX _rules/semgrep-rules || true
+
+      - name: Quick language sniff
+        run: |
+          set -euo pipefail
+          echo "Directory to scan: ${SCAN_DIR:-.}"
+          # đếm file cơ bản để chắc có code
+          cs=$(find "${SCAN_DIR:-.}" -type f -name '*.cs' | wc -l || true)
+          js=$(find "${SCAN_DIR:-.}" -type f \( -name '*.js' -o -name '*.jsx' \) | wc -l || true)
+          ts=$(find "${SCAN_DIR:-.}" -type f \( -name '*.ts' -o -name '*.tsx' \) | wc -l || true)
+          echo "C#: $cs | JS: $js | TS: $ts"
 
       - name: Codacy Security Scan (upload if token)
         if: ${{ secrets.CODACY_PROJECT_TOKEN != '' }}
         uses: codacy/codacy-analysis-cli-action@v4
         with:
-          directory: .
+          directory: ${{ env.SCAN_DIR }}
           upload: true
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
 
@@ -40,5 +68,5 @@ jobs:
         if: ${{ secrets.CODACY_PROJECT_TOKEN == '' }}
         uses: codacy/codacy-analysis-cli-action@v4
         with:
-          directory: .
+          directory: ${{ env.SCAN_DIR }}
           upload: false
