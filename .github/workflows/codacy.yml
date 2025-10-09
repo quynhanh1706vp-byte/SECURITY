@@ -1,0 +1,37 @@
+name: Codacy Security Scan
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: codacy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  codacy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Codacy Security Scan (upload to Codacy if token exists)
+        if: ${{ secrets.CODACY_PROJECT_TOKEN != '' }}
+        uses: codacy/codacy-analysis-cli-action@v4
+        with:
+          directory: .
+          upload: true
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+
+      - name: Codacy Security Scan (local only, no upload)
+        if: ${{ secrets.CODACY_PROJECT_TOKEN == '' }}
+        uses: codacy/codacy-analysis-cli-action@v4
+        with:
+          directory: .
+          upload: false
