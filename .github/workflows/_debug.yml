@@ -1,0 +1,13 @@
+name: _DEBUG
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sanity (internal only)
+        run: |
+          echo "Hi from ${{ github.ref }}"
+          git --version
