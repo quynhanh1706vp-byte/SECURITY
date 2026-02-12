@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180223065124_initdatabase.cs" />
+    <Compile Remove="Migrations\20180223065124_initdatabase.Designer.cs" />
+    <Compile Remove="Migrations\20190109041900_AddIcuDeviceIdColumnToUserLogTable.cs" />
+    <Compile Remove="Migrations\20190109051202_RemoveIcuDeviceIdFromUserLogTable.cs" />
+    <Compile Remove="Migrations\20190109094044_Add_UserLogTest.cs" />
+    <Compile Remove="Migrations\20190109094321_Delete_UserLogTest.cs" />
+    <Compile Remove="Migrations\20190219034515_Add_ServerPort_ServerIp_UserName.cs" />
+    <Compile Remove="Migrations\20190228060647_Add_EventCount_ChangeType_RegisterIdNumber.cs" />
+    <Compile Remove="Migrations\20190322040318_Add_MessageId_DeviceMessage.cs" />
+    <Compile Remove="Migrations\20190411103540_Add_DoorStatus_IcuDevice.cs" />
+    <Compile Remove="Migrations\20190411104110_Add_DoorStatus_IcuDevice.cs" />
+    <Compile Remove="Migrations\20191106045737_Update_DB_MultipleCompanies.cs" />
+    <Compile Remove="Migrations\20191106063735_Modify_Account_IcuDevice.cs" />
+    <Compile Remove="Migrations\20191128134158_change_property_Buzzer_IcuDevice_1.cs" />
+    <Compile Remove="Migrations\20200527114627_Add_New_Table_Role.cs" />
+    <Compile Remove="Migrations\20200825041152_change_timezone_to_accessTime.cs" />
+    <Compile Remove="Migrations\20220208042816_Add_Table_HeaderSetting.cs" />
+    <Compile Remove="Migrations\20220208042816_Add_Table_HeaderSetting.Designer.cs" />
+    <Compile Remove="Models\Door.cs" />
+    <Compile Remove="Migrations\20240628033257_refactor_datetime_without_timezone.cs" />
+    <Compile Remove="Migrations\20240628033257_refactor_datetime_without_timezone.Designer.cs" />
+    <Compile Remove="Migrations\20240628041916_refactor_all_datetime_without_timezone.cs" />
+    <Compile Remove="Migrations\20240628041916_refactor_all_datetime_without_timezone.Designer.cs" />
+    <Compile Remove="Migrations\20240701042618_NEW_TABLE_DepartmentDevice.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework.CodeFirstStoreFunctions" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App">
+      <PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
+      <Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="morelinq" Version="4.2.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <PackageReference Include="System.Memory" Version="4.5.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeMasterProCloud.Common\DeMasterProCloud.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+  </ItemGroup>
+
+</Project>

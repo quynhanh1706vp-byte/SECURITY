@@ -1,0 +1,851 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="access_category" xml:space="preserve">
+    <value>Truy cập</value>
+        <comment />
+  </data>
+    <data name="application_is_running" xml:space="preserve">
+    <value>Ứng dụng đang chạy</value>
+        <comment />
+  </data>
+    <data name="breakfast" xml:space="preserve">
+    <value>Ăn sáng</value>
+        <comment />
+  </data>
+    <data name="cache_buster_description" xml:space="preserve">
+    <value>Cache buster</value>
+        <comment />
+  </data>
+    <data name="cache_buster_title" xml:space="preserve">
+    <value>Cache buster</value>
+        <comment />
+  </data>
+    <data name="common_category" xml:space="preserve">
+    <value>Cài đặt chung</value>
+        <comment />
+  </data>
+    <data name="communication_failed" xml:space="preserve">
+    <value>Giao tiếp lỗi</value>
+        <comment />
+  </data>
+    <data name="communication_succeed" xml:space="preserve">
+    <value>Giao tiếp thành công</value>
+        <comment />
+  </data>
+    <data name="company_category" xml:space="preserve">
+    <value>Công ty</value>
+        <comment />
+  </data>
+    <data name="company_expiration_days_description" xml:space="preserve">
+    <value>Ngày hết hạn của công ty</value>
+        <comment />
+  </data>
+    <data name="company_expiration_days_title" xml:space="preserve">
+    <value>Ngày hết hạn của công ty</value>
+        <comment />
+  </data>
+    <data name="debug_level_title" xml:space="preserve">
+    <value>Debug Level</value>
+        <comment />
+  </data>
+    <data name="device_category" xml:space="preserve">
+    <value>Thiết bị</value>
+        <comment />
+  </data>
+    <data name="device_instruction_delete_all_events" xml:space="preserve">
+    <value>Device Instruction Delete All Events</value>
+        <comment />
+  </data>
+    <data name="device_instruction_delete_all_users_events" xml:space="preserve">
+    <value>Lệnh xóa tất cả người dùng, sự kiện</value>
+        <comment />
+  </data>
+    <data name="device_instruction_delete_all_users_events1" xml:space="preserve">
+    <value>Device Instruction Delete All Users, Events</value>
+        <comment />
+  </data>
+    <data name="device_instruction_force_close" xml:space="preserve">
+    <value>Lệnh thiết bị đóng cửa khẩn cấp</value>
+        <comment />
+  </data>
+    <data name="device_instruction_force_open" xml:space="preserve">
+    <value>Lệnh thiết bị mở cửa khẩn cấp</value>
+        <comment />
+  </data>
+    <data name="device_instruction_open" xml:space="preserve">
+    <value>Lệnh cho thiết bị mở</value>
+        <comment />
+  </data>
+    <data name="device_instruction_release" xml:space="preserve">
+    <value>Tắt chế độ khẩn cấp</value>
+        <comment />
+  </data>
+    <data name="device_instruction_reset" xml:space="preserve">
+    <value>Lệnh cho thiết bị khởi động lại</value>
+        <comment />
+  </data>
+    <data name="device_instruction_settime" xml:space="preserve">
+    <value>Lệnh cho thiết bị cài đặt thời gian</value>
+        <comment />
+  </data>
+    <data name="device_instruction_update_device_state" xml:space="preserve">
+    <value>Device Instruction Update Device State</value>
+        <comment />
+  </data>
+    <data name="device_is_running" xml:space="preserve">
+    <value>Thiết bị đang chạy</value>
+        <comment />
+  </data>
+    <data name="device_max_copy_setting_door_description" xml:space="preserve">
+    <value>Max copy setting door</value>
+        <comment />
+  </data>
+    <data name="device_max_copy_setting_door_title" xml:space="preserve">
+    <value>Max copy setting door</value>
+        <comment />
+  </data>
+    <data name="device_max_icu_user_description" xml:space="preserve">
+    <value>Max icu user</value>
+        <comment />
+  </data>
+    <data name="device_max_icu_user_title" xml:space="preserve">
+    <value>Max icu user</value>
+        <comment />
+  </data>
+    <data name="dinner" xml:space="preserve">
+    <value>Ăn tối</value>
+        <comment />
+  </data>
+    <data name="door_open_manually" xml:space="preserve">
+    <value>Mở cửa thủ công</value>
+        <comment />
+  </data>
+    <data name="effactive_date_not_started" xml:space="preserve">
+    <value>Ngày chưa bắt đầu hiệu lực.</value>
+        <comment />
+  </data>
+    <data name="email_content" xml:space="preserve">
+    <value>ICU device address {0} is {1}.</value>
+        <comment />
+  </data>
+    <data name="email_notification" xml:space="preserve">
+    <value>Demasterpro notification</value>
+        <comment />
+  </data>
+    <data name="enable_performance_log_description" xml:space="preserve">
+    <value>Enable performance log.</value>
+        <comment />
+  </data>
+    <data name="enable_performance_log_title" xml:space="preserve">
+    <value>Enable performance log.</value>
+        <comment />
+  </data>
+    <data name="etc_meal" xml:space="preserve">
+    <value>Etc Meal</value>
+        <comment />
+  </data>
+    <data name="exit_application" xml:space="preserve">
+    <value>Thoát ứng dụng</value>
+        <comment />
+  </data>
+    <data name="firmware_application_update" xml:space="preserve">
+    <value>Cập nhật ứng dụng firmware</value>
+        <comment />
+  </data>
+    <data name="firmware_download_failed" xml:space="preserve">
+    <value>Tải firmware lỗi</value>
+        <comment />
+  </data>
+    <data name="holiday_category" xml:space="preserve">
+    <value>Holiday</value>
+        <comment />
+  </data>
+    <data name="holiday_max_items_description" xml:space="preserve">
+    <value>Max holiday items</value>
+        <comment />
+  </data>
+    <data name="holiday_max_items_title" xml:space="preserve">
+    <value>Max holiday items</value>
+        <comment />
+  </data>
+    <data name="late_night_snack" xml:space="preserve">
+    <value>Bữa ăn thêm</value>
+        <comment />
+  </data>
+    <data name="lblCategory" xml:space="preserve">
+    <value>Category</value>
+        <comment />
+  </data>
+    <data name="lblKey" xml:space="preserve">
+    <value>Key</value>
+        <comment />
+  </data>
+    <data name="lblPassword" xml:space="preserve">
+    <value>Password</value>
+        <comment />
+  </data>
+    <data name="lblSetting" xml:space="preserve">
+    <value>Setting</value>
+        <comment />
+  </data>
+    <data name="lblValue" xml:space="preserve">
+    <value>Value</value>
+        <comment />
+  </data>
+    <data name="list_user_to_notification_category" xml:space="preserve">
+    <value>List of users to notification</value>
+        <comment />
+  </data>
+    <data name="list_user_to_notification_title" xml:space="preserve">
+    <value>Danh sách người dùng gửi thông báo</value>
+        <comment />
+  </data>
+    <data name="logo_title" xml:space="preserve">
+    <value>Logo</value>
+        <comment />
+  </data>
+    <data name="lunch" xml:space="preserve">
+    <value>Ăn trưa</value>
+        <comment />
+  </data>
+    <data name="mastercard_access" xml:space="preserve">
+    <value>Truy cập bằng MasterCard</value>
+        <comment />
+  </data>
+    <data name="monitoring_category" xml:space="preserve">
+    <value>Giám sát</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_access_denied" xml:space="preserve">
+    <value>Từ chối truy cập</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_anti_passback_error" xml:space="preserve">
+    <value>AntiPassbackError</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_default_description" xml:space="preserve">
+    <value>Các kiểu nhật ký sự kiện sẽ được hiện thị tại màn hình giám sát</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_default_title" xml:space="preserve">
+    <value>Giá trị mặc định</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_expiration_date" xml:space="preserve">
+    <value>Ngày hết hạn</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_expired_card" xml:space="preserve">
+    <value>Expired Card</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_expired_card_and_pwd" xml:space="preserve">
+    <value>Expired Card And Password</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_expired_pwd" xml:space="preserve">
+    <value>Expired Password</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_invalid_access_type" xml:space="preserve">
+    <value>Các loại truy cập không hợp lệ</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_invalid_door" xml:space="preserve">
+    <value>Cửa không hợp lệ</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_normal_access" xml:space="preserve">
+    <value>Truy cập thường</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_no_door_active_time" xml:space="preserve">
+    <value>Cửa không hoạt động</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_no_user_access_time" xml:space="preserve">
+    <value>Không có thời gian truy cập của người dùng</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_passage_timezone_off" xml:space="preserve">
+    <value>Passage Timezone Off</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_passage_timezone_on" xml:space="preserve">
+    <value>Passage Timezone On</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_unregisterd_card" xml:space="preserve">
+    <value>Thẻ không được đăng kí</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_unregisterd_card_and_pwd" xml:space="preserve">
+    <value>Thẻ và mật khẩu không được đăng kí</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_unregistered_pwd" xml:space="preserve">
+    <value>Unregistered Password</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_valid_door" xml:space="preserve">
+    <value>Cửa hợp lệ</value>
+        <comment />
+  </data>
+    <data name="monitoring_event_type_wrong_pwd" xml:space="preserve">
+    <value>Sai mật khẩu</value>
+        <comment />
+  </data>
+    <data name="monitoring_max_record_display_description" xml:space="preserve">
+    <value>Số lượng tối đa bản ghi được hiển thị ở màn hình giám sát</value>
+        <comment />
+  </data>
+    <data name="monitoring_max_record_display_title" xml:space="preserve">
+    <value>Tối đa số lượng bản ghi hiển thị trên trang</value>
+        <comment />
+  </data>
+    <data name="mpr_auth" xml:space="preserve">
+    <value>MPR Auth</value>
+        <comment />
+  </data>
+    <data name="mpr_category" xml:space="preserve">
+    <value>Multiple person rules</value>
+        <comment />
+  </data>
+    <data name="mpr_error" xml:space="preserve">
+    <value>MPR Error</value>
+        <comment />
+  </data>
+    <data name="mpr_interval_expired" xml:space="preserve">
+    <value>MPR Interval Expired</value>
+        <comment />
+  </data>
+    <data name="mpr_max_condition_description" xml:space="preserve">
+    <value>Max condition items</value>
+        <comment />
+  </data>
+    <data name="mpr_max_condition_title" xml:space="preserve">
+    <value>Max condition items</value>
+        <comment />
+  </data>
+    <data name="msgChangeSetting" xml:space="preserve">
+    <value>Change setting {0} from '{1}' to '{2}'.</value>
+        <comment />
+  </data>
+    <data name="msgChangeSettingMultiple" xml:space="preserve">
+    <value>Change setting multiple</value>
+        <comment />
+  </data>
+    <data name="msgInclusiveBetween" xml:space="preserve">
+    <value>The value must between from 0 to 9.</value>
+        <comment />
+  </data>
+    <data name="msgRequired" xml:space="preserve">
+    <value>You must fill in all the textbox.</value>
+        <comment />
+  </data>
+    <data name="normal_access_mpr" xml:space="preserve">
+    <value>Normal Access(MPR)</value>
+        <comment />
+  </data>
+    <data name="notification_email_category" xml:space="preserve">
+    <value>Notification Email</value>
+        <comment />
+  </data>
+    <data name="notification_email_title" xml:space="preserve">
+    <value>Bật/tắt thông báo qua email</value>
+        <comment />
+  </data>
+    <data name="only_accessible_at_mealtime" xml:space="preserve">
+    <value>Chỉ có thể truy cập tại bữa ăn</value>
+        <comment />
+  </data>
+    <data name="pagination_title" xml:space="preserve">
+    <value>Danh sách bản ghi theo trang</value>
+        <comment />
+  </data>
+    <data name="pagination_description" xml:space="preserve">
+    <value>Số mẫu tin mặc định được hiển thị trên trang</value>
+        <comment />
+  </data>
+    <data name="procedure_omission_title" xml:space="preserve">
+    <value>Bỏ qua thủ tục</value>
+        <comment />
+  </data>
+    <data name="language_title" xml:space="preserve">
+    <value>Ngôn ngữ mặc định</value>
+        <comment />
+  </data>
+    <data name="timezone_category" xml:space="preserve">
+    <value>Timezone</value>
+        <comment />
+  </data>
+    <data name="timezone_max_items_description" xml:space="preserve">
+    <value>Max timezone items</value>
+        <comment />
+  </data>
+    <data name="timezone_max_items_title" xml:space="preserve">
+    <value>Max timezone items</value>
+        <comment />
+  </data>
+    <data name="try_access_in_invalid_door" xml:space="preserve">
+    <value>Thử truy cập vào cửa không hợp lệ</value>
+        <comment />
+  </data>
+    <data name="try_access_in_emergency_close" xml:space="preserve">
+    <value>Thử truy cập trong trường hợp khẩn cấp</value>
+        <comment />
+  </data>
+    <data name="valid_image_extension_description" xml:space="preserve">
+    <value>Định dạng ảnh hợp lệ trên hệ thống</value>
+        <comment />
+  </data>
+    <data name="valid_image_extension_title" xml:space="preserve">
+    <value>Định dạng ảnh hợp lệ trên hệ thống</value>
+        <comment />
+  </data>
+    <data name="wrong_issue_count" xml:space="preserve">
+    <value>Số lượng vấn đề sai</value>
+        <comment />
+  </data>
+    <data name="device_instruction_delete_all_users" xml:space="preserve">
+    <value>Device Instruction Delete All Users</value>
+        <comment />
+  </data>
+    <data name="company_building" xml:space="preserve">
+    <value>Đơn vị của công ty</value>
+        <comment />
+  </data>
+    <data name="email_content_device_disconnected" xml:space="preserve">
+    <value>Gửi,\n      Hệ thống của chúng tôi ghi nhận được thiết bị điều khiển "{0} ({1})" thuộc {2} đã bị mất kết nối.\n      Nếu đây không phải là hành động của bạn, xin vui lòng kiểm tra lại cáp ethernet hoặc trạng thái Internet của đơn vị và nếu sự cố vẫn còn vui lòng liên hệ với chúng tôi.\n      DeMasterPro Team\n      Tin nhắn tự động , xin vui lòng không trả lời lại.</value>
+        <comment />
+  </data>
+    <data name="email_notification_device_disconnected" xml:space="preserve">
+    <value>Thiết bị điều khiển "{0} ({1})" in the {2} đã bị mất kết nối.</value>
+        <comment />
+  </data>
+    <data name="email_content_device_connected" xml:space="preserve">
+    <value>Dear, \n            Hệ thống của chúng tôi ghi nhận được thiết bị điều khiển {0} - {1} in the {2} đã được kết nối. \n            DeMasterPro Team \n            Tin nhắn tự động , xin vui lòng không trả lời lại.    </value>
+        <comment />
+  </data>
+    <data name="email_notification_device_connected" xml:space="preserve">
+    <value>[DeMasterPro] Thiết bị điều khiển {0} - {1} in the {2} đã được kết nối thành công</value>
+        <comment />
+  </data>
+    <data name="vietnamese_language" xml:space="preserve">
+    <value>Tiếng Việt</value>
+        <comment />
+  </data>
+    <data name="english_language" xml:space="preserve">
+    <value>Tiếng Anh</value>
+        <comment />
+  </data>
+    <data name="korean_language" xml:space="preserve">
+    <value>Tiếng Hàn</value>
+        <comment />
+  </data>
+    <data name="japan_language" xml:space="preserve">
+    <value>Tiếng Nhật</value>
+        <comment />
+  </data>
+    <data name="qr_code_auto_renew_period_title" xml:space="preserve">
+    <value>Thời gian mã QR tự động tạo mới</value>
+        <comment />
+  </data>
+    <data name="auto_renew_qr_code_title" xml:space="preserve">
+    <value>Mã QR tự động tạo mới</value>
+        <comment />
+  </data>
+    <data name="gen_qr_code_for_user" xml:space="preserve">
+    <value>[DeMasterPro] Mã QR cho người dùng</value>
+        <comment />
+  </data>
+    <data name="gen_qr_code_for_user_content" xml:space="preserve">
+    <value>Gửi {0},\n      Đây là mã QR dùng để xác thực định danh của bạn trong công ty {1}.\n      Xin đừng xóa mã này.\n      Nếu lỡ tay xóa hoặc đánh mất vui lòng liên hệ với quản lý của bạn để xin cấp lại \n      DeMasterPro Team\n            Tin nhắn tự động, xin vui lòng không trả lời lại.    </value>
+        <comment />
+  </data>
+    <data name="expired_qr" xml:space="preserve">
+    <value>Mã QR hết hạn</value>
+        <comment />
+  </data>
+    <data name="pressed_the_button" xml:space="preserve">
+    <value>Bấm nút exit</value>
+        <comment />
+  </data>
+    <data name="qr_logo_title" xml:space="preserve">
+    <value>Logo cho mã QR</value>
+        <comment />
+  </data>
+    <data name="qr_logo_description" xml:space="preserve">
+    <value>Logo hình vuông được nhúng vào mã QR</value>
+        <comment />
+  </data>
+    <data name="camera_category" xml:space="preserve">
+    <value>Cấu hình Camera</value>
+        <comment />
+  </data>
+    <data name="lblLocalMqtt" xml:space="preserve">
+    <value>Cấu hình local mqtt</value>
+        <comment />
+  </data>
+    <data name="local_mqtt_category" xml:space="preserve">
+    <value>Local Mqtt</value>
+        <comment />
+  </data>
+    <data name="local_mqtt_host_title" xml:space="preserve">
+    <value>Host</value>
+        <comment />
+  </data>
+    <data name="local_mqtt_host_description" xml:space="preserve">
+    <value>Host Local Mqtt</value>
+        <comment />
+  </data>
+    <data name="local_mqtt_port_title" xml:space="preserve">
+    <value>Port</value>
+        <comment />
+  </data>
+    <data name="local_mqtt_port_description" xml:space="preserve">
+    <value>Port Local Mqtt</value>
+        <comment />
+  </data>
+    <data name="local_mqtt_username_title" xml:space="preserve">
+    <value>Tài khoản</value>
+        <comment />
+  </data>
+    <data name="local_mqtt_username_description" xml:space="preserve">
+    <value>Tài khoản Local Mqtt</value>
+        <comment />
+  </data>
+    <data name="local_mqtt_password_title" xml:space="preserve">
+    <value>Mật khẩu</value>
+        <comment />
+  </data>
+    <data name="local_mqtt_password_description" xml:space="preserve">
+    <value>Mật khẩu Local Mqtt</value>
+        <comment />
+  </data>
+    <data name="phone_support_title" xml:space="preserve">
+    <value>Điện thoại liên hệ</value>
+        <comment />
+  </data>
+    <data name="setting_support" xml:space="preserve">
+    <value>Địa chỉ liên hệ</value>
+        <comment />
+  </data>
+    <data name="name_support_title" xml:space="preserve">
+    <value>Tên liên hệ</value>
+        <comment />
+  </data>
+    <data name="email_support_title" xml:space="preserve">
+    <value>Email liên hệ</value>
+        <comment />
+  </data>
+    <data name="phone_support_description" xml:space="preserve">
+    <value>Số điện thoại của người hỗ trợ</value>
+        <comment />
+  </data>
+    <data name="name_support_description" xml:space="preserve">
+    <value>Tên của người hỗ trợ</value>
+        <comment />
+  </data>
+    <data name="email_support_description" xml:space="preserve">
+    <value>Email của người hỗ trợ</value>
+        <comment />
+  </data>
+    <data name="time_period_qrcode_title" xml:space="preserve">
+    <value>Thời gian mã QR có hiệu lực</value>
+        <comment />
+  </data>
+    <data name="time_period_qrcode_description" xml:space="preserve">
+    <value>giây</value>
+        <comment />
+  </data>
+    <data name="webhook_setting" xml:space="preserve">
+    <value>Cấu hình Webhook</value>
+        <comment />
+  </data>
+    <data name="webhook_eventlog_title" xml:space="preserve">
+    <value>Nhật ký sự kiện</value>
+        <comment />
+  </data>
+    <data name="webhook_eventlog_description" xml:space="preserve">
+    <value>Đường dẫn webhook nhận sự kiện từ phía hệ thống</value>
+        <comment />
+  </data>
+    <data name="employee_edit_avatar_title" xml:space="preserve">
+    <value>Bật/Tắt chức năng chỉnh sửa ảnh đại diện của nhân viên</value>
+        <comment />
+  </data>
+    <data name="employee_edit_avatar_description" xml:space="preserve">
+    <value>Cho phép quản lý cài đặt người dùng có thể tự cập nhật ảnh đại diện</value>
+        <comment />
+  </data>
+    <data name="auto_generate_qrcode_title" xml:space="preserve">
+    <value>Tự động tạo mã QR</value>
+        <comment />
+  </data>
+    <data name="auto_generate_qrcode_description" xml:space="preserve">
+    <value>Bật/tắt cho phép tự động tạo mã QR</value>
+        <comment />
+  </data>
+    <data name="ocr_setting" xml:space="preserve">
+    <value>Cài đặt OCR</value>
+        <comment />
+  </data>
+    <data name="ocr_api_key_title" xml:space="preserve">
+    <value>API Key</value>
+        <comment />
+  </data>
+    <data name="ocr_api_key_description" xml:space="preserve">
+    <value>Api key dùng cho việc đăng nhập (xác thực)</value>
+        <comment />
+  </data>
+    <data name="ocr_api_info_identity_description" xml:space="preserve">
+    <value>Api dùng cho việc lấy toàn bộ thông tin trên thẻ CCCD/CMT</value>
+        <comment />
+  </data>
+    <data name="ocr_api_info_identity_title" xml:space="preserve">
+    <value>Api lấy thông tin CCCD/CMT</value>
+        <comment />
+  </data>
+    <data name="ocr_api_authentication_title" xml:space="preserve">
+    <value>Api đăng nhập (xác thực)</value>
+        <comment />
+  </data>
+    <data name="ocr_api_authentication_description" xml:space="preserve">
+    <value>Api dùng để xác thực bởi Api key</value>
+        <comment />
+  </data>
+    <data name="use_auto_generate_nfc_phone_title" xml:space="preserve">
+    <value>Tự động tạo thẻ NFC Phone</value>
+        <comment />
+  </data>
+    <data name="use_auto_generate_nfc_phone_description" xml:space="preserve">
+    <value>Bật/tắt tính năng tự động tạo thẻ NFC Phone khi tạo thành viên mới</value>
+        <comment />
+  </data>
+    <data name="monitoring_avatar_display_title" xml:space="preserve">
+    <value>Tùy chọn hiển thị ảnh đại diện của người dùng trên trang theo dõi</value>
+        <comment />
+  </data>
+    <data name="monitoring_avatar_display_description" xml:space="preserve">
+    <value>Nếu bạn bật tùy chọn này, trang theo dõi sẽ hiển thị hình đại diện người dùng cho từng sự kiện</value>
+        <comment />
+  </data>
+    <data name="logo_description" xml:space="preserve">
+    <value>Xuất hiện ở trên cùng bên trái của trang</value>
+        <comment />
+  </data>
+    <data name="event_list_push_notification_category" xml:space="preserve">
+    <value>Thông báo sự kiện</value>
+        <comment />
+  </data>
+    <data name="event_list_push_notification_title" xml:space="preserve">
+    <value>Danh sách sự kiện</value>
+        <comment />
+  </data>
+    <data name="event_list_push_notification_description" xml:space="preserve">
+    <value>Lựa chọn những sự kiện được thông báo về Moblie App</value>
+        <comment />
+  </data>
+    <data name="notification_SMS_description" xml:space="preserve">
+    <value>Bật/tắt thông báo qua SMS</value>
+        <comment />
+  </data>
+    <data name="notification_SMS_title" xml:space="preserve">
+    <value>Thông báo qua SMS</value>
+        <comment />
+  </data>
+    <data name="army_work_type_default_title" xml:space="preserve">
+    <value>Military personnel classification type</value>
+        <comment />
+  </data>
+    <data name="army_work_type_default_description" xml:space="preserve">
+    <value>Select all types of people categorization to use</value>
+        <comment />
+  </data>
+    <data name="work_type_default_title" xml:space="preserve">
+    <value>Personnel classification type</value>
+        <comment />
+  </data>
+    <data name="work_type_default_description" xml:space="preserve">
+    <value>Select all types of people categorization to use</value>
+        <comment />
+  </data>
+    <data name="kakao_setting" xml:space="preserve">
+    <value>Cài đặt Kakao</value>
+        <comment />
+  </data>
+    <data name="kakao_app_key_title" xml:space="preserve">
+    <value>App Key</value>
+        <comment />
+  </data>
+    <data name="kakao_app_key_description" xml:space="preserve">
+    <value>Kakao config: AppKey</value>
+        <comment />
+  </data>
+    <data name="kakao_secret_key_title" xml:space="preserve">
+    <value>Secret Key</value>
+        <comment />
+  </data>
+    <data name="kakao_secret_key_description" xml:space="preserve">
+    <value>Kakao config: SecretKey</value>
+        <comment />
+  </data>
+    <data name="kakao_sender_key_title" xml:space="preserve">
+    <value>Sender Key</value>
+        <comment />
+  </data>
+    <data name="kakao_sender_key_description" xml:space="preserve">
+    <value>Kakao config: SenderKey</value>
+        <comment />
+  </data>
+    <data name="kakao_sender_name_title" xml:space="preserve">
+    <value>Sender Name</value>
+        <comment />
+  </data>
+    <data name="kakao_sender_name_description" xml:space="preserve">
+    <value>Kakao config: SenderName</value>
+        <comment />
+  </data>
+    <data name="allow_generate_qrcode_offline_description" xml:space="preserve">
+    <value>Bật/tắt cho phép tạo ra QrCode ngoại tuyến</value>
+        <comment />
+  </data>
+    <data name="allow_generate_qrcode_offline_title" xml:space="preserve">
+    <value>Cho phép tạo ra QrCode ngoại tuyến</value>
+        <comment />
+  </data>
+    <data name="use_static_qrcode_title" xml:space="preserve">
+    <value>Sử dụng QrCode tĩnh</value>
+        <comment />
+  </data>
+    <data name="use_static_qrcode_description" xml:space="preserve">
+    <value>Bật/tắt sử dụng QrCode tĩnh</value>
+        <comment />
+  </data>
+    <data name="link_user_to_account_title" xml:space="preserve">
+    <value>Liên kết người dùng với tài khoản</value>
+        <comment />
+  </data>
+    <data name="link_user_to_account_description" xml:space="preserve">
+    <value>Hiển thị nút mở liên kết phương thức người dùng tới tài khoản trong trang quản lý tài khoản</value>
+        <comment />
+  </data>
+    <data name="anti_passback_lift_for_visitor_title" xml:space="preserve">
+        <value>Bật/tắt tính năng tự động phân tầng mặc định</value>
+    </data>
+    <data name="anti_passback_lift_for_visitor_description" xml:space="preserve">
+        <value>Nếu bật thuộc tính này, Phần tầng thang máy sẽ tự động gán các tầng mặc định như cơ chế anti-passback</value>
+    </data>
+    <data name="overwrite_floor_lift_for_visitor_title" xml:space="preserve">
+        <value>Tầng mặc định cho cơ chế tự động phân tầng</value>
+    </data>
+    <data name="overwrite_floor_lift_for_visitor_description" xml:space="preserve">
+        <value>Danh sách tầng mặc định sẽ được reset về khi cơ chế tự động phân tầng được bật</value>
+    </data>
+    <data name="lblHeaderSetting" xml:space="preserve">
+    <value>Thiết lập tiêu đề</value>
+  </data>
+    <data name="lblDoorListSetting" xml:space="preserve">
+    <value>Thiết lập danh sách cửa</value>
+  </data>
+    <data name="lblMonitoringEventsSetting" xml:space="preserve">
+    <value>Thiết lập sự kiện theo dõi</value>
+  </data>
+    <data name="lblBuildingListSetting" xml:space="preserve">
+    <value>Thiết lập danh sách đơn vị</value>
+  </data>
+    <data name="vietnamese_school_language" xml:space="preserve">
+        <value>Tiếng Việt (Trường học)</value>
+    </data>
+    <data name="white_list_ip_address_title" xml:space="preserve">
+        <value>Danh sách địa chỉ IP</value>
+    </data>
+    <data name="white_list_ip_address_description" xml:space="preserve">
+        <value>Danh sách địa chỉ IP được cho phép đăng nhập vào hệ thống</value>
+    </data>
+    <data name="notification_email_description" xml:space="preserve">
+        <value>Bật/tắt thông báo qua email</value>
+    </data>
+    <data name="allow_mobile_access_without_white_list_title" xml:space="preserve">
+        <value>Cho phép/Không cho phép ứng dụng di động luôn truy cập vào hệ thống</value>
+    </data>
+    <data name="allow_mobile_access_without_white_list_description" xml:space="preserve">
+        <value>Cho phép ứng dụng di động luôn luôn có thể truy cập vào hệ thống (bỏ qua việc kiểm tra danh sách IP được cho phép)</value>
+    </data>
+    <data name="company_device_password_title" xml:space="preserve">
+        <value>Mật khẩu của thiết bị</value>
+    </data>
+    <data name="company_device_password_description" xml:space="preserve">
+        <value>Mật khẩu dùng để đăng nhập vào thiết bị</value>
+    </data>
+    <data name="require_password_change_on_first_login_title" xml:space="preserve">
+    <value>Yêu cầu thay đổi mật khẩu cho lần đăng nhập đầu tiên</value>
+  </data>
+  <data name="require_password_change_on_first_login_description" xml:space="preserve">
+    <value>Yêu cầu thay đổi mật khẩu cho lần đăng nhập đầu tiên</value>
+  </data>
+  <data name="password_require_uppercase_title" xml:space="preserve">
+    <value>Mật khẩu phải chứa chữ cái viết hoa</value>
+  </data>
+  <data name="password_require_uppercase_description" xml:space="preserve">
+    <value>Mật khẩu phải chứa chữ cái viết hoa</value>
+  </data>
+  <data name="password_require_number_title" xml:space="preserve">
+    <value>Mật khẩu phải chứa số(1,2,...)</value>
+  </data>
+  <data name="password_require_number_description" xml:space="preserve">
+    <value>Mật khẩu phải chứa số(1,2,...)</value>
+  </data>
+  <data name="password_require_special_char_title" xml:space="preserve">
+    <value>Mật khẩu phải chứa ký tự đặc biệt(@,#,...)</value>
+  </data>
+  <data name="password_require_special_char_description" xml:space="preserve">
+    <value>Mật khẩu phải chứa ký tự đặc biệt(@,#,...)</value>
+  </data>
+  <data name="password_time_need_to_change_title" xml:space="preserve">
+    <value>Thời gian cần thay đổi mật khẩu(phút)</value>
+  </data>
+  <data name="password_time_need_to_change_description" xml:space="preserve">
+    <value>Thời gian cần thay đổi mật khẩu(phút)</value>
+  </data>
+  <data name="password_max_valid_time_title" xml:space="preserve">
+    <value>Thời gian tối đa sử dụng với mật khẩu hợp lệ(phút)</value>
+  </data>
+  <data name="password_max_valid_time_description" xml:space="preserve">
+    <value>Thời gian tối đa sử dụng với mật khẩu hợp lệ(phút)</value>
+  </data>
+  <data name="max_failed_login_attempts_title" xml:space="preserve">
+    <value>Số lần tối đa đăng nhập sai</value>
+  </data>
+  <data name="max_failed_login_attempts_description" xml:space="preserve">
+    <value>Số lần tối đa đăng nhập sai</value>
+  </data>
+  <data name="lockout_duration_minutes_title" xml:space="preserve">
+    <value>Thời gian chờ ứng với số lần tối đa đăng nhập sai(phút)</value>
+  </data>
+  <data name="lockout_duration_minutes_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="time_session_timeout_title" xml:space="preserve">
+    <value>Thời gian hết hạn phiên đăng nhập(phút)</value>
+  </data>
+  <data name="time_session_timeout_description" xml:space="preserve">
+    <value></value>
+  </data>
+    <data name="login_setting" xml:space="preserve">
+        <value>Cấu hình đăng nhập</value>
+    </data>
+</root>

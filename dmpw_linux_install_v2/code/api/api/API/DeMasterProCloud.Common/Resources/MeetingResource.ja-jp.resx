@@ -1,0 +1,62 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblMeetingRoom" xml:space="preserve">
+        <value>Event room</value>
+    </data>
+    <data name="msgCanNotDeleteMeetingWithDependance" xml:space="preserve">
+        <value>The event room cannot be deleted while there are event scheduled in the room.</value>
+    </data>
+    <data name="msgEmptyUser" xml:space="preserve">
+        <value>Please assign at least one user.</value>
+    </data>
+    <data name="msgCannotAssignUsers" xml:space="preserve">
+        <value>You do not have permission to assign these users.</value>
+    </data>
+    <data name="msgAssignUsers" xml:space="preserve">
+        <value>Assign user(s) to event successfully.</value>
+    </data>
+    <data name="msgEmptyVisit" xml:space="preserve">
+        <value>Please assign at least one visitor.</value>
+    </data>
+    <data name="msgAssignVisits" xml:space="preserve">
+        <value>Assign visitor(s) to event successfully.</value>
+    </data>
+    <data name="msgUnAssignUsers" xml:space="preserve">
+        <value>UnAssign user(s) to event successfully.</value>
+    </data>
+    <data name="msgUnAssignVisits" xml:space="preserve">
+        <value>UnAssign visitor(s) to event successfully.</value>
+    </data>
+    <data name="lblMeeting" xml:space="preserve">
+        <value>Event</value>
+    </data>
+     <data name="lblName" xml:space="preserve">
+        <value>Name</value>
+    </data>
+    <data name="lblCheckIn" xml:space="preserve">
+        <value>Check-in</value>
+    </data>
+    <data name="lblAttendance" xml:space="preserve">
+        <value>Attendance</value>
+    </data>
+    <data name="lblYes" xml:space="preserve">
+        <value>Yes</value>
+    </data>
+    <data name="lblNo" xml:space="preserve">
+        <value>No</value>
+    </data>
+    <data name="msgMeetingLimitAttandance" xml:space="preserve">
+        <value>User in this event can not add over {0}/{1} persons.</value>
+    </data>
+</root>

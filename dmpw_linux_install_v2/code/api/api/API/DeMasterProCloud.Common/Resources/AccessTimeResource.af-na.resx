@@ -1,0 +1,113 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblAccess" xml:space="preserve">
+    <value>Truy cập</value>
+  </data>
+    <data name="lblActive" xml:space="preserve">
+    <value>Hoạt động</value>
+  </data>
+    <data name="lblAdd" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+    <data name="lblAddNew" xml:space="preserve">
+    <value>Thêm mới múi giờ</value>
+  </data>
+    <data name="lblDefaultNotUseTimezoneName" xml:space="preserve">
+    <value>Không sử dụng</value>
+  </data>
+    <data name="lblDefaultTimezoneName" xml:space="preserve">
+    <value>Có thể truy cập 24h</value>
+  </data>
+    <data name="lblDelete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+    <data name="lblDeleteMultiple" xml:space="preserve">
+    <value>Xóa nhiều</value>
+  </data>
+    <data name="lblEndTime" xml:space="preserve">
+    <value>Thời gian kết thúc</value>
+  </data>
+    <data name="lblFriday" xml:space="preserve">
+    <value>Thứ Sáu</value>
+  </data>
+    <data name="lblHolidayType1" xml:space="preserve">
+    <value>Kỳ nghỉ loại 1</value>
+  </data>
+    <data name="lblHolidayType2" xml:space="preserve">
+    <value>Kỳ nghỉ loại 2</value>
+  </data>
+    <data name="lblHolidayType3" xml:space="preserve">
+    <value>Kỳ nghỉ loại 3</value>
+  </data>
+    <data name="lblMonday" xml:space="preserve">
+    <value>Thứ Hai</value>
+  </data>
+    <data name="lblNormal" xml:space="preserve">
+    <value>Thường</value>
+  </data>
+    <data name="lblPassage" xml:space="preserve">
+    <value>khoảng</value>
+  </data>
+    <data name="lblRemark" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+    <data name="lblSaturday" xml:space="preserve">
+    <value>Thứ Bảy</value>
+  </data>
+    <data name="lblStartTime" xml:space="preserve">
+    <value>Thời gian bắt đầu</value>
+  </data>
+    <data name="lblSunday" xml:space="preserve">
+    <value>Chủ nhật</value>
+  </data>
+    <data name="lblThursday" xml:space="preserve">
+    <value>Thứ Năm</value>
+  </data>
+    <data name="lblTimezone" xml:space="preserve">
+    <value>Múi giờ</value>
+  </data>
+    <data name="lblTimezoneList" xml:space="preserve">
+    <value>Danh sách múi giờ</value>
+  </data>
+    <data name="lblTimezoneName" xml:space="preserve">
+    <value>Tên múi giờ</value>
+  </data>
+    <data name="lblTuesday" xml:space="preserve">
+    <value>Thứ Ba</value>
+  </data>
+    <data name="lblUpdate" xml:space="preserve">
+    <value>Cập nhật múi giờ</value>
+  </data>
+    <data name="lblWednesday" xml:space="preserve">
+    <value>Thứ 4</value>
+  </data>
+    <data name="msgCannotDeleteDefaultTz" xml:space="preserve">
+    <value>Không thể xóa múi giờ mặc định.</value>
+  </data>
+    <data name="msgCannotDeleteTimezone" xml:space="preserve">
+    <value>Không thể xóa múi giờ vì đang được sử dụng bởi cửa.</value>
+  </data>
+    <data name="msgCannotUpdateDefaultTz" xml:space="preserve">
+    <value>Không thể cập nhật múi giờ mặc định.</value>
+  </data>
+    <data name="msgLimitTimezone" xml:space="preserve">
+    <value>Bạn không thể tạo thêm múi giờ. Hệ thống giới hạn {0} múi giờ.</value>
+  </data>
+    <data name="lblAccessTime" xml:space="preserve">
+    <value>Access time</value>
+  </data>
+    <data name="msgNotFound" xml:space="preserve">
+    <value>Không thể tìm thấy thời gian truy cập với múi giờ rỗng</value>
+  </data>
+</root>

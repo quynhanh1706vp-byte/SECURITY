@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BodyCompanyAccount" xml:space="preserve">
+    <value>{0}へようこそ、&lt;br&gt; &lt;br&gt;アカウントが作成されました。サイトを今すぐ管理できるようになります。&lt;br&gt;
+&lt;テーブル&gt;
+&lt;tr&gt;
+&lt;td&gt;あなたのサイト：&lt;/td&gt;
+&lt;td&gt; &lt;a href="{1}"&gt; {2} &lt;/a&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ユーザー名：&lt;/td&gt;
+&lt;td&gt; {3} &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;パスワード：&lt;/td&gt;
+&lt;td&gt; {4} &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt; &lt;br&gt;
+よろしく、&lt;br&gt; Demaster Proサポートチーム。</value>
+  </data>
+  <data name="BodyCompanyAccountAdmin" xml:space="preserve">
+    <value>Dear {0}&amp;nbsp;, &lt;br&gt;&lt;br&gt; User's account has been created.&amp;nbsp;&lt;br&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;Your site: &lt;/td&gt;
+&lt;td&gt;&lt;a href="{1}"&gt;{2}&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Username: &lt;/td&gt;
+&lt;td&gt;{3}&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+&lt;br&gt;&lt;br&gt;
+Regards,&lt;br&gt;Demaster Pro Support Team.</value>
+  </data>
+  <data name="BodyCompanyExpired" xml:space="preserve">
+    <value>{0}様、&lt;br&gt; &lt;br&gt; &lt;br&gt;
+アカウントの有効期限は{1}日です。&lt;a href="mailto:{2}"&gt; {3} &lt;/a&gt;にあるカスタマーサービスセンターにご連絡ください。
+&lt;br&gt; &lt;br&gt;
+よろしく、
+&lt;br&gt;
+Demaster Proサポートチーム。</value>
+  </data>
+  <data name="BodyCompanyOldAccount" xml:space="preserve">
+    <value>{0}様、&lt;br&gt; &lt;br&gt; &lt;br&gt;
+あなたのアカウントは変更されました。 会社の&lt;a href="{1}"&gt; {2} &lt;/a&gt;アカウントを使用しなくなります&lt;a href="{3}"&gt; {4} &lt;/a&gt;
+&lt;br&gt; &lt;br&gt;
+よろしく、
+&lt;br&gt;
+Demaster Proサポートチーム。</value>
+  </data>
+  <data name="BodyCompanyUpdate" xml:space="preserve">
+    <value>{0}様、&lt;br&gt; &lt;br&gt;アカウントは変更されました。&lt;br&gt; n）
+&lt;テーブル&gt;
+&lt;tr&gt;
+&lt;td&gt;あなたのサイト：&lt;/td&gt;
+&lt;td&gt; &lt;a href="{1}"&gt; {2} &lt;/a&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ユーザー名：&lt;/td&gt;
+&lt;td&gt; {3} &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;連絡先：&lt;/td&gt;
+&lt;td&gt; {4} &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt; &lt;br&gt;
+よろしく、&lt;br&gt; Demaster Proサポートチーム。</value>
+  </data>
+  <data name="BodyInternalServerError" xml:space="preserve">
+    <value>&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;アカウント：&lt;/td&gt;
+&lt;td&gt; {0} &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;アクセスURL：&lt;/td&gt;
+&lt;td&gt; {1} &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;例外：&lt;/td&gt;
+&lt;td&gt; {2} &lt;/td&gt;
+&lt;/tr&gt;
+&lt;td&gt;内部例外：&lt;/td&gt;
+&lt;td&gt; {3} &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+Demaster Proサポートチーム。</value>
+  </data>
+  <data name="BodyResetAccount" xml:space="preserve">
+    <value>親愛なる{0}様に&lt;br&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;{1}&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;&lt;br&gt;
+Best Regards,
+&lt;br&gt;
+Demaster Pro Support Team.</value>
+  </data>
+  <data name="SubjectCompanyAccount" xml:space="preserve">
+    <value>アカウントが正常に作成されました。</value>
+  </data>
+  <data name="SubjectCompanyAccountAdmin" xml:space="preserve">
+    <value>User's account has been successfully created.</value>
+  </data>
+  <data name="SubjectCompanyExpired" xml:space="preserve">
+    <value>[DemasterPro]あなたのアカウントは{0}日で期限切れになります</value>
+  </data>
+  <data name="SubjectCompanyOldAccount" xml:space="preserve">
+    <value>あなたのアカウントは変更されました。</value>
+  </data>
+  <data name="SubjectCompanyUpdate" xml:space="preserve">
+    <value>あなたのアカウントは変更されました。</value>
+  </data>
+  <data name="SubjectInternalServerError" xml:space="preserve">
+    <value>[DemasterPro]：{0}</value>
+  </data>
+  <data name="SubjectResetAccount" xml:space="preserve">
+    <value>パスワードをお忘れですか。</value>
+  </data>
+  <data name="BodyResetPasswordNewAccount" xml:space="preserve">
+    <value>親愛なる{0}様に&lt;br&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;{1}&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;&lt;br&gt;
+Best Regards,
+&lt;br&gt;
+Demaster Pro Support Team.</value>
+  </data>
+  <data name="BodyWelcome" xml:space="preserve">
+    <value>&lt;b&gt;おめでとうございます。 &lt;small&gt;アカウントが登録されました。&lt;/small&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="BodyWelcomeUserGreeting" xml:space="preserve">
+    <value>親愛なる{0}さんへ &lt;br&gt;
+会員様と一緒になって嬉しいです。 &lt;br&gt;
+会員様のアカウント情報は以下からご確認いただけます。 &lt;br&gt;
+下のリンクやアイコンでmobile appをダウンロードできます。</value>
+  </data>
+  <data name="BodyWelcomeUserPassword" xml:space="preserve">
+    <value>&lt;a href="{0}" style="color:#478dfc; text-decoration:underline;"&gt;ここ&lt;/a&gt; をクリックしてパスワードを設定してください。</value>
+  </data>
+  <data name="BodyWelcomeLogin" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="BodyWorkingTimeInfo" xml:space="preserve">
+    <value>時間:月-金9:30-17:00. 土、日 休み</value>
+  </data>
+  <data name="BodyCustomerSupport" xml:space="preserve">
+    <value>{0}&lt;br&gt;
+顧客サポート: &lt;a href="mailto:{1}" style="font-size:13px; color:#263238; text-decoration:none;"&gt;{1}&lt;/a&gt;&lt;br&gt;</value>
+  </data>
+  <data name="BodyCompanyInfo" xml:space="preserve">
+    <value>会社情報&lt;br&gt;
+会社URL: &lt;a href="{0}" target="_blank" style="font-size:13px; color:#525252; text-decoration:none;"&gt;{0}&lt;/a&gt;</value>
+  </data>
+  <data name="BodyWelcomeManagerGreeting" xml:space="preserve">
+    <value>会員様と一緒になって嬉しいです。 &lt;br&gt;
+会員様のアカウントが管理者アカウントに登録されました。 &lt;br&gt;
+これからは以下のアカウント情報を利用してウェブサイトを管理することができる。</value>
+  </data>
+  <data name="BodyUpdated" xml:space="preserve">
+    <value>&lt;b&gt;&lt;small&gt;会員様のログインアカウントが成功裏に変更されました。&lt;/small&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="BodyUpdatedGreeting" xml:space="preserve">
+    <value>親愛なる{0}様に &lt;br&gt;
+いつも一緒にいてくれてありがとうございます。 &lt;br&gt;
+会員様のアカウント情報は以下のように変更されました。 &lt;br&gt;
+以下のリンクでmobileappをダウンロードできます。</value>
+  </data>
+  <data name="BodyReplyMessage" xml:space="preserve">
+    <value>このメールは発信専用です。 テクニカルサポートは&lt;a href="mailto:{0}" style="font-size:13px; color:#478dfc; text-decoration:none;"&gt;{0}&lt;/a&gt;までお問い合わせください。</value>
+  </data>
+  <data name="BodyWelcomeAndroidDownload" xml:space="preserve">
+    <value>ダウンロード&lt;br&gt;&lt;small&gt;&amp;nbsp;(Android)&lt;/small&gt;</value>
+  </data>
+  <data name="BodyWelcomeAdminGreeting" xml:space="preserve">
+    <value>会員様と一緒になって嬉しいです。 &lt;br&gt;
+会員様のアカウントがシステム管理者アカウントに登録されました。 &lt;br&gt;
+これから下記のアカウント情報を利用してシステムを管理できます。</value>
+  </data>
+  <data name="BodyWelcomeManagerPassword" xml:space="preserve">
+    <value>&lt;a href="{0}" style="color:#478dfc; text-decoration:underline;"&gt;ここ&lt;/a&gt; をクリックしてパスワードを再設定できます。</value>
+  </data>
+  <data name="BodyResetPassword" xml:space="preserve">
+    <value>&lt;a href="{0}" style="color:#478dfc; text-decoration:underline;"&gt;ここ&lt;/a&gt; をクリックしてパスワードを再設定できます。</value>
+  </data>
+  <data name="SubjectDeviceDisconnected" xml:space="preserve">
+    <value>{2}建物の"{0}({1})"端末の接続が切断されました。</value>
+  </data>
+  <data name="BodyDeviceDisconnected" xml:space="preserve">
+    <value>親愛なる,&lt;br&gt;
+
+{2}にある"{0} ({1})"ドアの端末の接続が切断されました。&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+意図した作業でない場合、建物のイーサネットケーブルまたはインターネットの状態を確認し、問題が続く場合は当社にお問い合わせください。&lt;br&gt;
+
+DeMasterProチーム&lt;br&gt;</value>
+  </data>
+  <data name="SubjectDeviceConnected" xml:space="preserve">
+    <value>   </value>
+  </data>
+  <data name="BodyDeviceConnected" xml:space="preserve">
+    <value>親愛なる,&lt;br&gt;
+      
+{2}にある"{0} ({1})"ドアのコントローラが連結されていることを感知した。&lt;br&gt;&lt;br&gt;&lt;br&gt;
+      
+DeMasterProチーム&lt;br&gt;</value>
+  </data>
+  <data name="BodySendQRtoUser" xml:space="preserve">
+    <value>親愛なる{0}様へ、&lt;br&gt;
+このQRコードは{1}であなたの身元を確認するために使用されます。&lt;br&gt;
+このイメージを削除しないでください。&lt;br&gt;
+紛失の際は、管理者に問い合わせて再度提供を受けてください。 &lt;br&gt;
+DeMaster Pro チーム&lt;br&gt;
+
+自動メッセージです。 応答しなくてもいいです。</value>
+  </data>
+  <data name="SubjecSendQRtoUser" xml:space="preserve">
+    <value>ユーザーのためのQRコード</value>
+  </data>
+  <data name="BodyWelcomeIOSDownload" xml:space="preserve">
+    <value>ダウンロード&lt;small&gt;&amp;nbsp;(IOS)&lt;/small&gt;</value>
+  </data>
+  <data name="BodyLoginButton" xml:space="preserve">
+    <value>&lt;button type="button" title="Confirm Account Registration" style="border:none; background: #74ca01; border-radius: 25px;"&gt;
+&lt;a href="{0}" style="font-size:35px; padding: 20px; color: #e1eab4; text-decoration:none"&gt;
+&lt;small&gt;&lt;small&gt;&lt;small&gt;&lt;sup&gt;&lt;b&gt;&lt;b&gt;&lt;b&gt;{1}&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;&lt;/sup&gt;&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;
+&lt;/a&gt;
+&lt;/button&gt;</value>
+  </data>
+  <data name="BodyWelcomeDownloadExplain" xml:space="preserve">
+    <value>下のアイコンやダウンロードリンクを押してモバイルアプリをダウンロードしてください。</value>
+  </data>
+  <data name="BodyDownloadExplain" xml:space="preserve">
+    <value>以下のリンクからモバイルアプリもダウンロードできます。</value>
+  </data>
+  <data name="BodyApprovalVisit" xml:space="preserve">
+    <value>{0}様、&lt;br&gt;訪問申請が要請され、メールいたします。&lt;br/&gt;訪問者情報は以下の通りです。</value>
+  </data>
+  <data name="BodyVisitorName" xml:space="preserve">
+    <value>訪問者名</value>
+  </data>
+  <data name="BodyVisitorContact" xml:space="preserve">
+    <value>訪問者の連絡先</value>
+  </data>
+  <data name="BodyVisitTargetName" xml:space="preserve">
+    <value>訪問対象者</value>
+  </data>
+  <data name="BodyVisitPurpose" xml:space="preserve">
+    <value>訪問目的</value>
+  </data>
+  <data name="BodyApprovalCount" xml:space="preserve">
+    <value>この他にも、承認待機中の訪問申請が{0}件存在します。</value>
+  </data>
+  <data name="BodyLinkToWeb" xml:space="preserve">
+    <value>下のボタンでウェブサイトに移動できます。</value>
+  </data>
+  <data name="SubjectRequestApproval" xml:space="preserve">
+    <value>訪問要請の確認をお願いします。</value>
+  </data>
+  <data name="SubjectNotificationEmail" xml:space="preserve">
+    <value>The emergency mode  has been activated in {0} building.</value>
+  </data>
+  <data name="BodyNotificationEmail" xml:space="preserve">
+    <value>Dear,  &lt;br&gt;
+    The emergency mode {0} has been activated  for the door(s):  &lt;br&gt;
+    {1} of the building {2} by {3}.  &lt;br&gt;
+    DeMasterPro team
+    </value>
+  </data>
+  <data name="SubjectNotificationEmailForceClose" xml:space="preserve">
+    <value>The emergency mode in the {0} building has been deactivated.</value>
+  </data>
+  <data name="BodyNotificationEmailForceClose" xml:space="preserve">
+    <value>Dear,  &lt;br&gt;
+     The emergency mode in the {0} building has been deactivated by {1}  &lt;br&gt;
+    DeMasterPro team
+    </value>
+  </data>
+  <data name="SubjectQRmail" xml:space="preserve">
+    <value>QRコードが正常に発行されました。</value>
+  </data>
+  <data name="BodyButtonVisitor" xml:space="preserve">
+    <value>訪問者の確認</value>
+  </data>
+  <data name="BodyApprovedVisit" xml:space="preserve">
+    <value>{0}様、&lt;br&gt;
+あなたが申請された訪問申請が承認されました。</value>
+  </data>
+  <data name="BodySendQRtoVisit" xml:space="preserve">
+    <value>このQRコードは{0}であなたの身元を確認するために使用されます。&lt;br&gt;
+このイメージを削除しないでください。&lt;br&gt;</value>
+  </data>
+  <data name="BodyLostQR" xml:space="preserve">
+    <value>紛失の際は、管理者に問い合わせて再度提供を受けてください。 &lt;br&gt;
+DeMaster Pro チーム&lt;br&gt;</value>
+  </data>
+  <data name="SubjectPassCodeMail" xml:space="preserve">
+    <value>キーパッドのパスワードが正常に作成されました。</value>
+  </data>
+  <data name="BodyCreatedPassCode" xml:space="preserve">
+    <value>{0}様、&lt;br&gt;
+あなたが使用するキーパッドパスワードが作成されました。</value>
+  </data>
+  <data name="BodySendPassCodeToUser" xml:space="preserve">
+    <value>以下の番号は、{0}であなたの身元を確認するために使用できるキーパッドパスワードです。 &lt;br&gt;
+メールを削除しないでください。 &lt;br&gt;</value>
+  </data>
+  <data name="SubjectRejectVisitor" xml:space="preserve">
+    <value>Reject register visit to {0}</value>
+  </data>
+  <data name="BodyRejectRegisterVisit" xml:space="preserve">
+    <value>Dear {0}, &lt;br&gt;Becase {1}, The application of {2} for a visit has been rejected by {3}. &lt;br /&gt;</value>
+  </data>
+  <data name="SubjectApprovalVisitor" xml:space="preserve">
+    <value>Your Visit application to company {0} has been approved</value>
+  </data>
+  <data name="SubjectMailLinkRegister" xml:space="preserve">
+    <value>Form register for visit of {0}</value>
+  </data>
+  <data name="BodyMailLinkRegister" xml:space="preserve">
+    <value>Dear {0}, &lt;br/&gt;Please complete the company registration form for visit&lt;br/&gt; Link: &lt;a href="{1}" style="font-size:13px; color:#525252; text-decoration:none;"&gt;{1}&lt;/a&gt;&lt;br&gt;</value>
+  </data>
+  <data name="BodyVisitLetter" xml:space="preserve">
+    <value>Visit Invitation Letter</value>
+  </data>
+  <data name="BodyUseQrVisit" xml:space="preserve">
+    <value>Use the QR Code below to access the door when you come.</value>
+  </data>
+  <data name="SubjectNotifyOverDueBook" xml:space="preserve">
+    <value>Duali Book Return Information</value>
+  </data>
+  <data name="BodyTitleOverDueBook" xml:space="preserve">
+    <value>Duali Book Return Information</value>
+  </data>
+  <data name="BodyContentOverDueBook" xml:space="preserve">
+    <value>Your book return date is approaching. Please extend or return the rental period.</value>
+  </data>
+  <data name="SubjectLeaveRequestReview" xml:space="preserve">
+    <value>Please confirm the leave request</value>
+  </data>
+  <data name="BodyFormLeaveReview" xml:space="preserve">
+    <value>Dear {0},&lt;br/&gt;Please check the leave request of the user.&lt;br/&gt;User information is as follows.</value>
+  </data>
+  <data name="SubjectLeaveRequestApproval" xml:space="preserve">
+    <value>Leave Request is acepted</value>
+  </data>
+  <data name="BodyFormLeaveApproval" xml:space="preserve">
+    <value>Dear {0},&lt;br/&gt;Your leave request has been acepted.&lt;br/&gt;Leave request information is as follows.</value>
+  </data>
+  <data name="BodyFormLeaveReject" xml:space="preserve">
+    <value>Dear {0},&lt;br/&gt;Your leave request has been rejected.&lt;br/&gt;Leave request information is as follows.</value>
+  </data>
+  <data name="SubjectLeaveRequestReject" xml:space="preserve">
+    <value>Leave Request is rejected</value>
+  </data>
+  <data name="SubjectMonitoringTemplate" xml:space="preserve">
+    <value>Display Monitoring</value>
+  </data>
+</root>

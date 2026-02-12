@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="access_category" xml:space="preserve">
+    <value>접속</value>
+    <comment />
+  </data>
+  <data name="cache_buster_description" xml:space="preserve">
+    <value>캐시 버스터</value>
+    <comment />
+  </data>
+  <data name="cache_buster_title" xml:space="preserve">
+    <value>캐시 버스터</value>
+    <comment />
+  </data>
+  <data name="common_category" xml:space="preserve">
+    <value>공통 설정</value>
+    <comment />
+  </data>
+  <data name="company_category" xml:space="preserve">
+    <value>회사</value>
+    <comment />
+  </data>
+  <data name="company_expiration_days_description" xml:space="preserve">
+    <value>회사 만료일</value>
+    <comment />
+  </data>
+  <data name="company_expiration_days_title" xml:space="preserve">
+    <value>회사 만료일</value>
+    <comment />
+  </data>
+  <data name="device_category" xml:space="preserve">
+    <value>단말기</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_events" xml:space="preserve">
+    <value>모든 이벤트 삭제 단말기 커맨드</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_users" xml:space="preserve">
+    <value>모든 사용자 삭제 명령</value>
+    <comment />
+  </data>
+  <data name="device_instruction_force_close" xml:space="preserve">
+    <value>비상 닫힘</value>
+    <comment />
+  </data>
+  <data name="device_instruction_force_open" xml:space="preserve">
+    <value>비상 열림</value>
+    <comment />
+  </data>
+  <data name="device_instruction_open" xml:space="preserve">
+    <value>강제 오픈</value>
+    <comment />
+  </data>
+  <data name="device_instruction_release" xml:space="preserve">
+    <value>도어 해제</value>
+    <comment />
+  </data>
+  <data name="device_instruction_reset" xml:space="preserve">
+    <value>재시작 명령</value>
+    <comment />
+  </data>
+  <data name="device_instruction_settime" xml:space="preserve">
+    <value>동기화 명령</value>
+    <comment />
+  </data>
+  <data name="device_instruction_update_device_state" xml:space="preserve">
+    <value>출입문 상태 변경</value>
+    <comment />
+  </data>
+  <data name="device_max_copy_setting_door_description" xml:space="preserve">
+    <value>최대 복사 설정 문</value>
+    <comment />
+  </data>
+  <data name="device_max_copy_setting_door_title" xml:space="preserve">
+    <value>최대 복사 설정 문</value>
+    <comment />
+  </data>
+  <data name="device_max_icu_user_description" xml:space="preserve">
+    <value>최대 ICU ID 수</value>
+    <comment />
+  </data>
+  <data name="device_max_icu_user_title" xml:space="preserve">
+    <value>최대 ICU ID 수</value>
+    <comment />
+  </data>
+  <data name="email_content" xml:space="preserve">
+    <value>ICU 단말기 주소 {0}은 {1}입니다.</value>
+    <comment />
+  </data>
+  <data name="email_notification" xml:space="preserve">
+    <value>Demasterpro 알림</value>
+    <comment />
+  </data>
+  <data name="enable_performance_log_description" xml:space="preserve">
+    <value>성능 테스트 로그 사용.</value>
+    <comment />
+  </data>
+  <data name="enable_performance_log_title" xml:space="preserve">
+    <value>성능 테스트 로그 사용.</value>
+    <comment />
+  </data>
+  <data name="holiday_category" xml:space="preserve">
+    <value>휴일</value>
+    <comment />
+  </data>
+  <data name="holiday_max_items_description" xml:space="preserve">
+    <value>최대 휴일 수</value>
+    <comment />
+  </data>
+  <data name="holiday_max_items_title" xml:space="preserve">
+    <value>최대 휴일 수</value>
+    <comment />
+  </data>
+  <data name="lblCategory" xml:space="preserve">
+    <value>범주</value>
+    <comment />
+  </data>
+  <data name="lblKey" xml:space="preserve">
+    <value>키</value>
+    <comment />
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>비밀번호</value>
+    <comment />
+  </data>
+  <data name="lblSetting" xml:space="preserve">
+    <value>설정</value>
+    <comment />
+  </data>
+  <data name="lblValue" xml:space="preserve">
+    <value>값</value>
+    <comment />
+  </data>
+  <data name="list_user_to_notification_category" xml:space="preserve">
+    <value>알림 할 사용자 목록</value>
+    <comment />
+  </data>
+  <data name="list_user_to_notification_title" xml:space="preserve">
+    <value>알림 사용자 목록</value>
+    <comment />
+  </data>
+  <data name="monitoring_category" xml:space="preserve">
+    <value>모니터링</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_access_denied" xml:space="preserve">
+    <value>안티패스/ 출입 불가</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_anti_passback_error" xml:space="preserve">
+    <value>안티패스 에러</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_default_description" xml:space="preserve">
+    <value>페이지 접근 시 기본으로 표기될 이벤트 목록</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_default_title" xml:space="preserve">
+    <value>화면에 표기되는 기본 이벤트 선택</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expiration_date" xml:space="preserve">
+    <value>유효기간 만료</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expired_card" xml:space="preserve">
+    <value>만료된 카드</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expired_card_and_pwd" xml:space="preserve">
+    <value>만료된 카드와 비밀번호</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_expired_pwd" xml:space="preserve">
+    <value>만료된 비밀번호</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_invalid_access_type" xml:space="preserve">
+    <value>무효한 타입</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_invalid_door" xml:space="preserve">
+    <value>출입문 미사용</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_normal_access" xml:space="preserve">
+    <value>일반 출입</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_no_door_active_time" xml:space="preserve">
+    <value>문 출입 불가 시간</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_no_user_access_time" xml:space="preserve">
+    <value>사용자 출입 불가 시간</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_passage_timezone_off" xml:space="preserve">
+    <value>개방 시간 종료</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_passage_timezone_on" xml:space="preserve">
+    <value>개방 시간 시작</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_unregisterd_card" xml:space="preserve">
+    <value>미등록 카드</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_unregisterd_card_and_pwd" xml:space="preserve">
+    <value>등록되지 않은 카드와 비밀번호</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_unregistered_pwd" xml:space="preserve">
+    <value>등록되지 않은 비밀번호</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_wrong_pwd" xml:space="preserve">
+    <value>비밀번호 틀림</value>
+    <comment />
+  </data>
+  <data name="monitoring_max_record_display_description" xml:space="preserve">
+    <value>페이지에 표기되는 이벤트의 최대 개수</value>
+    <comment />
+  </data>
+  <data name="monitoring_max_record_display_title" xml:space="preserve">
+    <value>최대 이벤트 개수</value>
+    <comment />
+  </data>
+  <data name="mpr_category" xml:space="preserve">
+    <value>Multiple person rules</value>
+    <comment />
+  </data>
+  <data name="mpr_max_condition_description" xml:space="preserve">
+    <value>최대 조건 항목</value>
+    <comment />
+  </data>
+  <data name="mpr_max_condition_title" xml:space="preserve">
+    <value>최대 조건 항목</value>
+    <comment />
+  </data>
+  <data name="msgChangeSetting" xml:space="preserve">
+    <value>{0}에 대한 설정이 '{1}' 에서 '{2}' (으)로 변경되었습니다.</value>
+    <comment />
+  </data>
+  <data name="msgChangeSettingMultiple" xml:space="preserve">
+    <value>다중 설정 변경</value>
+    <comment />
+  </data>
+  <data name="msgInclusiveBetween" xml:space="preserve">
+    <value>값은 0 - 9 사이 여야합니다.</value>
+    <comment />
+  </data>
+  <data name="msgRequired" xml:space="preserve">
+    <value>모든 텍스트 상자를 입력해주세요.</value>
+    <comment />
+  </data>
+  <data name="notification_email_category" xml:space="preserve">
+    <value>알림 이메일</value>
+    <comment />
+  </data>
+  <data name="notification_email_title" xml:space="preserve">
+    <value>이메일 알림</value>
+    <comment />
+  </data>
+  <data name="pagination_title" xml:space="preserve">
+    <value>자료 개수</value>
+    <comment />
+  </data>
+  <data name="pagination_description" xml:space="preserve">
+    <value>페이지에 표시되는 기본 자료 개수</value>
+    <comment />
+  </data>
+  <data name="timezone_category" xml:space="preserve">
+    <value>시간대</value>
+    <comment />
+  </data>
+  <data name="timezone_max_items_description" xml:space="preserve">
+    <value>최대 시간대 항목</value>
+    <comment />
+  </data>
+  <data name="timezone_max_items_title" xml:space="preserve">
+    <value>최대 시간대 항목</value>
+    <comment />
+  </data>
+  <data name="valid_image_extension_description" xml:space="preserve">
+    <value>이미지 확장자 목록</value>
+    <comment />
+  </data>
+  <data name="valid_image_extension_title" xml:space="preserve">
+    <value>시스템에서 유효한 이미지 확장자</value>
+    <comment />
+  </data>
+  <data name="effactive_date_not_started" xml:space="preserve">
+    <value>유효기간 미시작.</value>
+    <comment />
+  </data>
+  <data name="wrong_issue_count" xml:space="preserve">
+    <value>발급 차수 다름</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_users_events" xml:space="preserve">
+    <value>단말기 재설치</value>
+    <comment />
+  </data>
+  <data name="try_access_in_emergency_close" xml:space="preserve">
+    <value>비상 상황 중 출입 시도</value>
+    <comment />
+  </data>
+  <data name="try_access_in_invalid_door" xml:space="preserve">
+    <value>사용 안함 문 중 출입 시도</value>
+    <comment />
+  </data>
+  <data name="communication_failed" xml:space="preserve">
+    <value>통신 실패</value>
+    <comment />
+  </data>
+  <data name="communication_succeed" xml:space="preserve">
+    <value>통신 성공</value>
+    <comment />
+  </data>
+  <data name="device_is_running" xml:space="preserve">
+    <value>단말기 켜짐</value>
+    <comment />
+  </data>
+  <data name="breakfast" xml:space="preserve">
+    <value>아침 식사</value>
+    <comment />
+  </data>
+  <data name="lunch" xml:space="preserve">
+    <value>점심 식사</value>
+    <comment />
+  </data>
+  <data name="dinner" xml:space="preserve">
+    <value>저녁 식사</value>
+    <comment />
+  </data>
+  <data name="late_night_snack" xml:space="preserve">
+    <value>야간 식사</value>
+    <comment />
+  </data>
+  <data name="etc_meal" xml:space="preserve">
+    <value>기타 식사</value>
+    <comment />
+  </data>
+  <data name="only_accessible_at_mealtime" xml:space="preserve">
+    <value>식사시간 외 접근</value>
+    <comment />
+  </data>
+  <data name="firmware_application_update" xml:space="preserve">
+    <value>펌웨어 다운로드</value>
+    <comment />
+  </data>
+  <data name="firmware_download_failed" xml:space="preserve">
+    <value>펌웨어 다운로드 실패</value>
+    <comment />
+  </data>
+  <data name="application_is_running" xml:space="preserve">
+    <value>단말기 어플리케이션 켜짐</value>
+    <comment />
+  </data>
+  <data name="exit_application" xml:space="preserve">
+    <value>단말기 어플리케이션 종료</value>
+    <comment />
+  </data>
+  <data name="mpr_interval_expired" xml:space="preserve">
+    <value>MPR Interval 만료</value>
+    <comment />
+  </data>
+  <data name="mpr_auth" xml:space="preserve">
+    <value>MPR Auth</value>
+    <comment />
+  </data>
+  <data name="normal_access_mpr" xml:space="preserve">
+    <value>일반 출입(MPR)</value>
+    <comment />
+  </data>
+  <data name="mpr_error" xml:space="preserve">
+    <value>MPR Error</value>
+    <comment />
+  </data>
+  <data name="logo_title" xml:space="preserve">
+    <value>로고</value>
+    <comment />
+  </data>
+  <data name="mastercard_access" xml:space="preserve">
+    <value>마스터카드 출입</value>
+    <comment />
+  </data>
+  <data name="monitoring_event_type_valid_door" xml:space="preserve">
+    <value>출입문 사용</value>
+    <comment />
+  </data>
+  <data name="debug_level_title" xml:space="preserve">
+    <value>디버그 레벨</value>
+    <comment />
+  </data>
+  <data name="procedure_omission_title" xml:space="preserve">
+    <value>방문 신청 결재/승인 생략</value>
+    <comment />
+  </data>
+  <data name="language_title" xml:space="preserve">
+    <value>기본 언어</value>
+    <comment />
+  </data>
+  <data name="door_open_manually" xml:space="preserve">
+    <value>예외사항 문열림</value>
+    <comment />
+  </data>
+  <data name="device_instruction_delete_all_users_events1" xml:space="preserve">
+    <value>모든 사용자,이벤트 삭제 명령</value>
+    <comment />
+  </data>
+  <data name="vietnamese_language" xml:space="preserve">
+    <value>베트남어</value>
+    <comment />
+  </data>
+  <data name="english_language" xml:space="preserve">
+    <value>영어</value>
+    <comment />
+  </data>
+  <data name="korean_language" xml:space="preserve">
+    <value>한국어</value>
+    <comment />
+  </data>
+  <data name="japan_language" xml:space="preserve">
+    <value>일본어</value>
+    <comment />
+  </data>
+  <data name="company_building" xml:space="preserve">
+    <value>Building</value>
+    <comment />
+  </data>
+  <data name="email_content_device_disconnected" xml:space="preserve">
+    <value>안녕하십니까,\n{2}에 있는 "{0} ({1})" 도어의 단말기의 연결이 끊어졌습니다.\n의도한 작업이 아니신 경우, 건물의 이더넷 케이블 또는 인터넷 상태를 확인하고 문제가 지속되면 당사에 문의해주세요.\nDeMasterPro Team\n본 메일은 자동 메세지로 회신 불가합니다.</value>
+    <comment />
+  </data>
+  <data name="email_notification_device_disconnected" xml:space="preserve">
+    <value>{2} 건물의 "{0} ({1})" 단말기의 연결이 끊어졌습니다.</value>
+    <comment />
+  </data>
+  <data name="gen_qr_code_for_user" xml:space="preserve">
+    <value>[DeMasterPro] QR code for user</value>
+    <comment />
+  </data>
+  <data name="gen_qr_code_for_user_content" xml:space="preserve">
+    <value>Dear {0},\n      This is QR code using for verify your identity in the company {1}.\n      Please do not delete this image.\n      If losing please contact to your manager to provide it again \n      DeMasterPro Team\n            Automated message, please do not reply.    </value>
+    <comment />
+  </data>
+  <data name="qr_code_auto_renew_period_title" xml:space="preserve">
+    <value>QR code 자동 갱신 주기</value>
+    <comment />
+  </data>
+  <data name="auto_renew_qr_code_title" xml:space="preserve">
+    <value>QR code 자동 갱신</value>
+    <comment />
+  </data>
+  <data name="email_content_device_connected" xml:space="preserve">
+    <value>친애하는, \n            {2}에 있는 {0} - {1} 도어의 컨트롤러가 연결되어 있음을 감지했다. \n            DeMasterPro 팀 \n            자동 메시지입니다. 응답하지 않으셔도 됩니다.    </value>
+    <comment />
+  </data>
+  <data name="expired_qr" xml:space="preserve">
+    <value>Expired QR</value>
+    <comment />
+  </data>
+  <data name="pressed_the_button" xml:space="preserve">
+    <value>버튼 누름</value>
+    <comment />
+  </data>
+  <data name="qr_logo_title" xml:space="preserve">
+    <value>QR 코드용 로고 이미지</value>
+    <comment />
+  </data>
+  <data name="qr_logo_description" xml:space="preserve">
+    <value>QR 코드에 내장되는 사각형 로고</value>
+    <comment />
+  </data>
+  <data name="camera_category" xml:space="preserve">
+    <value>카메라 설정</value>
+    <comment />
+  </data>
+  <data name="lblLocalMqtt" xml:space="preserve">
+    <value>Setting local mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_category" xml:space="preserve">
+    <value>Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_host_title" xml:space="preserve">
+    <value>Host</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_host_description" xml:space="preserve">
+    <value>Host Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_port_title" xml:space="preserve">
+    <value>Port</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_port_description" xml:space="preserve">
+    <value>Port Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_username_title" xml:space="preserve">
+    <value>UserName</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_username_description" xml:space="preserve">
+    <value>UserName Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_password_title" xml:space="preserve">
+    <value>Password</value>
+    <comment />
+  </data>
+  <data name="local_mqtt_password_description" xml:space="preserve">
+    <value>Password Local Mqtt</value>
+    <comment />
+  </data>
+  <data name="phone_support_title" xml:space="preserve">
+    <value>유선 전화 정보</value>
+    <comment />
+  </data>
+  <data name="setting_support" xml:space="preserve">
+    <value>연락 정보</value>
+    <comment />
+  </data>
+  <data name="name_support_title" xml:space="preserve">
+    <value>이름</value>
+    <comment />
+  </data>
+  <data name="email_support_title" xml:space="preserve">
+    <value>Email 정보</value>
+    <comment />
+  </data>
+  <data name="phone_support_description" xml:space="preserve">
+    <value>지원 담당자 연락처</value>
+    <comment />
+  </data>
+  <data name="name_support_description" xml:space="preserve">
+    <value>지원 담당자 이름</value>
+    <comment />
+  </data>
+  <data name="email_support_description" xml:space="preserve">
+    <value>지원 담당자 Email 주소</value>
+    <comment />
+  </data>
+  <data name="time_period_qrcode_title" xml:space="preserve">
+    <value>동적 QR Code 변경 시간 주기</value>
+    <comment />
+  </data>
+  <data name="time_period_qrcode_description" xml:space="preserve">
+    <value>초 단위</value>
+    <comment />
+  </data>
+  <data name="webhook_setting" xml:space="preserve">
+    <value>Webhook 설정</value>
+    <comment />
+  </data>
+  <data name="webhook_eventlog_title" xml:space="preserve">
+    <value>이벤트</value>
+    <comment />
+  </data>
+  <data name="webhook_eventlog_description" xml:space="preserve">
+    <value>이벤트를 수신하기 위한 webhook Link</value>
+    <comment />
+  </data>
+  <data name="employee_edit_avatar_title" xml:space="preserve">
+    <value>직원 스스로 프로필 사진 변경</value>
+    <comment />
+  </data>
+  <data name="employee_edit_avatar_description" xml:space="preserve">
+    <value>직원 본인의 프로필 사진을 스스로 수정할 수 있는 권한</value>
+    <comment />
+  </data>
+  <data name="auto_generate_qrcode_title" xml:space="preserve">
+    <value>QR code 자동 생성</value>
+    <comment />
+  </data>
+  <data name="auto_generate_qrcode_description" xml:space="preserve">
+    <value>QR code 자동 생성 여부 체크</value>
+    <comment />
+  </data>
+  <data name="email_notification_device_connected" xml:space="preserve">
+    <value>[DeMasterPro] Controller of the door {0} - {1} in the {2} has been connected successfully</value>
+    <comment />
+  </data>
+  <data name="ocr_setting" xml:space="preserve">
+    <value>OCR 설정</value>
+    <comment />
+  </data>
+  <data name="ocr_api_key_title" xml:space="preserve">
+    <value>API 키</value>
+    <comment />
+  </data>
+  <data name="ocr_api_key_description" xml:space="preserve">
+    <value>인증에 사용되는 API 키 값</value>
+    <comment />
+  </data>
+  <data name="ocr_api_info_identity_description" xml:space="preserve">
+    <value>Api get all information of National Identity Number</value>
+    <comment />
+  </data>
+  <data name="ocr_api_info_identity_title" xml:space="preserve">
+    <value>API Get Info NationalIdNumber</value>
+    <comment />
+  </data>
+  <data name="ocr_api_authentication_title" xml:space="preserve">
+    <value>API 인증</value>
+    <comment />
+  </data>
+  <data name="ocr_api_authentication_description" xml:space="preserve">
+    <value>API 키 인증에 사용하는 API</value>
+    <comment />
+  </data>
+  <data name="use_auto_generate_nfc_phone_title" xml:space="preserve">
+    <value>NFC Phone 자동 생성</value>
+    <comment />
+  </data>
+  <data name="use_auto_generate_nfc_phone_description" xml:space="preserve">
+    <value>NFC Phone 자동 생성 활성화 / 비활성화</value>
+    <comment />
+  </data>
+  <data name="monitoring_avatar_display_title" xml:space="preserve">
+    <value>사용자 사진 표기 여부</value>
+    <comment />
+  </data>
+  <data name="monitoring_avatar_display_description" xml:space="preserve">
+    <value>모니터링 페이지에 각 이벤트에 대한 사용자의 사진이 표기</value>
+    <comment />
+  </data>
+  <data name="notification_email_description" xml:space="preserve">
+    <value>이메일 알림 활성화 / 비활성화</value>
+    <comment />
+  </data>
+  <data name="logo_description" xml:space="preserve">
+    <value>페이지 좌측 상단에 표기</value>
+    <comment />
+  </data>
+  <data name="event_list_push_notification_category" xml:space="preserve">
+    <value>이벤트 push 알림</value>
+    <comment />
+  </data>
+  <data name="event_list_push_notification_title" xml:space="preserve">
+    <value>이벤트 유형 목록</value>
+    <comment />
+  </data>
+  <data name="event_list_push_notification_description" xml:space="preserve">
+    <value>휴대전화 APP으로 push 알림을 보낼 이벤트 유형을 선택</value>
+    <comment />
+  </data>
+  <data name="notification_SMS_description" xml:space="preserve">
+    <value>SMS 알림 활성화 / 비활성화</value>
+    <comment />
+  </data>
+  <data name="notification_SMS_title" xml:space="preserve">
+    <value>SMS 알림</value>
+    <comment />
+  </data>
+  <data name="army_work_type_default_title" xml:space="preserve">
+    <value>군 인원 구분 종류</value>
+    <comment />
+  </data>
+  <data name="army_work_type_default_description" xml:space="preserve">
+    <value>사용할 인원 구분 종류를 모두 선택</value>
+    <comment />
+  </data>
+  <data name="work_type_default_title" xml:space="preserve">
+    <value>사용자 인원 구분 종류</value>
+    <comment />
+  </data>
+  <data name="work_type_default_description" xml:space="preserve">
+    <value>사용할 인원 구분 종류를 모두 선택</value>
+    <comment />
+  </data>
+  <data name="kakao_setting" xml:space="preserve">
+    <value>Kakao Setting</value>
+    <comment />
+  </data>
+  <data name="kakao_app_key_title" xml:space="preserve">
+    <value>App Key</value>
+    <comment />
+  </data>
+  <data name="kakao_app_key_description" xml:space="preserve">
+    <value>Kakao config: AppKey</value>
+    <comment />
+  </data>
+  <data name="kakao_secret_key_title" xml:space="preserve">
+    <value>Secret Key</value>
+    <comment />
+  </data>
+  <data name="kakao_secret_key_description" xml:space="preserve">
+    <value>Kakao config: SecretKey</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_key_title" xml:space="preserve">
+    <value>Sender Key</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_key_description" xml:space="preserve">
+    <value>Kakao config: SenderKey</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_name_title" xml:space="preserve">
+    <value>Sender Name</value>
+    <comment />
+  </data>
+  <data name="kakao_sender_name_description" xml:space="preserve">
+    <value>Kakao config: SenderName</value>
+    <comment />
+  </data>
+  <data name="allow_generate_qrcode_offline_title" xml:space="preserve">
+    <value>오프라인 QR code 생성</value>
+    <comment />
+  </data>
+  <data name="allow_generate_qrcode_offline_description" xml:space="preserve">
+    <value>오프라인 환경에서 QR code 생성 가능 여부 체크</value>
+    <comment />
+  </data>
+  <data name="use_static_qrcode_title" xml:space="preserve">
+    <value>고정 QR code 사용</value>
+    <comment />
+  </data>
+  <data name="use_static_qrcode_description" xml:space="preserve">
+    <value>고정된 QR code 사용 여부 체크</value>
+    <comment />
+  </data>
+  <data name="link_user_to_account_title" xml:space="preserve">
+    <value>사용자에 로그인 계정 연결</value>
+    <comment />
+  </data>
+  <data name="link_user_to_account_description" xml:space="preserve">
+    <value>계정 관리 페이지에서 로그인 계정과 사용자를 연결할 수 있는 버튼 표기</value>
+    <comment />
+  </data>
+  <data name="anti_passback_lift_for_visitor_title" xml:space="preserve">
+    <value>Enable/Disable auto set lift of elevator for visitor</value>
+  </data>
+  <data name="anti_passback_lift_for_visitor_description" xml:space="preserve">
+    <value>If enable this property, Elevator will active same as feature anti-passback</value>
+  </data>
+  <data name="overwrite_floor_lift_for_visitor_title" xml:space="preserve">
+    <value>Set floor default for feature visitor's elevator</value>
+  </data>
+  <data name="overwrite_floor_lift_for_visitor_description" xml:space="preserve">
+    <value>Array list of floors reset default visitor's elevator</value>
+  </data>
+  <data name="lblHeaderSetting" xml:space="preserve">
+    <value>헤더 설정</value>
+  </data>
+  <data name="lblDoorListSetting" xml:space="preserve">
+    <value>출입문 목록 설정</value>
+  </data>
+  <data name="lblMonitoringEventsSetting" xml:space="preserve">
+    <value>이벤트 목록 설정</value>
+  </data>
+  <data name="lblBuildingListSetting" xml:space="preserve">
+    <value>건물 목록 설정</value>
+  </data>
+  <data name="vietnamese_school_language" xml:space="preserve">
+    <value>Vietnamese (School)</value>
+  </data>
+  <data name="white_list_ip_address_title" xml:space="preserve">
+    <value>IP 주소의 화이트 리스트</value>
+  </data>
+  <data name="white_list_ip_address_description" xml:space="preserve">
+    <value>시스템에 로그인할 수 있는 IP 주소 목록</value>
+  </data>
+  <data name="allow_mobile_access_without_white_list_title" xml:space="preserve">
+    <value>모바일 앱이 항상 시스템에 액세스하도록 허용/거부</value>
+  </data>
+  <data name="allow_mobile_access_without_white_list_description" xml:space="preserve">
+    <value>모바일 애플리케이션이 항상 시스템에 접근할 수 있도록 허용(허용된 IP 목록 확인 건너뛰기)</value>
+  </data>
+  <data name="company_device_password_title" xml:space="preserve">
+    <value>장치 비밀번호</value>
+  </data>
+  <data name="company_device_password_description" xml:space="preserve">
+    <value>장치에 로그인하는 데 사용되는 비밀번호</value>
+  </data>
+  <data name="require_password_change_on_first_login_title" xml:space="preserve">
+    <value>첫 로그인 시 비밀번호 변경 필요</value>
+  </data>
+  <data name="require_password_change_on_first_login_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_require_uppercase_title" xml:space="preserve">
+    <value>비밀번호에 대문자 포함 필요</value>
+  </data>
+  <data name="password_require_uppercase_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_require_number_title" xml:space="preserve">
+    <value>비밀번호에 숫자 포함 필요(1,2,...)</value>
+  </data>
+  <data name="password_require_number_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_require_special_char_title" xml:space="preserve">
+    <value>비밀번호에 특수문자 포함 필요(@,#,...)</value>
+  </data>
+  <data name="password_require_special_char_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_time_need_to_change_title" xml:space="preserve">
+    <value>비밀번호를 변경해야 하는 시간(분)</value>
+  </data>
+  <data name="password_time_need_to_change_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="password_max_valid_time_title" xml:space="preserve">
+    <value>유효한 비밀번호의 최대 사용 기간(분)</value>
+  </data>
+  <data name="password_max_valid_time_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="max_failed_login_attempts_title" xml:space="preserve">
+    <value>로그인 실패 최대 시도 횟수</value>
+  </data>
+  <data name="max_failed_login_attempts_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="lockout_duration_minutes_title" xml:space="preserve">
+    <value>로그인 실패 최대 시도 횟수에 해당하는 대기 시간(분)</value>
+  </data>
+  <data name="lockout_duration_minutes_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="time_session_timeout_title" xml:space="preserve">
+    <value>로그인 세션 만료 시간(분)</value>
+  </data>
+  <data name="time_session_timeout_description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="login_setting" xml:space="preserve">
+    <value>Login setting</value>
+  </data>
+</root>

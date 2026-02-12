@@ -1,0 +1,35 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblAccessSchedule" xml:space="preserve">
+        <value>Lịch trực</value>
+    </data>
+    <data name="msgEmptyUser" xml:space="preserve">
+        <value>Người dùng trống</value>
+    </data>
+    <data name="msgCannotAssignUsers" xml:space="preserve">
+        <value>Không thể gán người dùng</value>
+    </data>
+    <data name="msgAssignUsers" xml:space="preserve">
+        <value>Gán người dùng</value>
+    </data>
+    <data name="msgUnAssignUsers" xml:space="preserve">
+        <value>Bỏ gán người dùng</value>
+    </data>
+    <data name="lblContent" xml:space="preserve">
+        <value>Nội dung</value>
+    </data>
+    <data name="DeletedFailed" xml:space="preserve">
+        <value>Xóa lịch trực không thành công.</value>
+    </data>
+</root>

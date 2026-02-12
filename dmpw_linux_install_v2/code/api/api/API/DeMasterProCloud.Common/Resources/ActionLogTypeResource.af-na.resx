@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessibleDoorExport" xml:space="preserve">
+    <value>Xuất danh sách cửa được truy cập</value>
+  </data>
+  <data name="ActiveDoor" xml:space="preserve">
+    <value>Active door</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="AnalysisExport" xml:space="preserve">
+    <value>Phân tích</value>
+  </data>
+  <data name="AssignDoor" xml:space="preserve">
+    <value>Assign Door(s)</value>
+  </data>
+  <data name="AssignUser" xml:space="preserve">
+    <value>Assign User</value>
+  </data>
+  <data name="AssignUsersToDoor" xml:space="preserve">
+    <value>Assign user(s) to the door</value>
+  </data>
+  <data name="AutoRegister" xml:space="preserve">
+    <value>Auto Register</value>
+  </data>
+  <data name="BasicInfoTransmit" xml:space="preserve">
+    <value>Basic Info Transmit</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="ChangeTimezone" xml:space="preserve">
+    <value>Change timezone</value>
+  </data>
+  <data name="Command" xml:space="preserve">
+    <value>Command</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Sao chép Thiết lập cửa</value>
+  </data>
+  <data name="CopyDoorSetting" xml:space="preserve">
+    <value>Sao chép Thiết lập cửa</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="DeleteMultiple" xml:space="preserve">
+    <value>Xóa nhiều</value>
+  </data>
+  <data name="DeleteMultipleType" xml:space="preserve">
+    <value>Delete multiple {0}</value>
+  </data>
+  <data name="DoorDeleteMultiple" xml:space="preserve">
+    <value>Door Delete Multiple</value>
+  </data>
+  <data name="DoorOpen" xml:space="preserve">
+    <value>Mở cửa</value>
+  </data>
+  <data name="DoorUpdate" xml:space="preserve">
+    <value>Door Update</value>
+  </data>
+  <data name="EventExport" xml:space="preserve">
+    <value>Xuất sự kiện</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Xuất</value>
+  </data>
+  <data name="Fail" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="ForcedClose" xml:space="preserve">
+    <value>Đóng khẩn cấp</value>
+  </data>
+  <data name="ForcedOpen" xml:space="preserve">
+    <value>Mở khẩn cấp</value>
+  </data>
+  <data name="HolidayTransmit" xml:space="preserve">
+    <value>Holiday Transmit</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="InactiveDoor" xml:space="preserve">
+    <value>Inactive Door</value>
+  </data>
+  <data name="InvalidDoor" xml:space="preserve">
+    <value>Invalid Door</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MoveDepartment" xml:space="preserve">
+    <value>Change department of user</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>Recovery</value>
+  </data>
+  <data name="RegisteredDoorExport" xml:space="preserve">
+    <value>Xuất cửa được đăng kí</value>
+  </data>
+  <data name="Reinstall" xml:space="preserve">
+    <value>Reinstall door setting</value>
+  </data>
+  <data name="Release" xml:space="preserve">
+    <value>Emergency Release</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Khởi động lại</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Thành công</value>
+  </data>
+  <data name="Sync" xml:space="preserve">
+    <value>Đồng bộ</value>
+  </data>
+  <data name="SystemLogExport" xml:space="preserve">
+    <value>System Log Export</value>
+  </data>
+  <data name="TimezoneTransmit" xml:space="preserve">
+    <value>Timezone Transmit</value>
+  </data>
+  <data name="Transmit" xml:space="preserve">
+    <value>Transmit</value>
+  </data>
+  <data name="UnassignDoor" xml:space="preserve">
+    <value>Unassign Door</value>
+  </data>
+  <data name="UnassignUser" xml:space="preserve">
+    <value>Unassign User</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Cập Nhật</value>
+  </data>
+  <data name="UpdateDoor" xml:space="preserve">
+    <value>Cập nhật cửa</value>
+  </data>
+  <data name="UpdateMultipleUser" xml:space="preserve">
+    <value>Update Multiple User</value>
+  </data>
+  <data name="UserAdd" xml:space="preserve">
+    <value>User Add</value>
+  </data>
+  <data name="UserDelete" xml:space="preserve">
+    <value>User Delete</value>
+  </data>
+  <data name="UserDeleteMultiple" xml:space="preserve">
+    <value>User Delete Multiple</value>
+  </data>
+  <data name="ValidDoor" xml:space="preserve">
+    <value>Valid Door</value>
+  </data>
+  <data name="UpdateMealServicePrice" xml:space="preserve">
+    <value>Update Meal Service Price</value>
+  </data>
+  <data name="AddMaster" xml:space="preserve">
+    <value>Add new master</value>
+  </data>
+  <data name="DeleteMaster" xml:space="preserve">
+    <value>Delete existing master</value>
+  </data>
+  <data name="ExportMaster" xml:space="preserve">
+    <value>Export building masters</value>
+  </data>
+  <data name="ExportDoor" xml:space="preserve">
+    <value>Export doors</value>
+  </data>
+</root>

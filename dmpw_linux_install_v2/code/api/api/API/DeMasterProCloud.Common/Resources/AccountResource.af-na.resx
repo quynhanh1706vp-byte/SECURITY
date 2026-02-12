@@ -1,0 +1,196 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblAccount" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+    <data name="lblAccountList" xml:space="preserve">
+    <value>Danh sách tài khoản</value>
+  </data>
+    <data name="lblAccounts" xml:space="preserve">
+    <value>tài khoản</value>
+  </data>
+    <data name="lblAdd" xml:space="preserve">
+    <value>Thêm tài khoản mới ({0})</value>
+  </data>
+    <data name="lblAddNew" xml:space="preserve">
+    <value>Thêm tài khoản mới</value>
+  </data>
+    <data name="lblComanyCode" xml:space="preserve">
+    <value>Mã công ty</value>
+  </data>
+    <data name="lblConfirmNewPassword" xml:space="preserve">
+    <value>Xác nhận mật khẩu mới Mật khẩu</value>
+  </data>
+    <data name="lblConfirmPassword" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+  </data>
+    <data name="lblContact" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+    <data name="lblContactInfo" xml:space="preserve">
+    <value>Bạn không thể truy cập vào hệ thống.&lt;br&gt;Vui lòng liên hệ tới: &lt;strong&gt;{0}&lt;/strong&gt; để được hỗ trợ.</value>
+  </data>
+    <data name="lblDelete" xml:space="preserve">
+    <value>Xóa tài khoản</value>
+  </data>
+    <data name="lblDeleteMultiple" xml:space="preserve">
+    <value>Xóa nhiều tài khoản</value>
+  </data>
+    <data name="lblEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+    <data name="lblEmailAddressOrUsername" xml:space="preserve">
+    <value>Địa chỉ email hoặc Tên người dùng</value>
+  </data>
+    <data name="lblEnterYourEmail" xml:space="preserve">
+    <value>Nhập địa chỉ email của bạn bên dưới.</value>
+  </data>
+    <data name="lblForgotPassword" xml:space="preserve">
+    <value>Quên mật khẩu</value>
+  </data>
+    <data name="lblLogin" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+    <data name="lblLogout" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+    <data name="lblNewPassword" xml:space="preserve">
+    <value>Mật khẩu mới</value>
+  </data>
+    <data name="lblPassword" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+    <data name="lblRemeberMe" xml:space="preserve">
+    <value>Ghi nhớ tôi</value>
+  </data>
+    <data name="lblRole" xml:space="preserve">
+    <value>Vai trò</value>
+  </data>
+    <data name="lblStatus" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+    <data name="lblToken" xml:space="preserve">
+    <value>Token</value>
+  </data>
+    <data name="lblUpdate" xml:space="preserve">
+    <value>Cập nhật tài khoản</value>
+  </data>
+    <data name="lblUsername" xml:space="preserve">
+    <value>Tên người dùng</value>
+  </data>
+    <data name="lblYourEmailAddress" xml:space="preserve">
+    <value>Địa chỉ email của bạn</value>
+  </data>
+    <data name="msgChangePassword" xml:space="preserve">
+    <value>Thay đổi p/w tài khoản web ({0}).</value>
+  </data>
+    <data name="msgCompanyExpired" xml:space="preserve">
+    <value>Công ty của bạn đã hết hạn.</value>
+  </data>
+    <data name="msgCompanyNonExist" xml:space="preserve">
+    <value>Mã công ty không tồn tại.</value>
+  </data>
+    <data name="msgEmailNotExist" xml:space="preserve">
+    <value>Email không tồn tại trong hệ thống.</value>
+  </data>
+    <data name="msgInvalidAccount" xml:space="preserve">
+    <value>Tài khoản không hợp lệ.</value>
+  </data>
+    <data name="msgInvalidAccountType" xml:space="preserve">
+    <value>Vai trò tài khoản không hợp lệ.</value>
+  </data>
+    <data name="msgInvalidCompany" xml:space="preserve">
+    <value>Không thể truy cập vào hệ thống. Vui lòng xác nhận bằng {0}.</value>
+  </data>
+    <data name="msgNonAccount" xml:space="preserve">
+    <value>Vui lòng đăng nhập bằng tài khoản mặc định.</value>
+  </data>
+    <data name="msgNotDelete" xml:space="preserve">
+    <value>Không xóa được tài khoản.</value>
+  </data>
+    <data name="msgResetPassword" xml:space="preserve">
+    <value>Đặt lại mật khẩu thành công. Vui lòng kiểm tra hộp thư đến của bạn để nhận mật khẩu mới.</value>
+  </data>
+    <data name="msgChangeCompany" xml:space="preserve">
+    <value>Thay đổi thông tin tài khoản công ty ({0}).</value>
+  </data>
+    <data name="lblImageLimit" xml:space="preserve">
+    <value>Kích thước hình ảnh quá lớn</value>
+  </data>
+    <data name="msgWrongPassword" xml:space="preserve">
+    <value>Sai mật khẩu</value>
+  </data>
+    <data name="msgChangePassSuccess" xml:space="preserve">
+    <value>Thay đổi mật khẩu thành công</value>
+  </data>
+    <data name="msgChangePasswordDefault" xml:space="preserve">
+    <value>Vui lòng thay đổi mật khẩu để tiếp tục</value>
+  </data>
+    <data name="msgAccountNotLinkUser" xml:space="preserve">
+    <value>Người dùng không được tạo bằng tài khoản này</value> </data> <data name="msgPasswordExpired" xml:space="preserve">   <value>{0} ngày đã trôi qua kể từ khi bạn thay đổi mật khẩu của mình. Vui lòng cập nhật mật khẩu của bạn.</value> </data> <data name="msgSamePasswordBefore" xml:space="preserve"> <value>Đây là mật khẩu giống như trước đây. Vui lòng sử dụng một mật khẩu khác.</value> </data> <data name="msgDeleteApprovalAccount" xml:space="preserve"> <value>Tài khoản chấp nhận đã được chấp nhận và không thể xóa.</value> </data>
+    <data name="msgSessionExpired" xml:space="preserve">
+    <value>Phiên làm việc đã hết hạn</value>
+  </data>
+    <data name="msgAccountUseOther" xml:space="preserve">
+    <value>Tài khoản đang được sử dụng trên thiết bị khác</value>
+  </data>
+    <data name="msgEmptyAvatar" xml:space="preserve">
+    <value>Ảnh không được để trống.</value>
+  </data>
+    <data name="msgIsTextBase64Avatar" xml:space="preserve">
+    <value>Ảnh đại diện phải là kiểu base64</value>
+  </data>
+    <data name="msgInvalidTimezon" xml:space="preserve">
+    <value>Múi giờ không tồn tại</value>
+  </data>
+    <data name="msgInvalidUser" xml:space="preserve">
+    <value>Người dùng không tồn tại</value>
+  </data>
+    <data name="msgCanNotChangeRolePrimaryToSystem" xml:space="preserve">
+    <value>Không thể thay đổi vai trò chính thành quản trị viên hệ thống</value>
+  </data>
+  <data name="lblUserId" xml:space="preserve">
+    <value>UserId</value>
+  </data>
+ <data name="msgInvalidPassWordFormat" xml:space="preserve">
+    <value>Mật khẩu không đúng định dạng</value>
+  </data>
+  <data name="msgPasswordComplexity" xml:space="preserve">
+    <value>Mật khẩu không đáp ứng yêu cầu độ phức tạp</value>
+  </data>
+   <data name="msgPasswordChangeRequired" xml:space="preserve">
+    <value>Mật khẩu phải được thay đổi</value>
+  </data>
+  <data name="msgPasswordNeedToChange" xml:space="preserve">
+    <value>Bạn cần thay đổi mật khẩu để tăng tính bảo mật</value>
+  </data>
+  <data name="msgAccountLockedWithDuration" xml:space="preserve">
+    <value>Tài khoản đã bị khóa. Vui lòng thử lại sau {0} phút.</value>
+  </data>
+  <data name="msgAccountLocked" xml:space="preserve">
+    <value>Tài khoản đã bị khóa.</value>
+  </data>
+  <data name="msgPasswordChangeFirstLogin" xml:space="preserve">
+    <value>Vui lòng thay đổi mật khẩu khi đăng nhập lần đầu để đảm bảo bảo mật.</value>
+  </data>
+  <data name="msgPasswordRequireUppercase" xml:space="preserve">
+    <value>Mật khẩu phải chứa ít nhất một chữ cái viết hoa.</value>
+  </data>
+  <data name="msgPasswordRequireNumber" xml:space="preserve">
+    <value>Mật khẩu phải chứa ít nhất một chữ số.</value>
+  </data>
+  <data name="msgPasswordRequireSpecialChar" xml:space="preserve">
+    <value>Mật khẩu phải chứa ít nhất một ký tự đặc biệt .</value>
+  </data>
+</root>

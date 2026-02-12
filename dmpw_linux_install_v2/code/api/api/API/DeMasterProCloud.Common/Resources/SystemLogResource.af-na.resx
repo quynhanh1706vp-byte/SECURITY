@@ -1,0 +1,59 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblAction" xml:space="preserve">
+    <value>Hành động</value>
+  </data>
+    <data name="lblCompany" xml:space="preserve">
+    <value>Công ty</value>
+  </data>
+    <data name="lblMessage" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+    <data name="lblNo" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+    <data name="lblObjectType" xml:space="preserve">
+    <value>Loại đối tượng</value>
+  </data>
+    <data name="lblOpeDateFrom" xml:space="preserve">
+    <value>Ngày hoạt động Từ</value>
+  </data>
+    <data name="lblOpeDateTo" xml:space="preserve">
+    <value>Ngày hoạt động Đến</value>
+  </data>
+    <data name="lblOperationTime" xml:space="preserve">
+    <value>Thời gian hoạt động</value>
+  </data>
+    <data name="lblOpeTimeFrom" xml:space="preserve">
+    <value>Ngày hoạt động Từ</value>
+  </data>
+    <data name="lblOpeTimeTo" xml:space="preserve">
+    <value>Ngày hoạt động Đến</value>
+  </data>
+    <data name="lblReport" xml:space="preserve">
+    <value>Báo cáo</value>
+  </data>
+    <data name="lblSystemLog" xml:space="preserve">
+    <value>Nhật ký hệ thống</value>
+  </data>
+    <data name="lblUserAccount" xml:space="preserve">
+    <value>Tài khoản người dùng</value>
+  </data>
+    <data name="lblOperationType" xml:space="preserve">
+    <value>Loại hoạt động</value>
+  </data>
+  <data name="lblDetails" xml:space="preserve">
+    <value>Chi tiết</value>
+  </data>
+</root>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="titleRequestApproval" xml:space="preserve">
+        <value>訪問申請を依頼するメール</value>
+    </data>
+  <data name="titleApprovalVisit" xml:space="preserve">
+        <value>招待メール形式</value>
+    </data>
+  <data name="titleRejectVisit" xml:space="preserve">
+        <value>訪問拒否のメール</value>
+    </data>
+  <data name="titleLinkRegisterVisit" xml:space="preserve">
+        <value>訪問登録ページへのリンクメール形式</value>
+    </data>
+  <data name="titleWelcomeUserEmail" xml:space="preserve">
+        <value>新規ユーザーメール</value>
+    </data>
+  <data name="titleSendPassCodeEmail" xml:space="preserve">
+        <value>ユーザーにパスコードが送信されます</value>
+    </data>
+  <data name="descriptionApprovalVisit" xml:space="preserve">
+        <value>訪問者に依頼承諾メールを送信します。メールには、QR画像、会社の住所、訪問時間などが含まれます。</value>
+    </data>
+  <data name="descriptionLinkRegisterVisit" xml:space="preserve">
+        <value>訪問登録リンクを含むメールがユーザーに送信されます。</value>
+    </data>
+  <data name="descriptionRejectVisit" xml:space="preserve">
+        <value>リクエストが拒否された事を訪問者へ送信しました。</value>
+    </data>
+  <data name="descriptionRequestApproval" xml:space="preserve">
+        <value>担当者に訪問申請を要請するメールを送信します。</value>
+    </data>
+  <data name="descriptionSendPassCodeEmail" xml:space="preserve">
+        <value>ユーザーにパスワードを送信します。</value>
+    </data>
+  <data name="descriptionWelcomeUserEmail" xml:space="preserve">
+        <value>新規ユーザーにメールを送信します。メールには、初期パスワードの設定、モバイルダウンロードリンクが含まれます。</value>
+    </data>
+  <data name="titleSendQREmail" xml:space="preserve">
+        <value>ユーザーにQRコードが送信されます</value>
+    </data>
+  <data name="descriptionSendQREmail" xml:space="preserve">
+        <value>訪問者にQR画像を示す電子メールを送信します。</value>
+    </data>
+  <data name="titleWelcomeMailForManager" xml:space="preserve">
+        <value>新規管理者メール</value>
+    </data>
+  <data name="descriptionWelcomeMailForManager" xml:space="preserve">
+        <value>管理者にメールを送信します。メールには、モバイルダウンロード、パスワードの設定、管理ページリンクのリンクなどが含まれます。</value>
+    </data>
+  <data name="descriptionWelcomeMailForAdmin" xml:space="preserve">
+        <value>管理者にアカウントとパスワードをリセットするリンクを送信します。</value>
+    </data>
+  <data name="titleWelcomeMailForAdmin" xml:space="preserve">
+        <value>担当者にアカウント/パスワードが送信されます</value>
+    </data>
+  <data name="descriptionAddress" xml:space="preserve">
+        <value>会社の住所</value>
+    </data>
+  <data name="descriptionAndroidIcon" xml:space="preserve">
+        <value>Androidのアイコン</value>
+    </data>
+  <data name="descriptionApprovalName" xml:space="preserve">
+        <value>申請者または訪問者の名前</value>
+    </data>
+  <data name="descriptionCompanyName" xml:space="preserve">
+        <value>会社名</value>
+    </data>
+  <data name="descriptionApprovalCount" xml:space="preserve">
+        <value>訪問承認件数</value>
+    </data>
+  <data name="descriptionEmailWelcome" xml:space="preserve">
+        <value>ユーザーの電子メールアカウントが作成されました</value>
+    </data>
+  <data name="descriptionImageQRCode" xml:space="preserve">
+        <value>訪問者に送信されるQR画像</value>
+    </data>
+  <data name="descriptionIosIcon" xml:space="preserve">
+        <value>IOSのアイコン</value>
+    </data>
+  <data name="descriptionLogoImageId" xml:space="preserve">
+        <value>会社のロゴ画像</value>
+    </data>
+  <data name="descriptionPassCode" xml:space="preserve">
+        <value>パスコードがユーザーに送信されます</value>
+    </data>
+  <data name="descriptionToken" xml:space="preserve">
+        <value>パスワード変更リンク</value>
+    </data>
+  <data name="descriptionUserName" xml:space="preserve">
+        <value>ログイン名</value>
+    </data>
+  <data name="descriptionUserNameWelcome" xml:space="preserve">
+        <value>新規ログイン名</value>
+    </data>
+  <data name="descriptionVisitEmail" xml:space="preserve">
+        <value>訪問者の電子メールアドレス</value>
+    </data>
+  <data name="descriptionVisitLink" xml:space="preserve">
+        <value>訪問者の管理ページへのリンク</value>
+    </data>
+  <data name="descriptionVisitLinkQrCode" xml:space="preserve">
+        <value>訪問者の登録ページへのリンク</value>
+    </data>
+  <data name="descriptionVisitorName" xml:space="preserve">
+        <value>訪問者の名前</value>
+    </data>
+  <data name="descriptionVisitorPhone" xml:space="preserve">
+        <value>訪問者の連絡先</value>
+    </data>
+  <data name="descriptionVisitReason" xml:space="preserve">
+        <value>訪問を拒否する理由</value>
+    </data>
+  <data name="descriptionVisitTargetName" xml:space="preserve">
+        <value>訪問者の名前</value>
+    </data>
+  <data name="descriptionVisitTimeAccess" xml:space="preserve">
+        <value>訪問時間</value>
+    </data>
+  <data name="descriptionVisitUserCreate" xml:space="preserve">
+        <value>訪問者の名前</value>
+    </data>
+  <data name="descriptionVisitUserReject" xml:space="preserve">
+        <value>訪問拒否の名前</value>
+    </data>
+  <data name="descriptionPasswordDefault" xml:space="preserve">
+        <value>Password default</value>
+    </data>
+    <data name="descriptionFireCrackerIcon" xml:space="preserve">
+        <value>Fire Cracker Icon</value>
+    </data>
+    <data name="descriptionGetItOnGooglePlayIcon" xml:space="preserve">
+        <value>Google Play Icon</value>
+    </data>
+    <data name="descriptionDownloadOnAppStoreIcon" xml:space="preserve">
+        <value>App Store Icon</value>
+    </data>
+    <data name="descriptionCompanyLogo" xml:space="preserve">
+        <value>Company Logo</value>
+    </data>
+    <data name="descriptionTimeIcon" xml:space="preserve">
+        <value>Visit Time Icon</value>
+    </data>
+    <data name="descriptionLocationIcon" xml:space="preserve">
+        <value>Location Icon</value>
+    </data>
+    <data name="descriptionDoorIcon" xml:space="preserve">
+        <value>Door Icon</value>
+    </data>
+    <data name="descriptionDoorListVisitAccess" xml:space="preserve">
+        <value>Door of Visit Access</value>
+    </data>
+    <data name="descriptionPhoneIcon" xml:space="preserve">
+        <value>Phone Icon</value>
+    </data>
+    <data name="descriptionContactVisitTarget" xml:space="preserve">
+        <value>Contact Visit Target</value>
+    </data>
+    <data name="titleNotifyOverDueBook" xml:space="preserve">
+        <value>Notify Over Due Book</value>
+    </data>
+    <data name="descriptionNotifyOverDueBook" xml:space="preserve">
+        <value>Mail is sent to user: notify over due book.</value>
+    </data>
+    <data name="descriptionUserNameBorrowBook" xml:space="preserve">
+        <value>Borrower name</value>
+    </data>
+    <data name="descriptionBookNameBorrowBook" xml:space="preserve">
+        <value>Book name</value>
+    </data>
+    <data name="descriptionBorrowDateBorrowBook" xml:space="preserve">
+        <value>Borrow date</value>
+    </data>
+    <data name="descriptionDeadlineDateBorrowBook" xml:space="preserve">
+        <value>Deadline date</value>
+    </data>
+    <data name="descriptionNameOfUser" xml:space="preserve">
+        <value>Username</value>
+    </data>
+    <data name="descriptionLeaveType" xml:space="preserve">
+        <value>Leave Type</value>
+    </data>
+    <data name="descriptionLeaveFromDate" xml:space="preserve">
+        <value>From Date</value>
+    </data>
+    <data name="descriptionLeaveToDate" xml:space="preserve">
+        <value>To Date</value>
+    </data>
+    <data name="descriptionLeaveReason" xml:space="preserve">
+        <value>Leave Request Reason</value>
+    </data>
+    <data name="descriptionLeaveRejectReason" xml:space="preserve">
+        <value>Leave Request Reject Reason</value>
+    </data>
+    <data name="titleLeaveRequestReview" xml:space="preserve">
+        <value>Form Leave Request for approval review mail template</value>
+    </data>
+    <data name="descriptionLeaveRequestReview" xml:space="preserve">
+        <value>Mail is sent to manager that form leave request</value>
+    </data>
+    <data name="descriptionLeaveRequestLink" xml:space="preserve">
+        <value>Link page Leave Request</value>
+    </data>
+    <data name="descriptionManagerApproval" xml:space="preserve">
+        <value>Name of manager approval</value>
+    </data>
+    <data name="descriptionLeaveUserName" xml:space="preserve">
+        <value>Name of user that created form</value>
+    </data>
+    <data name="titleLeaveRequestApproval" xml:space="preserve">
+        <value>From Leave Request is Approved</value>
+    </data>
+    <data name="descriptionLeaveRequestApproval" xml:space="preserve">
+        <value>Mail is sent to user that form leave request approved</value>
+    </data>
+    <data name="titleLeaveRequestReject" xml:space="preserve">
+        <value>From Leave Request is Rejected</value>
+    </data>
+    <data name="descriptionLeaveRequestReject" xml:space="preserve">
+        <value>Mail is sent to user that form leave request rejected</value>
+    </data>
+    <data name="lblEmailTemplate" xml:space="preserve">
+        <value>Email Template</value>
+    </data>
+    <data name="lblNoteScanQR" xml:space="preserve">
+        <value>ドアにアクセスするには、この QR コードをスキャンしてください。</value>
+    </data>
+    <data name="lblTextInvite" xml:space="preserve">
+        <value>招待されたのは</value>
+    </data>
+    <data name="lblTextPowerBy" xml:space="preserve">
+        <value>Duall Master を搭載。</value>
+    </data>
+    <data name="SubjectCardQRTemplate" xml:space="preserve">
+        <value>カード QR テンプレート</value>
+    </data>
+    <data name="titleQRCardTemplate" xml:space="preserve">
+        <value>カード QR テンプレート</value>
+    </data>
+     <data name="descriptionImgVisit1" xml:space="preserve">
+        <value>訪問者の画像へのリンク</value>
+    </data>
+  <data name="descriptionImgVisit2" xml:space="preserve">
+        <value>訪問者の画像へのリンク</value>
+    </data>
+  <data name="descriptionNoteScanQR" xml:space="preserve">
+        <value>QR コードの下にメモ</value>
+    </data>
+  <data name="descriptionTextPowerBy" xml:space="preserve">
+        <value>組織から提供されたカードを説明するテキスト</value>
+    </data>
+  <data name="descriptionTextInvite" xml:space="preserve">
+        <value>カードのタイトル</value>
+  </data>
+  <data name="descriptionLogoSquare" xml:space="preserve">
+        <value>会社のロゴ</value>
+  </data>
+    <data name="titleMonitoringTemplate" xml:space="preserve">
+        <value>Monitoring Template</value>
+    </data>
+    <data name="descriptionMonitoringTemplate" xml:space="preserve">
+        <value>Template used to view monitoring in page Device Monitoring</value>
+    </data>
+    <data name="descriptionResultCheckin" xml:space="preserve">
+        <value>Image result checkin</value>
+    </data>
+    <data name="descriptionVisitorAvatar" xml:space="preserve">
+        <value>Avatar of visit</value>
+    </data>
+    <data name="descriptionVisitorPosition" xml:space="preserve">
+        <value>Position of visit</value>
+    </data>
+</root>

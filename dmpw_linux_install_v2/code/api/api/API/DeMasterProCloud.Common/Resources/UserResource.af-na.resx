@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAccessGroup" xml:space="preserve">
+    <value>Nhóm truy cập</value>
+  </data>
+  <data name="lblAccessGroupId" xml:space="preserve">
+    <value>ID nhóm truy cập</value>
+  </data>
+  <data name="lblAccessibleDoors" xml:space="preserve">
+    <value>Cửa có thể truy cập</value>
+  </data>
+  <data name="lblAccessLevel" xml:space="preserve">
+    <value>Cấp độ truy cập</value>
+  </data>
+  <data name="lblAddNew" xml:space="preserve">
+    <value>Thêm người dùng mới</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="lblAvatar" xml:space="preserve">
+    <value>Ảnh đại diện</value>
+  </data>
+  <data name="lblCardId" xml:space="preserve">
+    <value>Mã định danh</value>
+  </data>
+  <data name="lblCard" xml:space="preserve">
+    <value>Thẻ</value>
+  </data>
+  <data name="lblCardStatus" xml:space="preserve">
+    <value>Trạng thái thẻ</value>
+  </data>
+  <data name="lblCity" xml:space="preserve">
+    <value>Thành phố</value>
+  </data>
+  <data name="lblClear" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="lblCompanyPhone" xml:space="preserve">
+    <value>Số điện thoại công ty</value>
+  </data>
+  <data name="lblContractWorker" xml:space="preserve">
+    <value>Nhân viên hợp đồng</value>
+  </data>
+  <data name="lblDelete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="lblDeleteMultiple" xml:space="preserve">
+    <value>Xóa nhiều người dùng</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="lblDepartmentName" xml:space="preserve">
+    <value>Tên phòng ban</value>
+  </data>
+  <data name="lblDepartmentNumber" xml:space="preserve">
+    <value>Số phòng ban</value>
+  </data>
+  <data name="lblDetails" xml:space="preserve">
+    <value>Chi tiết</value>
+  </data>
+  <data name="lblDeviceAuthority" xml:space="preserve">
+    <value>Thẩm quyền thiết bị</value>
+  </data>
+  <data name="lblEffectiveDate" xml:space="preserve">
+    <value>Ngày có hiệu lực</value>
+  </data>
+  <data name="lblEmergencyPassword" xml:space="preserve">
+    <value>Mật khẩu khẩn cấp</value>
+  </data>
+  <data name="lblEmployeeNumber" xml:space="preserve">
+    <value>Mã số nhân viên</value>
+  </data>
+  <data name="lblErrorData" xml:space="preserve">
+    <value>Lỗi dữ liệu</value>
+  </data>
+  <data name="lblExpiredDate" xml:space="preserve">
+    <value>Ngày hết hạn</value>
+  </data>
+  <data name="lblExport" xml:space="preserve">
+    <value>Xuất dữ liệu</value>
+  </data>
+  <data name="lblExportAccessibleDoor" xml:space="preserve">
+    <value>Xuất dữ liệu cửa có thể truy cập</value>
+  </data>
+  <data name="lblFemale" xml:space="preserve">
+    <value>Nữ</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="lblGender" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="lblGeneral" xml:space="preserve">
+    <value>Tổng quan</value>
+  </data>
+  <data name="lblHomePhone" xml:space="preserve">
+    <value>Điện thoại di động</value>
+  </data>
+  <data name="lblId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="lblImport" xml:space="preserve">
+    <value>Nhập dữ liệu</value>
+  </data>
+  <data name="lblIndex" xml:space="preserve">
+    <value>Mục lục</value>
+  </data>
+  <data name="lblInValid" xml:space="preserve">
+    <value>Không hợp lệ</value>
+  </data>
+  <data name="lblInvalidImport" xml:space="preserve">
+    <value>Nhập dữ liệu không hợp lệ</value>
+  </data>
+  <data name="lblIsMasterCard" xml:space="preserve">
+    <value>Là thẻ MasterCard</value>
+  </data>
+  <data name="lblIssueCount" xml:space="preserve">
+    <value>Số lần phát hành</value>
+  </data>
+  <data name="lblIssuedDate" xml:space="preserve">
+    <value>Ngày phát hành</value>
+  </data>
+  <data name="lblJob" xml:space="preserve">
+    <value>Công việc</value>
+  </data>
+  <data name="lblKeyPadPassword" xml:space="preserve">
+    <value>Mật khẩu KeyPad</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="lblLost" xml:space="preserve">
+    <value>Mất</value>
+  </data>
+  <data name="lblMale" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="lblNationality" xml:space="preserve">
+    <value>Quốc tịch</value>
+  </data>
+  <data name="lblNormal" xml:space="preserve">
+    <value>Bình thường</value>
+  </data>
+  <data name="lblNote" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="lblNotUse" xml:space="preserve">
+    <value>Không hợp lệ</value>
+  </data>
+  <data name="lblOfficePhone" xml:space="preserve">
+    <value>Điện thoại văn phòng</value>
+  </data>
+  <data name="lblOptimalSize" xml:space="preserve">
+    <value>Kích thước tối ưu 230 x 230 pixels</value>
+  </data>
+  <data name="lblPartTimeWorker" xml:space="preserve">
+    <value>Nhân viên làm thêm</value>
+  </data>
+  <data name="lblPassCard" xml:space="preserve">
+    <value>Thẻ ra vào</value>
+  </data>
+  <data name="lblPermanentWorker" xml:space="preserve">
+    <value>Nhân viên thường trực</value>
+  </data>
+  <data name="lblPleaseChoose" xml:space="preserve">
+    <value>Vui lòng chọn</value>
+  </data>
+  <data name="lblPosition" xml:space="preserve">
+    <value>Vị trí</value>
+  </data>
+  <data name="lblPostCode" xml:space="preserve">
+    <value>Mã bưu điện</value>
+  </data>
+  <data name="lblRemarks" xml:space="preserve">
+    <value>Lưu ý</value>
+  </data>
+  <data name="lblResidentWorker" xml:space="preserve">
+    <value>Công dân đơn vị</value>
+  </data>
+  <data name="lblResponsibility" xml:space="preserve">
+    <value>Nhiệm vụ</value>
+  </data>
+  <data name="lblRetire" xml:space="preserve">
+    <value>Về hưu</value>
+  </data>
+  <data name="lblSelectDepartment" xml:space="preserve">
+    <value>Chọn phòng ban</value>
+  </data>
+  <data name="lblSex" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="lblSyncTime" xml:space="preserve">
+    <value>Đồng bộ thời gian</value>
+  </data>
+  <data name="lblSystemAdmin" xml:space="preserve">
+    <value>Quản trị hệ thống</value>
+  </data>
+  <data name="lblTemp" xml:space="preserve">
+    <value>Tạm thời</value>
+  </data>
+  <data name="lblUpdate" xml:space="preserve">
+    <value>Cập nhật người dùng</value>
+  </data>
+  <data name="lblUse" xml:space="preserve">
+    <value>Hợp Lệ</value>
+  </data>
+  <data name="lblUser" xml:space="preserve">
+    <value>Người dùng</value>
+  </data>
+  <data name="lblUserCode" xml:space="preserve">
+    <value>Mã người dùng</value>
+  </data>
+  <data name="lblUserInfomation" xml:space="preserve">
+    <value>Thông tin người dùng</value>
+  </data>
+  <data name="lblUserList" xml:space="preserve">
+    <value>Danh sách người dùng</value>
+  </data>
+  <data name="lblUsers" xml:space="preserve">
+    <value>Người dùng</value>
+  </data>
+  <data name="lblVisitCard" xml:space="preserve">
+    <value>Thẻ khách</value>
+  </data>
+  <data name="msgCardIDIsBeingUsedByAnother" xml:space="preserve">
+    <value>ID thẻ đang được sử dụng bởi một người dùng khác với mã người dùng: {0}</value>
+  </data>
+  <data name="msgCardIDIsBeingUsedByAnotherInSystem" xml:space="preserve">
+    <value>ID thẻ đang được sử dụng bởi một người dùng khác trong hệ thống.</value>
+  </data>
+  <data name="msgChangeUserInfor" xml:space="preserve">
+    <value>Thay đổi thông tin người dùng ({0}) : {1} (Mã người dùng)</value>
+  </data>
+  <data name="msgChangeUserInforUserCode" xml:space="preserve">
+    <value>Thay đổi thông tin người dùng: {0} (Mã người dùng)</value>
+  </data>
+  <data name="msgDeleteMultipleUserCode" xml:space="preserve">
+    <value>Xóa nhiều người dùng (Mã người dùng)</value>
+  </data>
+  <data name="msgExportAccessibleDoorList" xml:space="preserve">
+    <value>xuất danh sách các cửa có thể truy cập cho {0}(người dùng) : {1} (Đăng nhập: {2})</value>
+  </data>
+  <data name="msgExportSuccess" xml:space="preserve">
+    <value>Xuất dữ liệu thành công.</value>
+  </data>
+  <data name="msgExportUserList" xml:space="preserve">
+    <value>Xuất danh sách người dùng : {0} (Đăng nhập: {1})</value>
+  </data>
+  <data name="msgImportSuccess" xml:space="preserve">
+    <value>Nhập dữ liệu thành công.</value>
+  </data>
+  <data name="msgImportUserList" xml:space="preserve">
+    <value>Nhập danh sách người dùng : {0} (Đăng nhập: {1})</value>
+  </data>
+  <data name="msgInValidAvatar" xml:space="preserve">
+    <value>Ảnh đại diện chỉ hỗ trợ các định dạng {0}</value>
+  </data>
+  <data name="msgInvalidRecord" xml:space="preserve">
+    <value>Có một số dữ liệu không hợp lệ. Vui lòng sửa và thử nhập lại.</value>
+  </data>
+  <data name="msgKeyPadPwdBeingUsedByAnother" xml:space="preserve">
+    <value>Mật khẩu Keypad đang được sử dụng bởi một người dùng khác với mã người dùng: {0}</value>
+  </data>
+  <data name="msgKeyPadPwdBeingUsedByAnotherInSystem" xml:space="preserve">
+    <value>Mật khẩu Keypad đang được sử dụng bởi một người dùng khác trong hệ thống.</value>
+  </data>
+  <data name="msgNoData" xml:space="preserve">
+    <value>Không có dữ liệu.</value>
+  </data>
+  <data name="msgUserCodeIsBeingUsedByAnother" xml:space="preserve">
+    <value>Mã người dùng đang được sử dụng bởi người khác.</value>
+  </data>
+  <data name="PresentDate" xml:space="preserve">
+    <value>Ngày hiện tại</value>
+  </data>
+  <data name="lblBirthday" xml:space="preserve">
+    <value>Sinh nhật</value>
+  </data>
+  <data name="msgAddNewCertification" xml:space="preserve">
+    <value>Mới {0} được thêm vào cho người dùng ({1}).</value>
+  </data>
+  <data name="lblQR" xml:space="preserve">
+    <value>QR</value>
+  </data>
+  <data name="lblUserCount" xml:space="preserve">
+    <value>Số lượng người dùng</value>
+  </data>
+  <data name="lblWorkingType" xml:space="preserve">
+    <value>Loại giờ làm việc</value>
+  </data>
+  <data name="lblLateIn" xml:space="preserve">
+    <value>Đi muộn</value>
+  </data>
+  <data name="lblEarlyOut" xml:space="preserve">
+    <value>Về sớm</value>
+  </data>
+  <data name="lblAbsentNoReason" xml:space="preserve">
+    <value>Vắng mặt không có lý do</value>
+  </data>
+  <data name="lblOverTime" xml:space="preserve">
+    <value>Làm thêm giờ</value>
+  </data>
+  <data name="lblBusinessTrip" xml:space="preserve">
+    <value>Công tác</value>
+  </data>
+  <data name="lblVacation" xml:space="preserve">
+    <value>Kì nghỉ</value>
+  </data>
+  <data name="lblSickness" xml:space="preserve">
+    <value>Ốm</value>
+  </data>
+  <data name="lblLateInEarlyOut" xml:space="preserve">
+    <value>Đi muộn về sớm</value>
+  </data>
+  <data name="lblRemote" xml:space="preserve">
+    <value>Làm việc từ xa</value>
+  </data>
+  <data name="lblAbNormal" xml:space="preserve">
+    <value>Bất thường</value>
+  </data>
+  <data name="lblPlugIn" xml:space="preserve">
+    <value>PlugIn</value>
+  </data>
+  <data name="lblCardType" xml:space="preserve">
+    <value>Loại thẻ</value>
+  </data>
+  <data name="lblHoliday" xml:space="preserve">
+    <value>Ngày nghỉ lễ</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="msgUserCodeLength" xml:space="preserve">
+    <value>Mã người dùng quá dài.</value>
+  </data>
+  <data name="lblActiveDutySoldier" xml:space="preserve">
+    <value>Lính tại ngũ</value>
+  </data>
+  <data name="lblCivilianWorker" xml:space="preserve">
+    <value>Công nhân dân sự trong quân đội</value>
+  </data>
+  <data name="lblSoldier" xml:space="preserve">
+    <value>Chiến sĩ</value>
+  </data>
+  <data name="lblAction" xml:space="preserve">
+    <value>Hành động</value>
+  </data>
+  <data name="lblMilitaryNumber" xml:space="preserve">
+    <value>Số hiệu quân đội</value>
+  </data>
+  <data name="lblEnlistmentDate" xml:space="preserve">
+    <value>Ngày nhập ngũ</value>
+  </data>
+  <data name="lblCategoryOptionId" xml:space="preserve">
+    <value>Tùy chọn danh mục</value>
+  </data>
+  <data name="lblValidUser" xml:space="preserve">
+    <value>Người dùng hợp lệ</value>
+  </data>
+  <data name="lblInvalidUser" xml:space="preserve">
+    <value>Người dùng không hợp lệ</value>
+  </data>
+  <data name="lblAllUser" xml:space="preserve">
+    <value>Tất cả người dùng</value>
+  </data>
+  <data name="msgDuplicatedFaceData" xml:space="preserve">
+    <value>Dữ liệu khuôn mặt đã được đăng ký. Vui lòng xóa dữ liệu cũ và đăng ký lại</value>
+  </data>
+  <data name="lblMaster" xml:space="preserve">
+    <value>Chính</value>
+  </data>
+  <data name="lblSoldierFamily" xml:space="preserve">
+    <value>Soldier family</value>
+  </data>
+  <data name="lblApprovalWaiting1" xml:space="preserve">
+    <value>Chờ phê duyệt 1</value>
+  </data>
+  <data name="lblApprovalWaiting2" xml:space="preserve">
+    <value>Chờ phê duyệt lần 2</value>
+  </data>
+  <data name="lblApproved" xml:space="preserve">
+    <value>Đã được phê duyệt</value>
+  </data>
+  <data name="lblRejected" xml:space="preserve">
+    <value>Bị từ chối</value>
+  </data>
+  <data name="lblApproval" xml:space="preserve">
+    <value>Phê duyệt</value>
+  </data>
+  <data name="lblReject" xml:space="preserve">
+    <value>Từ chối</value>
+  </data>
+  <data name="lblAccessSetting" xml:space="preserve">
+    <value>Cài đặt truy cập</value>
+  </data>
+  <data name="lblNotUseApproval" xml:space="preserve">
+    <value>Không sử dụng phê duyệt</value>
+  </data>
+  <data name="lblApprovalStatus" xml:space="preserve">
+    <value>Trạng thái phê duyệt</value>
+  </data>
+  <data name="lblUpdateWaiting1" xml:space="preserve">
+    <value>Chờ cập nhật phê duyệt lần 1</value>
+  </data>
+  <data name="lblUpdateWaiting2" xml:space="preserve">
+    <value>Chờ cập nhật phê duyệt lần 2</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="lblWorkType" xml:space="preserve">
+    <value>Loại công việc</value>
+  </data>
+  <data name="lblSecretIssuanceBasis" xml:space="preserve">
+    <value>Cơ sở phát hành bí mật</value>
+  </data>
+  <data name="lblColor" xml:space="preserve">
+    <value>Màu xe</value>
+  </data>
+  <data name="lblBlackBox" xml:space="preserve">
+    <value>Hộp đen</value>
+  </data>
+  <data name="lblModel" xml:space="preserve">
+    <value>Kiểu mẫu</value>
+  </data>
+  <data name="lblImageFileName" xml:space="preserve">
+    <value>Tên tệp ảnh</value>
+  </data>
+  <data name="lblArmyWorkType" xml:space="preserve">
+    <value>Loại công việc</value>
+  </data>
+  <data name="msgMaximumAddUser" xml:space="preserve">
+    <value>Bạn không thể thêm người dùng mới được nữa. (Số lượng người dùng lớn nhất có thể dùng: {0})</value>
+  </data>
+  <data name="lblContractorStaff" xml:space="preserve">
+    <value>Nhân viên nhà thầu</value>
+  </data>
+  <data name="lblPersonnel" xml:space="preserve">
+    <value>Cán bộ</value>
+  </data>
+  <data name="lblArmyUserFamilyName" xml:space="preserve">
+    <value>Army user family's name</value>
+  </data>
+  <data name="lblArmyUserFamilyRank" xml:space="preserve">
+    <value>Army user family's rank</value>
+  </data>
+  <data name="lblArmyUserFamilyDepartment" xml:space="preserve">
+    <value>Army user family's department</value>
+  </data>
+  <data name="msgDeleteCard" xml:space="preserve">
+    <value>Thẻ {0} đã bị xóa khỏi người dùng ({1}).</value>
+  </data>
+  <data name="lblVehicle" xml:space="preserve">
+    <value>Phương tiện</value>
+  </data>
+  <data name="lblOfficer" xml:space="preserve">
+    <value>sĩ quan</value>
+  </data>
+  <data name="lblNCOfficer" xml:space="preserve">
+    <value>hạ sĩ quan</value>
+  </data>
+  <data name="lblPublicOfficer" xml:space="preserve">
+    <value>Cán bộ công chức</value>
+  </data>
+  <data name="lblFixedWorker" xml:space="preserve">
+    <value>Nhân viên cố định</value>
+  </data>
+  <data name="lblResidedWorker" xml:space="preserve">
+    <value>Resided Worker</value>
+  </data>
+  <data name="lblReservedArmy" xml:space="preserve">
+    <value>Reserved Army</value>
+  </data>
+  <data name="lblCivilian" xml:space="preserve">
+    <value>Cư dân</value>
+  </data>
+  <data name="lblWaitingApproval" xml:space="preserve">
+    <value>Đang chờ phê chuẩn</value>
+  </data>
+  <data name="lblWaitingService" xml:space="preserve">
+    <value>Đang chờ xe khởi hành</value>
+  </data>
+  <data name="lblVehicleInService" xml:space="preserve">
+    <value>Xe đang chạy</value>
+  </data>
+  <data name="lblFinishedVehicleService" xml:space="preserve">
+    <value>Đã phục vụ xong</value>
+  </data>
+  <data name="lblVehicleAllocationManager" xml:space="preserve">
+    <value>Quản lý phân bổ xe</value>
+  </data>
+  <data name="lblVehicleAllocationDriver" xml:space="preserve">
+    <value>Tài xế phân bổ xe</value>
+  </data>
+  <data name="lblParentDepartment" xml:space="preserve">
+    <value>Tên Phòng Ban Cha</value>
+  </data>
+  <data name="lblTypeOfWork" xml:space="preserve">
+    <value>Loại công việc</value>
+  </data>
+  <data name="msgDataFingerprintInvalid" xml:space="preserve">
+    <value>Dữ liệu vân tay không hợp lệ</value>
+  </data>
+  <data name="DeleteDefaultWorkingType" xml:space="preserve">
+    <value>Không thể xóa loại làm việc mặc định!</value>
+  </data>
+  <data name="DeleteWorkingTypeUserWorkingOn" xml:space="preserve">
+    <value>Không thể xóa loại công việc đã được chỉ định cho người dùng!</value>
+  </data>
+  <data name="lblParmanentOfficer" xml:space="preserve">
+    <value>Cán bộ thường trực</value>
+  </data>
+  <data name="msgUserListNotChanged" xml:space="preserve">
+    <value>Dữ liệu người dùng không thay đổi</value>
+  </data>
+  <data name="lblStudent" xml:space="preserve">
+    <value>Học sinh</value>
+  </data>
+  <data name="lblTeacher" xml:space="preserve">
+    <value>Giáo viên</value>
+  </data>
+  <data name="lblSyncData" xml:space="preserve">
+    <value>Đồng bộ dữ liệu</value>
+  </data>
+  <data name="lblCode" xml:space="preserve">
+    <value>Mã đồng bộ</value>
+  </data>
+  <data name="lblOffDutyBreak" xml:space="preserve">
+    <value>Nghỉ trực</value>
+  </data>
+  <data name="DeletedUserFailed" xml:space="preserve">
+    <value>Xóa nhân viên không thành công. {0}</value>
+  </data>
+</root>

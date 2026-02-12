@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true"></xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="titleRequestApproval" xml:space="preserve">
+        <value>Request for approval review mail template</value>
+    </data>
+  <data name="titleApprovalVisit" xml:space="preserve">
+        <value>Visit Invitation mail template</value>
+    </data>
+  <data name="titleRejectVisit" xml:space="preserve">
+        <value>Visit application rejection mail template</value>
+    </data>
+  <data name="titleLinkRegisterVisit" xml:space="preserve">
+        <value>Visit registration link mail template</value>
+    </data>
+  <data name="titleWelcomeUserEmail" xml:space="preserve">
+        <value>Employee user welcome mail template</value>
+    </data>
+  <data name="titleSendPassCodeEmail" xml:space="preserve">
+        <value>Mail send passcode to user</value>
+    </data>
+  <data name="descriptionRequestApproval" xml:space="preserve">
+        <value>The email will be send to contact person, or approver to notifify user that he/she need to review the visit application.</value>
+    </data>
+  <data name="descriptionApprovalVisit" xml:space="preserve">
+        <value>Mail is sent to the visitor to indicate their visit application accepted. This mail includes: company address, time and QR Code for identity verification.</value>
+    </data>
+  <data name="descriptionRejectVisit" xml:space="preserve">
+        <value>Mail is sent to the visitor to indicate their visit application has been rejected.</value>
+    </data>
+  <data name="descriptionLinkRegisterVisit" xml:space="preserve">
+        <value>Mail is sent to people that includes the visit registration link.</value>
+    </data>
+  <data name="descriptionWelcomeUserEmail" xml:space="preserve">
+        <value>The email will be send to new employee user that includes greating message, 
+        link to download mobile app and login information.</value>
+    </data>
+  <data name="descriptionSendPassCodeEmail" xml:space="preserve">
+        <value>Mail send passcode to user.</value>
+    </data>
+  <data name="titleSendQREmail" xml:space="preserve">
+        <value>Mail send image qr-code to visitor</value>
+    </data>
+  <data name="descriptionSendQREmail" xml:space="preserve">
+        <value>Mail is sent to the visitor to indicate image qr-code.</value>
+    </data>
+  <data name="titleWelcomeMailForManager" xml:space="preserve">
+        <value>Manager user welcome mail template</value>
+    </data>
+  <data name="descriptionWelcomeMailForManager" xml:space="preserve">
+        <value>Mail is sent to manager include: account and link reset password.</value>
+    </data>
+  <data name="titleWelcomeMailForAdmin" xml:space="preserve">
+        <value>Mail send account/password for admin</value>
+    </data>
+  <data name="descriptionWelcomeMailForAdmin" xml:space="preserve">
+        <value>Mail is sent to admin include: account and link reset password.</value>
+    </data>
+  <data name="descriptionCompanyName" xml:space="preserve">
+        <value>Name of company</value>
+    </data>
+  <data name="descriptionVisitorName" xml:space="preserve">
+        <value>Name of visitor</value>
+    </data>
+  <data name="descriptionApprovalName" xml:space="preserve">
+        <value>Name of contact person who create visit</value>
+    </data>
+  <data name="descriptionApprovalCount" xml:space="preserve">
+        <value>Count of approved for visit</value>
+    </data>
+  <data name="descriptionVisitTargetName" xml:space="preserve">
+        <value>Contact person create visit</value>
+    </data>
+  <data name="descriptionVisitLink" xml:space="preserve">
+        <value>Link website visit management</value>
+    </data>
+  <data name="descriptionAddress" xml:space="preserve">
+        <value>Address of company</value>
+    </data>
+  <data name="descriptionImgVisit1" xml:space="preserve">
+        <value>Link image of visitor</value>
+    </data>
+  <data name="descriptionImgVisit2" xml:space="preserve">
+        <value>Link image of visitee</value>
+    </data>
+  <data name="descriptionNoteScanQR" xml:space="preserve">
+        <value>Some note below QR code</value>
+    </data>
+  <data name="descriptionTextPowerBy" xml:space="preserve">
+        <value>Text describing the card provided by organization</value>
+    </data>
+  <data name="descriptionTextInvite" xml:space="preserve">
+        <value>Title of card</value>
+  </data>
+  <data name="descriptionLogoSquare" xml:space="preserve">
+        <value>Logo of company</value>
+  </data>
+  <data name="descriptionVisitorPhone" xml:space="preserve">
+        <value>Phone of visitor</value>
+    </data>
+  <data name="descriptionVisitReason" xml:space="preserve">
+        <value>Reason reject visit</value>
+    </data>
+  <data name="descriptionVisitUserCreate" xml:space="preserve">
+        <value>Contact person who create visit</value>
+    </data>
+  <data name="descriptionVisitUserReject" xml:space="preserve">
+        <value>User reject visit</value>
+    </data>
+  <data name="descriptionVisitTimeAccess" xml:space="preserve">
+        <value>Time access for visit</value>
+    </data>
+  <data name="descriptionVisitEmail" xml:space="preserve">
+        <value>Email of visitor</value>
+    </data>
+  <data name="descriptionVisitLinkQrCode" xml:space="preserve">
+        <value>Link of form register visit</value>
+    </data>
+  <data name="descriptionLogoImageId" xml:space="preserve">
+        <value>Logo Image of company</value>
+    </data>
+  <data name="descriptionImageQRCode" xml:space="preserve">
+        <value>Image Qr-Code send to visitor</value>
+    </data>
+  <data name="descriptionAndroidIcon" xml:space="preserve">
+        <value>Icon Android</value>
+    </data>
+  <data name="descriptionIosIcon" xml:space="preserve">
+        <value>Icon Ios</value>
+    </data>
+  <data name="descriptionUserNameWelcome" xml:space="preserve">
+        <value>New Username</value>
+    </data>
+  <data name="descriptionEmailWelcome" xml:space="preserve">
+        <value>Email user created</value>
+    </data>
+  <data name="descriptionToken" xml:space="preserve">
+        <value>Token link to reset password</value>
+    </data>
+  <data name="descriptionUserName" xml:space="preserve">
+        <value>Username</value>
+    </data>
+  <data name="descriptionPassCode" xml:space="preserve">
+        <value>Passcode is sent to user</value>
+    </data>
+  <data name="descriptionPasswordDefault" xml:space="preserve">
+        <value>Password default</value>
+    </data>
+    <data name="descriptionFireCrackerIcon" xml:space="preserve">
+        <value>Fire Cracker Icon</value>
+    </data>
+    <data name="descriptionGetItOnGooglePlayIcon" xml:space="preserve">
+        <value>Google Play Icon</value>
+    </data>
+    <data name="descriptionDownloadOnAppStoreIcon" xml:space="preserve">
+        <value>App Store Icon</value>
+    </data>
+    <data name="descriptionCompanyLogo" xml:space="preserve">
+        <value>Company Logo</value>
+    </data>
+    <data name="descriptionTimeIcon" xml:space="preserve">
+        <value>Visit Time Icon</value>
+    </data>
+    <data name="descriptionLocationIcon" xml:space="preserve">
+        <value>Location Icon</value>
+    </data>
+    <data name="descriptionDoorIcon" xml:space="preserve">
+        <value>Door Icon</value>
+    </data>
+    <data name="descriptionDoorListVisitAccess" xml:space="preserve">
+        <value>Door of Visit Access</value>
+    </data>
+    <data name="descriptionPhoneIcon" xml:space="preserve">
+        <value>Phone Icon</value>
+    </data>
+    <data name="descriptionContactVisitTarget" xml:space="preserve">
+        <value>Contact Visit Target</value>
+    </data>
+    <data name="titleNotifyOverDueBook" xml:space="preserve">
+        <value>Notify Over Due Book</value>
+    </data>
+    <data name="descriptionNotifyOverDueBook" xml:space="preserve">
+        <value>Mail is sent to user: notify over due book.</value>
+    </data>
+    <data name="descriptionUserNameBorrowBook" xml:space="preserve">
+        <value>Borrower name</value>
+    </data>
+    <data name="descriptionBookNameBorrowBook" xml:space="preserve">
+        <value>Book name</value>
+    </data>
+    <data name="descriptionBorrowDateBorrowBook" xml:space="preserve">
+        <value>Borrow date</value>
+    </data>
+    <data name="descriptionDeadlineDateBorrowBook" xml:space="preserve">
+        <value>Deadline date</value>
+    </data>
+    <data name="descriptionNameOfUser" xml:space="preserve">
+        <value>Username</value>
+    </data>
+    <data name="descriptionLeaveType" xml:space="preserve">
+        <value>Leave Type</value>
+    </data>
+    <data name="descriptionLeaveFromDate" xml:space="preserve">
+        <value>From Date</value>
+    </data>
+    <data name="descriptionLeaveToDate" xml:space="preserve">
+        <value>To Date</value>
+    </data>
+    <data name="descriptionLeaveReason" xml:space="preserve">
+        <value>Leave Request Reason</value>
+    </data>
+    <data name="descriptionLeaveRejectReason" xml:space="preserve">
+        <value>Leave Request Reject Reason</value>
+    </data>
+    <data name="titleLeaveRequestReview" xml:space="preserve">
+        <value>Form Leave Request for approval review mail template</value>
+    </data>
+    <data name="descriptionLeaveRequestReview" xml:space="preserve">
+        <value>Mail is sent to manager that form leave request</value>
+    </data>
+    <data name="descriptionLeaveRequestLink" xml:space="preserve">
+        <value>Link page Leave Request</value>
+    </data>
+    <data name="descriptionManagerApproval" xml:space="preserve">
+        <value>Name of manager approval</value>
+    </data>
+    <data name="descriptionLeaveUserName" xml:space="preserve">
+        <value>Name of user that created form</value>
+    </data>
+    <data name="titleLeaveRequestApproval" xml:space="preserve">
+        <value>From Leave Request is Approved</value>
+    </data>
+    <data name="descriptionLeaveRequestApproval" xml:space="preserve">
+        <value>Mail is sent to user that form leave request approved</value>
+    </data>
+    <data name="titleLeaveRequestReject" xml:space="preserve">
+        <value>From Leave Request is Rejected</value>
+    </data>
+    <data name="descriptionLeaveRequestReject" xml:space="preserve">
+        <value>Mail is sent to user that form leave request rejected</value>
+    </data>
+    <data name="lblEmailTemplate" xml:space="preserve">
+        <value>Email Template</value>
+    </data>
+    <data name="lblNoteScanQR" xml:space="preserve">
+        <value>Scan this QR code to get access the door.</value>
+    </data>
+    <data name="lblTextInvite" xml:space="preserve">
+        <value>You’re invited by</value>
+    </data>
+    <data name="lblTextPowerBy" xml:space="preserve">
+        <value>Powered by Duall Master.</value>
+    </data>
+    <data name="SubjectCardQRTemplate" xml:space="preserve">
+        <value>Card QR Template</value>
+    </data>
+    <data name="titleQRCardTemplate" xml:space="preserve">
+        <value>Card QR Template</value>
+    </data>
+    <data name="titleMonitoringTemplate" xml:space="preserve">
+        <value>Monitoring Template</value>
+    </data>
+    <data name="descriptionMonitoringTemplate" xml:space="preserve">
+        <value>Template used to view monitoring in page Device Monitoring</value>
+    </data>
+    <data name="descriptionVisitorAvatar" xml:space="preserve">
+        <value>Avatar of visit</value>
+    </data>
+    <data name="descriptionResultCheckin" xml:space="preserve">
+        <value>Image result checkin</value>
+    </data>
+    <data name="descriptionVisitorPosition" xml:space="preserve">
+        <value>Position of visit</value>
+    </data>
+</root>

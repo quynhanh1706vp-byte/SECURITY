@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PlugInQrCode" xml:space="preserve">
+    <value>QR コード</value>
+  </data>
+  <data name="PlugInPassCode" xml:space="preserve">
+    <value>パスコード</value>
+  </data>
+  <data name="PlugInCardIssuing" xml:space="preserve">
+    <value>カード発行</value>
+  </data>
+  <data name="PlugInAccessControl" xml:space="preserve">
+    <value>アクセス制御</value>
+  </data>
+  <data name="PlugInScreenMessage" xml:space="preserve">
+    <value>画面メッセージ</value>
+  </data>
+  <data name="PlugInArmyManagement" xml:space="preserve">
+    <value>陸軍管理</value>
+  </data>
+  <data name="PlugInTimeAttendance" xml:space="preserve">
+    <value>時間出席</value>
+  </data>
+  <data name="PlugInVisitManagement" xml:space="preserve">
+    <value>訪問管理</value>
+  </data>
+  <data name="PlugInCanteenManagement" xml:space="preserve">
+    <value>食堂管理</value>
+  </data>
+  <data name="PlugInCommon" xml:space="preserve">
+    <value>共通</value>
+  </data>
+  <data name="PlugInCameraPlugIn" xml:space="preserve">
+    <value>カメラ プラグイン 1</value>
+  </data>
+  <data name="DescPlugInQrCode" xml:space="preserve">
+    <value>このplug-inにより、認証媒体としてQRを使用することができます。</value>
+  </data>
+  <data name="DescPlugInPassCode" xml:space="preserve">
+    <value>このplug-inによって認証媒体としてPasscodeを使用できるようになります。
+&lt;br&gt;支援端末はDE-960、iTouchPop2A、iTouchPopXなどがあります。</value>
+  </data>
+  <data name="DescPlugInScreenMessage" xml:space="preserve">
+    <value>このプラグインは、画面のある読み取り機を使用している会社に使えます。e.g. : iTouchPop 2A, iTouchPop X, etc.
+&lt;br&gt;このオプションを使用すると、画面メッセージを変更することができます。</value>
+  </data>
+  <data name="DescPlugInVisitManagement" xml:space="preserve">
+    <value>このプラグインで、訪問者管理が可能です。
+&lt;br&gt;このオプションを有効化して、訪問申込、訪問者招待、訪問者管理などをすることができます。</value>
+  </data>
+  <data name="DescPlugInTimeAttendance" xml:space="preserve">
+    <value>このプラグインを通じて、出勤退勤の記録、出席管理、勤務時間の設定および外勤休暇などを要請することができます。</value>
+  </data>
+  <data name="DescPlugInCommon" xml:space="preserve">
+    <value>本プラグインは、基本的に全ての会社に適用されます。</value>
+  </data>
+  <data name="DescPlugInAccessControl" xml:space="preserve">
+    <value>このプラグインは、ドア制御を行う会社に使用することができます。 出入グループ、出入時間、休日設定などが含まれます。</value>
+  </data>
+  <data name="DescPlugInArmyManagement" xml:space="preserve">
+    <value>このプラグインは軍部隊のための機能が含まれます。 このオプションを有効にすると、ユーザーおよび訪問者に関する機能が大きく変更されます。</value>
+  </data>
+  <data name="DescPlugInCameraPlugIn" xml:space="preserve">
+    <value>このプラグインは出入り時に顔認識のためのカメラを使用する会社で使用できる。</value>
+  </data>
+  <data name="DescPlugInCanteenManagement" xml:space="preserve">
+    <value>このプラグインは、食堂のための多数の機能を備えています。
+&lt;br&gt;このオプションを有効にすると、食堂管理のための機能が追加変更されます。</value>
+  </data>
+  <data name="DescPlugInCardIssuing" xml:space="preserve">
+    <value>このプラグインは、カードの印刷、カードの発行などに使用されます。</value>
+  </data>
+  <data name="PlugInEventManagement" xml:space="preserve">
+   <value>イベント管理</value>
+  </data>
+  <data name="DescPlugInEventManagement" xml:space="preserve">
+    <value>イベント管理</value>
+  </data>
+  <data name="DescPlugInVehiclePlugIn" xml:space="preserve">
+    <value>このプラグインにより、車両機能の使用が可能になります。</value>
+  </data>
+  <data name="PlugInVehiclePlugIn" xml:space="preserve">
+    <value>車両プラグイン</value>
+  </data>
+  <data name="DescPlugInCovid19" xml:space="preserve">
+    <value>Covid-19</value>
+  </data>
+  <data name="PlugInCovid19" xml:space="preserve">
+    <value>Covid19</value>
+  </data>
+  <data name="PlugInBuildingMaster" xml:space="preserve">
+    <value>建物別マスター</value>
+  </data>
+  <data name="DescPlugInBuildingMaster" xml:space="preserve">
+    <value>このプラグインを使用して、建物ごとにマスターを設定することができます。</value>
+  </data>
+  <data name="PlugInCameraPlugIn2" xml:space="preserve">
+    <value>カメラプラグイン2</value>
+  </data>
+  <data name="DescPlugInCameraPlugIn2" xml:space="preserve">
+    <value>プラグインカメラ2. hanetからシステムへの全ユーザー同期の使用</value>
+  </data>
+  <data name="PlugInElevator" xml:space="preserve">
+    <value>エレベータープラグイン</value>
+  </data>
+  <data name="DescPlugInElevator" xml:space="preserve">
+    <value>エレベータープラグイン</value>
+  </data>
+  <data name="PlugInVideoDoorbell" xml:space="preserve">
+    <value>ビデオドアベルプラグイン</value>
+  </data>
+  <data name="DescPlugInVideoDoorbell" xml:space="preserve">
+    <value>ドアベルとして使用される統合 Jitsi ビデオ会議</value>
+  </data>
+  <data name="PlugInFaceRecognition" xml:space="preserve">
+    <value>顔認識</value>
+  </data>
+  <data name="DescPlugInFaceRecognition" xml:space="preserve">
+    <value>このプラグインは、顔認識端末機の使用を可能にします。</value>
+  </data>
+  <data name="PlugInVein" xml:space="preserve">
+    <value>静脈</value>
+  </data>
+  <data name="DescPlugInVein" xml:space="preserve">
+    <value>このプラグインを有効にすれば、指静脈端末機をご利用いただけます。</value>
+  </data>
+  <data name="PlugInLibraryManagement" xml:space="preserve">
+    <value>ライブラリ管理</value>
+  </data>
+  <data name="DescPlugInLibraryManagement" xml:space="preserve">
+    <value>このプラグインはライブラリの管理を可能にします </value>
+  </data>
+  <data name="PlugInUnKnownPersonManagement" xml:space="preserve">
+    <value>不明な人物の管理</value>
+  </data>
+  <data name="DescPlugInUnknownPersonManagement" xml:space="preserve">
+    <value>このプラグインを有効にすると、会社は不明な人物 (不明な顔) のアクセス履歴を管理します</value>
+  </data>
+  <data name="PlugInFingerPrint" xml:space="preserve">
+    <value>指紋プラグイン</value>
+  </data>
+  <data name="DescPlugInFingerPrint" xml:space="preserve">
+    <value>このプラグインは指紋認証デバイスの使用を可能にします</value>
+  </data>
+  <data name="PlugInKakao" xml:space="preserve">
+    <value>Kakao プラグイン</value>
+  </data>
+  <data name="DescPlugInKakao" xml:space="preserve">
+    <value>このプラグインは Kakao によるメッセージ送信の使用を可能にします</value>
+  </data>
+  <data name="PlugInDeptAcGrpConn" xml:space="preserve">
+    <value>部門とアクセスグループ間の接続性を確保します</value>
+  </data>
+  <data name="DescPlugInDeptAcGrpConn" xml:space="preserve">
+    <value>Basic Access Group は、Department と Access Group の間の接続によって各部門に設定されます。</value>
+  </data>
+  <data name="PlugInDepartmentAccessLevel" xml:space="preserve">
+    <value>部門アクセス レベル</value>
+  </data>
+  <data name="DescPlugInDepartmentAccessLevel" xml:space="preserve">
+    <value>このプラグインにより、各部門のデバイス管理が可能になります</value>
+  </data>
+  <data name="DescPlugInCustomizeLanguage" xml:space="preserve">
+    <value>このプラグインが有効になっている場合、会社はデフォルトで一部の言語を使用し、ユーザーは他の言語に変更しません。</value>
+  </data>
+  <data name="PlugInCustomizeLanguage" xml:space="preserve">
+    <value>言語をカスタマイズ</value>
+  </data>
+</root>

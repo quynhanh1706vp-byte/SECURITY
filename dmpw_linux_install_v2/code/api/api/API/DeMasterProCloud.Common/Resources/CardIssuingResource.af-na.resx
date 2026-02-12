@@ -1,0 +1,182 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="lblTemporaryAccessCard" xml:space="preserve">
+        <value>Thẻ truy cập tạm thời</value>
+    </data>
+    <data name="lblAccessCard" xml:space="preserve">
+        <value>Thẻ truy cập</value>
+    </data>
+    <data name="lblVisitCard" xml:space="preserve">
+        <value>Thẻ khách mời</value>
+    </data>
+    <data name="lblSoldier" xml:space="preserve">
+        <value>Chiến sĩ</value>
+    </data>
+    <data name="lblFamily" xml:space="preserve">
+        <value>Gia đình</value>
+    </data>
+    <data name="lblRegularCivilian" xml:space="preserve">
+        <value>Người thường</value>
+    </data>
+    <data name="lblResidentCivilian" xml:space="preserve">
+        <value>Thường chú dân sự</value>
+    </data>
+    <data name="lblConstruction" xml:space="preserve">
+        <value>Xây dựng</value>
+    </data>
+    <data name="lblMeetingVisit" xml:space="preserve">
+        <value>Khách mời tham quan</value>
+    </data>
+    <data name="lblTraning" xml:space="preserve">
+        <value>Đào tạo</value>
+    </data>
+    <data name="lblCardReader" xml:space="preserve">
+        <value>Máy đọc thẻ</value>
+    </data>
+    <data name="lblCardPrinter" xml:space="preserve">
+        <value>Máy in thẻ</value>
+    </data>
+    <data name="lblVerticalAlignment" xml:space="preserve">
+        <value>Căn chỉnh theo chiều dọc</value>
+    </data>
+    <data name="lblHorizontalAlignment" xml:space="preserve">
+        <value>Căn chỉnh theo chiều ngang</value>
+    </data>
+    <data name="msgIpAddressInUse" xml:space="preserve">
+        <value>Địa chỉ IP này đã được sử dụng</value>
+    </data>
+    <data name="msgNameInUse" xml:space="preserve">
+        <value>Tên máy in đã tồn tại trên hệ thống</value>
+    </data>
+    <data name="lblCardLayout" xml:space="preserve">
+        <value>Bố cục của thẻ</value>
+    </data>
+    <data name="lblManagementNumber" xml:space="preserve">
+        <value>Mã số thẻ</value>
+    </data>
+    <data name="lblPersonCardType" xml:space="preserve">
+        <value>Loại thẻ cá nhân</value>
+    </data>
+    <data name="msgDeviceConnectFailed" xml:space="preserve">
+        <value>Kết nối thiết bị thất bại</value>
+    </data>
+    <data name="msgDeviceConnectSuccess" xml:space="preserve">
+        <value>Thiết bị được kết nối thành công</value>
+    </data>
+    <data name="ConnectTimeout" xml:space="preserve">
+        <value>Kết nối quá hạn</value>
+    </data>
+    <data name="msgRequireConnectToDevice" xml:space="preserve">
+        <value>Vui lòng kết nối với máy in trước khi thực hiện các thao tác</value>
+    </data>
+    <data name="msgPleaseWaitForPrinting" xml:space="preserve">
+        <value>Vui lòng đợi máy in thẻ thực hiện</value>
+    </data>
+    <data name="msgPrintCardSuccess" xml:space="preserve">
+        <value>In thẻ thành công</value>
+    </data>
+    <data name="msgPrintCardError" xml:space="preserve">
+        <value>In thẻ bị lỗi</value>
+    </data>
+    <data name="lblCardType" xml:space="preserve">
+        <value>loại thẻ</value>
+    </data>
+    <data name="lblCardName" xml:space="preserve">
+        <value>Tên thẻ</value>
+    </data>
+    <data name="lblRegisteredDate" xml:space="preserve">
+        <value>Ngày đăng ký</value>
+    </data>
+    <data name="lblCardId" xml:space="preserve">
+        <value>ID của thẻ</value>
+    </data>
+    <data name="lblDepartment" xml:space="preserve">
+        <value>Phòng ban</value>
+    </data>
+    <data name="lblIssuedDate" xml:space="preserve">
+        <value>Ngày phát hành</value>
+    </data>
+    <data name="lblIssuer" xml:space="preserve">
+        <value>Người phát hành</value>
+    </data>
+    <data name="lblRemark" xml:space="preserve">
+        <value>Nhận xét</value>
+    </data>
+    <data name="lblReturnedDate" xml:space="preserve">
+        <value>Ngày trả</value>
+    </data>
+    <data name="lblPosition" xml:space="preserve">
+        <value>Vị trí</value>
+    </data>
+    <data name="lblCardStatus" xml:space="preserve">
+        <value>Trạng thái thẻ</value>
+    </data>
+    <data name="lblMsn" xml:space="preserve">
+        <value>MSN</value>
+    </data>
+    <data name="lblNewStatus" xml:space="preserve">
+        <value>Trạng thái mới</value>
+    </data>
+    <data name="lblOldStatus" xml:space="preserve">
+        <value>Trạng thái cũ</value>
+    </data>
+    <data name="lblUpdatedOn" xml:space="preserve">
+        <value>Thời gian cập nhật</value>
+    </data>
+    <data name="lblUpdatedBy" xml:space="preserve">
+        <value>Người cập nhật</value>
+    </data>
+    <data name="lblNote" xml:space="preserve">
+        <value>Ghi chú</value>
+    </data>
+    <data name="lblIDPSmartCardPrinter" xml:space="preserve">
+        <value>Máy in thẻ IDP Smart</value>
+    </data>
+    <data name="lblBackGround" xml:space="preserve">
+        <value>Phần nền thẻ</value>
+    </data>
+    <data name="lblPictureFixed" xml:space="preserve">
+        <value>Ảnh</value>
+    </data>
+    <data name="lblPictureUser" xml:space="preserve">
+        <value>Ảnh thành viên (Avatar)</value>
+    </data>
+    <data name="lblTextFixed" xml:space="preserve">
+        <value>Văn bản</value>
+    </data>
+    <data name="lblTextDbInfo" xml:space="preserve">
+        <value>Dữ liệu trong Db</value>
+    </data>
+    <data name="lblIssueCount" xml:space="preserve">
+        <value>Số lần phát hành</value>
+    </data>
+    <data name="msgUserAssignedCard" xml:space="preserve">
+        <value>Người dùng đã được cấp phát thẻ</value>
+    </data>
+    <data name="msgErrorCheckQueue" xml:space="preserve">
+    <value>Lỗi kiểm tra hàng đợi in</value>
+  </data>
+    <data name="msgPrintQueue" xml:space="preserve">
+    <value>{0} chờ in thẻ</value>
+  </data>
+    <data name="msgNotFinishedYet" xml:space="preserve">
+    <value>Bản in trước đó không kết thúc. Vui lòng thử lại sau. Nếu máy in hiện không in, vui lòng khởi động lại máy in.</value>
+  </data>
+    <data name="lblCXD80" xml:space="preserve">
+        <value>Máy in thẻ CX-D80</value>
+    </data>
+    <data name="lblAccidentType" xml:space="preserve">
+        <value>Loại tai nạn</value>
+    </data>
+</root>

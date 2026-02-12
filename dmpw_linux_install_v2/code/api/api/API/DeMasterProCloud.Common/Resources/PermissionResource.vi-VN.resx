@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ViewAccessGroup" xml:space="preserve">
+    <value>Xem Nhóm truy cập</value>
+  </data>
+  <data name="AddAccessGroup" xml:space="preserve">
+    <value>Thêm Nhóm truy cập</value>
+  </data>
+  <data name="EditAccessGroup" xml:space="preserve">
+    <value>Sửa Nhóm truy cập</value>
+  </data>
+  <data name="DeleteAccessGroup" xml:space="preserve">
+    <value>Xóa Nhóm truy cập</value>
+  </data>
+  <data name="AssignDoorAccessGroup" xml:space="preserve">
+    <value>Điểm kiểm soát cho Nhóm truy cập</value>
+  </data>
+  <data name="DescriptionViewAccessGroup" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem một nhóm truy cập.</value>
+  </data>
+  <data name="DescriptionAddAccessGroup" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm một nhóm truy cập.</value>
+  </data>
+  <data name="DescriptionEditAccessGroup" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin nhóm truy cập.</value>
+  </data>
+  <data name="DescriptionDeleteAccessGroup" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa một nhóm truy cập.</value>
+  </data>
+  <data name="DescriptionAssignDoorAccessGroup" xml:space="preserve">
+    <value>Quyền này cho phép bạn điểm kiểm soát cho một nhóm truy cập.</value>
+  </data>
+  <data name="AccessGroup" xml:space="preserve">
+    <value>Nhóm truy cập</value>
+  </data>
+  <data name="ViewAccount" xml:space="preserve">
+    <value>Xem tài khoản</value>
+  </data>
+  <data name="AddAccount" xml:space="preserve">
+    <value>Thêm tài khoản</value>
+  </data>
+  <data name="EditAccount" xml:space="preserve">
+    <value>Sửa tài khoản</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>Xóa tài khoản</value>
+  </data>
+  <data name="DescriptionViewAccount" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem thông tin tài khoản.</value>
+  </data>
+  <data name="DescriptionAddAccount" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm một tài khoản mới.</value>
+  </data>
+  <data name="DescriptionEditAccount" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin tài khoản.</value>
+  </data>
+  <data name="DescriptionDeleteAccount" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa tài khoản.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="ViewAttendance" xml:space="preserve">
+    <value>Xem chấm công</value>
+  </data>
+  <data name="ExportAttendance" xml:space="preserve">
+    <value>Xuất dữ liệu chấm công</value>
+  </data>
+  <data name="DescriptionViewAttendance" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem lịch sử chấm công của nhân viên.</value>
+  </data>
+  <data name="DescriptionExportAttendance" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất dữ liệu chấm công thành tệp.</value>
+  </data>
+  <data name="TimeAttendanceReport" xml:space="preserve">
+    <value>Báo cáo chấm công</value>
+  </data>
+  <data name="ViewBuilding" xml:space="preserve">
+    <value>Xem đơn vị</value>
+  </data>
+  <data name="AddBuilding" xml:space="preserve">
+    <value>Thêm đơn vị</value>
+  </data>
+  <data name="EditBuilding" xml:space="preserve">
+    <value>Sửa đơn vị</value>
+  </data>
+  <data name="DeleteBuilding" xml:space="preserve">
+    <value>Xóa đơn vị</value>
+  </data>
+  <data name="AssignDoorBuilding" xml:space="preserve">
+    <value>Gán (các) cửa cho đơn vị</value>
+  </data>
+  <data name="DescriptionAssignDoorBuilding" xml:space="preserve">
+    <value>Quyền này cho phép bạn gán (các) cửa cho đơn vị.</value>
+  </data>
+  <data name="DescriptionViewBuilding" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem thông tin đơn vị.</value>
+  </data>
+  <data name="DescriptionAddBuilding" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm một đơn vị mới.</value>
+  </data>
+  <data name="DescriptionEditBuilding" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin đơn vị.</value>
+  </data>
+  <data name="DescriptionDeleteBuilding" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa một đơn vị.</value>
+  </data>
+  <data name="Building" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="ViewCategory" xml:space="preserve">
+    <value>Xem danh mục</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Thêm danh mục</value>
+  </data>
+  <data name="EditCategory" xml:space="preserve">
+    <value>Sửa danh mục</value>
+  </data>
+  <data name="DeleteCategory" xml:space="preserve">
+    <value>Xóa danh mục</value>
+  </data>
+  <data name="DescriptionViewCategory" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách các danh mục và tùy chọn.</value>
+  </data>
+  <data name="DescriptionAddCategory" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm danh sách các danh mục và tùy chọn.</value>
+  </data>
+  <data name="DescriptionEditCategory" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa danh sách các danh mục và tùy chọn.</value>
+  </data>
+  <data name="DescriptionDeleteCategory" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa danh sách các danh mục và tùy chọn.</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="ViewDepartment" xml:space="preserve">
+    <value>Xem phòng ban</value>
+  </data>
+  <data name="AddDepartment" xml:space="preserve">
+    <value>Thêm phòng ban</value>
+  </data>
+  <data name="EditDepartment" xml:space="preserve">
+    <value>Sửa phòng ban</value>
+  </data>
+  <data name="DeleteDepartment" xml:space="preserve">
+    <value>Xóa phòng ban</value>
+  </data>
+  <data name="ExportDepartment" xml:space="preserve">
+    <value>Xuất dữ liệu phòng ban</value>
+  </data>
+  <data name="DescriptionViewDepartment" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem thông tin phòng ban.</value>
+  </data>
+  <data name="DescriptionAddDepartment" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm phòng ban mới.</value>
+  </data>
+  <data name="DescriptionEditDepartment" xml:space="preserve">
+    <value>Quyền này cho phép bạn sửa thông tin phòng ban.</value>
+  </data>
+  <data name="DescriptionDeleteDepartment" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa các phòng ban.</value>
+  </data>
+  <data name="DescriptionExportDepartment" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất danh sách các phòng ban thành một tệp.</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="ViewDevice" xml:space="preserve">
+    <value>Xem thiết bị</value>
+  </data>
+  <data name="EditDevice" xml:space="preserve">
+    <value>Sửa thiết bị</value>
+  </data>
+  <data name="SendInstructionDevice" xml:space="preserve">
+    <value>Gửi hướng dẫn đến thiết bị</value>
+  </data>
+  <data name="ViewHistoryDevice" xml:space="preserve">
+    <value>Xem lịch sử của thiết bị</value>
+  </data>
+  <data name="ReinstallDevice" xml:space="preserve">
+    <value>Cài đặt lại thiết bị</value>
+  </data>
+  <data name="RebootDevice" xml:space="preserve">
+    <value>Khởi động lại thiết bị</value>
+  </data>
+  <data name="CopyDevice" xml:space="preserve">
+    <value>Sao chép cài đặt thiết bị</value>
+  </data>
+  <data name="DescriptionViewDevice" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách thiết bị.</value>
+  </data>
+  <data name="DescriptionEditDevice" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin thiết bị.</value>
+  </data>
+  <data name="DescriptionSendInstructionDevice" xml:space="preserve">
+    <value>Quyền này cho phép bạn gửi hướng dẫn đến thiết bị.</value>
+  </data>
+  <data name="DescriptionViewHistoryDevice" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem lịch sử của thiết bị.</value>
+  </data>
+  <data name="DescriptionReinstallDevice" xml:space="preserve">
+    <value>Quyền này cho phép bạn cài đặt lại thiết bị.</value>
+  </data>
+  <data name="DescriptionRebootDevice" xml:space="preserve">
+    <value>Quyền này cho phép bạn khởi động lại thiết bị.</value>
+  </data>
+  <data name="DescriptionCopyDevice" xml:space="preserve">
+    <value>Quyền này cho phép bạn sao chép và dán cài đặt thiết bị.</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Thiết bị</value>
+  </data>
+  <data name="ViewDeviceMessage" xml:space="preserve">
+    <value>Xem tin nhắn thiết bị</value>
+  </data>
+  <data name="EditDeviceMessage" xml:space="preserve">
+    <value>Sửa tin nhắn thiết bị</value>
+  </data>
+  <data name="DescriptionViewDeviceMessage" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách thông báo trên màn hình thiết bị.</value>
+  </data>
+  <data name="DescriptionEditDeviceMessage" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa tin nhắn trên màn hình thiết bị.</value>
+  </data>
+  <data name="DeviceMessage" xml:space="preserve">
+    <value>Tin nhắn thiết bị</value>
+  </data>
+  <data name="ViewEventLog" xml:space="preserve">
+    <value>Xem nhật ký sự kiện</value>
+  </data>
+  <data name="ExportEventLog" xml:space="preserve">
+    <value>Xuất nhật ký sự kiện</value>
+  </data>
+  <data name="DescriptionViewEventLog" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem nhật ký sự kiện trên trang báo cáo.</value>
+  </data>
+  <data name="DescriptionExportEventLog" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất nhật ký sự kiện sang tệp trên trang báo cáo.</value>
+  </data>
+  <data name="EventLog" xml:space="preserve">
+    <value>Nhật ký sự kiện</value>
+  </data>
+  <data name="ViewHoliday" xml:space="preserve">
+    <value>Xem ngày nghỉ</value>
+  </data>
+  <data name="AddHoliday" xml:space="preserve">
+    <value>Thêm ngày nghỉ</value>
+  </data>
+  <data name="EditHoliday" xml:space="preserve">
+    <value>Sửa ngày nghỉ</value>
+  </data>
+  <data name="DeleteHoliday" xml:space="preserve">
+    <value>Xóa ngày nghỉ</value>
+  </data>
+  <data name="DescriptionViewHoliday" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách các kỳ nghỉ.</value>
+  </data>
+  <data name="DescriptionAddHoliday" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm một kỳ nghỉ mới.</value>
+  </data>
+  <data name="DescriptionEditHoliday" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa ngày nghỉ.</value>
+  </data>
+  <data name="DescriptionDeleteHoliday" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa ngày nghỉ.</value>
+  </data>
+  <data name="Holiday" xml:space="preserve">
+    <value>Ngày nghỉ</value>
+  </data>
+  <data name="ViewSetting" xml:space="preserve">
+    <value>Xem cài đặt</value>
+  </data>
+  <data name="EditSetting" xml:space="preserve">
+    <value>Sửa cài đặt</value>
+  </data>
+  <data name="DescriptionViewSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem cài đặt hệ thống.</value>
+  </data>
+  <data name="DescriptionEditSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn thay đổi giá trị cài đặt hệ thống.</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Cài đặt hệ thống</value>
+  </data>
+  <data name="ViewSystemLog" xml:space="preserve">
+    <value>Xem nhật ký hệ thống</value>
+  </data>
+  <data name="ExportSystemLog" xml:space="preserve">
+    <value>Xuất nhật ký hệ thống</value>
+  </data>
+  <data name="DescriptionViewSystemLog" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem nhật ký hệ thống.</value>
+  </data>
+  <data name="DescriptionExportSystemLog" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất nhật ký hệ thống sang tệp.</value>
+  </data>
+  <data name="SystemLog" xml:space="preserve">
+    <value>Nhật ký hệ thống</value>
+  </data>
+  <data name="ViewTimezone" xml:space="preserve">
+    <value>Xem múi giờ</value>
+  </data>
+  <data name="AddTimezone" xml:space="preserve">
+    <value>Thêm múi giờ</value>
+  </data>
+  <data name="EditTimezone" xml:space="preserve">
+    <value>Chỉnh sửa múi giờ</value>
+  </data>
+  <data name="DeleteTimezone" xml:space="preserve">
+    <value>Xóa múi giờ</value>
+  </data>
+  <data name="DescriptionViewTimezone" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách thông tin múi giờ.</value>
+  </data>
+  <data name="DescriptionAddTimezone" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm múi giờ mới.</value>
+  </data>
+  <data name="DescriptionEditTimezone" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin múi giờ.</value>
+  </data>
+  <data name="DescriptionDeleteTimezone" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa các múi giờ.</value>
+  </data>
+  <data name="Timezone" xml:space="preserve">
+    <value>Múi giờ</value>
+  </data>
+  <data name="ViewUser" xml:space="preserve">
+    <value>Xem người dùng</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Thêm người dùng</value>
+  </data>
+  <data name="EditUser" xml:space="preserve">
+    <value>Sửa người dùng</value>
+  </data>
+  <data name="DeleteUser" xml:space="preserve">
+    <value>Xóa người dùng</value>
+  </data>
+  <data name="DescriptionViewUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách người dùng. Nó cũng được sử dụng để xem danh sách người dùng trên trang 'Cửa được phép truy cập'.</value>
+  </data>
+  <data name="DescriptionAddUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm người dùng mới.</value>
+  </data>
+  <data name="DescriptionEditUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa người dùng.</value>
+  </data>
+  <data name="DescriptionDeleteUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa người dùng.</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Người dùng</value>
+  </data>
+  <data name="ViewWorkingTime" xml:space="preserve">
+    <value>Xem loại giờ làm việc</value>
+  </data>
+  <data name="AddWorkingTime" xml:space="preserve">
+    <value>Thêm giờ làm việc</value>
+  </data>
+  <data name="EditWorkingTime" xml:space="preserve">
+    <value>Chỉnh sửa giờ làm việc</value>
+  </data>
+  <data name="DeleteWorkingTime" xml:space="preserve">
+    <value>Xóa giờ làm việc</value>
+  </data>
+  <data name="DescriptionViewWorkingTime" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách các loại giờ làm việc.</value>
+  </data>
+  <data name="DescriptionAddWorkingTime" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm danh sách các loại giờ làm việc.</value>
+  </data>
+  <data name="DescriptionEditWorkingTime" xml:space="preserve">
+    <value>Quyền này cho phép bạn sửa danh sách các loại giờ làm việc.</value>
+  </data>
+  <data name="DescriptionDeleteWorkingTime" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa danh sách các loại giờ làm việc.</value>
+  </data>
+  <data name="WorkingTime" xml:space="preserve">
+    <value>Loại giờ làm việc</value>
+  </data>
+  <data name="ViewVisit" xml:space="preserve">
+    <value>Xem dữ liệu khách truy cập</value>
+  </data>
+  <data name="AddVisit" xml:space="preserve">
+    <value>Tạo mới một lời mời</value>
+  </data>
+  <data name="EditVisit" xml:space="preserve">
+    <value>Chỉnh sửa thông tin khách truy cập</value>
+  </data>
+  <data name="DeleteVisit" xml:space="preserve">
+    <value>Xóa khách truy cập</value>
+  </data>
+  <data name="ExportVisit" xml:space="preserve">
+    <value>Xuất dữ liệu khách truy cập</value>
+  </data>
+  <data name="ReturnCardVisit" xml:space="preserve">
+    <value>Trả lại thẻ khách truy cập</value>
+  </data>
+  <data name="ViewHistoryVisit" xml:space="preserve">
+    <value>Xem lịch sử khách truy cập</value>
+  </data>
+  <data name="AssignDoorVisit" xml:space="preserve">
+    <value>Gán (các) cửa cho khách truy cập</value>
+  </data>
+  <data name="DescriptionViewVisit" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem dữ liệu khách truy cập.</value>
+  </data>
+  <data name="DescriptionAddVisit" xml:space="preserve">
+    <value>Sự cho phép này cho phép bạn đăng ký một lời mời truy cập.</value>
+  </data>
+  <data name="DescriptionEditVisit" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin khách truy cập.</value>
+  </data>
+  <data name="DescriptionDeleteVisit" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa lời mời truy cập chỉ khi bạn đã đăng ký.</value>
+  </data>
+  <data name="DescriptionExportVisit" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất dữ liệu khách truy cập sang tệp.</value>
+  </data>
+  <data name="DescriptionReturnCardVisit" xml:space="preserve">
+    <value>Quyền này cho phép bạn lấy thẻ của khách.</value>
+  </data>
+  <data name="DescriptionViewHistoryVisit" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem lịch sử của khách truy cập.</value>
+  </data>
+  <data name="DescriptionAssignDoorVisit" xml:space="preserve">
+    <value>Quyền này cho phép bạn điểm kiểm soát cho khách truy cập.</value>
+  </data>
+  <data name="VisitManagement" xml:space="preserve">
+    <value>Quản lý khách truy cập</value>
+  </data>
+  <data name="ViewUserArmy" xml:space="preserve">
+    <value>Xem người dùng quân đội</value>
+  </data>
+  <data name="AddUserArmy" xml:space="preserve">
+    <value>Thêm người dùng quân đội</value>
+  </data>
+  <data name="EditUserArmy" xml:space="preserve">
+    <value>Chỉnh sửa người dùng quân đội</value>
+  </data>
+  <data name="DeleteUserArmy" xml:space="preserve">
+    <value>Xóa người dùng quân đội</value>
+  </data>
+  <data name="DescriptionViewUserArmy" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách quân nhân.</value>
+  </data>
+  <data name="DescriptionAddUserArmy" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm một người dùng quân đội mới.</value>
+  </data>
+  <data name="DescriptionEditUserArmy" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin người dùng quân đội.</value>
+  </data>
+  <data name="DescriptionDeleteUserArmy" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa người dùng quân đội.</value>
+  </data>
+  <data name="UserArmy" xml:space="preserve">
+    <value>Người dùng quân đội</value>
+  </data>
+  <data name="ViewVisitArmy" xml:space="preserve">
+    <value>Xem dữ liệu khách quân đội</value>
+  </data>
+  <data name="AddVisitArmy" xml:space="preserve">
+    <value>Tạo mới một lời mời đến thăm cho quân đội</value>
+  </data>
+  <data name="EditVisitArmy" xml:space="preserve">
+    <value>Chỉnh sửa thông tin quân đội</value>
+  </data>
+  <data name="DeleteVisitArmy" xml:space="preserve">
+    <value>Xóa khách truy cập quân đội</value>
+  </data>
+  <data name="DescriptionViewVisitArmy" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem dữ liệu khách truy cập trong quân đội.</value>
+  </data>
+  <data name="DescriptionAddVisitArmy" xml:space="preserve">
+    <value>Sự cho phép này cho phép bạn đăng ký tham gia vào quân đội.</value>
+  </data>
+  <data name="DescriptionEditVisitArmy" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin quân đội.</value>
+  </data>
+  <data name="DescriptionDeleteVisitArmy" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa lời mời truy cập chỉ khi bạn đã đăng ký.</value>
+  </data>
+  <data name="VisitArmyManagement" xml:space="preserve">
+    <value>Khách quân đội</value>
+  </data>
+  <data name="ViewMonitoring" xml:space="preserve">
+    <value>Xem các sự kiện trong thời gian thực</value>
+  </data>
+  <data name="DescriptionViewMonitoring" xml:space="preserve">
+    <value>Quyền này cho phép bạn có thể xem các sự kiện được đăng trong thời gian thực.</value>
+  </data>
+  <data name="Monitoring" xml:space="preserve">
+    <value>Giám sát</value>
+  </data>
+  <data name="ViewDeviceMonitoring" xml:space="preserve">
+    <value>Xem nội dung của trang giám sát thiết bị</value>
+  </data>
+  <data name="DescriptionViewDeviceMonitoring" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem nội dung của trang giám sát thiết bị.</value>
+  </data>
+  <data name="DeviceMonitoring" xml:space="preserve">
+    <value>Giám sát thiết bị</value>
+  </data>
+  <data name="SendInstructionDeviceMonitoring" xml:space="preserve">
+    <value>Gửi hướng dẫn đến thiết bị</value>
+  </data>
+  <data name="DescriptionSendInstructionDeviceMonitoring" xml:space="preserve">
+    <value>Quyền này cho phép bạn gửi một số hướng dẫn đến các thiết bị. Các hướng dẫn bao gồm "Mở cửa", "Khởi động lại thiết bị" và "Gửi thời gian hiện tại".</value>
+  </data>
+  <data name="ViewUserDepartment" xml:space="preserve">
+    <value>Xem danh sách người dùng thuộc một phòng ban</value>
+  </data>
+  <data name="DescriptionViewUserDepartment" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách người dùng thuộc một phòng ban cụ thể.</value>
+  </data>
+  <data name="ExportUser" xml:space="preserve">
+    <value>Xuất danh sách người dùng sang tệp</value>
+  </data>
+  <data name="DescriptionExportUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất và lưu danh sách người dùng ở dạng tệp.</value>
+  </data>
+  <data name="SetWorkingTimeUser" xml:space="preserve">
+    <value>Cài đặt giờ làm việc</value>
+  </data>
+  <data name="DescriptionSetWorkingTimeUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn đặt giờ làm việc cho mỗi người dùng.</value>
+  </data>
+  <data name="ViewDeviceSetting" xml:space="preserve">
+    <value>Xem nội dung của trang cài đặt thiết bị</value>
+  </data>
+  <data name="EditDeviceSetting" xml:space="preserve">
+    <value>Chỉnh sửa thông tin thiết bị</value>
+  </data>
+  <data name="CopyDeviceSetting" xml:space="preserve">
+    <value>Sao chép cài đặt thiết bị</value>
+  </data>
+  <data name="ReinstallDeviceSetting" xml:space="preserve">
+    <value>Cài đặt lại thiết bị</value>
+  </data>
+  <data name="ViewHistoryDeviceSetting" xml:space="preserve">
+    <value>Xem lịch sử của thiết bị</value>
+  </data>
+  <data name="DescriptionEditDeviceSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin thiết bị. Bạn có thể chỉnh sửa thông tin thiết bị từ trang Giám sát, Giám sát thiết bị và Cài đặt thiết bị với quyền này.</value>
+  </data>
+  <data name="DescriptionViewDeviceSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem nội dung của trang cài đặt thiết bị. Nó cũng được sử dụng để xem danh sách các thiết bị trên trang 'Người dùng đã đăng ký'.</value>
+  </data>
+  <data name="DescriptionCopyDeviceSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn sao chép cài đặt thiết bị cụ thể và dán vào các thiết bị khác.</value>
+  </data>
+  <data name="DescriptionReinstallDeviceSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn cài đặt lại thiết bị.</value>
+  </data>
+  <data name="DescriptionViewHistoryDeviceSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem lịch sử thiết bị. Bạn cũng có thể xem lịch sử thiết bị trên trang giám sát thiết bị.</value>
+  </data>
+  <data name="DeviceSetting" xml:space="preserve">
+    <value>Thiết lập thiết bị</value>
+  </data>
+  <data name="ViewReport" xml:space="preserve">
+    <value>Chỉ xem các sự kiện của riêng bạn trên trang Báo cáo</value>
+  </data>
+  <data name="ExportReport" xml:space="preserve">
+    <value>Xuất sự kiện sang tệp</value>
+  </data>
+  <data name="DescriptionViewReport" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉ tìm kiếm và xem lịch sử truy cập trong quá khứ của riêng mình trên trang Báo cáo.</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Báo cáo</value>
+  </data>
+  <data name="DescriptionExportReport" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất các bản ghi truy cập thành một tệp.</value>
+  </data>
+  <data name="ViewAccessibleDoor" xml:space="preserve">
+    <value>Xem danh sách các cửa có thể vào được</value>
+  </data>
+  <data name="ExportAccessibleDoor" xml:space="preserve">
+    <value>Xuất danh sách các thiết bị có thể truy cập</value>
+  </data>
+  <data name="DescriptionViewAccessibleDoor" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách các thiết bị mà mỗi người dùng có thể truy cập.</value>
+  </data>
+  <data name="DescriptionExportAccessibleDoor" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất danh sách các thiết bị mà mỗi người dùng có thể truy cập vào một tệp.</value>
+  </data>
+  <data name="AccessibleDoor" xml:space="preserve">
+    <value>Cửa được phép truy cập</value>
+  </data>
+  <data name="ViewRegisteredUser" xml:space="preserve">
+    <value>Xem danh sách người dùng đã đăng ký</value>
+  </data>
+  <data name="ExportRegisteredUser" xml:space="preserve">
+    <value>Xuất danh sách người dùng đã đăng ký</value>
+  </data>
+  <data name="RegisteredUser" xml:space="preserve">
+    <value>Người dùng đã đăng kí</value>
+  </data>
+  <data name="DescriptionViewRegisteredUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách người dùng đã đăng ký trên mỗi thiết bị.</value>
+  </data>
+  <data name="DescriptionExportRegisteredUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất danh sách người dùng đã đăng ký trên mỗi thiết bị thành một tệp.</value>
+  </data>
+  <data name="EditAttendance" xml:space="preserve">
+    <value>Chỉnh sửa chấm công</value>
+  </data>
+  <data name="ViewHistoryAttendance" xml:space="preserve">
+    <value>Xem lịch sử truy cập chấm công</value>
+  </data>
+  <data name="DescriptionEditAttendance" xml:space="preserve">
+    <value>Người quản lý phòng ban có quyền này có thể chỉnh sửa chấm công.</value>
+  </data>
+  <data name="DescriptionViewHistoryAttendance" xml:space="preserve">
+    <value>Quyền này cho phép bạn kiểm tra lịch sử truy cập của người dùng. Bạn có thể xem lịch sử truy cập trên trang 'Giám sát' và 'Báo cáo chấm công'.</value>
+  </data>
+  <data name="ApproveVisit" xml:space="preserve">
+    <value>Phê duyệt một chuyến thăm</value>
+  </data>
+  <data name="DescriptionApproveVisit" xml:space="preserve">
+    <value>Quyền này cho phép bạn phê duyệt một chuyến thăm.</value>
+  </data>
+  <data name="ViewVisitReport" xml:space="preserve">
+    <value>Xem báo cáo truy cập của khách</value>
+  </data>
+  <data name="ExportVisitReport" xml:space="preserve">
+    <value>Xuất báo cáo truy cập của khách mời</value>
+  </data>
+  <data name="EditVisitSetting" xml:space="preserve">
+    <value>Thay đổi người phê duyệt lượt truy cập</value>
+  </data>
+  <data name="DescriptionViewVisitReport" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem báo cáo truy cập về khách truy cập.</value>
+  </data>
+  <data name="DescriptionExportVisitReport" xml:space="preserve">
+    <value>Quyền này cho phép bạn xuất báo cáo lịch sử truy cập cho khách truy cập vào một tệp.</value>
+  </data>
+  <data name="DescriptionEditVisitSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn thay đổi người phê duyệt lượt truy cập.</value>
+  </data>
+  <data name="VisitReport" xml:space="preserve">
+    <value>Báo cáo Truy cập</value>
+  </data>
+  <data name="VisitSetting" xml:space="preserve">
+    <value>Cài đặt Khách Truy cập</value>
+  </data>
+  <data name="ApproveUser" xml:space="preserve">
+    <value>Phê duyệt người dùng</value>
+  </data>
+  <data name="DescriptionApproveUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn phê duyệt người dùng.</value>
+  </data>
+  <data name="AccessSetting" xml:space="preserve">
+    <value>Cài đặt quyền truy cập</value>
+  </data>
+  <data name="EditAccessSetting" xml:space="preserve">
+    <value>Chỉnh sửa cài đặt quyền truy cập</value>
+  </data>
+  <data name="DescriptionEditAccessSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa cài đặt truy cập.</value>
+  </data>
+  <data name="VehicleManagement" xml:space="preserve">
+    <value>Quản lý phương tiện</value>
+  </data>
+  <data name="CardIssuing" xml:space="preserve">
+    <value>Phát hành thẻ</value>
+  </data>
+  <data name="CardIssuingSetting" xml:space="preserve">
+    <value>Cài đặt phát hành thẻ</value>
+  </data>
+  <data name="CardIssuingLayout" xml:space="preserve">
+    <value>Sơ đồ phát hành thẻ</value>
+  </data>
+  <data name="AddVehicle" xml:space="preserve">
+    <value>Thêm phương tiện</value>
+  </data>
+  <data name="ViewVehicle" xml:space="preserve">
+    <value>Xem dữ liệu phương tiện</value>
+  </data>
+  <data name="EditVehicle" xml:space="preserve">
+    <value>Chỉnh sửa thông tin phương tiện</value>
+  </data>
+  <data name="DescriptionAddVehicle" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm danh sách phương tiện.</value>
+  </data>
+  <data name="DescriptionViewVehicle" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách phương tiện.</value>
+  </data>
+  <data name="DescriptionEditVehicle" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin phương tiện.</value>
+  </data>
+  <data name="ViewCardIssuing" xml:space="preserve">
+    <value>Xem phát hành thẻ</value>
+  </data>
+  <data name="AddCardIssuing" xml:space="preserve">
+    <value>Thêm phát hành thẻ</value>
+  </data>
+  <data name="EditCardIssuing" xml:space="preserve">
+    <value>Chỉnh sửa phát hành thẻ</value>
+  </data>
+  <data name="DescriptionAddCardIssuing" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm phát hành thẻ.</value>
+  </data>
+  <data name="DescriptionViewCardIssuing" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem thông tin phát hành thẻ.</value>
+  </data>
+  <data name="ViewCardIssuingSetting" xml:space="preserve">
+    <value>Xem cài đặt phát hành thẻ</value>
+  </data>
+  <data name="ViewCardIssuingLayout" xml:space="preserve">
+    <value>Xem bố cục phát hành thẻ</value>
+  </data>
+  <data name="AddCardIssuingLayout" xml:space="preserve">
+    <value>Thêm bố cục phát hành thẻ</value>
+  </data>
+  <data name="AddCardIssuingSetting" xml:space="preserve">
+    <value>Thêm cài đặt phát hành thẻ</value>
+  </data>
+  <data name="EditCardIssuingSetting" xml:space="preserve">
+    <value>Chỉnh sửa cài đặt phát hành thẻ</value>
+  </data>
+  <data name="EditCardIssuingLayout" xml:space="preserve">
+    <value>Chỉnh sửa bố cục phát hành thẻ</value>
+  </data>
+  <data name="DescriptionViewCardIssuingSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem cài đặt phát hành thẻ.</value>
+  </data>
+  <data name="DescriptionViewCardIssuingLayout" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem sơ đồ phát hành thẻ.</value>
+  </data>
+  <data name="DescriptionAddCardIssuingSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm cài đặt phát hành thẻ.</value>
+  </data>
+  <data name="DescriptionAddCardIssuingLayout" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm bố cục phát hành thẻ.</value>
+  </data>
+  <data name="DescriptionEditCardIssuingSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa cài đặt phát hành thẻ.</value>
+  </data>
+  <data name="DescriptionEditCardIssuingLayout" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa bố cục phát hành thẻ.</value>
+  </data>
+  <data name="DescriptionEditCardIssuing" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin phát hành thẻ.</value>
+  </data>
+  <data name="ViewDashBoard" xml:space="preserve">
+    <value>Xem Bảng điều khiển</value>
+  </data>
+  <data name="DescriptionViewDashBoard" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem Bảng điều khiển.</value>
+  </data>
+  <data name="DashBoard" xml:space="preserve">
+    <value>Bảng điều khiển</value>
+  </data>
+  <data name="EventManagement" xml:space="preserve">
+    <value>Quản lý sự kiện cuộc họp</value>
+  </data>
+  <data name="ViewEventManagement" xml:space="preserve">
+    <value>Xem danh sách cuộc họp</value>
+  </data>
+  <data name="AddEventManagement" xml:space="preserve">
+    <value>Thêm sự kiện cuộc họp</value>
+  </data>
+  <data name="EditEventManagement" xml:space="preserve">
+    <value>Chỉnh sửa sự kiện cuộc họp</value>
+  </data>
+  <data name="DeleteEventManagement" xml:space="preserve">
+    <value>Xóa sự kiện cuộc họp</value>
+  </data>
+  <data name="DescriptionViewEventManagement" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sáchsự kiện các cuộc họp.</value>
+  </data>
+  <data name="DescriptionAddEventManagement" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm một cuộc họp mới.</value>
+  </data>
+  <data name="DescriptionEditEventManagement" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa sự kiện cuộc họp.</value>
+  </data>
+  <data name="DescriptionDeleteEventManagement" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa thông tin.</value>
+  </data>
+  <data name="LibraryManagement" xml:space="preserve">
+    <value>Quản lý thư viện</value>
+  </data>
+  <data name="EditBook" xml:space="preserve">
+    <value>Chỉnh sửa sách</value>
+  </data>
+  <data name="AddBook" xml:space="preserve">
+    <value>Thêm sách</value>
+  </data>
+  <data name="DeleteBook" xml:space="preserve">
+    <value>Xóa sách</value>
+  </data>
+  <data name="DescriptionViewBook" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem tất cả sách có trong thư viện.</value>
+  </data>
+  <data name="DescriptionAddBook" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm quyển sách mới.</value>
+  </data>
+  <data name="DescriptionEditBook" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa thông tin sách.</value>
+  </data>
+  <data name="DescriptionDeleteBook" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa quyển sách ở thư viện.</value>
+  </data>
+  <data name="Book" xml:space="preserve">
+    <value>Quản lý sách</value>
+  </data>
+  <data name="ViewBook" xml:space="preserve">
+    <value>Xem sách</value>
+  </data>
+  <data name="LeaveRequest" xml:space="preserve">
+    <value>Xin nghỉ phép</value>
+  </data>
+  <data name="ViewLeaveRequest" xml:space="preserve">
+    <value>Xem đơn xin nghỉ phép</value>
+  </data>
+  <data name="AddLeaveRequest" xml:space="preserve">
+    <value>Thêm đơn xin nghỉ phép</value>
+  </data>
+  <data name="EditLeaveRequest" xml:space="preserve">
+    <value>Chỉnh sửa đơn xin nghỉ phép</value>
+  </data>
+  <data name="DeleteLeaveRequest" xml:space="preserve">
+    <value>Xóa đơn xin nghỉ phép</value>
+  </data>
+  <data name="DescriptionViewLeaveRequest" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem danh sách đơn xin nghỉ phép.</value>
+  </data>
+  <data name="DescriptionAddLeaveRequest" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm đơn xin nghỉ phép mới.</value>
+  </data>
+  <data name="DescriptionEditLeaveRequest" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa đơn xin nghỉ phép.</value>
+  </data>
+  <data name="DescriptionDeleteLeaveRequest" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa đơn xin nghỉ việc.</value>
+  </data>
+  <data name="ViewLeaveManagementLeaveRequest" xml:space="preserve">
+    <value>Xem trang quản lý đơn xin nghỉ</value>
+  </data>
+  <data name="DescriptionViewLeaveManagementLeaveRequest" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem trang quản lý số lưng ngày nghỉ của các thành viên trong công ty.</value>
+  </data>
+  <data name="UpdateUserSettingUser" xml:space="preserve">
+    <value>Chỉnh sửa cài đặt người dùng</value>
+  </data>
+  <data name="DescriptionUpdateUserSettingUser" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa cấu hình người dùng.</value>
+  </data>
+  <data name="UpdateAttendanceSettingAttendance" xml:space="preserve">
+    <value>Chỉnh sửa cấu hình chấm công</value>
+  </data>
+  <data name="DescriptionUpdateAttendanceSettingAttendance" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa cấu hình chấm công.</value>
+  </data>
+  <data name="ViewVehicleAllocation" xml:space="preserve">
+    <value>Xem thông tin phân phối xe</value>
+  </data>
+  <data name="DescriptionViewVehicleAllocation" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem dữ liệu phân bổ phương tiện.</value>
+  </data>
+  <data name="AddVehicleAllocation" xml:space="preserve">
+    <value>Thêm phân bổ phương tiện</value>
+  </data>
+  <data name="DescriptionAddVehicleAllocation" xml:space="preserve">
+    <value>Quyền này cho phép bạn yêu cầu phân bổ phương tiện.</value>
+  </data>
+  <data name="VehicleAllocation" xml:space="preserve">
+    <value>Phân bổ phương tiện</value>
+  </data>
+  <data name="EditVehicleAllocation" xml:space="preserve">
+    <value>Chỉnh sửa phân bổ phương tiện</value>
+  </data>
+  <data name="DescriptionEditVehicleAllocation" xml:space="preserve">
+    <value>Quyền này cho phép bạn chỉnh sửa việc phân bổ phương tiện.</value>
+  </data>
+  <data name="DeleteVehicleAllocation" xml:space="preserve">
+    <value>Xóa phân bổ phương tiện</value>
+  </data>
+  <data name="DescriptionDeleteVehicleAllocation" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa phân bổ phương tiện.</value>
+  </data>
+  <data name="RunVehicleAllocation" xml:space="preserve">
+    <value>Khởi động xe, thiết lập kết thúc</value>
+  </data>
+  <data name="DescriptionRunVehicleAllocation" xml:space="preserve">
+    <value>Sử dụng đặc quyền này để thiết lập khởi động và kết thúc dịch vụ vận hành xe.</value>
+  </data>
+  <data name="UserArmyManagement" xml:space="preserve">
+    <value>Army user management</value>
+  </data>
+  <data name="ViewUserArmyManagement" xml:space="preserve">
+    <value>Xem quản lý người dùng quân đội</value>
+  </data>
+  <data name="DescriptionViewUserArmyManagement" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem một danh sách quản trị người dùng quân đội.</value>
+  </data>
+  <data name="AddUserArmyManagement" xml:space="preserve">
+    <value>Thêm quản lý người dùng quân đội</value>
+  </data>
+  <data name="DescriptionAddUserArmyManagement" xml:space="preserve">
+    <value>Giấy phép này cho phép bạn thêm các chuyến đi chơi và lịch nghỉ của binh sĩ.</value>
+  </data>
+  <data name="EditUserArmyManagement" xml:space="preserve">
+    <value>Chỉnh sửa Quản lý Người dùng Quân sự</value>
+  </data>
+  <data name="DescriptionEditUserArmyManagement" xml:space="preserve">
+    <value>Giấy phép này cho phép bạn thay đổi cách quản lý các chuyến đi và kỳ nghỉ của binh lính.</value>
+  </data>
+  <data name="DeleteUserArmyManagement" xml:space="preserve">
+    <value>Xoá quản lý người dùng quân đội</value>
+  </data>
+  <data name="DescriptionDeleteUserArmyManagement" xml:space="preserve">
+    <value>Giấy phép này cho phép bạn xóa việc quản lý các chuyến đi và kỳ nghỉ của binh lính.</value>
+  </data>
+  <data name="RegCivilVisitArmyManagement" xml:space="preserve">
+    <value>Đăng ký một chuyến thăm dân sự</value>
+  </data>
+  <data name="RegOtherVisitArmyManagement" xml:space="preserve">
+    <value>Đăng ký một đơn vị quân đội khác</value>
+  </data>
+  <data name="DescriptionRegCivilVisitArmyManagement" xml:space="preserve">
+    <value>Sự cho phép này cho phép bạn đăng ký cho một thường dân đến thăm.</value>
+  </data>
+  <data name="DescriptionRegOtherVisitArmyManagement" xml:space="preserve">
+    <value>Giấy phép này cho phép bạn đăng ký tiếp khách từ đơn vị quân đội khác.</value>
+  </data>
+  <data name="DescriptionRegiMasterBuilding" xml:space="preserve">
+    <value>Thông qua quyền hạn này, bạn có thể đăng ký làm chủ đơn vị.</value>
+  </data>
+  <data name="RegiMasterBuilding" xml:space="preserve">
+    <value>Đăng ký master đơn vị</value>
+  </data>
+  <data name="DescriptionViewMasterBuilding" xml:space="preserve">
+    <value>Thông qua quyền hạn này, bạn có thể xem danh sách các master của đơn vị.</value>
+  </data>
+  <data name="ViewMasterBuilding" xml:space="preserve">
+    <value>Xem master đơn vị</value>
+  </data>
+  <data name="ViewAllReport" xml:space="preserve">
+    <value>Xem mọi báo cáo truy cập</value>
+  </data>
+  <data name="DescriptionViewAllReport" xml:space="preserve">
+    <value>Quyền này cho phép bạn tìm kiếm mọi sự kiện trên trang báo biểu.</value>
+  </data>
+  <data name="DeleteVehicle" xml:space="preserve">
+    <value>Xóa thông tin phương tiện</value>
+  </data>
+  <data name="DescriptionDeleteVehicle" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa thông tin xe.</value>
+  </data>
+  <data name="DeleteCardIssuing" xml:space="preserve">
+    <value>Xóa phát hành thẻ</value>
+  </data>
+  <data name="DeleteCardIssuingLayout" xml:space="preserve">
+    <value>Xóa bố cục phát hành thẻ</value>
+  </data>
+  <data name="DeleteCardIssuingSetting" xml:space="preserve">
+    <value>Xóa cấu hình phát hành thẻ</value>
+  </data>
+  <data name="DescriptionDeleteCardIssuing" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa một thẻ phát hành</value>
+  </data>
+  <data name="DescriptionDeleteCardIssuingLayout" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa một bố cục phát hành thẻ.</value>
+  </data>
+  <data name="DescriptionDeleteCardIssuingSetting" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa cấu hình phát hành thẻ.</value>
+  </data>
+  <data name="ManageOwnRecordLeaveRequest" xml:space="preserve">
+    <value>Quản lý yêu cầu nghỉ phép của chính bạn</value>
+  </data>
+  <data name="DescriptionManageOwnRecordLeaveRequest" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem/thêm/sửa/xóa những yêu cầu nghỉ phép của chính bạn</value>
+  </data>
+
+  <data name="AccessSchedule" xml:space="preserve">
+    <value>Lịch trực</value>
+  </data>
+    <data name="ViewAccessSchedule" xml:space="preserve">
+    <value>Xem lịch trực</value>
+  </data>
+    <data name="DescriptionViewAccessSchedule" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem lịch trực.</value>
+  </data>
+    <data name="AddAccessSchedule" xml:space="preserve">
+    <value>Thêm lịch trực</value>
+  </data>
+    <data name="DescriptionAddAccessSchedule" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm lịch trực.</value>
+  </data>
+    <data name="EditAccessSchedule" xml:space="preserve">
+    <value>Sửa lịch trực</value>
+  </data>
+    <data name="DescriptionEditAccessSchedule" xml:space="preserve">
+    <value>Quyền này cho phép bạn sửa lịch trực.</value>
+  </data>
+    <data name="DeleteAccessSchedule" xml:space="preserve">
+    <value>Xóa lịch trực</value>
+  </data>
+    <data name="DescriptionDeleteAccessSchedule" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa lịch trực.</value>
+  </data>
+    <data name="DeviceReader" xml:space="preserve">
+    <value>Điểm truy cập</value>
+  </data>
+    <data name="ViewDeviceReader" xml:space="preserve">
+    <value>Xem điểm truy cập</value>
+  </data>
+    <data name="DescriptionViewDeviceReader" xml:space="preserve">
+    <value>Quyền này cho phép bạn xem điểm truy cập.</value>
+  </data>
+    <data name="AddDeviceReader" xml:space="preserve">
+    <value>Thêm điểm truy cập</value>
+  </data>
+    <data name="DescriptionAddDeviceReader" xml:space="preserve">
+    <value>Quyền này cho phép bạn thêm điểm truy cập.</value>
+  </data>
+    <data name="EditDeviceReader" xml:space="preserve">
+    <value>Sửa điểm truy cập</value>
+  </data>
+    <data name="DescriptionEditDeviceReader" xml:space="preserve">
+    <value>Quyền này cho phép bạn sửa điểm truy cập.</value>
+  </data>
+    <data name="DeleteDeviceReader" xml:space="preserve">
+    <value>Xóa điểm truy cập</value>
+  </data>
+    <data name="DescriptionDeleteDeviceReader" xml:space="preserve">
+    <value>Quyền này cho phép bạn xóa điểm truy cập.</value>
+  </data>
+</root>

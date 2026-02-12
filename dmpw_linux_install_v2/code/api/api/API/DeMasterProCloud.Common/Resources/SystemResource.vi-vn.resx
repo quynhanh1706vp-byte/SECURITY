@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PlugInCameraPlugIn" xml:space="preserve">
+    <value>Chế độ Camera 1</value>
+  </data>
+  <data name="PlugInCommon" xml:space="preserve">
+        <value>Tính năng chung</value>
+    </data>
+  <data name="PlugInQrCode" xml:space="preserve">
+        <value>Qr Code</value>
+    </data>
+  <data name="PlugInPassCode" xml:space="preserve">
+        <value>Mật mã</value>
+    </data>
+  <data name="PlugInCardIssuing" xml:space="preserve">
+        <value>Thẻ đang phát hành</value>
+    </data>
+  <data name="PlugInAccessControl" xml:space="preserve">
+        <value>Kiểm soát ra/vào</value>
+    </data>
+  <data name="PlugInScreenMessage" xml:space="preserve">
+        <value>Màn hình thông báo</value>
+    </data>
+  <data name="PlugInArmyManagement" xml:space="preserve">
+        <value>Quản lý quân đội</value>
+    </data>
+  <data name="PlugInTimeAttendance" xml:space="preserve">
+        <value>Thời gian ra/vào</value>
+    </data>
+  <data name="PlugInVisitManagement" xml:space="preserve">
+        <value>Quản lý khách mời</value>
+    </data>
+  <data name="PlugInCanteenManagement" xml:space="preserve">
+        <value>Quản lý canteen</value>
+    </data>
+  <data name="DescPlugInQrCode" xml:space="preserve">
+    <value>Cho phép sử dụng mã QR để ra/vào công ty</value>
+  </data>
+  <data name="DescPlugInPassCode" xml:space="preserve">
+    <value>Plugin này cho phép công ty sử dụng mật mã làm nhận dạng.
+&lt;br&gt;Nó được hỗ trợ sử dụng trên các loại thiết bị: DE960, iTouchPop 2A, iTouchPop X, etc.</value>
+  </data>
+  <data name="DescPlugInAccessControl" xml:space="preserve">
+    <value>Plugin này cho phép công ty cần kiểm soát cửa. Điều này bao gồm nhóm truy cập, thời gian truy cập, kỳ nghỉ, v.v.</value>
+  </data>
+  <data name="DescPlugInScreenMessage" xml:space="preserve">
+    <value>Plugin này cho phép công ty sử dụng trình đọc có màn hình. Ví dụ: iTouchPop 2A, iTouchPop X, v.v. &lt;br&gt; Tùy chọn này giúp bạn có thể thay đổi thông báo trên màn hình.</value>
+  </data>
+  <data name="DescPlugInVisitManagement" xml:space="preserve">
+    <value>Chế độ này cho phép quản lý khách mời đến thăm quan.
+&lt;br&gt;Tùy chọn này giúp bạn có thể kích hoạt tùy chọn này để đăng ký tham quan, mời khách truy cập và quản lý khách truy cập.</value>
+  </data>
+  <data name="DescPlugInTimeAttendance" xml:space="preserve">
+    <value>Plugin này dành cho công ty cần ghi lại thời gian vào / ra, quản lý việc chấm công, đặt giờ làm việc và yêu cầu nghỉ phép.</value>
+  </data>
+  <data name="DescPlugInCommon" xml:space="preserve">
+    <value>Theo mặc định, plugin này áp dụng cho tất cả các công ty.</value>
+  </data>
+  <data name="DescPlugInArmyManagement" xml:space="preserve">
+    <value>Plugin này bao gồm các tính năng dành cho các đơn vị quân đội. Bật tùy chọn này sẽ thay đổi đáng kể các tính năng liên quan đến người dùng và khách truy cập.</value>
+  </data>
+  <data name="DescPlugInCameraPlugIn" xml:space="preserve">
+    <value>Plugin này cho phép công ty sử dụng camera để nhận dạng khuôn mặt khi ra vào.</value>
+  </data>
+  <data name="DescPlugInCanteenManagement" xml:space="preserve">
+    <value>Plugin này bao gồm nhiều tính năng dành cho nhà hàng.
+&lt;br&gt;Bật tùy chọn này sẽ thêm / thay đổi nhiều tính năng cho quản lý nhà hàng.</value>
+  </data>
+  <data name="DescPlugInCardIssuing" xml:space="preserve">
+    <value>Cho phép công ty có thể tự in thẻ và phát hành thẻ sử dụng trong công ty.</value>
+  </data>
+  <data name="PlugInEventManagement" xml:space="preserve">
+    <value>Quản lý sự kiện</value>
+  </data>
+  <data name="DescPlugInEventManagement" xml:space="preserve">
+    <value>Quản lý sự kiện (các cuộc họp, các hoạt động tập thể,...)</value>
+  </data>
+  <data name="PlugInVehiclePlugIn" xml:space="preserve">
+    <value>Quản lý phương tiện</value>
+  </data>
+  <data name="PlugInCovid19" xml:space="preserve">
+    <value>Covid19</value>
+  </data>
+  <data name="DescPlugInCovid19" xml:space="preserve">
+    <value>Covid-19</value>
+  </data>
+  <data name="PlugInBuildingMaster" xml:space="preserve">
+    <value>Cài đặt quản lý cho đơn vị</value>
+  </data>
+  <data name="DescPlugInBuildingMaster" xml:space="preserve">
+    <value>Plugin này cho phép thiết lậpquản lý cho mỗi đơn vị.</value>
+  </data>
+  <data name="PlugInCameraPlugIn2" xml:space="preserve">
+    <value>Chế độ Camera 2</value>
+  </data>
+  <data name="DescPlugInCameraPlugIn2" xml:space="preserve">
+    <value>Với chế độ này yêu cầu bắt buộc là phải bật cả chế độ camera 1. Nó cho phép đồng bộ tất cả dữ liệu người dùng từ hệ thống của Hanet</value>
+  </data>
+  <data name="PlugInElevator" xml:space="preserve">
+    <value>Thang máy</value>
+  </data>
+  <data name="DescPlugInElevator" xml:space="preserve">
+    <value>Chế độ thang máy</value>
+  </data>
+  <data name="PlugInVideoDoorbell" xml:space="preserve">
+    <value>Chế độ chuông cửa</value>
+  </data>
+  <data name="DescPlugInVideoDoorbell" xml:space="preserve">
+    <value>Tích hợp Jitsi Video để sử dụng giống như chuông cửa</value>
+  </data>
+  <data name="PlugInFaceRecognition" xml:space="preserve">
+    <value>Nhận diện khuôn mặt</value>
+  </data>
+  <data name="DescPlugInFaceRecognition" xml:space="preserve">
+    <value>Plug-in này cho phép sử dụng thiết bị nhận diện khuôn mặt.</value>
+  </data>
+  <data name="PlugInVein" xml:space="preserve">
+    <value>Tĩnh mạch</value>
+  </data>
+  <data name="DescPlugInVehiclePlugIn" xml:space="preserve">
+    <value>Quản lý phương tiện</value>
+  </data>
+  <data name="DescPlugInVein" xml:space="preserve">
+    <value>Các plugin này cho phép sử dụng các thiết bị nhận dạng tĩnh mạch.</value>
+  </data>
+  <data name="PlugInLibraryManagement" xml:space="preserve">
+    <value>Quản lý thư viện</value>
+  </data>
+  <data name="DescPlugInLibraryManagement" xml:space="preserve">
+    <value>Plugin này sử dụng cho việc quản lý mượn, trả sách trong thư viện</value>
+  </data>
+  <data name="PlugInUnKnownPersonManagement" xml:space="preserve">
+    <value>Quản lý truy cập của người lạ</value>
+  </data>
+  <data name="DescPlugInUnknownPersonManagement" xml:space="preserve">
+    <value>Nếu cho phép sử dụng plugin này, các công ty sẽ quản lý truy cập của người lạ (không nhận diện được khuôn mặt)</value>
+  </data>
+  <data name="PlugInFingerPrint" xml:space="preserve">
+    <value>Nhận diện vân tay</value>
+  </data>
+  <data name="DescPlugInFingerPrint" xml:space="preserve">
+    <value>Plug-in này cho phép sử dụng các thiết bị nhận diện vân tay</value>
+  </data>
+  <data name="PlugInKakao" xml:space="preserve">
+    <value>Chế độ tin nhắn Kakao</value>
+  </data>
+  <data name="DescPlugInKakao" xml:space="preserve">
+    <value>Plug-in này cho phép sử dụng gửi tin nhắn bằng Kakao</value>
+  </data>
+  <data name="PlugInDeptAcGrpConn" xml:space="preserve">
+    <value>Kết nối giữa các phòng ban và nhóm truy cập</value>
+  </data>
+  <data name="DescPlugInDeptAcGrpConn" xml:space="preserve">
+    <value>Nhóm truy cập cơ bản được thiết lập cho từng bộ phận thông qua kết nối giữa Bộ và Nhóm truy cập.</value>
+  </data>
+  <data name="PlugInDepartmentAccessLevel" xml:space="preserve">
+    <value>Phân quyền truy cập theo phòng b</value>
+  </data>
+  <data name="DescPlugInDepartmentAccessLevel" xml:space="preserve">
+    <value>Cho phép người dùng quản lý thiết bị theo từng phòng ban</value>
+  </data>
+  <data name="DescPlugInCustomizeLanguage" xml:space="preserve">
+    <value>Nếu kích hoạt plugin này, công ty sẽ đặt mặc định một số ngôn ngữ và người dùng không chuyển sang ngôn ngữ khác</value>
+  </data>
+  <data name="PlugInCustomizeLanguage" xml:space="preserve">
+    <value>Tùy chỉnh ngôn ngữ</value>
+  </data>
+</root>

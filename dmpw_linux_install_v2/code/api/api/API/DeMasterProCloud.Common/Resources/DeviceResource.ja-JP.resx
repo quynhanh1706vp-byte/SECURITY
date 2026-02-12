@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAbcm" xml:space="preserve">
+    <value>ABCM</value>
+  </data>
+  <data name="lblAccessibleUsers" xml:space="preserve">
+    <value>出入可能ユーザー</value>
+  </data>
+  <data name="lblAccessTimezone" xml:space="preserve">
+    <value>アクセスタイムゾーン</value>
+  </data>
+  <data name="lblAddNew" xml:space="preserve">
+    <value>デバイス追加</value>
+  </data>
+  <data name="lblAlarm" xml:space="preserve">
+    <value>アラーム</value>
+  </data>
+  <data name="lblAntiPassback" xml:space="preserve">
+    <value>アンチパスバック</value>
+  </data>
+  <data name="lblBlue" xml:space="preserve">
+    <value>青</value>
+  </data>
+  <data name="lblBuilding" xml:space="preserve">
+    <value>ビル</value>
+  </data>
+  <data name="lblCardReaderLed" xml:space="preserve">
+    <value>カードリーダーLED</value>
+  </data>
+  <data name="lblChooseAtLeast" xml:space="preserve">
+    <value>最低１つのデバイスを選択してください</value>
+  </data>
+  <data name="lblCloseReverseLock" xml:space="preserve">
+    <value>Close And Reverse Lock</value>
+  </data>
+  <data name="lblCondition" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="lblConnectionStatus" xml:space="preserve">
+    <value>接続状態</value>
+  </data>
+  <data name="lblDe950" xml:space="preserve">
+    <value>DE-950</value>
+  </data>
+  <data name="lblDe960" xml:space="preserve">
+    <value>DE-960</value>
+  </data>
+  <data name="lblDeAbcm" xml:space="preserve">
+    <value>DE-ABCM</value>
+  </data>
+  <data name="lblDeleteMultipleDevice" xml:space="preserve">
+    <value>複数デバイスの削除</value>
+  </data>
+  <data name="lblDevice" xml:space="preserve">
+    <value>デバイス</value>
+  </data>
+  <data name="lblDeviceAddress" xml:space="preserve">
+    <value>RID</value>
+  </data>
+  <data name="lblDeviceList" xml:space="preserve">
+    <value>デバイスリスト</value>
+  </data>
+  <data name="lblDeviceSetting" xml:space="preserve">
+    <value>デバイス設定</value>
+  </data>
+  <data name="lblDeviceType" xml:space="preserve">
+    <value>デバイス タイプ</value>
+  </data>
+  <data name="lblDoorActiveTimezone" xml:space="preserve">
+    <value>ドアアクティブタイムゾーン</value>
+  </data>
+  <data name="lblDoorName" xml:space="preserve">
+    <value>ドア名</value>
+  </data>
+  <data name="lblDoorPassageTimezone" xml:space="preserve">
+    <value>パッセージタイムゾーン</value>
+  </data>
+  <data name="lblDoorSensorType" xml:space="preserve">
+    <value>ドアセンサータイプ</value>
+  </data>
+  <data name="lblEntrance" xml:space="preserve">
+    <value>出入モード</value>
+  </data>
+  <data name="lblReception" xml:space="preserve">
+    <value>Reception</value>
+  </data>
+  <data name="lblExportAccessibleUser" xml:space="preserve">
+    <value>出入可能ユーザーのエクスポート</value>
+  </data>
+  <data name="lblExtra" xml:space="preserve">
+    <value>Extra</value>
+  </data>
+  <data name="lblHardPassback" xml:space="preserve">
+    <value>ハードアンチパスバック</value>
+  </data>
+  <data name="lblIcu300N" xml:space="preserve">
+    <value>ICU-300N</value>
+  </data>
+  <data name="lblIcu300X" xml:space="preserve">
+    <value>ICU-300X</value>
+  </data>
+  <data name="lblId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="lblIn" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="lblIndex" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="lblInReader" xml:space="preserve">
+    <value>InReader</value>
+  </data>
+  <data name="lblIpAddress" xml:space="preserve">
+    <value>IPアドレス</value>
+  </data>
+  <data name="lbliTouchPop" xml:space="preserve">
+    <value>ITouchPop2A</value>
+  </data>
+  <data name="lblLastCommunicationTime" xml:space="preserve">
+    <value>最終通信時間</value>
+  </data>
+  <data name="lblLockOpenDuration" xml:space="preserve">
+    <value>ドア開放時間</value>
+  </data>
+  <data name="lblMacAddress" xml:space="preserve">
+    <value>MACアドレス</value>
+  </data>
+  <data name="lblMainFirmware" xml:space="preserve">
+    <value>MainFirmware</value>
+  </data>
+  <data name="lblMpr" xml:space="preserve">
+    <value>MPR</value>
+  </data>
+  <data name="lblMprInterval" xml:space="preserve">
+    <value>MPR間隔</value>
+  </data>
+  <data name="lblMultiPersonRule" xml:space="preserve">
+    <value>Multi Person Rule</value>
+  </data>
+  <data name="lblNetworkEnable" xml:space="preserve">
+    <value>ネットワーク有効化</value>
+  </data>
+  <data name="lblNfcModule" xml:space="preserve">
+    <value>NfcModule</value>
+  </data>
+  <data name="lblNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="lblNormalClose" xml:space="preserve">
+    <value>ノーマルクローズ</value>
+  </data>
+  <data name="lblNormalOpen" xml:space="preserve">
+    <value>ノーマルオープン</value>
+  </data>
+  <data name="lblNumberOfNotTransmittingEvent" xml:space="preserve">
+    <value>未送信イベント数</value>
+  </data>
+  <data name="lblOpenDoor" xml:space="preserve">
+    <value>ドア開放</value>
+  </data>
+  <data name="lblOut" xml:space="preserve">
+    <value>アウト</value>
+  </data>
+  <data name="lblOutReader" xml:space="preserve">
+    <value>OutReader</value>
+  </data>
+  <data name="lblPunchInterval" xml:space="preserve">
+    <value>パンチ間隔</value>
+  </data>
+  <data name="lblRed" xml:space="preserve">
+    <value>赤</value>
+  </data>
+  <data name="lblRegisterIdNumber" xml:space="preserve">
+    <value>登録されたID数</value>
+  </data>
+  <data name="lblRestaurant" xml:space="preserve">
+    <value>レストランモード</value>
+  </data>
+  <data name="lblRID" xml:space="preserve">
+    <value>RID</value>
+  </data>
+  <data name="lblServerIp" xml:space="preserve">
+    <value>サーバ IP</value>
+  </data>
+  <data name="lblServerPort" xml:space="preserve">
+    <value>サーバ ポート</value>
+  </data>
+  <data name="lblSoundTrack01" xml:space="preserve">
+    <value>SoundTrack01</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="lblStatusDelay" xml:space="preserve">
+    <value>状態遅延</value>
+  </data>
+  <data name="lblTransmitCurrentTime" xml:space="preserve">
+    <value>現在時刻送信</value>
+  </data>
+  <data name="lblTransmitDeviceSetting" xml:space="preserve">
+    <value>デバイス設定送信</value>
+  </data>
+  <data name="lblTransmitHolidaySetting" xml:space="preserve">
+    <value>休日設定送信</value>
+  </data>
+  <data name="lblTransmitMessageSetting" xml:space="preserve">
+    <value>メッセージ設定送信</value>
+  </data>
+  <data name="lblTransmitServerIp" xml:space="preserve">
+    <value>サーバ IP送信</value>
+  </data>
+  <data name="lblTransmitTimezoneSetting" xml:space="preserve">
+    <value>タイムゾーン設定送信</value>
+  </data>
+  <data name="lblTransmitUserInfo" xml:space="preserve">
+    <value>ユーザー送信</value>
+  </data>
+  <data name="lblOperationType" xml:space="preserve">
+    <value>操作タイプ</value>
+  </data>
+  <data name="lblUpdateDevice" xml:space="preserve">
+    <value>出入り口({0})の情報変更。</value>
+  </data>
+  <data name="lblUtc" xml:space="preserve">
+    <value>UTC</value>
+  </data>
+  <data name="lblVerifyMode" xml:space="preserve">
+    <value>認証モード</value>
+  </data>
+  <data name="lblVersion" xml:space="preserve">
+    <value>ファームウェアバージョン</value>
+  </data>
+  <data name="lblWiegandFormat" xml:space="preserve">
+    <value>ウィーガンドフォーマット</value>
+  </data>
+  <data name="msgActiveDoor" xml:space="preserve">
+    <value>ドアを無効に{0}（ドアの名前）</value>
+  </data>
+  <data name="msgChangeActiveTimezone" xml:space="preserve">
+    <value>ドアアクティブタイムゾーン{0}を変更（ドア名）</value>
+  </data>
+  <data name="msgChangeAntiPassback" xml:space="preserve">
+    <value>アンチパスバックを "{0}" {1}（ドア名）に変更</value>
+  </data>
+  <data name="msgChangeDevice" xml:space="preserve">
+    <value>デバイス {0} (デバイスID)変更</value>
+  </data>
+  <data name="msgChangeDeviceAddress" xml:space="preserve">
+    <value>デバイスアドレスを "{0}"（ドア名）に変更</value>
+  </data>
+  <data name="msgChangeDoorName" xml:space="preserve">
+    <value>名前を '{0}'から '{1}'（ドア名）に変更</value>
+  </data>
+  <data name="msgChangeDoorSensorType" xml:space="preserve">
+    <value>ドアセンサータイプを "{0}" {1}（ドア名）に変更</value>
+  </data>
+  <data name="msgChangeIpAddress" xml:space="preserve">
+    <value>IPアドレス{0}（ドア名）を変更</value>
+  </data>
+  <data name="msgChangeLockOpenDuration" xml:space="preserve">
+    <value>ドア開放時間を "{0}" {1}（ドア名）に変更</value>
+  </data>
+  <data name="msgChangeMprAccessTimezone" xml:space="preserve">
+    <value>MPRアクセスタイムゾーン{0}（ドア名）を変更</value>
+  </data>
+  <data name="msgChangeMprCondition" xml:space="preserve">
+    <value>MPR条件を変更{0}（ドア名）</value>
+  </data>
+  <data name="msgChangeMprGroup" xml:space="preserve">
+    <value>MPRグループオプションの変更{0}（ドア名）</value>
+  </data>
+  <data name="msgChangePassageTimezone" xml:space="preserve">
+    <value>ドア開放タイムゾーンを変更{0}（ドア名）</value>
+  </data>
+  <data name="msgChangeVerifyMode" xml:space="preserve">
+    <value>確認モードを '{0}' {1}（ドア名）に変更</value>
+  </data>
+  <data name="msgChangeWgFormat" xml:space="preserve">
+    <value>Wiegandフォーマット{0}（ドア名）をアップデート</value>
+  </data>
+  <data name="msgConfirmSwitch" xml:space="preserve">
+    <value>ドアを無効にすると、カードまたはPINを使ってこのドアにアクセスすることはできません。このドアを無効にしてよろしいですか？</value>
+  </data>
+  <data name="msgCopyDeviceSetting" xml:space="preserve">
+    <value>{0}の出入り口設定を{1}にコピーしました。</value>
+  </data>
+  <data name="msgDeleteMultipleDevices" xml:space="preserve">
+    <value>複数のデバイスの削除(デバイス アドレス)</value>
+  </data>
+  <data name="msgDeviceAddressInUse" xml:space="preserve">
+    <value>このコントローラアドレスはすでに使用されています。</value>
+  </data>
+  <data name="msgDisableAlarm" xml:space="preserve">
+    <value>アラームを無効にする{0}（ドア名）</value>
+  </data>
+  <data name="msgDisableAntiPassback" xml:space="preserve">
+    <value>アンチパスバックを無効にする{0}（ドア名）</value>
+  </data>
+  <data name="msgDisableHardAntiPassback" xml:space="preserve">
+    <value>ハードアンチパスバックを無効にする{0}（ドア名）</value>
+  </data>
+  <data name="msgDisableNetworkConnection" xml:space="preserve">
+    <value>ネットワーク接続が無効になっています{0}（ドア名）</value>
+  </data>
+  <data name="msgEmergencyForcedClose" xml:space="preserve">
+    <value>強制クローズ :{0}(ユーザ) {1}(デバイス アドレス)({2}(時刻)</value>
+  </data>
+  <data name="msgEmergencyForcedOpen" xml:space="preserve">
+    <value>強制オープン :{0}(ユーザ) {1}(デバイス アドレス) at {2}(時刻)</value>
+  </data>
+  <data name="msgEmergencyRelease" xml:space="preserve">
+    <value>リリース :{0}(ユーザ) {1}(デバイス アドレス)({2}(時刻)</value>
+  </data>
+  <data name="msgEnableAlarm" xml:space="preserve">
+    <value>アラームを有効にする{0}（ドア名）</value>
+  </data>
+  <data name="msgEnableHardAntiPassback" xml:space="preserve">
+    <value>ハードアンチパスバックを有効にする{0}（ドア名）</value>
+  </data>
+  <data name="msgEnableNetworkConnection" xml:space="preserve">
+    <value>ネットワーク接続が有効になっています{0}（ドア名）</value>
+  </data>
+  <data name="msgExportAccessibleUserList" xml:space="preserve">
+    <value>Export Accessible User list</value>
+  </data>
+  <data name="msgFirmwareUpdate" xml:space="preserve">
+    <value>デバイスのファームウェア アップデート。</value>
+  </data>
+  <data name="msgInactiveDoor" xml:space="preserve">
+    <value>非アクティブドア{0}（ドア名）</value>
+  </data>
+  <data name="msgInvalidDoor" xml:space="preserve">
+    <value>ドア設定を無効にする - {0} (ドア名)</value>
+  </data>
+  <data name="msgReinstallDeviceSetting" xml:space="preserve">
+    <value>デバイスの再インストール</value>
+  </data>
+  <data name="msgSendDeviceCommand" xml:space="preserve">
+    <value>デバイスにコマンド{0}を送信</value>
+  </data>
+  <data name="msgSendDeviceMonitoringCommand" xml:space="preserve">
+    <value>デバイスモニタリングコマンド{0}を送信：{1}（ユーザー）{2}（デバイスアドレス）{3}（時刻）</value>
+  </data>
+  <data name="msgSendEmergency" xml:space="preserve">
+    <value>緊急コマンド{0}を送信：{1}（ユーザー）{2}（デバイスアドレス）{3}（時刻）</value>
+  </data>
+  <data name="msgValidDoor" xml:space="preserve">
+    <value>ドア設定を有効にする -  {0}（ドア名）</value>
+  </data>
+  <data name="lblFromDbIdNumber" xml:space="preserve">
+    <value>ID Number From DB</value>
+  </data>
+  <data name="dsClosedAndLock" xml:space="preserve">
+    <value>Closed &amp; Lock</value>
+  </data>
+  <data name="dsClosedAndUnlocked" xml:space="preserve">
+    <value>Closed &amp; Unlocked</value>
+  </data>
+  <data name="dsOpened" xml:space="preserve">
+    <value>Opened</value>
+  </data>
+  <data name="dsEmergencyClosed" xml:space="preserve">
+    <value>Emergency Closed</value>
+  </data>
+  <data name="dsEmergencyOpened" xml:space="preserve">
+    <value>Emergency Opened</value>
+  </data>
+  <data name="dsForceOpened" xml:space="preserve">
+    <value>Force Opened</value>
+  </data>
+  <data name="dsPassageOpened" xml:space="preserve">
+    <value>Passage Opened</value>
+  </data>
+  <data name="lblCommand" xml:space="preserve">
+    <value>コマンド</value>
+  </data>
+  <data name="lblOpenPeriod" xml:space="preserve">
+    <value>オープン期間</value>
+  </data>
+  <data name="lblOpenUntilTime" xml:space="preserve">
+    <value>開扉時間</value>
+  </data>
+  <data name="lblReset" xml:space="preserve">
+    <value>デバイスを再起動します</value>
+  </data>
+  <data name="lblForceOpen" xml:space="preserve">
+    <value>強制開</value>
+  </data>
+  <data name="lblForceClose" xml:space="preserve">
+    <value>強制閉</value>
+  </data>
+  <data name="lblRelease" xml:space="preserve">
+    <value>状況解除</value>
+  </data>
+  <data name="lblDeviceCount" xml:space="preserve">
+    <value>デバイス数</value>
+  </data>
+  <data name="lblBackupPeriod" xml:space="preserve">
+    <value>バックアップ期間</value>
+  </data>
+  <data name="msgTransmitData" xml:space="preserve">
+    <value>デバイスにデータを転送</value>
+  </data>
+  <data name="msgDuplicateRole" xml:space="preserve">
+    <value>カードリーダーは役割が違っていなければなりません。</value>
+  </data>
+  <data name="lblDesktopApp" xml:space="preserve">
+    <value>DesktopApp</value>
+  </data>
+  <data name="dsUnknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="dsLock" xml:space="preserve">
+    <value>Lock</value>
+  </data>
+  <data name="dsUnlock" xml:space="preserve">
+    <value>Unlock</value>
+  </data>
+  <data name="lblITouchPopX" xml:space="preserve">
+    <value>ITouchPopX</value>
+  </data>
+  <data name="lblModule" xml:space="preserve">
+    <value>MODULE</value>
+  </data>
+  <data name="lblLibrary" xml:space="preserve">
+    <value>LIBRARY</value>
+  </data>
+  <data name="lblDQMini" xml:space="preserve">
+    <value>DQ-MINI</value>
+  </data>
+  <data name="NewDevice" xml:space="preserve">
+    <value>新規デバイス</value>
+  </data>
+  <data name="ReplaceDevice" xml:space="preserve">
+    <value>代替デバイス</value>
+  </data>
+  <data name="RelocatedDevice" xml:space="preserve">
+    <value>再設置されたデバイス</value>
+  </data>
+  <data name="lblDQMiniPlus" xml:space="preserve">
+    <value>DQ-MINI-PLUS</value>
+  </data>
+  <data name="lblIt100" xml:space="preserve">
+    <value>iT100</value>
+  </data>
+  <data name="verifyFace" xml:space="preserve">
+    <value>顔の認識のみ可能</value>
+  </data>
+  <data name="verifyCard" xml:space="preserve">
+    <value>カードのみ可能</value>
+  </data>
+  <data name="verifyCardAndQR" xml:space="preserve">
+    <value>カードとQRコード</value>
+  </data>
+  <data name="verifyCardAndPassCode" xml:space="preserve">
+    <value>カードおよびパスコード</value>
+  </data>
+  <data name="VerifyCardOrPassCode" xml:space="preserve">
+    <value>カードまたはパスコード</value>
+  </data>
+  <data name="verifyCardOrQR" xml:space="preserve">
+    <value>カードまたはQRコード</value>
+  </data>
+  <data name="verifyPassCode" xml:space="preserve">
+    <value>パスコードのみ</value>
+  </data>
+  <data name="verifyQR" xml:space="preserve">
+    <value>QR コードのみ</value>
+  </data>
+  <data name="msgCannotUseVerifyMode" xml:space="preserve">
+    <value>この装置で使用できない認証モードです。 変更してください。</value>
+  </data>
+  <data name="lblNexpaLPR" xml:space="preserve">
+    <value>NexpaLPR</value>
+  </data>
+  <data name="verifyIris" xml:space="preserve">
+    <value>虹彩認識のみ可能</value>
+  </data>
+  <data name="verifyFaceOrIris" xml:space="preserve">
+    <value>顔認識または虹彩認識</value>
+  </data>
+  <data name="verifyFaceAndIris" xml:space="preserve">
+    <value>顔認識と虹彩認識</value>
+  </data>
+  <data name="VerifyCardOrQROrPassCode" xml:space="preserve">
+    <value>カード or QR or キーパッド</value>
+  </data>
+  <data name="verifyCardOrFaceOrIris" xml:space="preserve">
+    <value>カード or 顔認識 or 虹彩認識</value>
+  </data>
+  <data name="lblIt100Registration" xml:space="preserve">
+    <value>iT100_REG</value>
+  </data>
+  <data name="lblPersonalVehicle" xml:space="preserve">
+    <value>Personal vehicle</value>
+  </data>
+  <data name="lblUnitVehicle" xml:space="preserve">
+    <value>Unit vehicle</value>
+  </data>
+  <data name="lblNormalVehicle" xml:space="preserve">
+    <value>Normal vehicle</value>
+  </data>
+  <data name="lblRFIDVehicle" xml:space="preserve">
+    <value>RFID vehicle</value>
+  </data>
+  <data name="lblVehicleAllow" xml:space="preserve">
+    <value>Allowed</value>
+  </data>
+  <data name="lblVehicleDisallow" xml:space="preserve">
+    <value>Disallowed</value>
+  </data>
+  <data name="lblControllerDevice" xml:space="preserve">
+    <value>Controller device</value>
+  </data>
+  <data name="lblNexpaLMS" xml:space="preserve">
+    <value>NexpaLMS</value>
+  </data>
+  <data name="lblRule2Vehicle" xml:space="preserve">
+    <value>Two-part system vehicle</value>
+  </data>
+  <data name="lblRule5Vehicle" xml:space="preserve">
+    <value>Five-part system vehicle</value>
+  </data>
+  <data name="lblExceptionVehicle" xml:space="preserve">
+    <value>Exception vehicle</value>
+  </data>
+  <data name="msgDeviceNotWorking" xml:space="preserve">
+    <value>Device not working</value>
+  </data>
+  <data name="msgCameraNotRecognizeFace" xml:space="preserve">
+    <value>Camera does not recognize the face</value>
+  </data>
+  <data name="lblAlarmStateOff" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="lblAlarmStateOn" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="lblXStation2" xml:space="preserve">
+    <value>X Station 2</value>
+  </data>
+  <data name="lblFV6000" xml:space="preserve">
+    <value>FV-6000</value>
+  </data>
+  <data name="lblViolationVehicle" xml:space="preserve">
+    <value>Violation Vehicle</value>
+  </data>
+  <data name="lblKorecenServer" xml:space="preserve">
+    <value>KorecenServer</value>
+  </data>
+  <data name="lblBusReader" xml:space="preserve">
+    <value>Bus reader</value>
+  </data>
+  <data name="lblPM85" xml:space="preserve">
+    <value>PM85</value>
+  </data>
+  <data name="lblTarFile" xml:space="preserve">
+    <value>TAR</value>
+  </data>
+  <data name="msgMaximumAddDevice" xml:space="preserve">
+    <value>You can not add new device. (Count of devices maximum: {0})</value>
+  </data>
+  <data name="lblFireDetector" xml:space="preserve">
+    <value>火災感知器</value>
+  </data>
+  <data name="lblITouch30A" xml:space="preserve">
+    <value>ITouch30A</value>
+  </data>
+  <data name="lblDP636X" xml:space="preserve">
+    <value>DP-636X</value>
+  </data>
+  <data name="msgForcedOpenSuccess" xml:space="preserve">
+    <value>Forced open success</value>
+  </data>
+  <data name="msgForcedCloseSuccess" xml:space="preserve">
+    <value>Forced close success</value>
+  </data>
+  <data name="msgForcedReleaseSuccess" xml:space="preserve">
+    <value>Release emergency success</value>
+  </data>
+  <data name="msgOpenDoorTimePeriod" xml:space="preserve">
+    <value>Open door for {0} seconds.</value>
+  </data>
+  <data name="msgOpenDoorUtilTime" xml:space="preserve">
+    <value>Open door util {0}.</value>
+  </data>
+  <data name="lblDQCube" xml:space="preserve">
+    <value>DQ-CUBE</value>
+  </data>
+  <data name="lblDF970" xml:space="preserve">
+    <value>DF970</value>
+  </data>
+  <data name="dsFireDetected" xml:space="preserve">
+    <value>Fire Detected</value>
+  </data>
+  <data name="dsFireNoDetected" xml:space="preserve">
+    <value>No fire detected</value>
+  </data>
+  <data name="dsNoMealTime" xml:space="preserve">
+    <value>Break Time</value>
+  </data>
+  <data name="dsInactive" xml:space="preserve">
+    <value>非アクティブ時間</value>
+  </data>
+  <data name="dsNeedSetting" xml:space="preserve">
+    <value>設定が必要</value>
+  </data>
+  <data name="dsInvalid" xml:space="preserve">
+    <value>不使用</value>
+  </data>
+  <data name="lblBiostation2" xml:space="preserve">
+    <value>Biostation2</value>
+  </data>
+  <data name="verifyFingerprintOnly" xml:space="preserve">
+    <value>Fingerprint Only</value>
+  </data>
+  <data name="verifyCardOrFingerprint" xml:space="preserve">
+    <value>Card or Fingerprint</value>
+  </data>
+  <data name="lblIcu300NX" xml:space="preserve">
+    <value>ICU-300NX</value>
+  </data>
+  <data name="lblBioStationMode" xml:space="preserve">
+    <value>BioStation Mode</value>
+  </data>
+  <data name="lblMaster" xml:space="preserve">
+    <value>Master</value>
+  </data>
+  <data name="lblSlave" xml:space="preserve">
+    <value>Slave</value>
+  </data>
+  <data name="lblStandalone" xml:space="preserve">
+    <value>Stand Alone</value>
+  </data>
+  <data name="verifyCardAndFingerprint" xml:space="preserve">
+    <value>Card and Fingerprint</value>
+  </data>
+  <data name="verifyFingerprintAndPassCode" xml:space="preserve">
+    <value>Fingerprint and Pass code</value>
+  </data>
+  <data name="lblBiostation3" xml:space="preserve">
+    <value>Biostation3</value>
+  </data>
+  <data name="verifyCardAndFace" xml:space="preserve">
+    <value>Card and Face ID</value>
+  </data>
+  <data name="verifyFaceAndPassCode" xml:space="preserve">
+    <value>Face ID and Pass code</value>
+  </data>
+  <data name="verifyCardAndFaceAndPassCode" xml:space="preserve">
+    <value>Card and Face ID and Pass code</value>
+  </data>
+  <data name="lblEbknReader" xml:space="preserve">
+    <value>EbknReader</value>
+  </data>
+  <data name="verifyFaceOrFingerPrintOrPassCode" xml:space="preserve">
+    <value>Face ID or Fingerprint or Pass code</value>
+  </data>
+  <data name="verifyFingerprintAndFace" xml:space="preserve">
+    <value>Fingerprint and Face ID</value>
+  </data>
+  <data name="verifyCardOrQrOrFingerprintOrFaceId" xml:space="preserve">
+    <value>Card or QR code or Fingerprint or Face</value>
+  </data>
+  <data name="msgDeviceNotReady" xml:space="preserve">
+    <value>Device not ready</value>
+  </data>
+  <data name="lblIcu400" xml:space="preserve">
+    <value>ICU-400</value>
+  </data>
+  <data name="lblDeviceId" xml:space="preserve">
+    <value>Device ID</value>
+  </data>
+  <data name="lblDoorStatus" xml:space="preserve">
+    <value>ドアステータス</value>
+  </data>
+  <data name="lblProgress" xml:space="preserve">
+    <value>進捗状況</value>
+  </data>
+  <data name="lblBA8300" xml:space="preserve">
+    <value>BA8300</value>
+  </data>
+  <data name="lblCreatedOn" xml:space="preserve">
+    <value>作成日</value>
+  </data>
+  <data name="lblCreateTimeOnlineDevice" xml:space="preserve">
+    <value>オンラインで時間を作る</value>
+  </data>
+  <data name="lblITouchPop2A" xml:space="preserve">
+    <value>ITouchPop2A</value>
+  </data>
+  <data name="lblUpTimeOnlineDevice" xml:space="preserve">
+    <value>オンライン稼働時間</value>
+  </data>
+  <data name="NotificationDevice" xml:space="preserve">
+    <value>{1}建物の緊急事態（{0}）が有効になっています</value>
+  </data>
+  <data name="msgRejectVideoCall" xml:space="preserve">
+    <value>あなたのリクエストは{0}によって拒否されました</value>
+  </data>
+  <data name="lblRA08" xml:space="preserve">
+    <value>RA08</value>
+  </data>
+  <data name="lblDQ8500" xml:space="preserve">
+    <value>DQ8500</value>
+  </data>
+  <data name="lblActiveFaceLicense" xml:space="preserve">
+    <value>Active Face License</value>
+  </data>
+  <data name="lblSerial" xml:space="preserve">
+    <value>Serial</value>
+  </data>
+  <data name="lblKey" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="lblActivationCode" xml:space="preserve">
+    <value>Activation Code</value>
+  </data>
+  <data name="msgYourRequestSuccess" xml:space="preserve">
+    <value>Your request send to device success. Please waiting a minutes</value>
+  </data>
+  <data name="msgNotificationNewFile" xml:space="preserve">
+    <value>{0} uploaded new log file. You can download it now.</value>
+  </data>
+  <data name="prgMsgLoadDeviceInfo" xml:space="preserve">
+    <value>リフレッシュ情報を要求します</value>
+  </data>
+  <data name="prgMsgUpdateTimezone" xml:space="preserve">
+    <value>タイムゾーン情報を送信します</value>
+  </data>
+  <data name="prgMsgUpdateHoliday" xml:space="preserve">
+    <value>休日情報を送信します</value>
+  </data>
+  <data name="prgMsgAddUser" xml:space="preserve">
+    <value>ユーザーデータを送信します</value>
+  </data>
+  <data name="prgMsgUpdateDeviceMessage" xml:space="preserve">
+    <value>表示メッセージを送信します</value>
+  </data>
+  <data name="prgMsgUpdateDeviceFirmware" xml:space="preserve">
+    <value>ファームウェアファイルを送信します</value>
+  </data>
+  <data name="prgMsgSending" xml:space="preserve">
+    <value>送信しています···</value>
+  </data>
+  <data name="lblDQ200" xml:space="preserve">
+    <value>DQ200</value>
+  </data>
+  <data name="msgDeviceNotResponse" xml:space="preserve">
+    <value>Device not response</value>
+  </data>
+  <data name="lblDCCamera" xml:space="preserve">
+    <value>DCCamera</value>
+  </data>
+  <data name="verifyVehicle" xml:space="preserve">
+    <value>Vehicle ID Only</value>
+  </data>
+  <data name="verifyVehicleAndFace" xml:space="preserve">
+    <value>Plate Number And Face ID</value>
+  </data>
+  <data name="verifyPlateNumberAndVNID" xml:space="preserve">
+    <value>Plate Number And VNID</value>
+  </data>
+  <data name="verifyVNID" xml:space="preserve">
+    <value>VNID</value>
+  </data>
+  <data name="lblTBVision" xml:space="preserve">
+    <value>TBVision</value>
+  </data>
+  <data name="lblIcu500" xml:space="preserve">
+    <value>ICU-500</value>
+  </data>
+  <data name="lblMotoBike" xml:space="preserve">
+    <value>Motobike</value>
+  </data>
+  <data name="lblCar" xml:space="preserve">
+    <value>Car</value>
+  </data>
+  <data name="lblT2Face" xml:space="preserve">
+    <value>T2Face</value>
+  </data>
+</root>
